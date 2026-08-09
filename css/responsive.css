@@ -1,0 +1,2673 @@
+﻿@media (min-width: 1200px) {
+  .mainHeader .navbar .navbar-collapse .navbar-nav li a {
+    padding: 24px 2px;
+  }
+  .mainHeader .navbar .navbar-collapse .navbar-nav .dropdown {
+    position: unset;
+  }
+  .mainHeader .navbar .navbar-collapse .navbar-nav .dropdown-menu {
+    min-width: 170px;
+    padding: 0px;
+    border: 0;
+    border-radius: 0;
+  }
+  .mainHeader .navbar .navbar-collapse .navbar-nav .dropdown-menu li a {
+    padding: 10px 20px;
+  }
+  .mainHeader .navbar .navbar-collapse .navbar-nav .dropdown-menu li a:hover {
+    background-color: #ed624f;
+    color: #fff;
+  }
+  .mainHeader .navbar .navbar-collapse .navbar-nav .dropdownMegaMenu {
+    min-width: 100%;
+    border: 0;
+    border-radius: 0;
+    padding: 25px 40px;
+    box-shadow: -10px 6px 50px 0px rgba(0, 0, 0, 0.04);
+    left: 0;
+  }
+  .mainHeader .navbar .navbar-collapse .navbar-nav .dropdownMegaMenu .dropdownRow {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .mainHeader .navbar .navbar-collapse .navbar-nav .dropdownMegaMenu .dropdownRow .dropdownCol ul {
+    gap: 14px;
+  }
+  .mainHeader .navbar .navbar-collapse .navbar-nav .dropdownMegaMenu .dropdownRow .dropdownCol ul li a {
+    color: #000;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 24px 6px;
+    transition: all 0.4s ease;
+    position: relative;
+    font-weight: 500;
+  }
+  .mainHeader .navbar .navbar-collapse .navbar-nav .dropdownMegaMenu .dropdownRow .dropdownCol ul li a::before {
+    display: block;
+    content: "";
+    width: 20px;
+    height: 10px;
+    background: url("../images/icon/arrow-icon.png") no-repeat;
+    background-size: contain;
+  }
+  .mainHeader .navbar .navbar-collapse .navbar-nav .dropdownMegaMenu .dropdownRow .dropdownCol ul li a:hover {
+    background-color: transparent;
+    color: #ed624f;
+  }
+  .mainHeader .navbar .navbar-collapse .navbar-nav .dropdownMegaMenu .dropdownRow .dropdownCol .dropdownColImg img {
+    border-radius: 5px;
+  }
+  .mainHeader .navbar .headerGroup .mainMenuContainer .navbarCollapseMenu #collapsibleNavbar {
+    top: 0 !important;
+  }
+  .mainHeader .navbar .navbar-collapse .navbar-nav .dropdownMegaMenu {
+    top: 56px;
+  }
+  .headerThree .mainHeader .navbar #collapsibleNavbar {
+    top: 0 !important;
+    position: relative;
+  }
+  .headerThree .mainHeader .navbar .navbar-collapse .navbar-nav .dropdown-menu .dropdownRow {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .headerThree .mainHeader .navbar .headerGroup .mainMenuContainer .navbarCollapseMenu #collapsibleNavbar .navbar-nav li .dropdown-menu li a:hover {
+    background-color: #ed624f;
+    color: #fff;
+  }
+  .headerThree .mainHeader .navbar .headerGroup .mainMenuContainer .navbarCollapseMenu #collapsibleNavbar .navbar-nav li .dropdown-menu.dropdownMegaMenu li a:hover {
+    background-color: transparent;
+    color: #ed624f;
+  }
+  .headerTwo .mainHeader .navbar #collapsibleNavbar {
+    top: 0 !important;
+    position: relative;
+  }
+  .headerTwo .mainHeader .navbar .navbar-collapse .navbar-nav .dropdown-menu .dropdownRow {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 1799px) {
+  .mainHeader .navbar .container #collapsibleNavbar .navbar-nav {
+    margin-left: 20px;
+    gap: 10px;
+  }
+}
+@media (max-width: 1400px) {
+  .mainHeader .navbar .navbar-brand img {
+    width: 160px;
+  }
+  .mainHeader .navbar .rightMenu .loginBtn a.btn {
+    font-size: 14px;
+  }
+  .rightMenu ul li a img {
+    width: 24px;
+  }
+  .mainHeader .navbar .container #collapsibleNavbar .navbar-nav li a {
+    font-size: 14px;
+  }
+  .mainHeader .navbar .container .navbar-brand img {
+    width: 160px;
+  }
+  .mainHeader .navbar .container #collapsibleNavbar .navbar-nav {
+    gap: 10px;
+  }
+  .testimonials .testimonialsContent .testimonialSlide .testimonialsSlider .testimonialsSliderOuter::after {
+    background-size: contain;
+  }
+  .testimonials .testimonialsContent .testimonialSlide .testimonialsSlider .testimonialsSliderOuter {
+    padding: 30px 50px;
+  }
+  .testimonials .testimonialsContent .testimonialSlide .testimonialsSlider::before {
+    right: 60px;
+    height: 50px;
+    width: 50px;
+  }
+  .mainHeader .navbar .container .rightMenu .loginBtn .btnGroup a:first-child:after {
+    font-size: 18px;
+  }
+  .mainHeader .navbar .container .rightMenu .loginBtn {
+    margin-left: 10px;
+  }
+  .headerThree .mainHeader .navbar .headerGroup .topHeader .topHeaderInner .language .searchBar {
+    width: 280px;
+  }
+  .headerThree .mainHeader .navbar .headerGroup .mainMenuContainer .navbarCollapseMenu #collapsibleNavbar .navbar-nav li a {
+    font-size: 16px;
+  }
+  .headerFive .rightMenu ul li a {
+    padding: 5px 8px;
+  }
+}
+@media (max-width: 1199px) {
+  .mainHeader .navbar div#collapsibleNavbar {
+    position: fixed;
+    width: 300px;
+    background-color: #fff;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    padding: 20px;
+    transition: all 0.6s ease;
+    z-index: 9999;
+    overflow: auto;
+    box-shadow: 2px 8px 10px 0px rgba(0, 0, 0, 0.05);
+  }
+  .mainHeader .navbar div#collapsibleNavbar.navbar-nav {
+    margin-left: 0;
+  }
+  .mainHeader .navbar .collapse:not(.show) {
+    display: block;
+    transform: translateX(-320px);
+  }
+  .rightMenu .toggleBtn {
+    margin-left: 10px;
+  }
+  .rightMenu .toggleBtn .navbar-toggler:focus {
+    box-shadow: unset;
+  }
+  .mainHeader .navbar .container #collapsibleNavbar .navbar-nav {
+    margin-left: 0;
+  }
+  .mainHeader .navbar .container #collapsibleNavbar .navbar-nav .nav-item .dropdown-menu .dropdownRow .dropdownCol .dropdownColImg {
+    display: none;
+  }
+  .mainHeader .navbar .container #collapsibleNavbar .navbar-nav .nav-item .dropdown-menu .dropdownRow .dropdownCol ul li {
+    margin-bottom: 12px;
+  }
+  .mainHeader .navbar .container #collapsibleNavbar .navbar-nav .nav-item .dropdown-menu {
+    padding: 20px;
+  }
+  .mainHeader .navbar {
+    padding: 10px;
+  }
+  .mainHeader .navbar .container #collapsibleNavbar .navbar-nav li a {
+    padding: 10px;
+  }
+  .headerFour .mainHeader .navbar #collapsibleNavbar .navbar-nav li a {
+    gap: 6px;
+    padding: 4px 6px;
+  }
+  .mainHeader .navbar .headerGroup .mainMenuContainer .navbarCollapseMenu #collapsibleNavbar .navbar-nav li .btnGroup a,
+  .headerFour .mainHeader .navbar #collapsibleNavbar .navbar-nav li .btnGroup a,
+  .mainHeader .navbar .container #collapsibleNavbar .navbar-nav li .btnGroup a {
+    background-color: #73805a;
+    color: #fff;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 767px) {
+  .topHeader .topHeaderInner .boxGroupHeader .flexGroupHeader .iconTxt span,
+  .topHeader .topHeaderInner .boxGroupHeader .flexGroupHeader .iconTxt .form-select {
+    font-size: 14px;
+  }
+  .topHeader .topHeaderInner .boxGroupHeader .iconTxt {
+    display: none;
+  }
+  .topHeader .topHeaderInner .boxGroupHeader:last-child .iconTxt {
+    display: block;
+  }
+  .rightMenu ul li.searchBtn a,
+  .rightMenu ul li.cardBtn a {
+    padding: 6px;
+  }
+  .mainHeader .navbar .rightMenu .loginBtn {
+    margin-left: 10px;
+  }
+  .mainHeader .navbar .rightMenu .loginBtn a i.fa {
+    display: block;
+    font-size: 20px;
+  }
+  .mainHeader .navbar .rightMenu .loginBtn a span {
+    display: none;
+  }
+  .mainHeader .navbar .container .rightMenu .loginBtn .btnGroup a:first-child:after {
+    font-size: 18px;
+    top: 4px;
+  }
+}
+@media (max-width: 575px) {
+  .mainHeader .navbar .navbar-brand img {
+    width: 140px;
+  }
+  .rightMenu ul li a img {
+    width: 20px;
+  }
+  .mainHeader .navbar .rightMenu .loginBtn a i.fa {
+    font-size: 16px;
+  }
+  .mainHeader .navbar .rightMenu .loginBtn a.btn {
+    padding: 8px 6px;
+  }
+  .rightMenu .toggleBtn .navbar-toggler {
+    padding: 4px;
+  }
+  .rightMenu .toggleBtn .navbar-toggler .navbar-toggler-icon {
+    width: 25px;
+    height: 25px;
+  }
+  .topHeader {
+    background-color: #ffd55f;
+    padding: 10px 15px;
+  }
+}
+@media (max-width: 375px) {
+  .mainHeader .navbar .rightMenu .loginBtn a.btn {
+    font-size: 12px;
+  }
+  .mainHeader .navbar .container .navbar-brand img {
+    width: 150px;
+  }
+  .testimonials .testimonialsContent .testimonialSlide .testimonialsSlider::before {
+    right: 10px;
+  }
+}
+@media (max-width: 1400px) {
+  .footerBg2 .footerGroup .footerInner .footerInnerRow .footerCol.footerCol2, .footerBg2 .footerGroup .footerInner .footerInnerRow .footerCol.footerCol3 {
+    padding-left: 20px;
+  }
+  .footer.footerBg2 .footerGroup .footerInner .footerInnerRow .footerCol.footerCol1 .needOurSupport .needOurSupportInner {
+    padding: 15px;
+  }
+  .footer.footerBg2 .footerCol1 .needOurSupport .needOurSupportInner .needOurSupportInput .input-group {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .footer.footerBg2 .footerCol1 .needOurSupport .needOurSupportInner .needOurSupportInput .input-group .form-control {
+    width: 100%;
+  }
+  .footer.footerBg2 .footerGroup .footerInner .footerInnerRow .footerCol.footerCol1 .needOurSupport .needOurSupportInner .needOurSupportInput .input-group .input-group-text {
+    justify-content: space-between;
+  }
+}
+@media (max-width: 1199px) {
+  .footerGroup .footerInner .footerInnerRow .footerCol .footerMenuLink.footerContactInfo ul li a .contactInfo .contactInfoTxt h6 {
+    font-size: 18px;
+    color: #fff;
+  }
+  .footer.footerBg1 .footerGroup {
+    position: absolute;
+    top: 150px;
+  }
+  .footerGroup .footerInner {
+    padding: 200px 0 60px 0;
+  }
+  .footer.footerBg2 .footerGroup .footerInner .footerInnerRow .footerCol.footerCol1 .needOurSupport .needOurSupportInner .needOurSupportTxt h2 {
+    font-size: 18px;
+  }
+  .footer.footerBg2 .footerCol1 .needOurSupport .needOurSupportInner .needOurSupportInput .input-group a span {
+    font-size: 14px;
+  }
+  .needOurSupport .needOurSupportInner .needOurSupportTxt, .needOurSupport .needOurSupportInner .needOurSupportInput {
+    width: 70%;
+  }
+}
+@media (max-width: 991px) {
+  .footerGroup .footerInner .footerInnerRow .footerCol.footerCol2, .footerGroup .footerInner .footerInnerRow .footerCol.footerCol3 {
+    padding-left: 0;
+  }
+  .footerGroup .footerInner .footerInnerRow .footerCol1 {
+    margin-bottom: 40px;
+  }
+  .footer.footerBg1 .footerGroup {
+    top: 120px;
+  }
+  .footerGroup .footerInner {
+    padding: 220px 0 60px 0;
+  }
+  .needOurSupport .needOurSupportInner .needOurSupportTxt h2 {
+    font-size: 32px;
+  }
+  .needOurSupport .needOurSupportInner .needOurSupportTxt, .needOurSupport .needOurSupportInner .needOurSupportInput {
+    width: 100%;
+  }
+  .needOurSupport .needOurSupportInner {
+    padding: 60px;
+  }
+}
+@media (max-width: 767px) {
+  .footerGroup .footerInner .footerInnerRow .footerCol2, .footerGroup .footerInner .footerInnerRow .footerCol3 {
+    margin-bottom: 40px;
+  }
+  .needOurSupport .needOurSupportInner .needOurSupportTxt h2 {
+    font-size: 24px;
+  }
+  .needOurSupport .needOurSupportInner .needOurSupportTxt p {
+    font-size: 14px;
+  }
+  .needOurSupport .needOurSupportInner .needOurSupportTxt p {
+    font-size: 14px;
+  }
+  .needOurSupport .needOurSupportInner {
+    padding: 30px;
+  }
+  .footer.footerBg1 .footerGroup {
+    top: 100px;
+  }
+  .footerGroup .footerInner {
+    padding: 140px 0 60px 0;
+  }
+  .footer.footerBg2 .footerCopyRight .footerCopyRightInner {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+@media (max-width: 575px) {
+  .needOurSupport .needOurSupportInner .needOurSupportInput .input-group {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .needOurSupport .needOurSupportInner .needOurSupportInput .input-group input.form-control {
+    width: 100%;
+  }
+  .input-group .input-group-text {
+    justify-content: space-between;
+  }
+  .footerGroup .footerInner {
+    padding: 230px 0 60px 0;
+  }
+  .needOurSupport .needOurSupportInner {
+    padding: 15px;
+  }
+  .footer.footerBg1 .footerGroup {
+    top: 100px;
+  }
+  .footerCopyRight .footerCopyRightInner p {
+    font-size: 14px;
+  }
+  .footerCopyRight {
+    padding: 15px 0;
+  }
+}
+@media (max-width: 375px) {
+  .footerGroup .footerInner {
+    padding: 180px 0 60px 0;
+  }
+  .footer.footerBg1 .footerGroup {
+    top: 140px;
+  }
+  .needOurSupport .needOurSupportInner {
+    padding: 15px;
+  }
+  .footerGroup .footerInner .footerInnerRow .footerCol .footerPara p {
+    color: #fff;
+    font-size: 14px;
+  }
+}
+@media (max-width: 350px) {
+  .footerGroup .footerInner {
+    padding: 240px 0 60px 0;
+  }
+}
+@media (min-width: 1200px) {
+  .broilerBreederRow {
+    align-items: center;
+  }
+}
+@media (max-width: 1699px) {
+  .actigen .blogSingleInner .poultryProductAside .growthBoosterOuter a .growthBooster .growthBoosterInner .growthBoosterInnerGroup {
+    padding: 40px;
+  }
+  .actigen .blogSingleInner .poultryProductAside .growthBoosterOuter a .growthBooster .growthBoosterInner .growthBoosterInnerGroup .growthBoosterImg .pulseAnimationCircle {
+    right: -10px;
+  }
+}
+@media (max-width: 1399px) {
+  .checkoutAside .productBox .asideProductItem, .paymentMethod {
+    padding: 20px;
+  }
+  .paymentMethod .paymentMethodInner .paymentMethodOpt .paymentOptName.custom-radios label .optName h6 {
+    font-size: 18px;
+  }
+  .checkoutAside .asideHeading h4 {
+    font-size: 26px;
+  }
+  .checkoutAside .productBox .asideProductItem .asideProdtBx {
+}
+@media (max-width: 1400px) {
+  .bannerSec {
+    height: 40vh;
+  }
+  .blogSingle .blogSingleInner .blogSingleAside .searchKeyword .searchKeywordInner h4, .blogSingle .blogSingleInner .blogSingleAside .postCategories h4, .blogSingle .blogSingleInner .blogSingleAside .recentPost h4, .blogSingle .blogSingleInner .blogSingleAside .popularTags h4 {
+    font-size: 24px;
+  }
+  .blogSingle .blogSingleInner .blogSingleAside .recentPost .recentPostList .recentPostGroupList a .recentPostTxt p {
+    font-size: 18px;
+  }
+  .blogSingle .blogSingleInner .blogSingleBlog .latestNewsCardInner .latestNewsCardInnerContent .queryBox p {
+    font-size: 18px;
+  }
+  .blogSingle .blogSingleInner .blogSingleBlog .latestNewsCardInner .latestNewsCardInnerContent .queryBox::before {
+    width: 50%;
+    height: 50%;
+  }
+  .blogSingle .blogSingleInner .blogSingleBlog .latestNewsCardInner .latestNewsCardInnerContent .latestNewsTxt h4 a {
+    font-size: 30px;
+  }
+  .poultryFeed .poultryFeedInner .poultryFeedCard .poultryFeedCardContent .poultryFeedTxt h5 {
+    font-size: 25px;
+  }
+  .actigen .blogSingleInner .poultryProductAside .growthBoosterOuter a .growthBooster .growthBoosterInner .growthBoosterInnerGroup {
+    padding: 50px 20px;
+  }
+  .actigen .blogSingleInner .poultryProductAside .growthBoosterOuter a .growthBooster .growthBoosterInner .growthBoosterInnerGroup .growthBoosterImg .pulseAnimationCircle .offerContent h4 {
+    font-size: 28px;
+  }
+  .actigen .blogSingleInner .poultryProductAside .growthBoosterOuter a .growthBooster .growthBoosterInner .growthBoosterInnerGroup .growthBoosterImg .pulseAnimationCircle {
+    width: 100px;
+    height: 100px;
+  }
+  .actigen .blogSingleInner .poultryProductAside .growthBoosterOuter a .growthBooster .growthBoosterInner .growthBoosterInnerGroup .growthBoosterImg .pulseAnimationCircle::after, .actigen .blogSingleInner .poultryProductAside .growthBoosterOuter a .growthBooster .growthBoosterInner .growthBoosterInnerGroup .growthBoosterImg .pulseAnimationCircle::before {
+    width: 100px;
+    height: 100px;
+  }
+  .actigen .blogSingleInner .poultryProductAside .growthBoosterOuter a .growthBooster .growthBoosterInner .growthBoosterInnerGroup .growthBoosterContant h5 {
+    font-size: 30px;
+  }
+  .actigen .blogSingleInner .poultryProductAside .growthBoosterOuter a .growthBooster .growthBoosterInner .growthBoosterInnerGroup .growthBoosterContant p {
+    font-size: 16px;
+  }
+  .ownerPoultry .ownerPoultryInner .ownerPoultryTxt h4 {
+    font-size: 28px;
+  }
+  .ourServiceCategory .categorySecInner a {
+    padding: 20px;
+  }
+  .getDifferent .getDifferentInner .getOrganicIcon .getOrganicImg .getOrganicImgInner .whyChooseUs p {
+    font-size: 22px;
+  }
+  .getDifferent .getDifferentInner .getOrganicIcon .getOrganicImg .getOrganicImgInner .whyChooseUs {
+    bottom: 83px;
+    right: -85px;
+  }
+  .getDifferent .getDifferentInner .getDifferentTxt ul li {
+    font-size: 18px;
+  }
+  .getDifferent .getDifferentInner .getDifferentTxt {
+    padding-right: 40px;
+  }
+  .aboutUsSec1 .aboutUsSec1Content .aboutUsSec1Para h4 {
+    font-size: 40px;
+  }
+  .aboutUsSec1 .aboutUsSec1Counter .aboutUsSec1Row {
+    padding: 20px;
+  }
+  .aboutUsSec1 .aboutUsSec1Img img {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 1199px) {
+  .bannerSec {
+    height: 30vh;
+  }
+  .videoListing .videoBanner .flVideo .circle {
+    width: 40px;
+    height: 40px;
+  }
+  .videoListing .videoBanner .flVideo .circle img {
+    width: 14px;
+  }
+  .contactSec .contactInfo {
+    padding-right: 20px;
+  }
+  .loginSec .loginSecRow .loginSecCol.loginSecCol2 .loginSecColInner .loginFormBox {
+    width: 90%;
+  }
+  .loginSec .loginSecRow .loginSecCol.loginSecCol2 .loginSecColInner .loginFormBox .loginFormGroup {
+    padding: 40px 20px;
+  }
+  .blogSingle .blogSingleInner .blogSingleAside .recentPost .recentPostList .recentPostGroupList a {
+    grid-template-columns: 80px 1fr;
+  }
+  .blogSingle .blogSingleInner .blogSingleAside .recentPost .recentPostList .recentPostGroupList a .recentPostTxt p {
+    font-size: 14px;
+  }
+  .blogSingle .blogSingleInner .blogSingleBlog .latestNewsCardInner .latestNewsCardInnerContent .queryBox p {
+    font-size: 16px;
+  }
+  .blogSingle .blogSingleInner .blogSingleBlog .latestNewsCardInner .latestNewsCardInnerContent .queryBox {
+    padding: 40px 200px 40px 40px;
+  }
+  .blogSingle .blogSingleInner .blogSingleBlog .latestNewsCardInner .latestNewsCardInnerContent .queryBox::before {
+    width: 40%;
+    height: 40%;
+  }
+  .poultryFeed .poultryFeedInner .poultryFeedCard .poultryFeedCardContent .poultryFeedTxt h5 {
+    font-size: 20px;
+  }
+  .broilerBreeder .broilerBreederInner .broilerBreederContentBox .broilerBreederImg {
+    height: auto;
+    margin-bottom: 20px;
+  }
+  .broilerBreeder .broilerBreederInner .broilerBreederContentBox .broilerBreederContent {
+    padding-right: 0;
+  }
+  .broilerBreeder .broilerBreederInner .pigFactsTopics .pigFactsTxt {
+    padding: 20px;
+  }
+  .broilerBreeder .pigFactsTopics .pigFactsTopicsRow .pigFactsTopicsCol .pigFactsTxt .pigFactsTxtInner .broilerBreederContent {
+    padding-left: 0;
+  }
+  .broilerBreeder .broilerBreederInner .pigFactsTopics .pigFactsTopicsRow {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .broilerBreeder .broilerBreederInner .pigFactsTopics .pigFactsTopicsCol1 .pigFactsImg img {
+    width: 100%;
+  }
+  .broilerBreeder .broilerBreederInner .pigFactsTopics .pigFactsTxt {
+    padding: 40px;
+  }
+  .getDifferent .getDifferentInner .getDifferentTxt h4 {
+    font-size: 34px;
+  }
+  .getDifferent .getDifferentInner .getDifferentTxt ul li {
+    font-size: 16px;
+    padding: 14px 0px;
+  }
+  .shopSingle .shopSingleInner .productDetail .guaranteedSafe .guaranteedSafeNav ul {
+    gap: 20px;
+    padding: 14px 20px;
+  }
+  .tabSection .nav-pills .nav-link {
+    font-size: 25px;
+  }
+}
+@media (max-width: 991px) {
+  .bannerSec {
+    height: 30vh;
+  }
+  .contactSec .contactInfo .infoGroup {
+    margin-bottom: 40px;
+  }
+  .contactSec .contactInfo {
+    padding-right: 0px;
+  }
+  .blogSingle .blogSingleInner .blogSingleAside .recentPost .recentPostList .recentPostGroupList a .recentPostTxt p {
+    font-size: 18px;
+  }
+  .blogArticles .blogArticlesInner .latestNewsCard .latestNewsCardInner .latestNewsCardInnerContent .latestNewsTxt {
+    min-height: auto;
+    display: unset;
+  }
+  .paginationGroup .pagination .page-item .page-link {
+    width: 40px;
+    height: 40px;
+  }
+  .paginationGroup .pagination .page-item .pageLinkPrev, .paginationGroup .pagination .page-item .pageLinkNext {
+    width: 60px;
+    height: 60px;
+  }
+  .broilerBreeder .broilerBreederInner .broilerBreederContentBox .broilerBreederContent .broilerBreederPara .paraBold {
+    font-size: 18px;
+  }
+  .broilerBreeder .broilerBreederInner .broilerBreederContentBox .broilerBreederContent .broilerBreederHeadGroup .broilBreederHeading h2, .broilerBreeder .pigFactsTopics .pigFactsTopicsRow .pigFactsTopicsCol .pigFactsTxt .pigFactsTxtInner .broilerBreederContent .broilerBreederHeadGroup .broilBreederHeading h2 {
+    font-size: 35px;
+  }
+  .actigen .blogSingleInner .poultryProductAside .growthBoosterOuter a .growthBooster .growthBoosterInner .growthBoosterInnerGroup {
+    padding: 80px;
+  }
+  .actigen .blogSingleInner .poultryProductAside .growthBoosterOuter a .growthBooster .growthBoosterInner .growthBoosterInnerGroup .growthBoosterImg .pulseAnimationCircle {
+    right: 70px;
+  }
+  .blogSingleAside {
+    margin-top: 20px;
+  }
+  .ownerPoultry .ownerPoultryInner .ownerPoultryImg {
+    margin-bottom: 20px;
+  }
+  .getDifferent .getDifferentInner .getOrganicIcon {
+    margin-top: 60px;
+    margin-left: 20px;
+  }
+  .ownerPoultry .ownerPoultryInner .ownerPoultryTxt .ownerPoultryFarms {
+    margin-bottom: 0;
+  }
+  .getDifferent .getDifferentInner .getDifferentTxt {
+    padding-right: 0px;
+  }
+  .checkout .checkoutInner .blogSingleBlog .latestNewsCardInner .commentBox .commentBoxInner {
+    padding: 20px;
+  }
+  .checkout .checkoutInner .blogSingleBlog {
+    margin-top: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .bannerSec .container .bannerContent h1 {
+    font-size: 40px;
+  }
+  .bannerSec .container .bannerContent ul.breadcrumb li a, .bannerSec .container .bannerContent ul.breadcrumb li {
+    font-size: 16px;
+  }
+  .videoListing, .galleryColumn {
+    padding: 40px 0;
+  }
+  .contactSec .contactForm {
+    padding: 40px 20px;
+  }
+  .singleVideo {
+    padding: 100px 0 40px;
+  }
+  .singleVideoSlider.poultryProductsSlider {
+  .errorSec .errorSecInner .errorSecGroup {
+    gap: 20px;
+  }
+  .loginSec .loginSecRow {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .loginSec .loginSecRow .loginSecCol.loginSecCol1 {
+    display: none;
+  }
+  .loginSec .loginSecRow .loginSecCol.loginSecCol2 .loginSecColInner .loginFormBox .loginFormGroup .loginRegisterTab .tab-content .tab-pane .loginTabInner form .logFormGroup label {
+    font-size: 18px;
+  }
+  .blogSingle .blogSingleInner .blogSingleBlog .latestNewsCardInner .latestNewsCardInnerContent .queryBox {
+    padding: 20px;
+  }
+  .blogSingle .blogSingleInner .blogSingleBlog .latestNewsCardInner .latestNewsCardInnerContent .queryBox::before {
+    width: 80%;
+    height: 80%;
+  }
+  .blogSingle .blogSingleInner .blogSingleBlog .latestNewsCardInner .coment .comentInner .comentGroup .commentGroup .commentRight .commentUserTxt h2, .blogSingle .blogSingleInner .blogSingleBlog .latestNewsCardInner .commentGroup .commentRight .commentUserTxt h2 {
+    font-size: 20px;
+  }
+  .blogSingle .blogSingleInner .blogSingleBlog .latestNewsCardInner .commentBox .commentBoxInner .commentBoxHeading h4 {
+    font-size: 30px;
+  }
+  .blogSingle .blogSingleInner .blogSingleBlog .latestNewsCardInner .commentGroup {
+    padding: 25px;
+  }
+  .blogSingle .blogSingleInner .blogSingleBlog .latestNewsCardInner .commentGroup .commentRight .commentUserTxt p, .latestNewsCardInnerContent p, .blogSingle .blogSingleInner .blogSingleBlog .latestNewsCardInner .coment .comentInner .comentGroup .commentGroup .commentRight .commentUserTxt p {
+    font-size: 14px;
+  }
+  .blogSingle {
+    padding: 40px 0;
+  }
+  .blogSingle .blogSingleInner .blogSingleBlog .latestNewsCardInner .coment .comentInner .comentGroup .commentGroup .commentRight .replyLink a span {
+    display: none;
+  }
+  .blogSingle .blogSingleInner .blogSingleBlog .latestNewsCardInner .coment .comentInner .comentGroup .commentGroup .commentRight .replyLink {
+    width: 40px;
+  }
+  .blogSingle .blogSingleInner .blogSingleBlog .latestNewsCardInner .coment .comentInner .comentGroup .commentGroup .commentRight {
+    width: calc(100% - 40px);
+  }
+  .blogSingle .blogSingleInner .blogSingleBlog .latestNewsCardInner .coment .comentInner .comentGroup .commentGroup .commentRight .commentRightTxt .dateGroup span {
+    font-size: 14px;
+  }
+  .paginationGroup .pagination .page-item .page-link {
+    width: 30px;
+    height: 30px;
+  }
+  .paginationGroup .pagination .page-item .pageLinkPrev, .paginationGroup .pagination .page-item .pageLinkNext {
+    width: 40px;
+    height: 40px;
+  }
+  .paginationGroup .pagination {
+    gap: 10px;
+  }
+  .broilerBreeder .broilerBreederInner .broilerBreederContentBox .broilerBreederContent .broilerBreederHeadGroup .broilBreederHeading h2, .broilerBreeder .pigFactsTopics .pigFactsTopicsRow .pigFactsTopicsCol .pigFactsTxt .pigFactsTxtInner .broilerBreederContent .broilerBreederHeadGroup .broilBreederHeading h2 {
+    font-size: 30px;
+  }
+  .actigen .blogSingleInner .poultryProductAside .growthBoosterOuter a .growthBooster .growthBoosterInner .growthBoosterInnerGroup .growthBoosterImg .pulseAnimationCircle {
+    right: 0;
+  }
+  .getDifferent .getDifferentInner .getOrganicIcon .OrganicImgIcon {
+    left: 2px;
+    top: 8px;
+    width: 90px;
+  }
+  .getDifferent .getDifferentInner .getOrganicIcon .getOrganicImg .getOrgImg {
+    padding: 50px 0px 0 50px;
+  }
+  .getDifferent .getDifferentInner .getOrganicIcon {
+    margin-top: 60px;
+    margin-left: 10px;
+  }
+  .getDifferent .getDifferentInner .getOrganicIcon {
+    margin-top: 30px;
+  }
+  .getDifferent .getDifferentInner .getDifferentTxt h4 {
+    font-size: 25px;
+  }
+  .ownerPoultry .ownerPoultryInner .ownerPoultryTxt .ownerPoultryFarms p {
+    font-size: 16px;
+  }
+  .ownerPoultry .ownerPoultryInner .ownerPoultryTxt .ownerPoultryFarms {
+    padding: 12px 14px;
+  }
+  .yearsExperience .yearsExperienceProgessBar .yearsExpProgessBar .progress .progress-bar .popOver {
+    font-size: 16px;
+  }
+  .yearsExperience .yearsExperienceProgessBar .yearsExpProgessBar .progress .progress-bar .popOver {
+    right: -16px;
+    top: -36px;
+  }
+  .yearsExperience .yearsExperienceProgessBar .yearsExpProgessBar h5 {
+    font-size: 22px;
+  }
+  .aboutUs .aboutUsGroup .aboutUsHead h2, .farmManagement .farmManagementHeadingBox h2, .pigsFarmingVideo .pigsFarmingVideoTxt h4, .pigFactsTopics .pigFactsTxt .pigFactsTxtInner .pigFactsHead h4, .aboutUsSec1 .aboutUsSec1Content .aboutUsSec1Para h4 {
+    font-size: 30px;
+  }
+  .aboutUsSec1 .aboutUsSec1Counter .aboutUsSec1Row .aboutUsSec1Col h5 span {
+    font-size: 36px;
+  }
+  .aboutUsSec1 .aboutUsSec1AnyQuestion .aboutAnyQuestionRow .aboutAnyQuestionCol2 span {
+    font-size: 24px;
+  }
+  .aboutUsSec1 .aboutUsSec1AnyQuestion .aboutAnyQuestionRow .aboutAnyQuestionCol2 p {
+    font-size: 16px;
+  }
+  .aboutUsSec1 .aboutUsSec1AnyQuestion .aboutAnyQuestionRow {
+    grid-template-columns: 150px 1fr;
+    align-items: center;
+  }
+  .tabSection .nav-pills .nav-link {
+    font-size: 20px;
+  }
+  .shopSingle .shopSingleInner .productDetail .stockLeftprogress {
+    width: 80%;
+  }
+  .shopSingle .shopSingleInner .productDetail .tagsShareGroup {
+    gap: 4px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .commentBox .commentPost .postContent .postGroup .userName p {
+    margin-bottom: 0;
+  }
+  .commentBox .commentPost .postContent .postGroup .userName {
+    gap: 4px;
+    flex-direction: column;
+  }
+  .tabSection .tab-content .tab-pane .reviewsInner .commentBox .commentPost .postContent .postGroup .userName span {
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+  .commentBox .commentPost .postContent .postGroup {
+    flex-direction: column;
+  }
+}
+@media (max-width: 575px) {
+  .bannerSec {
+    height: 20vh;
+  }
+  .contactSec .contactForm {
+    padding: 40px 15px;
+  }
+  .contactSec .contactInfo .infoGroup a .infoGroupItem {
+    padding: 15px 20px;
+    border-left: 5px solid #fff;
+  }
+  .contactSec .contactInfo .infoGroup a .infoGroupItem:hover {
+    border-left: 5px solid #ed624f;
+  }
+  .infoGroupItem .infoTxt h4 {
+    font-size: 18px;
+  }
+  .infoGroupItem .infoTxt p {
+    font-size: 14px;
+  }
+  .contactSec .contactInfo .infoGroup a .infoGroupItem .infoIcon span {
+    width: 50px;
+    height: 50px;
+  }
+  .contactSec .contactInfo .infoGroup a .infoGroupItem .infoIcon span img {
+    object-fit: contain;
+    width: 25px;
+    height: 25px;
+  }
+  .contactSec {
+    padding: 40px 0;
+  }
+  .contactSec .contactForm h4 {
+  .loginSec .loginSecRow .loginSecCol.loginSecCol2 .loginSecColInner .loginFormBox .loginFormGroup .loginRegisterTab .nav li a {
+    padding: 8px 20px;
+  }
+  .loginSec .loginSecRow .loginSecCol.loginSecCol2 .loginSecColInner .loginFormBox .loginFormGroup .loginRegisterTab .tab-content .tab-pane .loginTabInner form .checkFormGroup {
+    align-items: self-start;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .blogSingle .blogSingleInner .blogSingleBlog .latestNewsCardInner .latestNewsCardImg .latestNewsDate a h5 {
+    font-size: 28px;
+  }
+  .blogSingle .blogSingleInner .blogSingleBlog .latestNewsCardInner .latestNewsCardImg .latestNewsDate a span {
+    font-size: 14px;
+  }
+  .blogSingle .blogSingleInner .blogSingleBlog .latestNewsCardInner .latestNewsCardImg .latestNewsDate a {
+    width: 80px;
+    height: 80px;
+  }
+  .blogSingle .blogSingleInner .blogSingleBlog .latestNewsCardInner .tagShareGroup .tagShareGroupInner {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .blogSingle .blogSingleInner .blogSingleBlog .latestNewsCardInner .coment .comentInner .comentGroup .commentGroup {
+    position: relative;
+  }
+  .blogSingle .blogSingleInner .blogSingleBlog .latestNewsCardInner .coment .comentInner .comentGroup .commentGroup .commentRight .replyLink {
+    position: absolute;
+    right: 0;
+    top: 20px;
+  }
+  .blogSingle .blogSingleInner .blogSingleBlog .latestNewsCardInner .coment .comentInner .comentGroup .commentGroup .commentLeft .commentUserImg img {
+    width: 50px;
+    height: 50px;
+  }
+  .blogSingle .blogSingleInner .blogSingleBlog .latestNewsCardInner .coment .comentInner .comentGroup .commentGroup .commentLeft {
+    width: 60px;
+  }
+  .blogSingle .blogSingleInner .blogSingleBlog .latestNewsCardInner .commentGroup {
+    gap: 10px;
+  }
+  .blogSingle .blogSingleInner .blogSingleAside .searchKeyword .searchKeywordInner h4, .blogSingle .blogSingleInner .blogSingleAside .postCategories h4, .blogSingle .blogSingleInner .blogSingleAside .recentPost h4, .blogSingle .blogSingleInner .blogSingleAside .popularTags h4 {
+    font-size: 22px;
+  }
+  .blogSingle .blogSingleInner .blogSingleBlog .latestNewsCardInner .commentBox .commentBoxInner .commentBoxHeading h4 {
+    font-size: 25px;
+  }
+  .blogSingle .blogSingleInner .blogSingleBlog .latestNewsCardInner .commentBox .commentBoxInner .commentBoxHeading p, .blogSingle .blogSingleInner .blogSingleBlog .latestNewsCardInner .latestNewsCardInnerContent .latestNewsTxt h4 a {
+    font-size: 14px;
+  }
+  .blogSingle .blogSingleInner .blogSingleBlog .latestNewsCardInner .commentGroup .commentLeft .commentUserImg img {
+    width: 80px;
+    height: 80px;
+  }
+  .blogSingle .blogSingleInner .blogSingleBlog .latestNewsCardInner .commentGroup .commentRight {
+    width: calc(100% - 80px);
+  }
+  .blogSingle .blogSingleInner .blogSingleBlog .latestNewsCardInner .coment .comentInner, .blogSingle .blogSingleInner .blogSingleBlog .latestNewsCardInner .commentBox .commentBoxInner {
+    padding: 15px;
+  }
+  .blogSingle .blogSingleInner .blogSingleAside .recentPost .recentPostList .recentPostGroupList a .recentPostTxt p {
+    font-size: 16px;
+  }
+  .blogSingle .blogSingleInner .blogSingleBlog .latestNewsCardInner .latestNewsCardInnerContent .latestNewsList {
+    padding: 30px 0 10px;
+  }
+  .blogArticles {
+    padding: 40px 0;
+  }
+  .paginationGroup .pagination {
+    flex-wrap: wrap;
+  }
+  .shopSection {
+    padding: 40px 0;
+  }
+  .broilerBreeder .broilerBreederInner .broilerBreederContentBox .broilerBreederContent .broilerBreederHeadGroup .broilBreederHeading h2, .broilerBreeder .pigFactsTopics .pigFactsTopicsRow .pigFactsTopicsCol .pigFactsTxt .pigFactsTxtInner .broilerBreederContent .broilerBreederHeadGroup .broilBreederHeading h2 {
+    font-size: 25px;
+  }
+  .broilBreederImg img {
+    width: 60px;
+  }
+  .broilerBreeder .pigFactsTopics .pigFactsTopicsRow .pigFactsTopicsCol .pigFactsTxt .pigFactsTxtInner .broilerBreederContent .broilerBreederPara .paraBold, .broilerBreeder .broilerBreederInner .broilerBreederContentBox .broilerBreederContent .broilerBreederPara .paraBold {
+    font-size: 16px;
+  }
+  .broilerBreeder, .ourServiceCategory, .aboutUsSec1, .checkout {
+    padding: 40px 0;
+  }
+  .getDifferent {
+    margin: 40px 0;
+  }
+  .bannerSec .container .bannerContent h1 {
+    font-size: 30px;
+  }
+  .bannerSec .container .bannerContent ul.breadcrumb li a, .bannerSec .container .bannerContent ul.breadcrumb li {
+    font-size: 14px;
+  }
+  .actigen .blogSingleInner .poultryProductAside .growthBoosterOuter a .growthBooster .growthBoosterInner .growthBoosterInnerGroup {
+    padding: 40px;
+  }
+  .actigen .blogSingleInner .poultryProductAside .growthBoosterOuter a .growthBooster .growthBoosterInner .growthBoosterInnerGroup .growthBoosterImg .pulseAnimationCircle {
+    right: 40px;
+  }
+  .getDifferent .getDifferentInner .getOrganicIcon .getOrganicImg .getOrganicImgInner .whyChooseUs p {
+    font-size: 14px;
+  }
+  .getDifferent .getDifferentInner .getOrganicIcon .getOrganicImg .getOrganicImgInner .whyChooseUs {
+    bottom: 60px;
+    right: -61px;
+  }
+  .ownerPoultry .ownerPoultryInner .ownerPoultryImg .bestBreeders p {
+    font-size: 16px;
+  }
+  .ownerPoultry .ownerPoultryInner .ownerPoultryImg .bestBreeders {
+    width: 180px;
+  }
+  .ownerPoultry .ownerPoultryInner .ownerPoultryTxt h4, .ownerPoultry .ownerPoultryInner .ownerPoultryTxt p, .ownerPoultry .ownerPoultryInner .ownerPoultryTxt p {
+    margin-bottom: 20px;
+  }
+  .ownerPoultry .ownerPoultryInner .ownerPoultryTxt h4 {
+    font-size: 20px;
+  }
+  .aboutUsSec1 .aboutUsSec1AnyQuestion .aboutAnyQuestionRow {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .aboutUsSec1 .aboutUsSec1AnyQuestion .aboutAnyQuestionRow .aboutAnyQuestionCol1:after, .aboutUsSec1 .aboutUsSec1Counter .aboutUsSec1Row .aboutUsSec1Col:after {
+    content: unset;
+  }
+  .aboutUsSec1 .aboutUsSec1Counter .aboutUsSec1Row {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .aboutUsSec1 .aboutUsSec1Counter .aboutUsSec1Row .aboutUsSec1Col h5 span {
+    font-size: 50px;
+  }
+  .aboutUsSec1 .aboutUsSec1Img:after {
+    width: 110px;
+    height: 110px;
+  }
+  .checkout .checkoutInner .blogSingleBlog .latestNewsCardInner .commentBox .commentBoxInner .commentBoxHeading h4 {
+    font-size: 22px;
+  }
+  .checkout .checkoutInner .blogSingleBlog .latestNewsCardInner .commentBox .commentBoxInner .commentBoxForm .commentFormGroup .form-label {
+    font-size: 14px;
+  }
+  .checkout .checkoutInner .blogSingleBlog .latestNewsCardInner .commentBox .commentBoxInner .commentBoxForm .commentFormGroup input.form-control {
+    height: 40px;
+  }
+  .commentBox .commentPost {
+    flex-direction: column;
+  }
+  .commentBox .commentPost .postContent {
+    width: 100%;
+  }
+  .shopSingle .shopSingleInner .productDetail .productQty {
+    align-items: self-start;
+    gap: 20px;
+    margin-top: 20px;
+    flex-direction: column;
+  }
+  .shopSingle {
+    padding: 40px 0 0;
+  }
+  .shopSingle .shopSingleInner .productDetail .tagsShareGroup .share .shareInner span, .shopSingle .shopSingleInner .productDetail .tagsShareGroup .tags p span, .shopSingle .shopSingleInner .productDetail .sku p span {
+    font-size: 18px;
+  }
+  .shopSingle .shopSingleInner .productDetail .tagsShareGroup .share .shareInner {
+    gap: 10px;
+  }
+}
+@media (max-width: 375px) {
+  .bannerSec {
+    height: 18vh;
+  }
+  .contactSec .contactInfo .infoGroup a .infoGroupItem {
+  .actigen .blogSingleInner .poultryProductAside .growthBoosterOuter a .growthBooster .growthBoosterInner .growthBoosterInnerGroup .growthBoosterImg .pulseAnimationCircle {
+    right: 0px;
+  }
+  .actigen .blogSingleInner .poultryProductAside .growthBoosterOuter a .growthBooster .growthBoosterInner .growthBoosterInnerGroup {
+    padding: 50px 20px;
+  }
+  .shopSingle .shopSingleInner .productThumbnailsSlider .carousel-fade .carousel-inner .carouselItem {
+    height: 400px;
+  }
+  .shopSingle .shopSingleInner .productThumbnailsSlider .carousel-fade .carousel-indicators li .carouselIndicatorsItem img {
+    height: 70px;
+  }
+}
+@media (max-width: 1699px) {
+  .sheepBanner {
+    height: 86vh;
+  }
+}
+@media (max-width: 1599px) {
+  .sheepBanner {
+    height: 82vh;
+  }
+}
+@media (max-width: 1399px) {
+  .sheepBanner {
+    height: 66vh;
+  }
+  .sheepBanner .poultryPerformanceHeading h1, .sheepBanner .poultryPerformanceHeading h1 {
+    font-size: 40px;
+  }
+  .sheepBanner .poultryPerformanceHeading p {
+    font-size: 16px;
+  }
+  .industryLeadingSheep .industryLeadingSheepInner h2 {
+    font-size: 32px;
+  }
+  .industryLeadingSheep .industryLeadingSheepInner {
+    width: 60%;
+  }
+  .industryLeadingSheep {
+    height: 70vh;
+  }
+  .ourGallerySheep .galleryColumn::before {
+    top: 66px;
+    left: -11px;
+  }
+  .ourGallerySheep .galleryColumn::after {
+    bottom: 98px;
+    right: -15px;
+  }
+  .ourGallerySheep .galleryColumn, .whoWeAreSheep, .latestNewsArticlesSheep, .testimonialsSheep {
+    padding: 40px 0;
+  }
+  .testimonialsSheep .testimonialsContent .testimonialSlide .owl-nav {
+    margin-top: -125px;
+  }
+  .ourServiceSheep .ourServiceGroup .ourServiceGroupRow .ourServiceGroupCol .ourServiceGroupItem a {
+    padding: 40px 20px;
+  }
+}
+@media (max-width: 1199px) {
+  .commonHeading h4 {
+    font-size: 28px;
+  }
+  .qualityFeedsSheep .qualityFeedsRow .qualityFeedsCol .pigFactsList ul li a {
+    font-size: 18px;
+  }
+  .qualityFeedsSheep .qualityFeedsRow .qualityFeedsCol .pigFactsList ul li a::before {
+    width: 20px;
+    height: 13px;
+  }
+  .ourServiceSheep .ourServiceGroup .ourServiceGroupRow .ourServiceGroupCol .ourServiceGroupItem a .ourServiceGroupContent h4 {
+    font-size: 24px;
+  }
+  .sheepBanner .poultryPerformanceHeading h5, .commonHeading h5, .commonHeading.textCenter.textWhite h6 {
+    font-size: 16px;
+  }
+  .sheepBanner {
+    height: 52vh;
+  }
+  .sheepBanner .poultryPerformanceHeading h1, .sheepBanner .poultryPerformanceHeading h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  .commonHeading h4 {
+    font-size: 30px;
+  }
+  .mapsSection {
+    padding: 40px 0;
+  }
+  .industryLeadingSheep {
+    height: 60vh;
+  }
+  .latestNewsArticlesSheep .latestNewsArticlesInner .latestNewsCard .latestNewsCardInner .latestNewsCardInnerContent .latestNewsTxt h4 a {
+    font-size: 20px;
+  }
+  .latestNewsArticlesSheep .latestNewsArticlesInner .commonHeading {
+    width: 60%;
+  }
+}
+@media (max-width: 991px) {
+  .latestNewsArticlesSheep .latestNewsArticlesInner .latestNewsCard .latestNewsCardInner {
+    height: auto;
+  }
+  .sheepBanner {
+    height: 42vh;
+  }
+  .sheepBanner .poultryPerformanceHeading h1, .sheepBanner .poultryPerformanceHeading h1 {
+    font-size: 24px;
+  }
+  .ourServiceSheep .ourServiceGroup .ourServiceGroupRow .ourServiceGroupCol .ourServiceGroupItem a .ourServiceGroupContent h4 {
+    font-size: 20px;
+  }
+  .ourServiceSheep .ourServiceGroup .ourServiceGroupRow .ourServiceGroupCol .ourServiceGroupItem a {
+    padding: 15px;
+  }
+  .industryLeadingSheep .industryLeadingSheepInner h2 {
+    font-size: 24px;
+  }
+  .qualityFeedsSheep {
+    padding: 40px 0;
+  }
+}
+@media (max-width: 767px) {
+  .ourGallerySheep .galleryColumn::before, .ourGallerySheep .galleryColumn::after {
+    content: unset;
+  }
+  .mapsSection.mapsSectionSheep .mapsSectionInner .mapOverlay .tooltipGroup.tooltip9 {
+    right: 3%;
+    top: 75%;
+  }
+  .ourGallerySheep .galleryColumn .galleryRow .galleryCol .galleryItem .galleryLink .promo img {
+    height: auto;
+    border-bottom-right-radius: 20px;
+  }
+  .whoWeAreSheep .qualityFeedsCol.qualityFeedsCol, .qualityFeedsSheep .qualityFeedsCol.qualityFeedsCol2 {
+    margin-bottom: 40px;
+  }
+  .ourServiceSheep .ourServiceGroup .ourServiceGroupRow {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+  .owlCarouselSheep .sheepBanner {
+    position: relative;
+  }
+  .owlCarouselSheep .sheepBanner::after {
+    content: "";
+    background: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .sheepBanner .poultryPerformanceHeading h1, .sheepBanner .poultryPerformanceHeading p {
+    color: #fff;
+  }
+  .sheepBanner .poultryPerformanceHeading h5:after {
+    background: #ed6553;
+  }
+}
+@media (max-width: 575px) {
+  .ourServiceSheep .ourServiceGroup .ourServiceGroupRow {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .industryLeadingSheep .industryLeadingSheepInner, .latestNewsArticlesSheep .latestNewsArticlesInner .commonHeading {
+    width: 100%;
+  }
+  .testimonialsSheep .testimonialsRow .testimonialsContent {
+    margin-top: 40px;
+  }
+  .industryLeadingSheep .industryLeadingSheepInner h2, .commonHeading h4 {
+    font-size: 20px;
+  }
+  .headerFive .mainHeader nav.navbar .container {
+    justify-content: center;
+  }
+  .sheepBanner .poultryPerformanceHeading h5, .commonHeading h5 {
+    color: #ED624F;
+    font-size: 18px;
+    letter-spacing: normal;
+  }
+  .sheepBanner .poultryPerformanceHeading h1, .sheepBanner .poultryPerformanceHeading h1, .commonHeading h4 {
+    font-size: 20px;
+  }
+  .headerFive .mainHeader .navbar .rightMenu {
+    margin: 0;
+  }
+}
+@media (max-width: 1599px) {
+  .pigFactsTopics .pigFactsTxt {
+    padding: 40px;
+  }
+  .pigFactsTopics .pigFactsTxt .pigFactsTxtInner .pigFactsList ul li a {
+    font-size: 15px;
+  }
+  .pigFactsTopics .pigFactsTxt .pigFactsTxtInner .pigFactsList ul li a::before {
+    width: 22px;
+    height: 13px;
+  }
+}
+@media (max-width: 1399px) {
+  .professionalSec .professionalSecInner .professionalBoxGroup .professionalBox .professionalBoxRow .professionalBoxCol .professionalBoxItem {
+    height: 100%;
+  }
+  .farmManagement .farmManagementHeadingBox a {
+    font-size: 18px;
+  }
+  .pigsFarmingVideo .pigsFarmingVideoTxt, .customersTalking .commonHeading {
+    width: 70%;
+  }
+  .latestNewArticles .latestNewsArticlesInner .latestNewsCard::after {
+    top: -30px;
+    right: -30px;
+    height: 100px;
+    width: 100px;
+  }
+  .latestNewArticles .latestNewsArticlesInner .latestNewsCard .latestNewsCardInner .latestNewsCardInnerContent .latestNewsTxt h4 a {
+    font-size: 22px;
+  }
+  .aboutUs .aboutUsTxt .aboutUsSince p {
+    font-size: 40px;
+  }
+  .aboutUs .aboutUsGroup .aboutUsHead h2, .farmManagement .farmManagementHeadingBox h2, .pigsFarmingVideo .pigsFarmingVideoTxt h4, .pigFactsTopics .pigFactsTxt .pigFactsTxtInner .pigFactsHead h4 {
+    font-size: 36px;
+  }
+  .pigsFarmingVideo .pigsFarmingVideoTxt p, .professionalSec .professionalSecInner .professionalGroup .professionalGroupInner .professionalTxt .commonHeading p, .pigFactsTopics .pigFactsTxt .pigFactsTxtInner .pigFactsHead p {
+    font-size: 18px;
+  }
+  .pigsFarmingVideo {
+    height: 70vh;
+  }
+}
+@media (max-width: 1199px) {
+  .aboutUs .aboutUsGroup .aboutUsHead h2, .farmManagement .farmManagementHeadingBox h2, .pigsFarmingVideo .pigsFarmingVideoTxt h4, .pigFactsTopics .pigFactsTxt .pigFactsTxtInner .pigFactsHead h4 {
+    font-size: 32px;
+  }
+  .professionalSec .professionalSecInner .professionalBoxGroup .professionalBox .professionalBoxRow .professionalBoxCol .professionalBoxItem h5 {
+    font-size: 18px;
+  }
+  .professionalSec .professionalSecInner .professionalBoxGroup .professionalBox .professionalBoxRow .professionalBoxCol .professionalBoxItem h2 {
+    font-size: 38px;
+  }
+  .professionalSec .professionalSecInner .professionalBoxGroup .professionalBox .professionalBoxRow .professionalBoxCol .professionalBoxItem p {
+    font-size: 14px;
+  }
+  .professionalSec .professionalSecInner .professionalGroup .professionalGroupInner .professionalTxt .commonHeading h4 {
+    font-size: 40px;
+  }
+  .farmManagementIconBox .farmManagementPara h4 {
+    font-size: 18px;
+  }
+  .latestNewArticles .latestNewsArticlesInner .commonHeading {
+    width: 70%;
+  }
+  .latestNewArticles .latestNewsArticlesInner .latestNewsCard .latestNewsCardInner .latestNewsCardInnerContent .latestNewsTxt h4 a {
+    font-size: 20px;
+  }
+  .latestNewArticles .latestNewsArticlesInner .latestNewsCard .latestNewsCardInner .latestNewsCardInnerContent .latestNewsList {
+    padding: 30px 0 10px;
+  }
+  .btn-1 span {
+    font-size: 14px;
+  }
+  .btn-1 span img {
+    width: 18px;
+  }
+  .latestNewArticles .latestNewsArticlesInner .latestNewsCard::after {
+    top: -14px;
+    right: -14px;
+  }
+  .headerTwo .mainHeader .navbar .headerGroup .mainMenuContainer .navbarCollapseMenu #collapsibleNavbar {
+    padding-top: 80px;
+  }
+  .headerTwo .mainHeader .navbar div#collapsibleNavbar {
+    height: calc(100vh - 82px);
+  }
+}
+@media (max-width: 991px) {
+  .professionalGroupInner {
+    margin-bottom: 40px;
+  }
+  .pigFactsTopics .pigFactsTopicsRow {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .galleryPigFarm .commonHeading, .pigsFarmingVideo .pigsFarmingVideoTxt, .customersTalking .commonHeading {
+    width: 80%;
+  }
+  .aboutUs .aboutUsGroup .aboutUsHead h5 {
+    font-size: 26px;
+  }
+  .pigsFarmingVideo {
+    height: 46vh;
+  }
+  .latestNewArticles .latestNewsArticlesInner .latestNewsCard .latestNewsCardInner .latestNewsCardInnerContent .latestNewsTxt h4 {
+    min-height: auto;
+  }
+}
+@media (max-width: 767px) {
+  .latestNewArticles .latestNewsArticlesInner .commonHeading, .galleryPigFarm .commonHeading, .pigsFarmingVideo .pigsFarmingVideoTxt, .customersTalking .commonHeading {
+    width: 100%;
+  }
+  .farmManagement .farmManagementHeadingBox {
+    padding: 0px 0 40px;
+  }
+  .aboutUs .aboutUsGroup .aboutUsHead {
+    margin-bottom: 20px;
+  }
+  .aboutUs .aboutUsGroup .aboutImg1 {
+    margin-bottom: 40px;
+  }
+  .customersTalking, .farmManagement, .aboutUs, .galleryPigFarm, .latestNewArticles {
+    padding: 40px 0;
+  }
+  .customersTalking .customersTalkingSlider .customersTalkingOwlSlider .customersTalkingItem {
+    padding: 40px;
+  }
+  .customersTalking .customersTalkingSlider .customersTalkingOwlSlider .owl-stage .owl-item.center .item .customersTalkingItem:before {
+    left: 40px;
+  }
+}
+@media (max-width: 575px) {
+  .professionalSec .professionalSecInner .professionalBoxGroup .professionalBox .professionalBoxRow {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .professionalSec .professionalSecInner .professionalGroup .professionalGroupInner .professionalTxt .commonHeading h4 {
+    font-size: 30px;
+  }
+  .pigsFarmingVideo .pigsFarmingVideoTxt p, .professionalSec .professionalSecInner .professionalGroup .professionalGroupInner .professionalTxt .commonHeading p, .pigFactsTopics .pigFactsTxt .pigFactsTxtInner .pigFactsHead p {
+    font-size: 16px;
+  }
+  .aboutUs .aboutUsGroup .aboutUsHead h2, .farmManagement .farmManagementHeadingBox h2, .pigsFarmingVideo .pigsFarmingVideoTxt h4, .pigFactsTopics .pigFactsTxt .pigFactsTxtInner .pigFactsHead h4 {
+    font-size: 25px;
+  }
+  .aboutUs .aboutUsGroup .aboutUsHead h5 {
+    font-size: 20px;
+  }
+  .aboutUs .aboutUsTxt .aboutUsSince p {
+    font-size: 30px;
+  }
+  .aboutUs .aboutUsTxt .aboutUsSince span {
+    font-size: 20px;
+  }
+  .customersTalking .customersTalkingSlider .customersTalkingOwlSlider .customersTalkingItem {
+    padding: 20px;
+  }
+  .customersTalking .customersTalkingSlider .customersTalkingOwlSlider .owl-stage .owl-item.center .item .customersTalkingItem:before {
+    height: 100px;
+    width: 100px;
+    left: 20px;
+  }
+  .customersTalking .customersTalkingSlider .customersTalkingOwlSlider .owl-stage {
+    padding: 20px 0;
+  }
+  .pigFactsTopics .pigFactsTxt {
+    padding: 40px 20px;
+  }
+  .latestNewArticles .latestNewsArticlesInner .latestNewsCard::after {
+    top: -12px;
+    right: -12px;
+  }
+  .latestNewArticles .latestNewsArticlesInner .commonHeading {
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 1599px) {
+  .fishFarming .fishFarmingInner .fishFarmingHead .fishFarmingHeadInner h2 {
+    font-size: 42px;
+  }
+  .fishFarming .fishFarmingInner .fishFarmingHead .fishFarmingHeadInner p {
+    font-size: 18px;
+  }
+  .fishFarming .fishFarmingInner .fishFarmingHead .fishFarmingHeadInner {
+    padding: 60px 40px;
+  }
+}
+@media (max-width: 1400px) {
+  .fishFarming .fishFarmingInner .fishFarmingHead .fishFarmingHeadInner h2 {
+    font-size: 34px;
+  }
+  .fishFarming .fishFarmingInner .fishFarmingHead .fishFarmingHeadInner p {
+    font-size: 16px;
+  }
+  .fishFarming .fishFarmingInner .fishFarmingHead .fishFarmingHeadInner {
+    padding: 40px 40px;
+  }
+  .headerThree .mainHeader .navbar .container .headerGroup .topHeader .topHeaderInner .language .searchBar {
+    width: 250px;
+  }
+  .howItWorks .howItWorksPoints .howItWorksItem {
+    width: 250px;
+    height: 250px;
+  }
+  .howItWorks .howItWorksPoints .howItWorksItemInner {
+    width: 220px;
+    height: 220px;
+  }
+  .howItWorks .howItWorksPoints .howItWorksItem::before {
+    height: 250px;
+    width: 250px;
+    top: -15px;
+  }
+  .howItWorks .howItWorksPoints .howItWorksItem .howItWorksItemInner .howItWorksCircle .howItWorksContent h5 {
+    font-size: 18px;
+  }
+  .howItWorks .howItWorksPoints .howItWorksItem .howItWorksItemInner .howItWorksCircle .howItWorksContent p {
+    font-size: 12px;
+  }
+  .commTxtSec .nCommHeading h2, .customersTalkingSec .customersTalkingInner .customersTalkInnerSec .customersTalkingHeading h2, .howItWorks .commonHeading h2, .galleryOurFish .commonHeading h2, .testimonials .testimonialsContent .testimonialsHeadingSlider h2 {
+    font-size: 36px;
+  }
+  .testimonials .testimonialsContent .testimonialsHeadingSlider span, .customersTalkingSec .customersTalkingInner .customersTalkInnerSec .customersTalkingHeading h5, .commTxtSec .nCommHeading h5 {
+    font-size: 26px;
+  }
+  .customersTalkingSec .customersTalkingInner .customersTalkInnerSec .customersTalkingCartRow {
+    margin-bottom: 60px;
+  }
+  .customersTalkingSec .customersTalkingVideo {
+    margin-top: -300px;
+  }
+  .galleryOurFish .galleryOurFishInner .galleryOurFishSlider .galleryOurFishItem .galleryOurFishContent p {
+    font-size: 18px;
+  }
+  .mainHeader .navbar .container #collapsibleNavbar .navbar-nav {
+    margin-left: 0;
+    gap: 10px;
+  }
+  .headerThree .mainHeader .navbar .headerGroup .mainMenuContainer .navbarCollapseMenu a.navbar-brand {
+    padding: 30px 20px;
+  }
+  .headerThree .mainHeader .navbar .headerGroup .mainMenuContainer .navbarCollapseMenu #collapsibleNavbar {
+    margin-left: 172px;
+  }
+}
+@media (max-width: 1199px) {
+  .fishFarmingCards .fishFarmingCardInner {
+    padding: 10px;
+  }
+  .fishFarmingCards .fishFarmingCardInner a .fishFarmingCardBox {
+    padding: 20px;
+  }
+  .fishFarming .fishFarmingInner .fishFarmingHead .fishFarmingHeadInner {
+    margin: 0 40px;
+  }
+  .commTxtSec .nCommHeading h2, .customersTalkingSec .customersTalkingInner .customersTalkInnerSec .customersTalkingHeading h2, .howItWorks .commonHeading h2, .galleryOurFish .commonHeading h2, .testimonials .testimonialsContent .testimonialsHeadingSlider h2 {
+    font-size: 34px;
+  }
+  .testimonials .testimonialsContent .testimonialsHeadingSlider span, .customersTalkingSec .customersTalkingInner .customersTalkInnerSec .customersTalkingHeading h5, .commTxtSec .nCommHeading h5 {
+    font-size: 22px;
+  }
+  .aboutFishFarming .aboutFishFarmingImg .aboutFishRoted .aboutFishRotedinner span {
+    right: -34px;
+    font-size: 30px;
+    top: 74px;
+  }
+  .aboutFishFarming .aboutFishFarmingImg .rotateDiv .rotateDivInner {
+    height: 200px;
+  }
+  .aboutFishFarming .aboutFishFarmingImg {
+    display: grid;
+    grid-template-columns: 20px 1fr 60px;
+  }
+  .aboutFishFarming .aboutFishFarmingTxt {
+    padding-left: 0px;
+  }
+  .commTxtSec .yearExperience .year h4 {
+    font-size: 70px;
+  }
+  .commTxtSec .yearExperience .yearExperienceTxt span {
+    font-size: 26px;
+  }
+  .commTxtSec .yearExperience .yearExperienceTxt p {
+    font-size: 18px;
+  }
+  .headerThree .mainHeader .navbar .container .headerGroup .topHeader .topHeaderInner .language .searchBar {
+    display: none;
+  }
+  .headerThree .mainHeader .navbar {
+    padding: 0;
+  }
+  .headerThree .mainHeader .navbar .container .headerGroup .navbarCollapseMenu {
+    justify-content: end;
+    padding: 10px;
+  }
+  .customersTalkingSec .customersTalkingInner .customersTalkInnerSec .customersTalkingCart .customersTalkingHead .customersTalkingHeading span {
+    font-size: 30px;
+  }
+  .fishFarmingCards .fishFarmingCardInner a .fishFarmingCardBox .fishFarmingCardBoxInner .fishFarmingGroup .fishFarmingCardTxt h4 {
+    font-size: 24px;
+  }
+  .fishFarmingCards .fishFarmingCardInner a .fishFarmingCardBox .fishFarmingCardBoxInner .fishFarmingGroup .fishFarmingCardTxt p {
+    font-size: 14px;
+  }
+  .fishFarming .fishFarmingInner .fishFarmingHead .fishFarmingHeadInner {
+    padding: 30px 40px;
+  }
+  .customersTalkingSec .customersTalkingInner .customersTalkInnerSec .customersTalkingCart .customersTalkingHead .customersTalkingHeading h6 {
+    font-size: 18px;
+  }
+  .galleryOurFish .galleryOurFishInner .galleryOurFishSlider .owl-nav {
+    width: 66%;
+  }
+  .testimonials .testimonialsImg .fiveStar {
+    width: 100%;
+    position: static;
+  }
+  .testimonials .testimonialsContent .testimonialsHeadingSlider {
+    width: 80%;
+    margin-bottom: 10px;
+  }
+  .needOurSupportSec .needOurSupportContainer .needOurSupport .needOurSupportInner .needOurSupportTxt, .needOurSupportSec .needOurSupportContainer .needOurSupport .needOurSupportInner .needOurSupportInput {
+    width: 70%;
+    margin: 0 auto;
+  }
+  .needOurSupportSec .needOurSupportContainer .needOurSupport .needOurSupportInner .needOurSupportTxt h2 {
+    font-size: 34px;
+  }
+  .howItWorks .commonHeading {
+    width: 80%;
+  }
+  .rightMenu {
+    margin: 0 0 0 auto;
+    padding: 10px 0;
+  }
+  .headerThree .mainHeader .navbar .headerGroup .topHeader .topHeaderInner .language .topRightItem {
+    padding: 0 15px;
+  }
+  .headerThree .mainHeader .navbar .headerGroup .topHeader .topHeaderInner .language .topRightItem:nth-child(2) {
+    border: 0;
+    padding-right: 0;
+  }
+  .headerThree .mainHeader .navbar .headerGroup .mainMenuContainer .navbarCollapseMenu #collapsibleNavbar {
+    padding-left: 20px;
+  }
+  .testimonials .testimonialsContent .testimonialSlide .testimonialsSlider .testimonialsSliderOuter {
+    padding: 30px 30px;
+  }
+  .testimonials .testimonialsContent .testimonialSlide .testimonialsSlider::before {
+    right: 28px;
+  }
+  .latestArticles .latestNewsArticlesInner .latestNewsCard .latestNewsCardInner .latestNewsCardInnerContent .latestNewsTxt h4 a {
+    font-size: 20px;
+  }
+  .latestArticles .latestNewsArticlesInner .commonHeading {
+    width: 70%;
+  }
+  .headerThree .mainHeader .navbar .headerGroup .mainMenuContainer .navbarCollapseMenu #collapsibleNavbar {
+    margin-left: 0;
+  }
+  .headerThree .mainHeader .navbar .headerGroup .mainMenuContainer .navbarCollapseMenu #collapsibleNavbar {
+    height: calc(100vh - 63px);
+    z-index: 999;
+  }
+}
+@media (max-width: 991px) {
+  .fishFarming .fishFarmingInner .fishFarmingHead .fishFarmingHeadInner h2 {
+    font-size: 24px;
+  }
+  .fishFarming .fishFarmingInner .fishFarmingHead .fishFarmingHeadInner p {
+    font-size: 14px;
+  }
+  .fishFarming .fishFarmingInner .fishFarmingHead .fishFarmingHeadInner {
+    padding: 6px 20px;
+  }
+  .fishFarming .fishFarmingInner .fishFarmingHead .fishFarmingHeadInner {
+    margin: 0 20px;
+  }
+  .headerThree .mainHeader .navbar .container .headerGroup .topHeader .topHeaderInner .mobile .flexGroupHeader .iconTxt, .headerThree .mainHeader .navbar .container .headerGroup .topHeader .topHeaderInner .mail .flexGroupHeader .iconTxt {
+    display: none;
+  }
+  .aboutFishFarming .aboutFishFarmingTxt.aboutFishFarmingTxt3 {
+    margin-top: 40px;
+  }
+  .customersTalkingSec .customersTalkingVideo {
+    margin-top: -190px;
+  }
+  .commTxtSec .nCommHeading h2, .customersTalkingSec .customersTalkingInner .customersTalkInnerSec .customersTalkingHeading h2, .howItWorks .commonHeading h2, .galleryOurFish .commonHeading h2, .testimonials .testimonialsContent .testimonialsHeadingSlider h2 {
+    font-size: 30px;
+  }
+  .testimonialsContent {
+    margin-top: 40px;
+  }
+  .latestArticles .latestNewsArticlesInner .commonHeading {
+    width: 80%;
+    margin-bottom: 40px;
+  }
+  .customersTalkingSec .customersTalkingInner .customersTalkInnerSec .customersTalkingCart .customersTalkingHead .customersTalkingIcon span {
+    width: 60px;
+    height: 60px;
+    padding: 12px;
+  }
+  .customersTalkingSec .customersTalkingInner .customersTalkInnerSec .customersTalkingCart .customersTalkingHead .customersTalkingHeading h6 {
+    font-size: 16px;
+  }
+  .customersTalkingSec .customersTalkingInner .customersTalkInnerSec .customersTalkingCart .customersTalkingHead .customersTalkingHeading span {
+    font-size: 26px;
+  }
+  .galleryOurFish .commonHeading {
+    width: 80%;
+    margin: 0 auto 20px;
+  }
+  .needOurSupportSec .needOurSupportContainer .needOurSupport .needOurSupportInner .needOurSupportTxt, .needOurSupportSec .needOurSupportContainer .needOurSupport .needOurSupportInner .needOurSupportInput {
+    width: 90%;
+  }
+  .headerThree .mainHeader .navbar .headerGroup .mainMenuContainer .navbarCollapseMenu a.navbar-brand {
+    padding: 20px 20px;
+  }
+}
+@media (max-width: 767px) {
+  .fishFarming .fishFarmingInner .fishFarmingHead {
+    margin-bottom: 40px;
+  }
+  .fishFarming .fishFarmingInner .fishFarmingHead .fishFarmingHeadInner {
+    margin: 0;
+  }
+  .fishFarmingImg1 {
+    margin-bottom: 10px;
+  }
+  .fishFarmingCards .fishFarmingCardInner a {
+    height: auto;
+    margin-bottom: 10px;
+  }
+  .customersTalkingSec .customersTalkingVideo {
+    margin-top: -150px;
+  }
+  .howItWorks .commonHeading {
+    width: 100%;
+    margin: 0 auto 40px;
+  }
+  .galleryOurFish .galleryOurFishInner .galleryOurFishSlider .galleryOurFishItem .galleryOurFishContent p {
+    font-size: 14px;
+  }
+  .headerThree .mainHeader .navbar .container .logoFullHeight {
+    width: 140px;
+  }
+  .headerThree .mainHeader .navbar .container .headerGroup {
+    width: calc(100% - 200px);
+  }
+  .headerThree .mainHeader .navbar .container .cartIcon {
+    width: 60px;
+  }
+  .headerThree .mainHeader .navbar .container .headerGroup .navbarCollapseMenu {
+    top: 0px;
+  }
+  .headerThree .mainHeader .navbar .container .headerGroup .topHeader {
+    padding: 8px 10px;
+  }
+  .headerThree .mainHeader .navbar .container .headerGroup .navbarCollapseMenu .loginRegisterBtn {
+    margin-right: 0;
+  }
+  .testimonials .testimonialsContent .testimonialSlide .testimonialsSlider .testimonialsSliderOuter::after {
+    background-size: contain;
+  }
+  .fishFarming {
+    padding: 40px 0 80px;
+  }
+  .latestArticles .latestNewsArticlesInner .commonHeading, .galleryOurFish .commonHeading {
+    width: 100%;
+  }
+  .customersTalkingSec .customersTalkingVideo {
+    margin-top: 0;
+  }
+  .customersTalkingSec .customersTalkingVideo .videoBanner {
+    width: 100%;
+  }
+  .customersTalkingSec .customersTalkingInner .customersTalkInnerSec .customersTalkingCartRow {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 575px) {
+  .aboutFishFarming .aboutFishFarmingTxt .nCommHeading, .testimonials .testimonialsContent .testimonialsHeadingSlider {
+    width: 100%;
+  }
+  .testimonials .testimonialsContent .testimonialSlide .owl-nav {
+    margin-top: 20px;
+    justify-content: center;
+  }
+  .testimonials .testimonialsContent .testimonialSlide .testimonialsSlider .testimonialsSliderOuter {
+    padding: 40px 20px;
+  }
+  .needOurSupportSec .needOurSupportContainer .needOurSupport .needOurSupportInner .needOurSupportTxt h2 {
+    font-size: 28px;
+  }
+  .latestArticles, .howItWorks, .customersTalkingSec .customersTalkingInner, .fishFarmingCards, .fishFarming {
+    padding: 40px 0;
+  }
+  .needOurSupportSec .needOurSupportContainer, .testimonials {
+    padding-top: 40px;
+  }
+  .aboutFishFarming {
+    padding-bottom: 40px;
+  }
+  .galleryOurFish .galleryOurFishInner .galleryOurFishSlider .galleryOurFishItem .galleryOurFishContent {
+    padding: 0 10px;
+  }
+  .galleryOurFish .galleryOurFishInner .galleryOurFishSlider .galleryOurFishItem .galleryOurFishContent p {
+    padding: 8px;
+  }
+  .galleryOurFish .galleryOurFishInner .galleryOurFishSlider .galleryOurFishItem .galleryOurFishContent p {
+    font-size: 12px;
+  }
+  .aboutFishFarming .aboutFishFarmingImg {
+    grid-template-columns: 20px 1fr 40px;
+  }
+  .aboutFishFarming .aboutFishFarmingImg .aboutFishRoted .aboutFishRotedinner span {
+    font-size: 24px;
+  }
+  .commTxtSec .nCommHeading h2, .customersTalkingSec .customersTalkingInner .customersTalkInnerSec .customersTalkingHeading h2, .howItWorks .commonHeading h2, .galleryOurFish .commonHeading h2, .testimonials .testimonialsContent .testimonialsHeadingSlider h2 {
+    font-size: 26px;
+  }
+  .latestArticles .latestNewsArticlesInner .commonHeading, .galleryOurFish .commonHeading {
+    padding: 0 15px;
+  }
+  .headerThree .mainHeader .navbar .headerGroup .mainMenuContainer .navbarCollapseMenu a.navbar-brand img {
+    width: 90px;
+  }
+}
+@media (max-width: 1699px) {
+  .headerFour .mainHeader .navbar #collapsibleNavbar .navbar-nav {
+    gap: 10px;
+  }
+  .headerFourInner .phoneGroup {
+    padding: 10px;
+  }
+  .headerFourContainer {
+    width: calc(100% - 224px);
+  }
+  .headerFourInner .phoneGroup .phoneNumber p {
+    font-size: 16px;
+  }
+}
+@media (max-width: 1400px) {
+  .headerFour .mainHeader .navbar .navbar-brand img {
+    width: 150px;
+  }
+  .horseBreeding .horseBreedingInner .topBannerHeading .nCommHeading h2 {
+    font-size: 46px;
+  }
+  .horseBreeding .horseBreedingInner .topBannerHeading .nCommHeading p {
+    font-size: 18px;
+  }
+  .horseBreeding .horseBreedingInner .topBannerHeading .nCommHeading h5 {
+    font-size: 26px;
+  }
+  .industryLeading .industryLeadingInner {
+    width: 70%;
+  }
+  .industryLeading {
+    height: 80vh;
+  }
+}
+@media (max-width: 1199px) {
+  .horseBreeding .horseBreedingInner .topBannerHeading .nCommHeading h2 {
+    font-size: 40px;
+  }
+  .horseBreeding .horseBreedingInner .topBannerHeading .nCommHeading p {
+    font-size: 18px;
+  }
+  .horseBreeding .horseBreedingInner .topBannerHeading .nCommHeading h5 {
+    font-size: 26px;
+  }
+  .industryLeading {
+    height: 60vh;
+  }
+  .ourServicesTopics.ourServicesTopics .pigFactsTxt {
+    padding: 20px;
+  }
+  .headerFour .mainHeader .navbar div#collapsibleNavbar {
+    height: calc(100vh - 122px);
+  }
+}
+@media (max-width: 991px) {
+  .ourServicesTopics .pigFactsTopicsRow {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .aboutFishFarming .aboutFishFarmingTxt .nCommHeading.marBottom {
+    margin-bottom: 20px;
+  }
+  .horseBreeding .horseBreedingInner .horseBreedingImg {
+    padding-left: 0;
+  }
+  .horseBreeding .horseBreedingInner .topBannerHeading {
+    width: 100%;
+    padding: 40px;
+    position: static;
+    transform: unset;
+  }
+  .horseBreeding .horseBreedingInner .topBannerHeading .nCommHeading h2 {
+    font-size: 30px;
+  }
+  .horseBreeding .horseBreedingInner .topBannerHeading .nCommHeading h5 {
+    font-size: 22px;
+  }
+  .horseBreeding .horseBreedingInner .topBannerHeading .nCommHeading p {
+    font-size: 16px;
+    margin-bottom: 0;
+  }
+  .aboutFishFarming .aboutFishFarmingTxt .nComPara.marBottom {
+    margin-bottom: 20px;
+  }
+  .horseBreeding {
+    padding: 10px 0 80px 0px;
+  }
+  .aboutFishFarming .aboutFishFarmingTxt {
+    margin-top: 0px;
+  }
+  .aboutHourseImg {
+    margin-bottom: 20px;
+  }
+  .industryLeading .industryLeadingInner {
+    width: 100%;
+  }
+  .industryLeading .industryLeadingInner h2 {
+    font-size: 32px;
+  }
+  .industryLeading {
+    height: 45vh;
+  }
+  .horseBreeding .horseBreedingInner .topBannerHeading {
+    padding: 20px;
+  }
+  .ourServicesTopics.ourServicesTopics .pigFactsTxt .pigFactsTxtInner .pigFactsHead h4 {
+    font-size: 30px;
+  }
+  .ourServicesTopics.ourServicesTopics .pigFactsTxt .pigFactsTxtInner .pigFactsHead p {
+    font-size: 18px;
+  }
+  .ourServicesTopics.ourServicesTopics .pigFactsTxt .pigFactsTxtInner .pigFactsList ul li a {
+    font-size: 16px;
+  }
+  .ourServicesTopics.ourServicesTopics .pigFactsTxt .pigFactsTxtInner .pigFactsList ul li a::before {
+    width: 30px;
+    height: 16px;
+  }
+}
+@media (max-width: 767px) {
+  .testimonials .testimonialsImg {
+    margin-top: 40px;
+  }
+  .ourServicesTopics.ourServicesTopics .pigFactsTopicsRow {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .aboutFishFarming, .latestArticles, .horseTestimonials, .mapsSection {
+    padding: 40px 0;
+  }
+  .headerFourInner .topHeader .topHeaderInner {
+    padding: 10px;
+  }
+}
+@media (max-width: 575px) {
+  .industryLeading .industryLeadingInner h2 {
+    font-size: 26px;
+  }
+  .testimonials .testimonialsContent .testimonialSlide .testimonialsSlider .testimonialsSliderOuter .testimonialsSliderInner .testimonialPara p {
+    font-size: 14px;
+  }
+  .testimonials .testimonialsContent .testimonialSlide .testimonialsSlider .testimonialsSliderOuter {
+    padding: 40px 20px;
+  }
+  .latestArticles .latestNewsArticlesInner .latestNewsCard .latestNewsCardBtn {
+    margin-top: 20px;
+  }
+  .horseBreeding {
+    padding: 10px 0 40px 0px;
+  }
+  .testimonialsContent {
+    margin-top: 0;
+  }
+  .horseBreeding .horseBreedingInner .topBannerHeading .nCommHeading h2 {
+    font-size: 26px;
+  }
+}
+@media (max-width: 375px) {
+  .commTxtSec .yearExperience .year h4 {
+    font-size: 50px;
+  }
+  .commTxtSec .yearExperience .yearExperienceTxt span {
+    font-size: 22px;
+  }
+  .commTxtSec .yearExperience .yearExperienceTxt p {
+    font-size: 16px;
+  }
+}
+@media (min-width: 1400px) {
+  .container.shoCustomContainer {
+    max-width: 1140px;
+  }
+}
+@media (min-width: 1600px) {
+  .container {
+    max-width: 1520px;
+  }
+  .container.shoCustomContainer {
+    max-width: 1140px;
+  }
+}
+@media (min-width: 1800px) {
+  .container {
+    max-width: 1620px;
+  }
+  .breedersBox {
+    height: 800px;
+    padding: 0 150px;
+  }
+  .container.shoCustomContainer {
+    max-width: 1140px;
+  }
+}
+@media (max-width: 1799px) {
+  .latestNewsArticles .latestNewsArticlesInner .latestNewsCard::before {
+    top: -232px;
+    left: -70px;
+  }
+  .latestNewsArticles .latestNewsArticlesInner .latestNewsCard::after {
+    top: -232px;
+    right: -67px;
+  }
+  .mapsSection .mapsSectionInner .mapOverlay .tooltipGroup.tooltip1 {
+    left: 4%;
+  }
+  .mapsSection .mapsSectionInner .mapOverlay .tooltipGroup.tooltip2 {
+    left: 21%;
+  }
+  .mapsSection .mapsSectionInner .mapOverlay .tooltipGroup.tooltip3 {
+    left: 40%;
+  }
+  .mapsSection .mapsSectionInner .mapOverlay .tooltipGroup.tooltip4 {
+    right: 15%;
+  }
+  .mapsSection .mapsSectionInner .mapOverlay .tooltipGroup.tooltip5 {
+    left: 31%;
+  }
+  .mapsSection .mapsSectionInner .mapOverlay .tooltipGroup.tooltip6 {
+    right: 24%;
+  }
+  .mapsSection .mapsSectionInner .mapOverlay .tooltipGroup.tooltip7 {
+    left: 17%;
+  }
+  .mapsSection .mapsSectionInner .mapOverlay .tooltipGroup.tooltip8 {
+    left: 36%;
+  }
+  .mapsSection .mapsSectionInner .mapOverlay .tooltipGroup.tooltip9 {
+    right: 9%;
+  }
+}
+@media (max-width: 1699px) {
+  .mapsSection .mapsSectionInner .mapOverlay .tooltipGroup.tooltip1 {
+    left: 4%;
+  }
+  .mapsSection .mapsSectionInner .mapOverlay .tooltipGroup.tooltip2 {
+    left: 21%;
+    top: 12%;
+  }
+  .mapsSection .mapsSectionInner .mapOverlay .tooltipGroup.tooltip3 {
+    left: 40%;
+  }
+  .mapsSection .mapsSectionInner .mapOverlay .tooltipGroup.tooltip4 {
+    right: 4%;
+  }
+  .mapsSection .mapsSectionInner .mapOverlay .tooltipGroup.tooltip5 {
+    left: 31%;
+  }
+  .mapsSection .mapsSectionInner .mapOverlay .tooltipGroup.tooltip6 {
+    right: 24%;
+  }
+  .mapsSection .mapsSectionInner .mapOverlay .tooltipGroup.tooltip7 {
+    left: 17%;
+  }
+  .mapsSection .mapsSectionInner .mapOverlay .tooltipGroup.tooltip8 {
+    left: 36%;
+  }
+  .mapsSection .mapsSectionInner .mapOverlay .tooltipGroup.tooltip9 {
+    right: 9%;
+  }
+}
+@media (max-width: 1599px) {
+  .mapsSection .mapsSectionInner .mapOverlay .tooltipGroup.tooltip1 {
+    left: 0%;
+    top: 36%;
+  }
+  .mapsSection .mapsSectionInner .mapOverlay .tooltipGroup.tooltip2 {
+    left: 17%;
+    top: 16%;
+  }
+  .mapsSection .mapsSectionInner .mapOverlay .tooltipGroup.tooltip3 {
+    left: 37%;
+    top: 33%;
+  }
+  .mapsSection .mapsSectionInner .mapOverlay .tooltipGroup.tooltip4 {
+    right: 13%;
+    top: 30%;
+  }
+  .mapsSection .mapsSectionInner .mapOverlay .tooltipGroup.tooltip5 {
+    left: 27%;
+    top: 57%;
+  }
+  .mapsSection .mapsSectionInner .mapOverlay .tooltipGroup.tooltip6 {
+    right: 23%;
+  }
+  .mapsSection .mapsSectionInner .mapOverlay .tooltipGroup.tooltip8 {
+    left: 34%;
+    top: 71%;
+  }
+  .mapsSection .mapsSectionInner .mapOverlay .tooltipGroup.tooltip7 {
+    left: 14%;
+    bottom: 5%;
+  }
+  .mapsSection .mapsSectionInner .mapOverlay .tooltipGroup.tooltip9 {
+    right: 7%;
+    top: 80%;
+  }
+}
+@media (max-width: 1400px) {
+  .latestNewsArticles .latestNewsArticlesInner .latestNewsCard::before {
+    left: -30px;
+    height: 300px;
+    width: 300px;
+  }
+  .latestNewsArticles .latestNewsArticlesInner .latestNewsCard::after {
+    right: -30px;
+    height: 300px;
+    width: 300px;
+  }
+  .commonHeading h4 {
+    font-size: 36px;
+  }
+  .poultryPerformanceBanner {
+    height: 70vh;
+  }
+  .poultryPerformanceBanner .poultryPerformanceHeading h1 {
+    font-size: 45px;
+  }
+  .qualityFeeds .yearsExperience a .yearsExperienceTxt p {
+    font-size: 24px;
+  }
+  .diverBusinessesGrid .diverBusinessesGridCol .diverBusinessesContent {
+    background-color: #fdefed;
+    padding: 50px;
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .diverBusinessesGrid .diverBusinessesGridCol .diverBusinessesContent .diverBusinessesList ul li a {
+    font-size: 24px;
+  }
+  .testimonialsBox .testimonialsRow .testimonialsCol.testimonialsCol1 {
+    padding: 100px 30px 100px 40px;
+  }
+  .testimonialsBox .testimonialsRow .testimonialsCol h2 {
+    font-size: 42px;
+  }
+  .testimonialsBox .testimonialsRow .testimonialsCol .testimonialSlider .testimonialSliderItem p {
+    font-size: 18px;
+  }
+  .testimonialsBox .testimonialsRow .testimonialsCol .testimonialSlider .testimonialSliderItem h4 {
+    font-size: 26px;
+  }
+  .needOurSupport .needOurSupportInner .needOurSupportTxt h2 {
+    font-size: 36px;
+  }
+  .latestNewsArticles .latestNewsArticlesInner .latestNewsCard .latestNewsCardInner .latestNewsCardInnerContent .latestNewsTxt h4 a {
+    font-size: 22px;
+  }
+  .mainHeader .navbar #collapsibleNavbar .navbar-nav li a {
+    font-size: 14px;
+  }
+  .cartSideBox {
+    height: calc(100vh - 117px);
+  }
+  .cartSideBox2 {
+    height: calc(100vh - 82px);
+  }
+  .mainHeader .navbar .rightMenu .loginBtn .btnGroup a:first-child:after {
+    top: 1px;
+  }
+}
+@media (max-width: 1399px) {
+  .mapsSection .mapsSectionInner .mapOverlay .tooltipGroup.tooltip1 {
+    left: 20%;
+    top: 38%;
+  }
+  .mapsSection .mapsSectionInner .mapOverlay .tooltipGroup.tooltip2 {
+    left: 14%;
+    top: 21%;
+  }
+  .mapsSection .mapsSectionInner .mapOverlay .tooltipGroup.tooltip3 {
+    left: 34%;
+    top: 35%;
+  }
+  .mapsSection .mapsSectionInner .mapOverlay .tooltipGroup.tooltip4 {
+    right: 12%;
+    top: 32%;
+  }
+  .mapsSection .mapsSectionInner .mapOverlay .tooltipGroup.tooltip5 {
+    left: 24%;
+    top: 56%;
+  }
+  .mapsSection .mapsSectionInner .mapOverlay .tooltipGroup.tooltip6 {
+    right: 22%;
+    top: 55%;
+  }
+  .mapsSection .mapsSectionInner .mapOverlay .tooltipGroup.tooltip7 {
+    left: 10%;
+    bottom: 10%;
+  }
+  .mapsSection .mapsSectionInner .mapOverlay .tooltipGroup.tooltip8 {
+    left: 30%;
+    top: 67%;
+  }
+  .mapsSection .mapsSectionInner .mapOverlay .tooltipGroup.tooltip9 {
+    right: 6%;
+    top: 76%;
+  }
+  .mapsSection .mapsSectionInner .mapOverlay .tooltip1 .tooltip:after {
+    right: unset;
+    left: 70px;
+  }
+  .mapsSection .mapsSectionInner .mapOverlay .tooltip .locationTxt p {
+    font-size: 18px;
+  }
+}
+@media (max-width: 1199px) {
+  .owlCarouselRelatedProducts .owlSlideItem {
+    grid-template-columns: 200px 1fr;
+  }
+  .breedersBox {
+    height: 500px;
+    padding: 0 40px;
+  }
+  .breedersBox .commonHeading h4 {
+    color: #fff;
+    font-size: 30px;
+  }
+  .breedersBoxIcon img {
+    width: 120px;
+    height: 120px;
+    object-fit: fill;
+  }
+  .testimonialsBox .testimonialsRow .testimonialsCol h2 {
+    font-size: 30px;
+  }
+  .testimonialsBox .testimonialsRow .testimonialsCol .testimonialSlider .testimonialSliderItem p {
+    font-size: 16px;
+  }
+  .testimonialsBox .testimonialsRow .testimonialsCol .testimonialSlider .testimonialSliderItem h4 {
+    font-size: 24px;
+  }
+  .qualityFeeds .yearsExperience a .yearsExperienceTxt p {
+    font-size: 18px;
+  }
+  .commonHeading h4 {
+    font-size: 30px;
+  }
+  .qualityFeeds .yearsExperience a .yearsExperienceTxt span {
+    font-size: 18px;
+  }
+  .qualityFeeds .yearsExperience a .yearsExperienceTxt span img {
+    width: 18px;
+  }
+  .yearsExperience a .yearsExperienceIcon {
+    width: 80px;
+  }
+  .yearsExperience a .yearsExperienceTxt {
+    width: calc(100% - 80px);
+  }
+  .diverBusinessesGrid .diverBusinessesGridCol .diverBusinessesContent .diverBusinessesList ul li a {
+    font-size: 20px;
+  }
+  .poultryPerformanceBanner .poultryPerformanceHeading h1 {
+    font-size: 38px;
+    margin-bottom: 20px;
+  }
+  .poultryPerformanceBanner .poultryPerformanceHeading p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  .poultryPerformanceBanner {
+    height: 60vh;
+  }
+  .diverBusinessesGrid .diverBusinessesGridCol .diverBusinessesContent {
+    min-height: 500px;
+  }
+  .latestNewsArticles .latestNewsArticlesInner .latestNewsCard::before, .latestNewsArticles .latestNewsArticlesInner .latestNewsCard::after {
+    height: 200px;
+    width: 200px;
+  }
+  .latestNewsArticles .latestNewsArticlesInner .latestNewsCard::after {
+    right: 0;
+  }
+  .latestNewsArticles .latestNewsArticlesInner .latestNewsCard::before {
+    left: 0;
+  }
+  .poultryProductsSlider .poultryProductsHead .commonHeading {
+    width: 60%;
+  }
+  .mapsSection .mapsSectionInner .mapOverlay .tooltipGroup.tooltip1 {
+    left: 19%;
+    top: 40%;
+  }
+  .mapsSection .mapsSectionInner .mapOverlay .tooltipGroup.tooltip2 {
+    left: 8%;
+    top: 26%;
+  }
+  .mapsSection .mapsSectionInner .mapOverlay .tooltipGroup.tooltip3 {
+    left: 28%;
+    top: 38%;
+  }
+  .mapsSection .mapsSectionInner .mapOverlay .tooltipGroup.tooltip4 {
+    right: 10%;
+    top: 35%;
+  }
+  .mapsSection .mapsSectionInner .mapOverlay .tooltipGroup.tooltip5 {
+    left: 19%;
+    top: 55%;
+  }
+  .mapsSection .mapsSectionInner .mapOverlay .tooltipGroup.tooltip6 {
+    right: 20%;
+    top: 54%;
+  }
+  .mapsSection .mapsSectionInner .mapOverlay .tooltipGroup.tooltip7 {
+    left: 5%;
+    bottom: 14%;
+  }
+  .mapsSection .mapsSectionInner .mapOverlay .tooltipGroup.tooltip8 {
+    left: 24%;
+    top: 65%;
+  }
+  .mapsSection .mapsSectionInner .mapOverlay .tooltipGroup.tooltip9 {
+    right: 4%;
+    top: 71%;
+  }
+  .searchBox .searchBoxInner {
+    padding: 40px 80px;
+  }
+  .faqSec .faqImg {
+    margin-bottom: 20px;
+    height: auto;
+  }
+  .headerOne .mainHeader .navbar div#collapsibleNavbar {
+    height: calc(100vh - 125px);
+  }
+}
+@media (max-width: 991px) {
+  .commonHeading p {
+    font-size: 14px;
+  }
+  .diverBusinessesGrid .diverBusinessesGridCol .diverBusinessesContent {
+    padding: 20px;
+  }
+  .diverBusinessesGrid .diverBusinessesGridCol .diverBusinessesContent .diverBusinessesList ul li a {
+    font-size: 18px;
+  }
+  .diverBusinessesGrid .diverBusinessesGridCol .diverBusinessesContent .diverBusinessesList ul li a::before {
+    width: 25px;
+    height: 16px;
+  }
+  .yearsExperience a .yearsExperienceIcon {
+    width: 40px;
+  }
+  .yearsExperience a .yearsExperienceTxt {
+    width: calc(100% - 40px);
+  }
+  .qualityFeeds .yearsExperience a .yearsExperienceTxt p {
+    font-size: 14px;
+  }
+  .qualityFeeds .yearsExperience a .yearsExperienceTxt span {
+    font-size: 16px;
+  }
+  .commonHeading h4 {
+    font-size: 26px;
+  }
+  .btn-1 span {
+    font-size: 14px;
+  }
+  .gotQuestionsSec .gotQuestions .gotQuesPara p {
+    font-size: 14px;
+  }
+  .gotQuestionsSec:before {
+    height: 62%;
+  }
+  .latestNewsArticles .latestNewsArticlesInner .commonHeading {
+    width: 70%;
+    margin-bottom: 30px;
+  }
+  .latestNewsArticles .latestNewsArticlesInner .latestNewsCard::before, .latestNewsArticles .latestNewsArticlesInner .latestNewsCard::after {
+    height: 120px;
+    width: 120px;
+  }
+  .latestNewsArticles .latestNewsArticlesInner .latestNewsCard::before, .latestNewsArticles .latestNewsArticlesInner .latestNewsCard::after {
+    top: -100px;
+  }
+  .testimonialsBox .testimonialsRow {
+    display: flex;
+    flex-direction: column;
+  }
+  .testimonialsBox .testimonialsRow .testimonialsCol:first-child {
+    border-right: 0;
+    border-bottom: 1px solid #fff;
+  }
+  .testimonialsBox .testimonialsRow .testimonialsCol.testimonialsCol1 {
+    padding: 0;
+  }
+  .testimonialsBox .testimonialsRow .testimonialsCol.testimonialsCol1 {
+    padding: 0;
+    margin: 0;
+  }
+  .testimonialsBox .testimonialsRow .testimonialsCol.testimonialsCol2 {
+    margin-left: 0 !important;
+    padding: 0;
+  }
+  .testimonialsBox .testimonialsRow .testimonialsCol {
+    margin: 0;
+  }
+  .testimonialsBox .testimonialsRow {
+    padding: 40px;
+  }
+  .testimonialsBox .testimonialsRow .testimonialsCol.testimonialsCol1 {
+    padding-bottom: 20px;
+  }
+  .testimonialsBox .testimonialsRow .testimonialsCol.testimonialsCol2 {
+    padding-top: 20px;
+  }
+  .testimonialsBox .testimonialsRow .testimonialsCol h2 {
+    font-size: 22px;
+  }
+  .testimonialsBox .testimonialsRow .testimonialsCol h4 {
+    font-size: 24px;
+  }
+  .testimonialsBox .testimonialsRow .testimonialsCol.testimonialsCol1::before {
+    height: 80px;
+    width: 80px;
+    right: 0;
+  }
+  .galleryPoultryFarm .commonHeading {
+    width: 70%;
+    margin: 0 auto 40px;
+  }
+  .gotQuestionsSec .gotQuestionsRow {
+    gap: 40px;
+  }
+  .poultryPerformanceBanner .poultryPerformanceHeading h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  .poultryPerformanceBanner .poultryPerformanceHeading p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    line-height: normal;
+  }
+  .poultryPerformanceBanner {
+    height: 50vh;
+  }
+  .qualityFeeds {
+    padding: 100px 0;
+  }
+  .diverBusinessesGrid .diverBusinessesGridCol .diverBusinessesContent {
+    min-height: 450px;
+  }
+  .latestNewsCardInner, .categorySecItem {
+    margin-bottom: 20px;
+  }
+  .mapsSection .mapsSectionInner .mapOverlay .tooltip .locationTxt p {
+    font-size: 16px;
+  }
+  .mapsSection .mapsSectionInner .mapOverlay .tooltipGroup.tooltip1 {
+    left: 18%;
+    top: 33%;
+  }
+  .mapsSection .mapsSectionInner .mapOverlay .tooltipGroup.tooltip2 {
+    left: 20%;
+    top: 15%;
+  }
+  .mapsSection .mapsSectionInner .mapOverlay .tooltipGroup.tooltip3 {
+    left: 17%;
+    top: 32%;
+  }
+  .mapsSection .mapsSectionInner .mapOverlay .tooltipGroup.tooltip4 {
+    right: 7%;
+    top: 28%;
+  }
+  .mapsSection .mapsSectionInner .mapOverlay .tooltipGroup.tooltip5 {
+    left: 7%;
+    top: 58%;
+  }
+  .mapsSection .mapsSectionInner .mapOverlay .tooltipGroup.tooltip6 {
+    right: 17%;
+    top: 56%;
+  }
+  .mapsSection .mapsSectionInner .mapOverlay .tooltipGroup.tooltip7 {
+    left: 16%;
+    bottom: 102px;
+  }
+  .mapsSection .mapsSectionInner .mapOverlay .tooltipGroup.tooltip8 {
+    left: 7%;
+    top: 58%;
+  }
+  .mapsSection .mapsSectionInner .mapOverlay .tooltipGroup.tooltip9 {
+    right: 1%;
+    top: 83%;
+  }
+  .mapsSection .mapsSectionInner .mapOverlay .tooltip2 .tooltip:after {
+    right: unset;
+    left: 170px;
+  }
+  .mapsSection .mapsSectionInner .mapOverlay .tooltip7 .tooltip:after {
+    right: unset;
+    left: 170px;
+    bottom: -14px;
+    top: unset;
+    transform: rotate(0deg);
+  }
+  .mapsSection .mapsSectionInner .mapOverlay svg {
+    height: 330px;
+  }
+  .searchBox .searchBoxInner {
+    padding: 20px;
+  }
+  .searchBox .searchBoxInner .searchHeading h4 {
+    font-size: 26px;
+  }
+  .qualityFeeds .qualityFeedsRow .qualityFeedsCol1 {
+    padding-right: 15px;
+  }
+  .mainHeader .navbar .rightMenu .loginBtn .btnGroup a:first-child:after {
+    font-size: 20px;
+    top: 3px;
+  }
+  .latestNewsArticles .latestNewsArticlesInner .latestNewsCard .latestNewsCardInner .latestNewsCardInnerContent .latestNewsTxt h4 {
+    min-height: auto;
+  }
+}
+@media (max-width: 767px) {
+  .qualityFeeds .qualityFeedsRow .qualityFeedsCol1 {
+    margin-bottom: 40px;
+  }
+  .qualityFeeds {
+    padding: 100px 0 40px;
+  }
+  .diverBusinessesGrid, .breedersCardGroup, .gotQuestionsSec .gotQuestionsRow {
+    display: flex;
+    flex-direction: column;
+  }
+  .gotQuestionsSec .gotQuestions .gotQuestionsContent {
+    margin-bottom: 20px;
+  }
+  .gotQuestionsSec .gotQuestionsRow {
+    gap: 20px;
+  }
+  .poultryProductsSlider, .gotQuestionsSec {
+    padding: 40px 0;
+  }
+  .galleryPoultryFarm .commonHeading {
+    width: 100%;
+    padding: 0 15px;
+  }
+  .testimonialsBox {
+    padding: 0 40px;
+  }
+  .needOurSupport .needOurSupportInner .needOurSupportTxt h2 {
+    font-size: 28px;
+  }
+  .latestNewsArticles .latestNewsArticlesInner .latestNewsCard::before, .latestNewsArticles .latestNewsArticlesInner .latestNewsCard::after {
+    display: none;
+  }
+  .latestNewsArticles .latestNewsArticlesInner .commonHeading {
+    width: 100%;
+  }
+  .latestNewsArticles {
+    padding: 340px 0 40px;
+  }
+  .mapsSection .mapsSectionInner .mapOverlay .tooltip .locationTxt p {
+    font-size: 14px;
+  }
+  .mapsSection .mapsSectionInner .mapOverlay .tooltip {
+    padding: 10px;
+  }
+  .mapsSection .mapsSectionInner .mapOverlay .tooltipGroup, .mapsSection .mapsSectionInner .mapOverlay .tooltip {
+    width: 300px;
+  }
+  .mapsSection .mapsSectionInner .mapOverlay .tooltip .locationIcon {
+    width: 26px;
+  }
+  .mapsSection .mapsSectionInner .mapOverlay .tooltip {
+    gap: 10px;
+  }
+  .mapsSection .mapsSectionInner .mapOverlay .tooltipGroup.tooltip2 {
+    left: 13%;
+    top: 23%;
+  }
+  .mapsSection .mapsSectionInner .mapOverlay .tooltipGroup.tooltip4 {
+    right: 2%;
+    top: 34%;
+  }
+  .mapsSection .mapsSectionInner .mapOverlay .tooltipGroup.tooltip3 {
+    left: 21%;
+    top: 37%;
+  }
+  .mapsSection .mapsSectionInner .mapOverlay .tooltipGroup.tooltip1 {
+    left: 15%;
+    top: 39%;
+  }
+  .mapsSection .mapsSectionInner .mapOverlay .tooltipGroup.tooltip6 {
+    right: 12%;
+    top: 55%;
+  }
+  .mapsSection .mapsSectionInner .mapOverlay .tooltipGroup.tooltip5 {
+    left: 11%;
+    top: 57%;
+  }
+  .mapsSection .mapsSectionInner .mapOverlay .tooltipGroup.tooltip8 {
+    left: 17%;
+    top: 67%;
+  }
+  .mapsSection .mapsSectionInner .mapOverlay .tooltipGroup.tooltip7 {
+    left: 9%;
+    bottom: 119px;
+  }
+  .mapsSection .mapsSectionInner .mapOverlay .tooltipGroup.tooltip9 {
+    right: -3%;
+    top: 75%;
+  }
+  .searchBox .searchBoxInner .searchHeading h4 {
+    font-size: 20px;
+  }
+  .cartSideBox {
+    width: 320px;
+  }
+  .cartSideBox .allItems .itemContent .addItems {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+  }
+  .cartSideBox .allItems .itemContent .addItems .removeItems {
+    justify-content: start;
+  }
+  .itemContent .itemTitlePriceGroup .itemTitle h5 {
+    font-size: 16px;
+  }
+  .cartSideBox .allItems .itemContent .addItems .removeItems a {
+    font-size: 14px;
+  }
+  .cartSideBox .priceTbl .priceBody .priceTr h6, .cartSideBox .priceTbl .priceBody .priceTr span, .cartSideBox .checkoutTaxIncluded P, .cartSideBox .checkoutTaxIncluded .form-check .form-check-label {
+    font-size: 14px;
+  }
+  .cartSideBox .priceTbl .priceFoot .priceTr h5, .cartSideBox .priceTbl .priceFoot .priceTr span {
+    font-size: 16px;
+  }
+  .faqTab .accordion .accordion-item .accordion-header .accordion-button {
+    font-size: 16px;
+    font-weight: 600;
+    padding: 15px;
+  }
+  .faqTab .accordion .accordion-item .accordion-collapse .accordion-body p {
+    font-size: 14px;
+  }
+  .faqSec {
+    padding: 40px 0;
+  }
+}
+@media (max-width: 575px) {
+  .poultryProductsSlider .poultryProductsHead .commonHeading {
+    width: 100%;
+  }
+  .poultryProductsSlider .poultryProductsHead {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .testimonialsBox {
+    padding: 0 15px;
+  }
+  .breedersBox {
+    height: 420px;
+    padding: 0 20px;
+  }
+  .testimonialsBox .testimonialsRow {
+    padding: 20px;
+  }
+  .latestNewsArticles .latestNewsArticlesInner .latestNewsCard .latestNewsCardInner .latestNewsCardInnerContent .latestNewsTxt h4 a {
+    font-size: 18px;
+  }
+  .latestNewsArticles .latestNewsArticlesInner .latestNewsCard .latestNewsCardInner .latestNewsCardInnerContent .latestNewsList span {
+    font-size: 14px;
+  }
+  .commonHeading h4 {
+    font-size: 22px;
+  }
+  .latestNewsTxt p {
+    font-size: 14px;
+  }
+  .needOurSupport .needOurSupportInner .needOurSupportTxt h2 {
+    font-size: 22px;
+  }
+  .owlCarouselRelatedProducts .owlSlideItem {
+    display: flex;
+    flex-direction: column;
+  }
+  .poultryProductsSlider .owlCarouselProducts .owlSlideItem .owlSlideItemImg, .poultryProductsSlider .owlCarouselRelatedProducts .owlSlideItem .owlSlideItemImg {
+    background-color: #fdefed;
+    padding: 50px 10px;
+    border-radius: 8px;
+    position: relative;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  .needOurSupport .needOurSupportInner {
+    padding: 40px 15px;
+  }
+  .latestNewsArticles .latestNewsArticlesInner .latestNewsCard .latestNewsCardBtn {
+    margin-top: 20px;
+  }
+  .mainHeader .navbar div#collapsibleNavbar {
+    width: 250px;
+  }
+  .mapsSection .mapsSectionInner .mapOverlay .tooltip .locationTxt p {
+    font-size: 12px;
+  }
+  .mapsSection .mapsSectionInner .mapOverlay .tooltipGroup, .mapsSection .mapsSectionInner .mapOverlay .tooltip {
+    width: 220px;
+  }
+  .searchBox .searchBoxInner .searchInput .input-group {
+    flex-direction: column;
+  }
+  .searchBox .searchBoxInner .searchInput .input-group .form-control {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .poultryPerformanceBanner {
+    height: 40vh;
+  }
+  .poultryPerformanceBanner .poultryPerformanceHeading h1 {
+    font-size: 25px;
+  }
+  .mapsSection .mapsSectionInner .mapOverlay svg {
+    height: 250px;
+  }
+  .mapsSection {
+    padding: 40px 0;
+  }
+  .cartSideBox {
+    height: calc(100vh - 80px);
+  }
+  .faqTab .accordion .accordion-item .accordion-header .accordion-button {
+    font-size: 14px;
+  }
+  .faqTab .accordion .accordion-item .accordion-collapse .accordion-body p {
+    font-size: 14px;
+  }
+}
+@media (max-width: 375px) {
+  .breedersBox {
+    padding: 0 15px;
+  }
+  .testimonialsBox .testimonialsRow {
+    padding: 15px;
+  }
+  .mapsSection .mapsSectionInner .mapOverlay svg {
+    height: 150px;
+  }
+  .cartSideBox {
+    height: calc(100vh - 110px);
+  }
+  .galleryPoultryFarm .galleryPoultrySec .carouselGalleryPoultry .owl-nav {
+    padding: 0 15px;
+  }
+}/*# sourceMappingURL=responsive.css.map */

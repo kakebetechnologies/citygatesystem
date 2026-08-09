@@ -1,0 +1,367 @@
+@include for-min-1200 {
+
+    .mainHeader {
+        .navbar {
+            .navbar-collapse {
+                .navbar-nav {
+                    li{
+                        a{
+                            padding: 24px 2px;
+                        }
+                    }
+                    .dropdown {
+                        position: unset;
+
+                    }
+                    .dropdown-menu {
+                        min-width: 170px;
+                        padding: 0px;
+                        border: 0;
+                        border-radius: 0;
+                        li {
+                            a {
+                                padding: 10px 20px;
+                                &:hover{
+                                    background-color: #ed624f;
+                                    color: #fff;
+                                }
+                            }
+                        }
+                    }
+
+                    .dropdownMegaMenu {
+                        min-width: 100%;
+                        border: 0;
+                        border-radius: 0;
+                        padding: 25px 40px;
+                        box-shadow: -10px 6px 50px 0px rgba(0, 0, 0, 0.04);
+                        left: 0;
+
+                        .dropdownRow {
+                            display: grid;
+                            grid-template-columns: repeat(4, 1fr);
+
+                            .dropdownCol {
+                                ul {
+                                    gap: 14px;
+
+                                    li {
+                                        a {
+                                            color: #000;
+                                            font-size: 16px;
+                                            display: flex;
+                                            align-items: center;
+                                            gap: 6px;
+                                            padding: 24px 6px;
+                                            transition: all 0.4s ease;
+                                            position: relative;
+                                            font-weight: 500;
+
+                                            &::before {
+                                                display: block;
+                                                content: "";
+                                                width: 20px;
+                                                height: 10px;
+                                                background: url('../images/icon/arrow-icon.png') no-repeat;
+                                                background-size: contain;
+                                            }
+                                            &:hover{
+                                                background-color: transparent;
+                                                color: #ed624f;
+                                            }
+                                        }
+                                    }
+                                }
+
+                                .dropdownColImg {
+                                    img {
+                                        border-radius: 5px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .mainHeader .navbar .headerGroup .mainMenuContainer .navbarCollapseMenu #collapsibleNavbar {
+        top: 0 !important;
+    }
+
+
+
+    .mainHeader .navbar .navbar-collapse .navbar-nav .dropdownMegaMenu {
+        top: 56px;
+    }
+
+    // Header Three
+    .headerThree .mainHeader .navbar #collapsibleNavbar {
+        top: 0 !important;
+        position: relative;
+    }
+
+    .headerThree .mainHeader .navbar .navbar-collapse .navbar-nav .dropdown-menu .dropdownRow {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .headerThree .mainHeader .navbar .headerGroup .mainMenuContainer .navbarCollapseMenu #collapsibleNavbar .navbar-nav li .dropdown-menu li a:hover {
+        background-color: #ed624f;
+        color: #fff;
+    }
+
+    .headerThree .mainHeader .navbar .headerGroup .mainMenuContainer .navbarCollapseMenu #collapsibleNavbar .navbar-nav li .dropdown-menu.dropdownMegaMenu li a:hover {
+        background-color: transparent;
+        color: #ed624f;
+    }
+
+    // Header Four
+
+
+    .headerTwo .mainHeader .navbar #collapsibleNavbar {
+        top: 0 !important;
+        position: relative;
+    }
+
+    .headerTwo .mainHeader .navbar .navbar-collapse .navbar-nav .dropdown-menu .dropdownRow {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@include for-max-1799 {
+    .mainHeader .navbar .container #collapsibleNavbar .navbar-nav {
+        margin-left: 20px;
+        gap: 10px;
+    }
+}
+@include for-max-1400 {
+    .mainHeader .navbar .navbar-brand img {
+        width: 160px;
+    }
+
+    .mainHeader .navbar .rightMenu .loginBtn a.btn {
+        font-size: 14px;
+    }
+
+    .rightMenu ul li a img {
+        width: 24px;
+    }
+
+    .mainHeader .navbar .container #collapsibleNavbar .navbar-nav li a {
+        font-size: 14px;
+    }
+
+    .mainHeader .navbar .container .navbar-brand img {
+        width: 160px;
+    }
+
+    .mainHeader .navbar .container #collapsibleNavbar .navbar-nav {
+        gap: 10px;
+    }
+
+    .testimonials .testimonialsContent .testimonialSlide .testimonialsSlider .testimonialsSliderOuter::after {
+        background-size: contain;
+    }
+
+    .testimonials .testimonialsContent .testimonialSlide .testimonialsSlider .testimonialsSliderOuter {
+        padding: 30px 50px;
+    }
+
+    .testimonials .testimonialsContent .testimonialSlide .testimonialsSlider::before {
+        right: 60px;
+        height: 50px;
+        width: 50px;
+    }
+
+    .mainHeader .navbar .container .rightMenu .loginBtn .btnGroup a:first-child:after {
+        font-size: 18px;
+    }
+
+    .mainHeader .navbar .container .rightMenu .loginBtn {
+        margin-left: 10px;
+    }
+
+    .headerThree .mainHeader .navbar .headerGroup .topHeader .topHeaderInner .language .searchBar {
+        width: 280px;
+    }
+
+    .headerThree .mainHeader .navbar .headerGroup .mainMenuContainer .navbarCollapseMenu #collapsibleNavbar .navbar-nav li a {
+        font-size: 16px;
+    }
+    .headerFive .rightMenu ul li a {
+        padding: 5px 8px;
+    }
+}
+
+@include for-max-1199 {
+    .mainHeader {
+        .navbar {
+            div#collapsibleNavbar {
+                position: fixed;
+                width: 300px;
+                background-color: #fff;
+                left: 0;
+                top: 0;
+                height: 100vh;
+                padding: 20px;
+                transition: all 0.6s ease;
+                z-index: 9999;
+                overflow: auto;
+                box-shadow: 2px 8px 10px 0px rgba(0, 0, 0, 0.05);
+
+                &.navbar-nav {
+                    margin-left: 0;
+                }
+            }
+
+            .collapse {
+                &:not(.show) {
+                    display: block;
+                    transform: translateX(-320px);
+                }
+            }
+        }
+    }
+
+    .rightMenu {
+        .toggleBtn {
+            margin-left: 10px;
+
+            .navbar-toggler {
+                &:focus {
+                    box-shadow: unset;
+                }
+            }
+
+        }
+    }
+
+    .mainHeader .navbar .container #collapsibleNavbar .navbar-nav {
+        margin-left: 0;
+    }
+
+    .mainHeader .navbar .container #collapsibleNavbar .navbar-nav .nav-item .dropdown-menu .dropdownRow .dropdownCol .dropdownColImg {
+        display: none;
+    }
+
+    .mainHeader .navbar .container #collapsibleNavbar .navbar-nav .nav-item .dropdown-menu .dropdownRow .dropdownCol ul li {
+        margin-bottom: 12px;
+    }
+
+    .mainHeader .navbar .container #collapsibleNavbar .navbar-nav .nav-item .dropdown-menu {
+        padding: 20px;
+    }
+
+    .mainHeader .navbar {
+        padding: 10px;
+    }
+
+    .mainHeader .navbar .container #collapsibleNavbar .navbar-nav li a {
+        padding: 10px;
+    }
+
+    .headerFour .mainHeader .navbar #collapsibleNavbar .navbar-nav li a {
+        gap: 6px;
+        padding: 4px 6px;
+    }
+
+    .mainHeader .navbar .headerGroup .mainMenuContainer .navbarCollapseMenu #collapsibleNavbar .navbar-nav li .btnGroup a,
+    .headerFour .mainHeader .navbar #collapsibleNavbar .navbar-nav li .btnGroup a,
+    .mainHeader .navbar .container #collapsibleNavbar .navbar-nav li .btnGroup a {
+        background-color: #73805a;
+        color: #fff;
+        width: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+}
+
+@include for-max-991 {}
+
+@include for-max-767 {
+
+    .topHeader .topHeaderInner .boxGroupHeader .flexGroupHeader .iconTxt span,
+    .topHeader .topHeaderInner .boxGroupHeader .flexGroupHeader .iconTxt .form-select {
+        font-size: 14px;
+    }
+
+    .topHeader .topHeaderInner .boxGroupHeader .iconTxt {
+        display: none;
+    }
+
+    .topHeader .topHeaderInner .boxGroupHeader:last-child .iconTxt {
+        display: block;
+    }
+
+    .rightMenu ul li.searchBtn a,
+    .rightMenu ul li.cardBtn a {
+        padding: 6px;
+    }
+
+    .mainHeader .navbar .rightMenu .loginBtn {
+        margin-left: 10px;
+    }
+
+    .mainHeader .navbar .rightMenu .loginBtn a i.fa {
+        display: block;
+        font-size: 20px;
+    }
+
+    .mainHeader .navbar .rightMenu .loginBtn a span {
+        display: none;
+    }
+
+    .mainHeader .navbar .container .rightMenu .loginBtn .btnGroup a:first-child:after {
+        font-size: 18px;
+        top: 4px;
+    }
+}
+
+@include for-max-575 {
+    .mainHeader .navbar .navbar-brand img {
+        width: 140px;
+    }
+
+    .rightMenu ul li a img {
+        width: 20px;
+    }
+
+    .mainHeader .navbar .rightMenu .loginBtn a i.fa {
+        font-size: 16px;
+
+    }
+
+    .mainHeader .navbar .rightMenu .loginBtn a.btn {
+        padding: 8px 6px;
+    }
+
+    .rightMenu .toggleBtn .navbar-toggler {
+        padding: 4px;
+    }
+
+    .rightMenu .toggleBtn .navbar-toggler .navbar-toggler-icon {
+        width: 25px;
+        height: 25px;
+    }
+
+    .topHeader {
+        background-color: #ffd55f;
+        padding: 10px 15px;
+    }
+}
+
+@include for-max-375 {
+    .mainHeader .navbar .rightMenu .loginBtn a.btn {
+        font-size: 12px;
+    }
+
+    .mainHeader .navbar .container .navbar-brand img {
+        width: 150px;
+    }
+
+    .testimonials .testimonialsContent .testimonialSlide .testimonialsSlider::before {
+        right: 10px;
+    }
+}

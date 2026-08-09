@@ -1,0 +1,182 @@
+﻿
+@include for-max-1699{
+    .sheepBanner {
+        height: 86vh;
+    }
+}
+@include for-max-1599{
+    .sheepBanner {
+        height: 82vh;
+    }
+}
+@include for-max-1399{
+    .sheepBanner {
+        height: 66vh;
+    }
+    .sheepBanner .poultryPerformanceHeading h1, .sheepBanner .poultryPerformanceHeading h1 {
+        font-size: 40px;
+    }
+    .sheepBanner .poultryPerformanceHeading p {
+        font-size: 16px;
+    }
+    .industryLeadingSheep .industryLeadingSheepInner h2 {
+        font-size: 32px;
+    }
+    .industryLeadingSheep .industryLeadingSheepInner {
+        width: 60%;
+    }
+    .industryLeadingSheep {
+        height: 70vh;
+    }
+    .ourGallerySheep .galleryColumn::before {
+        top: 66px;
+        left: -11px;
+    }
+    .ourGallerySheep .galleryColumn::after {
+        bottom: 98px;
+        right: -15px;
+    }
+    .ourGallerySheep .galleryColumn, .whoWeAreSheep, .latestNewsArticlesSheep, .testimonialsSheep {
+        padding: 40px 0;
+    }
+    .testimonialsSheep .testimonialsContent .testimonialSlide .owl-nav {
+        margin-top: -125px;
+    }
+    .ourServiceSheep .ourServiceGroup .ourServiceGroupRow .ourServiceGroupCol .ourServiceGroupItem a {
+        padding: 40px 20px;
+    }
+}
+@include for-max-1199{
+    .commonHeading h4 {
+        font-size: 28px;
+    }
+    .qualityFeedsSheep .qualityFeedsRow .qualityFeedsCol .pigFactsList ul li a {
+        font-size: 18px;
+    }
+    .qualityFeedsSheep .qualityFeedsRow .qualityFeedsCol .pigFactsList ul li a::before {
+        width: 20px;
+        height: 13px;
+    }
+    .ourServiceSheep .ourServiceGroup .ourServiceGroupRow .ourServiceGroupCol .ourServiceGroupItem a .ourServiceGroupContent h4 {
+        font-size: 24px;
+    }
+    .sheepBanner .poultryPerformanceHeading h5, .commonHeading h5, .commonHeading.textCenter.textWhite h6 {
+        font-size: 16px;
+    }
+
+    .sheepBanner {
+        height: 52vh;
+    }
+    .sheepBanner .poultryPerformanceHeading h1, .sheepBanner .poultryPerformanceHeading h1 {
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+    .commonHeading h4{
+        font-size: 30px;
+    }
+    .mapsSection {
+        padding: 40px 0;
+    }
+    .industryLeadingSheep {
+        height: 60vh;
+    }
+    .latestNewsArticlesSheep .latestNewsArticlesInner .latestNewsCard .latestNewsCardInner .latestNewsCardInnerContent .latestNewsTxt h4 a {
+        font-size: 20px;
+    }
+    .latestNewsArticlesSheep .latestNewsArticlesInner .commonHeading {
+        width: 60%;
+    }
+}
+@include for-max-991{
+    .latestNewsArticlesSheep .latestNewsArticlesInner .latestNewsCard .latestNewsCardInner {
+        height: auto;
+    }
+    .sheepBanner {
+        height: 42vh;
+    }
+    .sheepBanner .poultryPerformanceHeading h1, .sheepBanner .poultryPerformanceHeading h1 {
+        font-size: 24px;
+    }
+    .ourServiceSheep .ourServiceGroup .ourServiceGroupRow .ourServiceGroupCol .ourServiceGroupItem a .ourServiceGroupContent h4 {
+        font-size: 20px;
+    }
+    .ourServiceSheep .ourServiceGroup .ourServiceGroupRow .ourServiceGroupCol .ourServiceGroupItem a {
+        padding: 15px;
+    }
+    .industryLeadingSheep .industryLeadingSheepInner h2 {
+        font-size: 24px;
+    }
+    .qualityFeedsSheep {
+        padding: 40px 0;
+    }
+}
+@include for-max-767{
+    .ourGallerySheep .galleryColumn::before, .ourGallerySheep .galleryColumn::after {
+        content: unset;
+    }
+    .mapsSection.mapsSectionSheep .mapsSectionInner .mapOverlay .tooltipGroup.tooltip9 {
+        right: 3%;
+        top: 75%;
+    }
+    .ourGallerySheep .galleryColumn .galleryRow .galleryCol .galleryItem .galleryLink .promo img {
+        height: auto;
+        border-bottom-right-radius: 20px;
+    }
+    .whoWeAreSheep .qualityFeedsCol.qualityFeedsCol, .qualityFeedsSheep .qualityFeedsCol.qualityFeedsCol2 {
+        margin-bottom: 40px;
+    }
+    .ourServiceSheep .ourServiceGroup .ourServiceGroupRow {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+    .owlCarouselSheep .sheepBanner {
+        position: relative;
+    }
+    .owlCarouselSheep .sheepBanner::after {
+        content: '';
+        background: rgb(0 0 0 / 80%);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .sheepBanner .poultryPerformanceHeading h1, .sheepBanner .poultryPerformanceHeading p {
+        color: #fff;
+    }
+    .sheepBanner .poultryPerformanceHeading h5:after {
+        background: #ed6553;
+    }
+}
+@include for-max-575{
+    .ourServiceSheep .ourServiceGroup .ourServiceGroupRow {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .industryLeadingSheep .industryLeadingSheepInner, .latestNewsArticlesSheep .latestNewsArticlesInner .commonHeading {
+        width: 100%;
+    }
+    .testimonialsSheep .testimonialsRow .testimonialsContent {
+        margin-top: 40px;
+    }
+    .industryLeadingSheep .industryLeadingSheepInner h2, .commonHeading h4 {
+        font-size: 20px;
+    }
+    .headerFive .mainHeader nav.navbar .container {
+        justify-content: center;
+    }
+    .sheepBanner .poultryPerformanceHeading h5, .commonHeading h5 {
+        color: #ED624F;
+        font-size: 18px;
+        letter-spacing: normal;
+    }
+    .sheepBanner .poultryPerformanceHeading h1, .sheepBanner .poultryPerformanceHeading h1, .commonHeading h4 {
+        font-size: 20px;
+    }
+   .headerFive .mainHeader .navbar .rightMenu {
+        margin: 0;
+    }    
+}
+@include for-max-375{
+
+}

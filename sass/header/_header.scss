@@ -1,0 +1,605 @@
+// common header css
+// top header css
+.topHeader{
+    background-color: $bgClr2;
+    padding: 15px;
+    .topHeaderInner{
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        .boxGroupHeader{
+            .flexGroupHeader {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                select{
+                    background-color: transparent;
+                    border: 0;
+                    &:focus{
+                        box-shadow: unset;
+                    }
+                }
+                .iconTxt{
+                    span{
+                        color: $textClr3;
+                    }
+                    select{
+                        color: $textClr3;
+                    }
+                    .form-select {
+                        --bs-form-select-bg-img: url(../images/icon/down-arrow.png);
+                        background-size: 12px;
+                        padding: 0 30px 2px 10px;
+                    }
+                }
+            }  
+            a{
+                text-decoration: none;
+            }
+        }
+        .language{
+            .flexGroupHeader{
+                gap: 0;
+            }
+        }
+    }
+}
+// main header css
+.mainHeader{
+    .navbar{
+        padding: 0;
+        .container{
+            position: relative;
+            .navbar-brand{
+                img {
+                    width: 180px;
+                }
+            }
+            #collapsibleNavbar{
+                .navbar-nav{
+                    margin-left: 20px;
+                    gap: 20px;
+                    li{
+                        a{
+                            color: #000;
+                            font-size: 16px;
+                            display: flex;
+                            align-items: center;
+                            gap: 6px;
+                            transition: all 0.4s ease;
+                            .fa{
+                                transform: rotate(90deg);
+                            }
+                            &[aria-expanded="true"]{
+                                i.fa{
+                                    transform: rotate(90deg);
+                                }
+                            }
+                            &:hover{
+                                color:#ed624f;
+                                .fa {
+                                    transform: rotate(-90deg);
+                                }
+                            }
+                        }
+                        &.dropdown{
+                            .dropdown-menu{
+                                li {
+                                    a {
+                                        padding: 10px 20px;
+                                        &:hover{
+                                            background-color: #ed624f;
+                                            color: #fff;
+                                        }
+                                    }
+                                }
+                                &.dropdownMegaMenu{
+                                    .dropdownRow{
+                                        .dropdownCol{
+                                            .dropdownUl{
+                                                li{
+                                                    a{
+                                                        padding: 4px;
+                                                        &:hover{
+                                                            background-color: transparent;
+                                                            color: #ed624f;
+                                                        }
+                                                    }
+                                                }
+                                            } 
+                                        }
+                                    }
+                                }
+                                .dropdownRow{
+                                    .dropdownCol{
+                                        .dropdownUl{
+                                            li{
+                                                a{
+                                                    padding: 4px;
+                                                }
+                                            }
+                                        } 
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .rightMenu{
+                .cardBtn{
+                    position: relative;
+                    a{
+                        span{
+                            &.badge{
+                                background-color: #73805a;
+                                position: absolute;
+                                top: 0;
+                                right: 0;
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                }
+                .loginBtn{
+                    margin-left: 20px;
+                    a{
+                        &.btn{
+                            background-color: $btnClr4;
+                            color: $textWhite;
+                        }
+                        i.fa{
+                            display: none;
+                        }
+                    }
+                    .btnGroup{
+                        display: flex;
+                        border-radius: 6px;
+                        overflow: hidden;
+                        a {
+                            border-radius: 0;
+                            position: relative;
+                            &:first-child{
+                                &:after {
+                                    content: '/';
+                                    position: absolute;
+                                    right: -5.5px;
+                                    font-size: 23px;
+                                    top: 3px;
+                                    z-index: 1;
+                                }
+                            }
+                            &:hover {
+                                background-color: #73805a;
+                            }
+                        }
+                        .btn-check:checked + .btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check) + .btn:active {
+                            border-color: #ed624f;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Header One
+.headerOne{
+    background: #fff;
+    position: relative;
+    &.headerActive{
+        position: fixed;
+        box-shadow: 0 5px 16px rgba(0, 0, 0, 0.1);
+        background-color: #fff3e6;
+        animation: slideDown 0.35s ease-out; 
+        top:0;
+        z-index: 999;
+    }
+}
+
+// Header Two
+
+.headerTwo{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 99;
+    &.headerActive{
+        position: fixed;
+        box-shadow: 0 5px 16px rgba(0, 0, 0, 0.1);
+        background-color: #fff;
+        animation: slideDown 0.35s ease-out;
+    }
+}
+
+@keyframes slideDown {
+    from {
+      transform: translateY(-100%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+
+
+// Header Three
+
+.headerThree{
+    background-color: #73805A;
+    position: fixed;
+    top: 0;
+    z-index: 999999;
+    .mainHeader{
+        .navbar{
+                .headerGroup{
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    .topHeader {
+                        background-color: #73805a;
+                        padding: 15px;
+                        .topHeaderInner{
+                            .boxGroupHeader{
+                                .flexGroupHeader{
+                                    .icon{
+                                        img{
+                                            filter: brightness(0) invert(1);
+                                        }
+                                    }
+                                    .iconTxt{
+                                        span {
+                                            color: #fff;
+                                        }
+                                        select {
+                                            color: #fff;
+                                            background-color: #73805a;
+                                        }
+                                        .form-select {
+                                            --bs-form-select-bg-img: url(../images/icon/arrow-down-white.png);
+                                            background-image: url(../images/icon/arrow-down-white.png);
+                                        }
+                                    }
+                                }
+                            }
+                            .language{
+                                display: flex;
+                                align-items: center;
+                                gap:0px;
+                                .searchBar{
+                                    width: 350px;
+                                    .input-group{
+                                        padding: 0 0 8px;
+                                        border-bottom: 1px solid rgb(255 255 255 / 30%);
+                                        .form-control{
+                                            background-color: transparent;
+                                            border-radius: 0;
+                                            border: 0;
+                                            padding: 0;
+                                            color: #fff;
+                                            &::placeholder{
+                                                color: #fff;
+                                            }
+                                        }
+                                        .input-group-text{
+                                            background-color: transparent;
+                                            border-radius: 0;
+                                            border: 0;
+                                            padding: 0;
+                                        }
+                                    }
+                                }
+                                .topRightItem {
+                                    position: relative;
+                                    padding: 0 20px;
+                                    border-right: 1px solid #ffff;
+                                    &:last-child{
+                                        border-right: 0;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .mainMenuContainer{
+                        background-color: #fff;
+                        .navbarCollapseMenu{
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            background-color: #fff;
+                            z-index: 4;
+                            position: relative;
+                            a.navbar-brand {
+                                background: #FFFFFF;
+                                box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.05);
+                                border-radius: 0px 0px 20px 20px;
+                                padding: 30px;
+                                position: absolute;
+                                top: 0;
+                                img {
+                                    width: 120px;
+                                }
+                            }
+                            .loginRegisterBtn{
+                                margin-right: 20px;
+                            }
+                            #collapsibleNavbar{
+                                margin-left: 200px;
+                                z-index: -1;
+                                .navbar-nav{
+                                    li {
+                                        a {
+                                            color: #000;
+                                            transition: all 0.4s ease;
+                                            .fa {
+                                                transform: rotate(90deg);
+                                            }
+                                            &:hover{
+                                                color:#ed624f;
+                                                .fa {
+                                                    transform: rotate(-90deg);
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+        
+        }
+    }
+
+}
+
+// Header Four
+
+.headerFour{
+    &.headerActive{
+        position: fixed;
+        top: 0;
+        box-shadow: 0 5px 16px rgba(0, 0, 0, 0.1);
+        background-color: #fff3e6;
+        animation: slideDown 0.35s ease-out;
+        z-index: 999;
+    }
+    .mainHeader{
+        background-color: #fff;
+        .navbar{
+            padding: 0;
+            .navbar-brand{
+                img {
+                    width: 220px;
+                }
+            }
+            #collapsibleNavbar{
+                .navbar-nav{
+                    gap: 20px;
+                    li{
+                        a{
+                            color: #000;
+                            font-size: 16px;
+                            display: flex;
+                            align-items: center;
+                            gap: 6px;
+                            transition: all 0.4s ease;
+                            .fa{
+                                transform: rotate(90deg);
+                            }
+                            &[aria-expanded="true"]{
+                                i.fa{
+                                    transform: rotate(90deg);
+                                }
+                            }
+                            &:hover{
+                                color:#ed624f;
+                                .fa {
+                                    transform: rotate(-90deg);
+                                }
+                            }
+                        }
+                        &.dropdown{
+                            .dropdown-menu{
+                                a{
+                                    &:hover {
+                                        background-color: #73805a;
+                                        color: #fff;
+                                    }
+                                 }
+                                 &.dropdownMegaMenu{
+                                    .dropdownRow{
+                                        .dropdownCol{
+                                            .dropdownUl{
+                                                li{
+                                                    a{
+                                                        padding: 4px;
+                                                        &:hover{
+                                                            background-color: transparent;
+                                                            color: #ed624f;
+                                                        }
+                                                    }
+                                                }
+                                            } 
+                                        }
+                                    }
+                                }
+                                .dropdownRow{
+                                    .dropdownCol{
+                                        .dropdownUl{
+                                            li{
+                                                a{
+                                                    padding: 4px;
+                                                }
+                                            }
+                                        } 
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .rightMenu{
+                .cardBtn{
+                    position: relative;
+                    a{
+                        span{
+                            &.badge{
+                                background-color: #73805a;
+                                position: absolute;
+                                top: 0;
+                                right: 0;
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                }
+                .loginBtn{
+                    margin-left: 20px;
+                    a{
+                        &.btn{
+                            background-color: $btnClr4;
+                            color: $textWhite;
+                        }
+                        i.fa{
+                            display: none;
+                        }
+                    }
+                    .btnGroup{
+                        display: flex;
+                        border-radius: 6px;
+                        overflow: hidden;
+                        a {
+                            border-radius: 0;
+                            position: relative;
+                            &:first-child{
+                                &:after {
+                                    content: '/';
+                                    position: absolute;
+                                    right: -5.5px;
+                                    font-size: 23px;
+                                    top: 3px;
+                                    z-index: 1;
+                                }
+                            }
+                            &:hover {
+                                background-color: #73805a;
+                            }
+                        }
+                        .btn-check:checked + .btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check) + .btn:active {
+                            border-color: #ed624f;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+    .headerFourInner {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        .topHeader {
+            .topHeaderInner {
+                padding-left: 10px;
+                align-items: center;
+                .language {
+                    align-items: center;
+                }
+            }
+        }
+        .headerFourContainer {
+            width: 100%;
+
+            .topHeader {
+                background-color: #ffd55f;
+                padding: 0;
+            }
+        }    
+        .phoneGroup {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            background-color: #73805a;
+            padding: 8px 12px;
+            .phoneIcon{
+                background-color: #fff;
+                width: 40px;
+                height: 40px;
+                padding: 10px;
+                border-radius: 50px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .phoneNumber{
+                span{
+                    color: #fff;
+                }
+                p{
+                    color: #fff;
+                    font-size: 16px;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+
+// header five
+.headerFive{
+    background: #fff;
+    position: relative;
+    &.headerActive{
+        position: fixed;
+        box-shadow: 0 5px 16px rgba(0, 0, 0, 0.1);
+        background-color: #fff3e6;
+        animation: slideDown 0.35s ease-out; 
+        top:0;
+        z-index: 999;
+    }
+    .boxGroupHeader{
+        .flexGroupHeader {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            select{
+                background-color: transparent;
+                border: 0;
+                &:focus{
+                    box-shadow: unset;
+                }
+            }
+            .iconTxt{
+                span{
+                    color: $textClr3;
+                }
+                select{
+                    color: $textBlack;
+                }
+                .form-select {
+                    --bs-form-select-bg-img: url(../images/icon/down-arrow.png);
+                    background-size: 12px;
+                    padding: 0 30px 2px 10px;
+                }
+            }
+        }  
+        a{
+            text-decoration: none;
+        }
+    }
+    .rightMenu{
+        ul{
+            align-items: center;
+        }
+    }
+}
+
+
+
+
+
+
+
+

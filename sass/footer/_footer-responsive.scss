@@ -1,0 +1,144 @@
+@include for-max-1400{
+    .footerBg2 .footerGroup .footerInner .footerInnerRow .footerCol.footerCol2, .footerBg2 .footerGroup .footerInner .footerInnerRow .footerCol.footerCol3 {
+        padding-left: 20px;
+    }
+    .footer.footerBg2 .footerGroup .footerInner .footerInnerRow .footerCol.footerCol1 .needOurSupport .needOurSupportInner {
+        padding: 15px;
+    }
+    .footer.footerBg2 .footerCol1 .needOurSupport .needOurSupportInner .needOurSupportInput .input-group {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .footer.footerBg2 .footerCol1 .needOurSupport .needOurSupportInner .needOurSupportInput .input-group .form-control {
+        width: 100%;
+    }
+    .footer.footerBg2 .footerGroup .footerInner .footerInnerRow .footerCol.footerCol1 .needOurSupport .needOurSupportInner .needOurSupportInput .input-group .input-group-text {
+        justify-content: space-between;
+    }
+}
+@include for-max-1199{
+    .footerGroup .footerInner .footerInnerRow .footerCol .footerMenuLink.footerContactInfo ul li a .contactInfo .contactInfoTxt h6 {
+        font-size: 18px;
+        color: #fff;
+    }
+    .footer.footerBg1 .footerGroup {
+        position: absolute;
+        top: 150px;
+    }
+    .footerGroup .footerInner {
+        padding: 200px 0 60px 0;
+    } 
+    .footer.footerBg2 .footerGroup .footerInner .footerInnerRow .footerCol.footerCol1 .needOurSupport .needOurSupportInner .needOurSupportTxt h2 {
+        font-size: 18px;
+    }
+    .footer.footerBg2 .footerCol1 .needOurSupport .needOurSupportInner .needOurSupportInput .input-group a span {
+        font-size: 14px;
+    }
+    .needOurSupport .needOurSupportInner .needOurSupportTxt, .needOurSupport .needOurSupportInner .needOurSupportInput {
+        width: 70%;
+    }
+}
+
+@include for-max-991{
+    .footerGroup .footerInner .footerInnerRow .footerCol.footerCol2, .footerGroup .footerInner .footerInnerRow .footerCol.footerCol3 {
+        padding-left: 0;
+    }
+    .footerGroup .footerInner .footerInnerRow .footerCol1 {
+        margin-bottom: 40px;
+    }
+    .footer.footerBg1 .footerGroup {
+        top: 120px;
+    }
+    .footerGroup .footerInner {
+        padding: 220px 0 60px 0;
+    }
+    .needOurSupport .needOurSupportInner .needOurSupportTxt h2 {
+        font-size: 32px;
+    }
+    .needOurSupport .needOurSupportInner .needOurSupportTxt, .needOurSupport .needOurSupportInner .needOurSupportInput {
+        width: 100%;
+    }
+    .needOurSupport .needOurSupportInner {
+        padding: 60px;
+    }
+}
+
+
+@include for-max-767{
+    .footerGroup .footerInner .footerInnerRow .footerCol2, .footerGroup .footerInner .footerInnerRow .footerCol3 {
+        margin-bottom: 40px;
+    }
+    .needOurSupport .needOurSupportInner .needOurSupportTxt h2 {
+        font-size: 24px;
+    }
+    .needOurSupport .needOurSupportInner .needOurSupportTxt p {
+        font-size: 14px;
+    }
+    .needOurSupport .needOurSupportInner .needOurSupportTxt p {
+        font-size: 14px;
+    }
+    .needOurSupport .needOurSupportInner {
+        padding: 30px;
+    }
+    .footer.footerBg1 .footerGroup {
+        top: 100px;
+    }
+    .footerGroup .footerInner {
+        padding: 140px 0 60px 0;
+    }
+    .footer.footerBg2 .footerCopyRight .footerCopyRightInner {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+@include for-max-575{
+    .needOurSupport .needOurSupportInner .needOurSupportInput .input-group {
+        flex-direction: column;
+        // align-items: center;
+        gap: 10px;
+    }
+    .needOurSupport .needOurSupportInner .needOurSupportInput .input-group input.form-control {
+        width: 100%;
+    }
+    .input-group .input-group-text {
+        justify-content: space-between;
+    }
+    .footerGroup .footerInner {
+        padding: 230px 0 60px 0;
+    }
+    .needOurSupport .needOurSupportInner {
+        padding: 15px;
+    }
+    .footer.footerBg1 .footerGroup {
+        top: 100px;
+    }
+    .footerCopyRight .footerCopyRightInner p {
+        font-size: 14px;
+    }
+    .footerCopyRight {
+        padding: 15px 0;
+    }
+}
+@include for-max-375{
+    .footerGroup .footerInner {
+        padding: 180px 0 60px 0;
+    }
+    .footer.footerBg1 .footerGroup {
+        top: 140px;
+    }
+    .needOurSupport .needOurSupportInner {
+        padding: 15px;
+    }
+    .footerGroup .footerInner .footerInnerRow .footerCol .footerPara p {
+        color: #fff;
+        font-size: 14px;
+    }
+}
+@include for-max-350{
+    .footerGroup .footerInner {
+        padding: 240px 0 60px 0;
+    }
+}
+
+
+

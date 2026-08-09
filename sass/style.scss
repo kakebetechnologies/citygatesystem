@@ -1,0 +1,67 @@
+
+// Common CSS 
+@import 'common/common';
+
+// header CSS 
+@import 'header/header';
+
+// footer CSS 
+@import 'footer/footer';
+
+// fonts CSS 
+@import 'fonts/fonts';
+
+// home 5 CSS 
+@import 'home5/home5';
+// home 5 CSS 
+
+// home 1 CSS 
+@import 'home1/home1';
+// home 1 CSS 
+
+// home 2 CSS 
+@import 'home2/home2';
+// home 2 CSS 
+
+// home 3 CSS 
+@import 'home3/home3';
+// home 3 CSS 
+
+// home 4 CSS 
+@import 'home4/home4';
+// home 4 CSS 
+
+// inner pages css
+@import 'inner/inner';
+// inner pages css
+
+// shortcode pages css
+@import 'shortcode/shortcode';
+// shortcode pages css
+
+// ---- common css start ----
+.commonHeading{
+    h4{
+        font-weight: 700;
+        font-size: 46px;
+    }
+    p{
+        font-weight: 400;
+        font-size: 16px;    
+    }
+}
+// ---- common css end ----
+
+
+
+
+
+
+
+
+
+
+
+
+
+

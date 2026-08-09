@@ -1,0 +1,2595 @@
+﻿<!DOCTYPE html>
+
+<!--[if IE 8]> 
+<html lang="en" class="ie8 no-js">
+   <![endif]-->
+<!--[if !IE]><!-->
+<html lang="zxx" dir="ltr">
+<!--[endif]-->
+
+<head>
+   <meta charset="utf-8">
+   <title>City Gate Mixed Farm - Integrated Model Farm in Lira City, Uganda</title>
+   <meta name="description" content="City Gate Mixed Farm is an integrated model farm in Amuca, Lira City, Uganda specialising in poultry, goats, dairy, and crops. Farm visits, training, and livestock sales available.">
+   <meta name="keywords" content="City Gate Mixed Farm, Lira City, Amuca, Uganda farm, poultry, dairy, goats, broilers, layers, Boer goats, agricultural training">
+   <meta content="width=device-width, initial-scale=1.0" name="viewport">
+   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+   <link rel="stylesheet" type="text/css" href="css/fonts.css">
+   <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+   <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+   <link rel="stylesheet" type="text/css" href="css/magnific-popup.css">
+   <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
+   <link rel="stylesheet" type="text/css" href="css/owl.theme.default.min.css">
+   <link rel="stylesheet" type="text/css" href="css/animate.css">
+   <link rel="stylesheet" type="text/css" href="css/jquery-ui.css">
+   <link rel="stylesheet" type="text/css" href="css/slick.css">
+   <link rel="stylesheet" type="text/css" href="css/grt-youtube-popup.css">
+   <link rel="stylesheet" type="text/css" href="css/fancybox.min.css">
+   <link rel="stylesheet" type="text/css" href="css/style.css">
+   <link rel="stylesheet" type="text/css" href="css/responsive.css">
+   <link rel="shortcut icon" type="image/png" href="images/logo/favcon.png">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+         :root {
+             --farm-green: #2F5D3A;
+             --cream: #FAF7F0;
+             --earth: #C9A978;
+             --charcoal: #1A1A1A;
+             --white: #FFFFFF;
+             --soft-shadow: 0 8px 32px rgba(47, 93, 58, 0.12);
+             --cta-green: #C9A978;
+         }
+        
+        * { box-sizing: border-box; }
+        
+        body { 
+            font-family: 'Ubuntu', -apple-system, sans-serif;
+            color: var(--charcoal);
+            background: var(--cream);
+            overflow-x: hidden;
+        }
+        
+        /* HERO â€” minimal 5-slide, fade, Ken Burns */
+        :root { --cg-green: #2E7D32; }
+        .cg-hero {
+            position: relative;
+            height: 72vh;
+            min-height: 480px;
+            max-height: 680px;
+            overflow: hidden;
+            background: #0d0d0d;
+            font-family: 'Ubuntu', -apple-system, sans-serif;
+        }
+        @media (max-width: 768px) {
+            .cg-hero { height: 62vh; min-height: 420px; }
+        }
+        .cg-hero__stage {
+            position: absolute;
+            inset: 0;
+        }
+        .cg-hero__slide {
+            position: absolute;
+            inset: 0;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 1.2s ease-in-out, visibility 1.2s ease-in-out;
+        }
+        .cg-hero__slide.is-active {
+            opacity: 1;
+            visibility: visible;
+        }
+        .cg-hero__img {
+            position: absolute;
+            inset: 0;
+            background-size: cover;
+            background-position: center;
+            transform: scale(1.04);
+            will-change: transform;
+        }
+        .cg-hero__slide.is-active .cg-hero__img {
+            animation: cgZoom 8s ease-out forwards;
+        }
+        @keyframes cgZoom {
+            from { transform: scale(1.04); }
+            to   { transform: scale(1.16); }
+        }
+        .cg-hero__overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(180deg, rgba(0,0,0,0.15) 0%, rgba(0,0,0,0.35) 50%, rgba(0,0,0,0.6) 100%);
+        }
+        .cg-hero__content {
+            position: absolute;
+            inset: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0 24px;
+            text-align: center;
+            color: #fff;
+            pointer-events: none;
+        }
+        .cg-hero__slide.is-active .cg-hero__content { pointer-events: auto; }
+        .cg-hero__inner {
+            max-width: 780px;
+        }
+        .cg-hero__eyebrow {
+            display: inline-block;
+            font-size: 11px;
+            letter-spacing: 5px;
+            text-transform: uppercase;
+            color: rgba(255,255,255,0.8);
+            margin-bottom: 28px;
+            opacity: 0;
+            transform: translateY(16px);
+        }
+        .cg-hero__title {
+            font-size: clamp(40px, 7vw, 78px);
+            font-weight: 300;
+            line-height: 1.08;
+            letter-spacing: -1px;
+            margin: 0 0 20px;
+            color: #fff;
+            opacity: 0;
+            transform: translateY(24px);
+        }
+        .cg-hero__title strong {
+            font-weight: 600;
+        }
+        .cg-hero__sub {
+            font-size: clamp(14px, 1.4vw, 17px);
+            line-height: 1.6;
+            color: rgba(255,255,255,0.85);
+            margin: 0 auto 40px;
+            max-width: 520px;
+            opacity: 0;
+            transform: translateY(24px);
+        }
+         .cg-hero__cta {
+             display: inline-flex;
+             align-items: center;
+             gap: 10px;
+             padding: 16px 34px;
+             border-radius: 100px;
+             background: var(--cta-green);
+             color: var(--charcoal);
+             font-size: 13px;
+             font-weight: 600;
+             letter-spacing: 1.5px;
+             text-transform: uppercase;
+             text-decoration: none;
+             transition: transform 0.35s ease, box-shadow 0.35s ease, background 0.35s ease;
+             opacity: 0;
+             transform: translateY(24px);
+         }
+         .cg-hero__cta:hover {
+             background: var(--earth);
+             color: var(--charcoal);
+             transform: translateY(-3px);
+             box-shadow: 0 16px 36px rgba(201, 169, 120, 0.45);
+         }
+        .cg-hero__cta i {
+            transition: transform 0.35s ease;
+        }
+        .cg-hero__cta:hover i {
+            transform: translateX(4px);
+        }
+        .cg-hero__slide.is-active .cg-hero__eyebrow { animation: cgRise 0.9s 0.25s ease forwards; }
+        .cg-hero__slide.is-active .cg-hero__title   { animation: cgRise 0.9s 0.45s ease forwards; }
+        .cg-hero__slide.is-active .cg-hero__sub     { animation: cgRise 0.9s 0.65s ease forwards; }
+        .cg-hero__slide.is-active .cg-hero__cta     { animation: cgRise 0.9s 0.85s ease forwards; }
+        @keyframes cgRise {
+            to { opacity: 1; transform: translateY(0); }
+        }
+        /* Arrows */
+        .cg-hero__arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 52px;
+            height: 52px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.08);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            border: 1px solid rgba(255,255,255,0.2);
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            z-index: 5;
+            font-size: 15px;
+            transition: all 0.3s ease;
+        }
+        .cg-hero__arrow:hover {
+            background: var(--cg-green);
+            border-color: var(--cg-green);
+            transform: translateY(-50%) scale(1.08);
+        }
+        .cg-hero__arrow--prev { left: 32px; }
+        .cg-hero__arrow--next { right: 32px; }
+        /* Dots */
+        .cg-hero__dots {
+            position: absolute;
+            bottom: 48px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 12px;
+            z-index: 5;
+        }
+        .cg-hero__dot {
+            width: 28px;
+            height: 2px;
+            background: rgba(255,255,255,0.35);
+            border: none;
+            padding: 0;
+            cursor: pointer;
+            transition: all 0.4s ease;
+        }
+        .cg-hero__dot.is-active {
+            background: #fff;
+            width: 44px;
+        }
+        /* Scroll indicator */
+        .cg-hero__scroll {
+            position: absolute;
+            left: 50%;
+            bottom: 14px;
+            transform: translateX(-50%);
+            z-index: 5;
+            color: rgba(255,255,255,0.7);
+            font-size: 10px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            text-decoration: none;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 6px;
+            animation: cgFloat 2.4s ease-in-out infinite;
+        }
+        .cg-hero__scroll::after {
+            content: '';
+            width: 1px;
+            height: 22px;
+            background: rgba(255,255,255,0.5);
+        }
+        @keyframes cgFloat {
+            0%, 100% { transform: translate(-50%, 0); opacity: 0.7; }
+            50%      { transform: translate(-50%, 6px); opacity: 1; }
+        }
+        @media (max-width: 768px) {
+            .cg-hero__arrow { width: 42px; height: 42px; }
+            .cg-hero__arrow--prev { left: 14px; }
+            .cg-hero__arrow--next { right: 14px; }
+            .cg-hero__dots { bottom: 70px; }
+            .cg-hero__scroll { display: none; }
+        }
+        
+        .modern-btn {
+            padding: 16px 32px;
+            border-radius: 4px;
+            font-size: 14px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            border: none;
+        }
+        
+        .modern-btn-primary {
+            background: var(--cream);
+            color: var(--farm-green);
+        }
+        
+        .modern-btn-primary:hover {
+            background: var(--white);
+            transform: translateY(-2px);
+        }
+        
+        .modern-btn-outline {
+            background: transparent;
+            color: var(--cream);
+            border: 2px solid var(--cream);
+        }
+        
+        .modern-btn-outline:hover {
+            background: var(--cream);
+            color: var(--farm-green);
+        }
+        
+        @keyframes kenBurns {
+            0% { transform: scale(1); }
+            100% { transform: scale(1.1); }
+        }
+        
+        /* Hero Image Slider */
+        .hero-slider {
+            position: relative;
+            height: 100vh;
+            min-height: 600px;
+            overflow: hidden;
+        }
+        .hero-slider-slides {
+            position: absolute;
+            inset: 0;
+        }
+        .hero-slider-slide {
+            position: absolute;
+            inset: 0;
+            opacity: 0;
+            transition: opacity 1.5s ease-in-out;
+        }
+        .hero-slider-slide.active {
+            opacity: 1;
+        }
+        .hero-slider-slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            animation: slowZoom 8s ease-in-out infinite alternate;
+        }
+        @keyframes slowZoom {
+            0% { transform: scale(1); }
+            100% { transform: scale(1.1); }
+        }
+        .hero-slider-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, rgba(47, 93, 58, 0.85) 0%, rgba(47, 93, 58, 0.5) 100%);
+        }
+        .hero-slider-content {
+            position: relative;
+            z-index: 2;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: var(--white);
+            padding: 0 24px;
+        }
+        .hero-slider-content h1 {
+            font-size: clamp(40px, 7vw, 80px);
+            font-weight: 700;
+            margin-bottom: 20px;
+            animation: slideUp 1s ease forwards;
+            opacity: 0;
+        }
+        .hero-slider-content p {
+            font-size: clamp(16px, 2vw, 20px);
+            max-width: 600px;
+            line-height: 1.6;
+            margin-bottom: 32px;
+            animation: slideUp 1s ease 0.3s forwards;
+            opacity: 0;
+        }
+        .hero-slider-dots {
+            position: absolute;
+            bottom: 40px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 12px;
+            z-index: 3;
+        }
+        .hero-slider-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.4);
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .hero-slider-dot.active {
+            background: var(--cream);
+            transform: scale(1.3);
+        }
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        /* Image Showcase Slider */
+        .showcase-section {
+            padding: 100px 0;
+            background: var(--cream);
+        }
+        .showcase-slider {
+            position: relative;
+            margin-top: 48px;
+        }
+        .showcase-slider-track {
+            display: flex;
+            gap: 24px;
+            animation: scrollTrack 30s linear infinite;
+        }
+        @keyframes scrollTrack {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+        .showcase-slide {
+            min-width: 350px;
+            height: 450px;
+            border-radius: 16px;
+            overflow: hidden;
+            position: relative;
+            flex-shrink: 0;
+        }
+        .showcase-slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        .showcase-slide:hover img {
+            transform: scale(1.1);
+        }
+        .showcase-slide-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 24px;
+            background: linear-gradient(to top, rgba(47, 93, 58, 0.95), transparent);
+            color: var(--cream);
+        }
+        .showcase-slide-overlay h4 {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+        .showcase-slide-overlay p {
+            font-size: 14px;
+            opacity: 0.9;
+        }
+        
+        .stats-strip {
+            background: var(--farm-green);
+            padding: 64px 0;
+        }
+        
+        .stats-strip-inner {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 24px;
+            text-align: center;
+        }
+        
+        .stat-item {
+            color: var(--cream);
+        }
+        
+        .stat-number {
+            font-size: clamp(36px, 5vw, 56px);
+            font-weight: 700;
+            line-height: 1;
+            margin-bottom: 8px;
+        }
+        
+        .stat-label {
+            font-size: 14px;
+            opacity: 0.8;
+            letter-spacing: 1px;
+        }
+        
+        .section-pad {
+            padding: 120px 0;
+        }
+        
+        .section-eyebrow {
+            font-size: 12px;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            color: var(--earth);
+            margin-bottom: 16px;
+        }
+        
+        .section-title {
+            font-size: clamp(32px, 4vw, 48px);
+            font-weight: 700;
+            color: var(--charcoal);
+            margin-bottom: 16px;
+        }
+        
+        .sectors-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 24px;
+            margin-top: 48px;
+        }
+        
+        .sector-card {
+            position: relative;
+            border-radius: 12px;
+            overflow: hidden;
+            aspect-ratio: 3/4;
+            cursor: pointer;
+        }
+        
+        .sector-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.6s ease;
+        }
+        
+        .sector-card:hover img {
+            transform: scale(1.08);
+        }
+        
+        .sector-card-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, rgba(47, 93, 58, 0.9) 0%, rgba(47, 93, 58, 0.3) 60%);
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding: 32px;
+        }
+        
+        .sector-card-label {
+            font-size: 14px;
+            color: var(--cream);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 8px;
+        }
+        
+        .sector-card-promise {
+            font-size: 20px;
+            font-weight: 600;
+            color: var(--white);
+        }
+        
+        .pillars-row {
+            background: var(--cream);
+            padding: 120px 0;
+        }
+        
+        .pillars-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 48px;
+            margin-top: 64px;
+        }
+        
+        .pillar-item {
+            text-align: center;
+            padding: 32px;
+        }
+        
+        .pillar-icon {
+            width: 64px;
+            height: 64px;
+            margin: 0 auto 24px;
+            background: var(--farm-green);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--cream);
+            font-size: 24px;
+        }
+        
+        .pillar-title {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 16px;
+            color: var(--charcoal);
+        }
+        
+        .pillar-desc {
+            font-size: 16px;
+            line-height: 1.7;
+            color: #666;
+        }
+        
+        .products-section {
+            padding: 120px 0;
+            background: var(--white);
+        }
+        
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 24px;
+            margin-top: 48px;
+        }
+        
+        .product-card {
+            background: var(--cream);
+            border-radius: 12px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+        
+        .product-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--soft-shadow);
+        }
+        
+        .product-card-img {
+            aspect-ratio: 4/3;
+            overflow: hidden;
+        }
+        
+        .product-card-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .product-card-body {
+            padding: 24px;
+        }
+        
+        .product-card-name {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: var(--charcoal);
+        }
+        
+        .product-card-price {
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--farm-green);
+            margin-bottom: 16px;
+        }
+        
+        .product-card-btn {
+            display: block;
+            width: 100%;
+            padding: 12px;
+            text-align: center;
+            background: var(--farm-green);
+            color: var(--cream);
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 600;
+            border-radius: 4px;
+            transition: background 0.3s ease;
+        }
+        
+        .product-card-btn:hover {
+            background: var(--charcoal);
+        }
+        
+        .cta-band {
+            background: var(--farm-green);
+            padding: 80px 0;
+            text-align: center;
+        }
+        
+        .cta-band-text {
+            font-size: clamp(24px, 3vw, 36px);
+            font-weight: 600;
+            color: var(--cream);
+            margin-bottom: 32px;
+        }
+        
+        .cta-band .modern-btn {
+            background: var(--cream);
+            color: var(--farm-green);
+        }
+        
+        .blog-section {
+            padding: 120px 0;
+            background: var(--cream);
+        }
+        
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 32px;
+            margin-top: 48px;
+        }
+        
+        .blog-card {
+            background: var(--white);
+            border-radius: 12px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+        
+        .blog-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--soft-shadow);
+        }
+        
+        .blog-card-img {
+            aspect-ratio: 16/10;
+            overflow: hidden;
+        }
+        
+        .blog-card-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .blog-card-body {
+            padding: 24px;
+        }
+        
+        .blog-card-date {
+            font-size: 12px;
+            color: var(--earth);
+            margin-bottom: 12px;
+        }
+        
+        .blog-card-title {
+            font-size: 18px;
+            font-weight: 600;
+            color: var(--charcoal);
+            line-height: 1.4;
+        }
+        
+        .newsletter-section {
+            background: var(--charcoal);
+            padding: 80px 0;
+        }
+        
+        .newsletter-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 24px;
+        }
+        
+        .newsletter-text {
+            color: var(--cream);
+        }
+        
+        .newsletter-text h3 {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+        
+        .newsletter-text p {
+            opacity: 0.7;
+        }
+        
+        .newsletter-form {
+            display: flex;
+            gap: 12px;
+        }
+        
+        .newsletter-form input {
+            padding: 16px 24px;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            min-width: 300px;
+        }
+        
+        .newsletter-form button {
+            padding: 16px 32px;
+            background: var(--farm-green);
+            color: var(--cream);
+            border: none;
+            border-radius: 4px;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        
+         .newsletter-form button:hover {
+             background: var(--earth);
+         }
+         
+         /* Book a Visit button color */
+         .nav-link.btn[href="login.html"] {
+             background: var(--cta-green) !important;
+             color: var(--charcoal) !important;
+         }
+         
+         .nav-link.btn[href="login.html"]:hover {
+             background: var(--earth) !important;
+         }
+         
+         .cta-band .modern-btn {
+             background: var(--cta-green);
+             color: var(--charcoal);
+         }
+         
+         .cta-band .modern-btn:hover {
+             background: var(--earth);
+         }
+         
+         .fade-in {
+            opacity: 0;
+            transform: translateY(24px);
+            transition: all 0.8s ease;
+        }
+        
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        @media (max-width: 1024px) {
+            .sectors-grid { grid-template-columns: repeat(2, 1fr); }
+            .pillars-grid { grid-template-columns: 1fr; gap: 32px; }
+            .products-grid { grid-template-columns: repeat(2, 1fr); }
+            .blog-grid { grid-template-columns: 1fr; }
+            .stats-strip-inner { grid-template-columns: repeat(2, 1fr); gap: 32px; }
+        }
+        
+        @media (max-width: 768px) {
+            .section-pad { padding: 80px 0; }
+            .pillars-row { padding: 80px 0; }
+            .products-section { padding: 80px 0; }
+            .blog-section { padding: 80px 0; }
+            .sectors-grid { grid-template-columns: 1fr; }
+            .products-grid { grid-template-columns: 1fr; }
+            .newsletter-inner { text-align: center; justify-content: center; }
+            .newsletter-form { flex-direction: column; width: 100%; }
+            .newsletter-form input { min-width: 100%; }
+            .modern-hero-ctas { flex-direction: column; align-items: center; }
+        }
+    </style>
+ </head>
+
+<body>
+   <!--cursor-->
+   <div class='cursor cursor1'></div>
+   <div class='cursor cursor2'></div>
+      <!--header start-->
+   <header class="w-100 clearfix header headerOne" id="headerOne">
+      <!--top header-->
+      <div class="topHeader">
+         <div class="container">
+            <div class="topHeaderInner">
+               <div class="mobile boxGroupHeader">
+                  <a href="javascript:void(0);">
+                     <div class="flexGroupHeader">
+                        <div class="icon">
+                           <img src="images/icon/phone.png" alt="icon" class="img-fluid">
+                        </div>
+                        <div class="iconTxt">
+                           <span>+256 123 456 789</span>
+                        </div>
+                     </div>
+                  </a>
+               </div>
+               <div class="mail boxGroupHeader">
+                  <a href="javascript:void(0);">
+                     <div class="flexGroupHeader">
+                        <div class="icon">
+                           <img src="images/icon/mail.png" alt="icon" class="img-fluid">
+                        </div>
+                        <div class="iconTxt">
+                           <span>info@citygatefarms.com</span>
+                        </div>
+                     </div>
+                  </a>
+               </div>
+               <div class="language boxGroupHeader ms-auto">
+                  <div class="flexGroupHeader">
+                     <div class="icon">
+                        <img src="images/icon/lang.png" alt="icon" class="img-fluid">
+                     </div>
+                     <div class="iconTxt">
+                        <select class="form-select">
+                           <option>English</option>
+                           <option>Luo</option>
+                           <option>Luganda</option>
+                        </select>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!--main header-->
+      <div class="mainHeader">
+         <nav class="navbar navbar-expand-xl">
+            <div class="container">
+               <a class="navbar-brand" href="#"><img src="images/logo/citygatelogo.png" alt="City Gate Farm" class="img-fluid"></a>
+               <div class="collapse navbar-collapse" id="collapsibleNavbar">
+<ul class="navbar-nav">
+<li class="nav-item active">
+                          <a class="nav-link" href="index.html"><span>Home</span></a>
+                      </li>
+                      <li class="nav-item">
+                         <a class="nav-link" href="about-us.html">About Us</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                         <a class="nav-link" href="our-service.html" data-bs-toggle="dropdown">Services <i
+                               class="fa fa-angle-right" aria-hidden="true"></i></a>
+                         <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="our-service.html">All Services</a></li>
+                            <li><a class="dropdown-item" href="poultry-feed.html">Poultry (Chicken)</a></li>
+                            <li><a class="dropdown-item" href="broiler-breeder.html">Goat Farming</a></li>
+                            <li><a class="dropdown-item" href="layer-breeders.html">Dairy (Cows)</a></li>
+                            <li><a class="dropdown-item" href="actigen.html">Crops</a></li>
+                         </ul>
+                      </li>
+<li class="nav-item">
+                         <a class="nav-link" href="gallery-3-column.html">Gallery</a>
+                      </li>
+                      <li class="nav-item">
+                         <a class="nav-link" href="blog.html">Blog</a>
+                      </li>
+                      <li class="nav-item">
+                         <a class="nav-link" href="shop.html">Shop</a>
+                      </li>
+<li class="nav-item">
+                         <a class="nav-link" href="faq.html">FAQ</a>
+                      </li>
+                      <li class="nav-item">
+                         <a class="nav-link" href="login.html">Book a Visit</a>
+                      </li>
+                      <li class="nav-item">
+                         <a class="nav-link" href="contact-us.html">Contact</a>
+                      </li>
+                      <li class="nav-item loginBtn d-block d-md-none">
+                         <div class="btnGroup">
+                            <a class="nav-link btn" href="login.html">Book a Visit</a>
+                         </div>
+                      </li>
+                   </ul>
+                </div>
+                <div class="rightMenu">
+                   <ul class="nav">
+                      <li class="nav-item searchBtn">
+                         <a class="nav-link" href="javascript:void(0);"><img src="images/icon/search.png" alt="loader"
+                               class="img-fluid"></a>
+                      </li>
+                      <li class="nav-item cardBtn">
+                         <a class="nav-link" href="javascript:void(0);"><img src="images/icon/card.png" alt="loader"
+                               class="img-fluid"><span class="badge rounded-pill">2</span></a>
+                      </li>
+                      <li class="nav-item loginBtn d-none d-md-block">
+                         <div class="btnGroup">
+                            <a class="nav-link btn" href="login.html">Book a Visit</a>
+                         </div>
+                      </li>
+                     <li class="nav-item toggleBtn">
+                        <a class="nav-link navbar-toggler" href="javascript:void(0);" data-bs-toggle="collapse"
+                           data-bs-target="#collapsibleNavbar">
+                           <span class="navbar-toggler-icon"></span>
+                        </a>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </nav>
+      </div>
+      <!--overlay-->
+      <div class="widgetOverlay"></div>
+</header>
+    <!--header end-->
+    
+    <!-- HERO SLIDER -->
+    <section class="cg-hero" id="cgHero" aria-label="City Gate Mixed Farm">
+        <div class="cg-hero__stage">
+            <div class="cg-hero__slide is-active" data-slide="0">
+                <div class="cg-hero__img" style="background-image: url('images/gallary/pexels-chicken-1867521_1920.jpg');"></div>
+                <div class="cg-hero__overlay"></div>
+                <div class="cg-hero__content">
+                    <div class="cg-hero__inner">
+                        <span class="cg-hero__eyebrow">Poultry</span>
+                        <h1 class="cg-hero__title">Modern <strong>Poultry Farming</strong></h1>
+                        <p class="cg-hero__sub">Clean housing. Organized feeding. Healthy birds.</p>
+                        <a href="broiler-breeder.html" class="cg-hero__cta">Explore Poultry <i class="fa fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="cg-hero__slide" data-slide="1">
+                <div class="cg-hero__img" style="background-image: url('images/gallary/jaclou-dl-cow-4270355_1920.jpg');"></div>
+                <div class="cg-hero__overlay"></div>
+                <div class="cg-hero__content">
+                    <div class="cg-hero__inner">
+                        <span class="cg-hero__eyebrow">Dairy</span>
+                        <h1 class="cg-hero__title">Fresh <strong>Daily Milk</strong></h1>
+                        <p class="cg-hero__sub">Straight from a well-cared-for herd in Amuca.</p>
+                        <a href="shop.html" class="cg-hero__cta">View Dairy <i class="fa fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="cg-hero__slide" data-slide="2">
+                <div class="cg-hero__img" style="background-image: url('images/gallary/walter46-goat-4138049_1920.jpg');"></div>
+                <div class="cg-hero__overlay"></div>
+                <div class="cg-hero__content">
+                    <div class="cg-hero__inner">
+                        <span class="cg-hero__eyebrow">Goats</span>
+                        <h1 class="cg-hero__title">Premium <strong>Goat Breeds</strong></h1>
+                        <p class="cg-hero__sub">Boer &amp; Savannah â€” strong, healthy, farm-raised.</p>
+                        <a href="shop.html" class="cg-hero__cta">See Goats <i class="fa fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="cg-hero__slide" data-slide="3">
+                <div class="cg-hero__img" style="background-image: url('images/gallary/marcusvu-coffee-2992598_1920.jpg');"></div>
+                <div class="cg-hero__overlay"></div>
+                <div class="cg-hero__content">
+                    <div class="cg-hero__inner">
+                        <span class="cg-hero__eyebrow">Crops</span>
+                        <h1 class="cg-hero__title">Sustainable <strong>Farming</strong></h1>
+                        <p class="cg-hero__sub">Coffee and banana, grown on our 4-acre model farm.</p>
+                        <a href="our-service.html" class="cg-hero__cta">Explore Crops <i class="fa fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="cg-hero__slide" data-slide="4">
+                <div class="cg-hero__img" style="background-image: url('images/gallary/rooster-farm.jpg');"></div>
+                <div class="cg-hero__overlay"></div>
+                <div class="cg-hero__content">
+                    <div class="cg-hero__inner">
+                        <span class="cg-hero__eyebrow">Training &amp; Visits</span>
+                        <h1 class="cg-hero__title">Visit. Learn. <strong>Grow.</strong></h1>
+                        <p class="cg-hero__sub">Hands-on training and farm tours in Lira City.</p>
+                        <a href="contact-us.html" class="cg-hero__cta">Book a Visit <i class="fa fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button class="cg-hero__arrow cg-hero__arrow--prev" id="cgHeroPrev" aria-label="Previous slide"><i class="fa fa-angle-left"></i></button>
+        <button class="cg-hero__arrow cg-hero__arrow--next" id="cgHeroNext" aria-label="Next slide"><i class="fa fa-angle-right"></i></button>
+
+        <div class="cg-hero__dots" id="cgHeroDots">
+            <button class="cg-hero__dot is-active" data-go="0" aria-label="Slide 1"></button>
+            <button class="cg-hero__dot" data-go="1" aria-label="Slide 2"></button>
+            <button class="cg-hero__dot" data-go="2" aria-label="Slide 3"></button>
+            <button class="cg-hero__dot" data-go="3" aria-label="Slide 4"></button>
+            <button class="cg-hero__dot" data-go="4" aria-label="Slide 5"></button>
+        </div>
+
+        <a href="#cgHeroBelow" class="cg-hero__scroll" aria-label="Scroll down">Scroll</a>
+    </section>
+    <span id="cgHeroBelow"></span>
+    <script>
+    (function(){
+        var root = document.getElementById('cgHero');
+        if (!root) return;
+        var slides = root.querySelectorAll('.cg-hero__slide');
+        var dots = root.querySelectorAll('.cg-hero__dot');
+        var idx = 0, total = slides.length, timer;
+        function go(n){
+            idx = (n + total) % total;
+            slides.forEach(function(s,i){ s.classList.toggle('is-active', i === idx); });
+            dots.forEach(function(d,i){ d.classList.toggle('is-active', i === idx); });
+        }
+        function next(){ go(idx + 1); }
+        function prev(){ go(idx - 1); }
+        function restart(){ clearInterval(timer); timer = setInterval(next, 6000); }
+        dots.forEach(function(d){
+            d.addEventListener('click', function(){ go(parseInt(d.dataset.go, 10)); restart(); });
+        });
+        document.getElementById('cgHeroNext').addEventListener('click', function(){ next(); restart(); });
+        document.getElementById('cgHeroPrev').addEventListener('click', function(){ prev(); restart(); });
+        document.addEventListener('keydown', function(e){
+            if (e.key === 'ArrowRight') { next(); restart(); }
+            if (e.key === 'ArrowLeft')  { prev(); restart(); }
+        });
+        restart();
+    })();
+    </script>
+    
+    <!-- STATS STRIP -->
+    <section class="stats-strip">
+        <div class="container">
+            <div class="stats-strip-inner">
+                <div class="stat-item fade-in">
+                    <div class="stat-number">14,000+</div>
+                    <div class="stat-label">Birds</div>
+                </div>
+                <div class="stat-item fade-in">
+                    <div class="stat-number">80L</div>
+                    <div class="stat-label">Milk / Day</div>
+                </div>
+                <div class="stat-item fade-in">
+                    <div class="stat-number">4</div>
+                    <div class="stat-label">Sectors</div>
+                </div>
+                <div class="stat-item fade-in">
+                    <div class="stat-number">1</div>
+                    <div class="stat-label">Mission</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- FOUR SECTORS -->
+    <section class="section-pad">
+        <div class="container">
+            <p class="section-eyebrow">Our Farm</p>
+            <h2 class="section-title">Four Sectors</h2>
+            <div class="sectors-grid">
+                <div class="sector-card fade-in">
+                    <img src="images/gallary/pexels-chicken-1867521_1920.jpg" alt="Poultry">
+                    <div class="sector-card-overlay">
+                        <span class="sector-card-label">Poultry</span>
+                        <span class="sector-card-promise">Broilers, layers, eggs</span>
+                    </div>
+                </div>
+                <div class="sector-card fade-in">
+                    <img src="images/gallary/jaclou-dl-cow-4270355_1920.jpg" alt="Dairy">
+                    <div class="sector-card-overlay">
+                        <span class="sector-card-label">Dairy</span>
+                        <span class="sector-card-promise">Fresh milk daily</span>
+                    </div>
+                </div>
+                <div class="sector-card fade-in">
+                    <img src="images/gallary/couleur-milk-2474993.jpg" alt="Goats">
+                    <div class="sector-card-overlay">
+                        <span class="sector-card-label">Goats</span>
+                        <span class="sector-card-promise">Boer & Savannah</span>
+                    </div>
+                </div>
+                <div class="sector-card fade-in">
+                    <img src="images/gallary/engin_akyurt-egg-6757508_1920.jpg" alt="Crops">
+                    <div class="sector-card-overlay">
+                        <span class="sector-card-label">Crops</span>
+                        <span class="sector-card-promise">Coffee, bananas, maize</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- WHAT WE DO -->
+    <section class="pillars-row">
+        <div class="container">
+            <p class="section-eyebrow">What We Do</p>
+            <h2 class="section-title">Produce Â· Train Â· Partner</h2>
+            <div class="pillars-grid">
+                <div class="pillar-item fade-in">
+                    <div class="pillar-icon"><i class="fa fa-leaf"></i></div>
+                    <h3 class="pillar-title">Produce</h3>
+                    <p class="pillar-desc">Farm-fresh eggs, chicks, broiler meat, fresh milk, and premium goats. Direct from the farm, priced in UGX.</p>
+                </div>
+                <div class="pillar-item fade-in">
+                    <div class="pillar-icon"><i class="fa fa-graduation-cap"></i></div>
+                    <h3 class="pillar-title">Train</h3>
+                    <p class="pillar-desc">Hands-on farming training, youth empowerment programs, and industrial placements for agriculture students.</p>
+                </div>
+                <div class="pillar-item fade-in">
+                    <div class="pillar-icon"><i class="fa fa-users"></i></div>
+                    <h3 class="pillar-title">Partner</h3>
+                    <p class="pillar-desc">Join us in scaling from 14,000 to 100,000 birds. Farm tours, school visits, and investor partnerships.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- FEATURED PRODUCTS -->
+    <section class="products-section">
+        <div class="container">
+            <p class="section-eyebrow">Shop</p>
+            <h2 class="section-title">Featured Products</h2>
+            <div class="products-grid">
+                <div class="product-card fade-in">
+                    <div class="product-card-img">
+                        <img src="images/gallary/engin_akyurt-egg-6757508_1920.jpg" alt="Eggs">
+                    </div>
+                    <div class="product-card-body">
+                        <h4 class="product-card-name">Farm Fresh Eggs</h4>
+                        <div class="product-card-price">UGX 12,000 / tray</div>
+                        <a href="shop.html" class="product-card-btn">Enquire</a>
+                    </div>
+                </div>
+                <div class="product-card fade-in">
+                    <div class="product-card-img">
+                        <img src="images/gallary/stevepb-nest-1050964_1920.jpg" alt="Chicks">
+                    </div>
+                    <div class="product-card-body">
+                        <h4 class="product-card-name">1-Month Chicks</h4>
+                        <div class="product-card-price">UGX 10,000</div>
+                        <a href="shop.html" class="product-card-btn">Enquire</a>
+                    </div>
+                </div>
+                <div class="product-card fade-in">
+                    <div class="product-card-img">
+                        <img src="images/gallary/couleur-milk-2474993.jpg" alt="Milk">
+                    </div>
+                    <div class="product-card-body">
+                        <h4 class="product-card-name">Fresh Milk</h4>
+                        <div class="product-card-price">UGX 2,500 / litre</div>
+                        <a href="shop.html" class="product-card-btn">Enquire</a>
+                    </div>
+                </div>
+                <div class="product-card fade-in">
+                    <div class="product-card-img">
+                        <img src="images/gallary/andreasgoellner-hen-5642953_1920.jpg" alt="Goat">
+                    </div>
+                    <div class="product-card-body">
+                        <h4 class="product-card-name">Boer Goat</h4>
+                        <div class="product-card-price">From UGX 600,000</div>
+                        <a href="shop.html" class="product-card-btn">Enquire</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- VISIT CTA BAND -->
+    <section class="cta-band">
+        <div class="container">
+            <p class="cta-band-text">Come see the farm in Amuca, Lira City</p>
+            <a href="contact-us.html" class="modern-btn">Plan Your Visit</a>
+        </div>
+    </section>
+    
+    <!-- BLOG SECTION -->
+    <section class="blog-section">
+        <div class="container">
+            <p class="section-eyebrow">Blog</p>
+            <h2 class="section-title">From the Farm</h2>
+            <div class="blog-grid">
+                <article class="blog-card fade-in">
+                    <div class="blog-card-img">
+                        <img src="images/gallary/rooster-farm.jpg" alt="Blog">
+                    </div>
+                    <div class="blog-card-body">
+                        <p class="blog-card-date">March 25, 2026</p>
+                        <h3 class="blog-card-title">Scaling From 14,000 to 100,000 Birds</h3>
+                    </div>
+                </article>
+                <article class="blog-card fade-in">
+                    <div class="blog-card-img">
+                        <img src="images/gallary/jaclou-dl-cow-4270355_1920.jpg" alt="Blog">
+                    </div>
+                    <div class="blog-card-body">
+                        <p class="blog-card-date">March 18, 2026</p>
+                        <h3 class="blog-card-title">Why Boer Goats Pay Off</h3>
+                    </div>
+                </article>
+                <article class="blog-card fade-in">
+                    <div class="blog-card-img">
+                        <img src="images/gallary/couleur-milk-2474993.jpg" alt="Blog">
+                    </div>
+                    <div class="blog-card-body">
+                        <p class="blog-card-date">March 10, 2026</p>
+                        <h3 class="blog-card-title">Dairy Ration Planning for 80+ Litres</h3>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+    
+    <!-- NEWSLETTER -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-inner">
+                <div class="newsletter-text">
+                    <h3>Stay Connected</h3>
+                    <p>Updates on products, training, and farm visits.</p>
+                </div>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your email address">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+</section>
+
+    <!-- footer start
+                  <div class="owlSlideImg circleEffect">
+                     <div class="owlSlideItemImg">
+                        <div class="sliderIconMenu">
+                           <div class="sliderHotBadge">
+                              <a href="javascript:void(0);" class="badge bg-success">New</a>
+                           </div>
+                           <div class="heartIcon">
+                              <a href="javascript:void(0);" class="heart">
+                                 <i class="fa fa-heart" aria-hidden="true"></i>
+                              </a>
+                           </div>
+                        </div>
+                        <a href="shop-single.html">
+                        <img src="images/img5.png" alt="" class="img-fluid">
+                        </a>
+                        <a href="cart.html" class="addToCart"><img src="images/icon/add-to-cart.png"
+                              alt="cart" class="img-fluid"></a>
+                     </div>
+                  </div>
+                  <div class="owlSlideItemContent">
+                      <a href="shop-single.html">
+                     <div class="owlProductHeading">
+                        <h4>Farm Fresh Eggs (Tray)</h4>
+                     </div>
+                     </a>
+                     <div class="productPrice">
+                        <a href="shop.html" class="shopLink">View in Shop</a>
+                     </div>
+                     <div class="ratingStar">
+                        <i class="fa fa-star fill" aria-hidden="true"></i>
+                        <i class="fa fa-star fill" aria-hidden="true"></i>
+                        <i class="fa fa-star fill" aria-hidden="true"></i>
+                        <i class="fa fa-star unfill" aria-hidden="true"></i>
+                        <i class="fa fa-star unfill" aria-hidden="true"></i>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="item">
+               <div class="owlSlideItem fadein">
+                  <div class="owlSlideImg circleEffect">
+                     <div class="owlSlideItemImg">
+                        <div class="sliderIconMenu">
+                           <div class="sliderHotBadge">
+                              <a href="javascript:void(0);" class="badge bg-danger">Hot</a>
+                           </div>
+                           <div class="heartIcon">
+                              <a href="javascript:void(0);" class="heart">
+                                 <i class="fa fa-heart" aria-hidden="true"></i>
+                              </a>
+                           </div>
+                        </div>
+                        <a href="shop-single.html">
+                        <img src="images/img6.png" alt="" class="img-fluid">
+                        </a>
+                        <a href="cart.html" class="addToCart"><img src="images/icon/add-to-cart.png"
+                              alt="cart" class="img-fluid"></a>
+                     </div>
+                  </div>
+                  <div class="owlSlideItemContent">
+                     <a href="shop-single.html">
+                     <div class="owlProductHeading">
+                        <h4>1-Month Chicks</h4>
+                     </div>
+                     </a>
+                     <div class="productPrice">
+                        <a href="shop.html" class="shopLink">View in Shop</a>
+                     </div>
+                     <div class="ratingStar">
+                        <i class="fa fa-star fill" aria-hidden="true"></i>
+                        <i class="fa fa-star fill" aria-hidden="true"></i>
+                        <i class="fa fa-star fill" aria-hidden="true"></i>
+                        <i class="fa fa-star unfill" aria-hidden="true"></i>
+                        <i class="fa fa-star unfill" aria-hidden="true"></i>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="item">
+               <div class="owlSlideItem fadein">
+                  <div class="owlSlideImg circleEffect">
+                     <div class="owlSlideItemImg">
+                        <div class="sliderIconMenu">
+                           <div class="sliderHotBadge">
+                              <a href="javascript:void(0);" class="badge bg-success">New</a>
+                           </div>
+                           <div class="heartIcon">
+                              <a href="javascript:void(0);" class="heart">
+                                 <i class="fa fa-heart" aria-hidden="true"></i>
+                              </a>
+                           </div>
+                        </div>
+                        <a href="shop-single.html">
+                        <img src="images/img7.png" alt="" class="img-fluid">
+                        </a>
+                        <a href="cart.html" class="addToCart"><img src="images/icon/add-to-cart.png"
+                              alt="cart" class="img-fluid"></a>
+                     </div>
+                  </div>
+                  <div class="owlSlideItemContent">
+                     <a href="shop-single.html">
+                     <div class="owlProductHeading">
+                        <h4>Layer Hens</h4>
+                     </div>
+                     </a>
+                     <div class="productPrice">
+                        <a href="shop.html" class="shopLink">View in Shop</a>
+                     </div>
+                     <div class="ratingStar">
+                        <i class="fa fa-star fill" aria-hidden="true"></i>
+                        <i class="fa fa-star fill" aria-hidden="true"></i>
+                        <i class="fa fa-star fill" aria-hidden="true"></i>
+                        <i class="fa fa-star unfill" aria-hidden="true"></i>
+                        <i class="fa fa-star unfill" aria-hidden="true"></i>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="item">
+               <div class="owlSlideItem fadein">
+                  <div class="owlSlideImg circleEffect">
+                     <div class="owlSlideItemImg">
+                        <div class="sliderIconMenu">
+                           <div class="sliderHotBadge">
+                           </div>
+                           <div class="heartIcon">
+                              <a href="javascript:void(0);" class="heart">
+                                 <i class="fa fa-heart" aria-hidden="true"></i>
+                              </a>
+                           </div>
+                        </div>
+                        <a href="shop-single.html">
+                        <img src="images/img8.png" alt="" class="img-fluid">
+                        </a>
+                        <a href="cart.html" class="addToCart"><img src="images/icon/add-to-cart.png"
+                              alt="cart" class="img-fluid"></a>
+                     </div>
+                  </div>
+                  <div class="owlSlideItemContent">
+                     <a href="shop-single.html">
+                     <div class="owlProductHeading">
+                        <h4>Broiler Chicken</h4>
+                     </div>
+                     </a>
+                     <div class="productPrice">
+                        <a href="shop.html" class="shopLink">View in Shop</a>
+                     </div>
+                     <div class="ratingStar">
+                        <i class="fa fa-star fill" aria-hidden="true"></i>
+                        <i class="fa fa-star fill" aria-hidden="true"></i>
+                        <i class="fa fa-star fill" aria-hidden="true"></i>
+                        <i class="fa fa-star unfill" aria-hidden="true"></i>
+                        <i class="fa fa-star unfill" aria-hidden="true"></i>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="item">
+               <div class="owlSlideItem fadein">
+                  <div class="owlSlideImg circleEffect">
+                     <div class="owlSlideItemImg">
+                        <div class="sliderIconMenu">
+                           <div class="sliderHotBadge">
+                              <a href="javascript:void(0);" class="badge bg-danger">Hot</a>
+                           </div>
+                           <div class="heartIcon">
+                              <a href="javascript:void(0);" class="heart">
+                                 <i class="fa fa-heart" aria-hidden="true"></i>
+                              </a>
+                           </div>
+                        </div>
+                        <a href="shop-single.html">
+                        <img src="images/img5.png" alt="" class="img-fluid">
+                        </a>
+                        <a href="cart.html" class="addToCart"><img src="images/icon/add-to-cart.png"
+                              alt="cart" class="img-fluid"></a>
+                     </div>
+                  </div>
+                  <div class="owlSlideItemContent">
+                     <a href="shop-single.html">
+                     <div class="owlProductHeading">
+                        <h4>Farm Fresh Eggs (Tray)</h4>
+                     </div>
+                     </a>
+                     <div class="productPrice">
+                        <a href="shop.html" class="shopLink">View in Shop</a>
+                     </div>
+                     <div class="ratingStar">
+                        <i class="fa fa-star fill" aria-hidden="true"></i>
+                        <i class="fa fa-star fill" aria-hidden="true"></i>
+                        <i class="fa fa-star fill" aria-hidden="true"></i>
+                        <i class="fa fa-star unfill" aria-hidden="true"></i>
+                        <i class="fa fa-star unfill" aria-hidden="true"></i>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="item">
+               <div class="owlSlideItem fadein">
+                  <div class="owlSlideImg circleEffect">
+                     <div class="owlSlideItemImg">
+                        <div class="sliderIconMenu">
+                           <div class="sliderHotBadge">
+                              <a href="javascript:void(0);" class="badge bg-danger">Hot</a>
+                           </div>
+                           <div class="heartIcon">
+                              <a href="javascript:void(0);" class="heart">
+                                 <i class="fa fa-heart" aria-hidden="true"></i>
+                              </a>
+                           </div>
+                        </div>
+                        <a href="shop-single.html">
+                        <img src="images/img6.png" alt="" class="img-fluid">
+                        </a>
+                        <a href="cart.html" class="addToCart"><img src="images/icon/add-to-cart.png"
+                              alt="cart" class="img-fluid"></a>
+                     </div>
+                  </div>
+                  <div class="owlSlideItemContent">
+                     <a href="shop-single.html">
+                     <div class="owlProductHeading">
+                        <h4>1-Month Chicks</h4>
+                     </div>
+                     </a>
+                     <div class="productPrice">
+                        <a href="shop.html" class="shopLink">View in Shop</a>
+                     </div>
+                     <div class="ratingStar">
+                        <i class="fa fa-star fill" aria-hidden="true"></i>
+                        <i class="fa fa-star fill" aria-hidden="true"></i>
+                        <i class="fa fa-star fill" aria-hidden="true"></i>
+                        <i class="fa fa-star unfill" aria-hidden="true"></i>
+                        <i class="fa fa-star unfill" aria-hidden="true"></i>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="item">
+               <div class="owlSlideItem fadein">
+                  <div class="owlSlideImg circleEffect">
+                     <div class="owlSlideItemImg">
+                        <div class="sliderIconMenu">
+                           <div class="sliderHotBadge">
+                              <a href="javascript:void(0);" class="badge bg-success">New</a>
+                           </div>
+                           <div class="heartIcon">
+                              <a href="javascript:void(0);" class="heart">
+                                 <i class="fa fa-heart" aria-hidden="true"></i>
+                              </a>
+                           </div>
+                        </div>
+                        <a href="shop-single.html">
+                        <img src="images/img7.png" alt="" class="img-fluid">
+                        </a>
+                        <a href="cart.html" class="addToCart"><img src="images/icon/add-to-cart.png"
+                              alt="cart" class="img-fluid"></a>
+
+                     </div>
+                  </div>
+                  <div class="owlSlideItemContent">
+                     <a href="shop-single.html">
+                     <div class="owlProductHeading">
+                        <h4>Layer Hens</h4>
+                     </div>
+                     </a>
+                     <div class="productPrice">
+                        <a href="shop.html" class="shopLink">View in Shop</a>
+                     </div>
+                     <div class="ratingStar">
+                        <i class="fa fa-star fill" aria-hidden="true"></i>
+                        <i class="fa fa-star fill" aria-hidden="true"></i>
+                        <i class="fa fa-star fill" aria-hidden="true"></i>
+                        <i class="fa fa-star unfill" aria-hidden="true"></i>
+                        <i class="fa fa-star unfill" aria-hidden="true"></i>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="item">
+               <div class="owlSlideItem fadein">
+                  <div class="owlSlideImg circleEffect">
+                     <div class="owlSlideItemImg">
+                        <div class="sliderIconMenu">
+                           <div class="sliderHotBadge">
+                           </div>
+                           <div class="heartIcon">
+                              <a href="javascript:void(0);" class="heart">
+                                 <i class="fa fa-heart" aria-hidden="true"></i>
+                              </a>
+                           </div>
+                        </div>
+                        <a href="shop-single.html">
+                        <img src="images/img8.png" alt="" class="img-fluid">
+                        </a>
+                        <a href="cart.html" class="addToCart"><img src="images/icon/add-to-cart.png"
+                              alt="cart" class="img-fluid"></a>
+                     </div>
+                  </div>
+                  <div class="owlSlideItemContent">
+                     <a href="shop-single.html">
+                     <div class="owlProductHeading">
+                        <h4>Broiler Chicken</h4>
+                     </div>
+                     </a>
+                     <div class="productPrice">
+                        <a href="shop.html" class="shopLink">View in Shop</a>
+                     </div>
+                     <div class="ratingStar">
+                        <i class="fa fa-star fill" aria-hidden="true"></i>
+                        <i class="fa fa-star fill" aria-hidden="true"></i>
+                        <i class="fa fa-star fill" aria-hidden="true"></i>
+                        <i class="fa fa-star unfill" aria-hidden="true"></i>
+                        <i class="fa fa-star unfill" aria-hidden="true"></i>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="viewAllProduct fadein">
+            <a class="btnCustom2 btn-1 hover-slide-down" href="javascript:void(0);">
+               <span>View All <img src="images/icon/icon-right.png" alt="right" class="img-fluid"></span>
+            </a>
+         </div>
+      </div>
+   </section> -->
+   <section class="w-100 clearfix categorySec" id="categorySec">
+      <div class="container">
+         <div class="categorySecInner fadein">
+            <div class="row">
+<div class="col-sm-6 col-lg-3">
+                   <a href="javascript:void(0);">
+                      <div class="categorySecItem">
+                         <div class="categoryIcon">
+                            <span>
+                               <img src="images/icon1.png" alt="icon" class="img-fluid">
+                            </span>
+                         </div>
+<div class="categoryContent">
+                             <h5>Poultry Farming</h5>
+                             <p>14,000+ chickens including broilers, layers, and dual-purpose breeds.</p>
+                          </div>
+                       </div>
+                    </a>
+                 </div>
+                 <div class="col-sm-6 col-lg-3">
+                    <a href="javascript:void(0);">
+                       <div class="categorySecItem">
+                          <div class="categoryIcon">
+                             <span>
+                                <img src="images/icon2.png" alt="icon" class="img-fluid">
+                             </span>
+                          </div>
+                          <div class="categoryContent">
+                             <h5>Dairy Production</h5>
+                             <p>Fresh milk daily with ~80 litres production.</p>
+                          </div>
+                       </div>
+                    </a>
+                 </div>
+                 <div class="col-sm-6 col-lg-3">
+                    <a href="javascript:void(0);">
+                       <div class="categorySecItem">
+                          <div class="categoryIcon">
+                             <span>
+                                <img src="images/icon3.png" alt="icon" class="img-fluid">
+                             </span>
+                          </div>
+                          <div class="categoryContent">
+                             <h5>Goat Farming</h5>
+                             <p>Premium Boer and Savannah goats raised in controlled environments.</p>
+                          </div>
+                       </div>
+                    </a>
+                 </div>
+                 <div class="col-sm-6 col-lg-3">
+                    <a href="javascript:void(0);">
+                       <div class="categorySecItem">
+                          <div class="categoryIcon">
+                             <span>
+                                <img src="images/icon4.png" alt="icon" class="img-fluid">
+                             </span>
+                          </div>
+                          <div class="categoryContent">
+                             <h5>Training Programs</h5>
+                             <p>Youth empowerment and practical farming skills training.</p>
+                          </div>
+                       </div>
+                    </a>
+                 </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <section class="w-100 clearfix poultryProductsSlider" id="poultryProductSlider">
+      <div class="container">
+         <div class="poultryProductsHead">
+            <div class="commonHeading">
+               <h4 class="fadein">Training & Value-Added Services</h4>
+               <p class="fadein">Beyond livestock and crops, City Gate Mixed Farm delivers agricultural training, farm tours, youth empowerment programs, internships, and agribusiness mentorship across Northern Uganda.</p>
+            </div>
+            <div class="owlNavBtn fadein">
+               <div class="btn-wrap">
+                  <button class="prev-btn"><img src="images/icon/icon-left.png" alt="left" class="img-fluid"></button>
+                  <button class="next-btn"><img src="images/icon/icon-right.png" alt="right" class="img-fluid"></button>
+               </div>
+            </div>
+         </div>
+         <div class="owl-carousel owl-theme owlCarouselRelatedProducts">
+            <div class="item">
+               <div class="owlSlideItem fadein">
+                  <div class="owlSlideItemImg circleEffect">
+                     <img src="images/img9.png" alt="" class="img-fluid">
+                  </div>
+                  <div class="owlSlideItemContent">
+                     <div class="owlProductHeading">
+                        <h4>Farm Visits & Tours</h4>
+                     </div>
+                     <div class="owlProductPara">
+                        <p>Guided walk-through of our poultry, goat, dairy and crop units. Ideal for schools, groups and aspiring farmers.</p>
+                     </div>
+                     <div class="relatedProductsBtn">
+                        <a href="our-service.html" class="readMoreBtn">Read More <img
+                              src="images/icon/arrow-right.png" alt="right" class="img-fluid"></a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="item">
+               <div class="owlSlideItem fadein">
+                  <div class="owlSlideItemImg circleEffect">
+                     <img src="images/img10.png" alt="" class="img-fluid">
+                  </div>
+                  <div class="owlSlideItemContent">
+                     <div class="owlProductHeading">
+                        <h4>Training & Internships</h4>
+                     </div>
+                     <div class="owlProductPara">
+                        <p>Hands-on agricultural training, youth empowerment programs, and industrial-training placements for students.</p>
+                     </div>
+                     <div class="relatedProductsBtn">
+                        <a href="our-service.html" class="readMoreBtn">Read More <img
+                              src="images/icon/arrow-right.png" alt="right" class="img-fluid"></a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="item">
+               <div class="owlSlideItem fadein">
+                  <div class="owlSlideItemImg circleEffect">
+                     <img src="images/img9.png" alt="" class="img-fluid">
+                  </div>
+                  <div class="owlSlideItemContent">
+                     <div class="owlProductHeading">
+                        <h4>ACTIGENÂ®</h4>
+                     </div>
+                     <div class="owlProductPara">
+                        <p>Actigen provides a cost-effective means of maintaining gut health and integrity to support
+                           overall performance.</p>
+                     </div>
+                     <div class="relatedProductsBtn">
+                        <a href="javascript:void(0);" class="readMoreBtn">Read More <img
+                              src="images/icon/arrow-right.png" alt="right" class="img-fluid"></a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="item">
+               <div class="owlSlideItem fadein">
+                  <div class="owlSlideItemImg circleEffect">
+                     <img src="images/img10.png" alt="" class="img-fluid">
+                  </div>
+                  <div class="owlSlideItemContent">
+                     <div class="owlProductHeading">
+                        <h4>Training & Internships</h4>
+                     </div>
+                     <div class="owlProductPara">
+                        <p>Hands-on agricultural training, youth empowerment programs, and industrial-training placements for students.</p>
+                     </div>
+                     <div class="relatedProductsBtn">
+                        <a href="our-service.html" class="readMoreBtn">Read More <img
+                              src="images/icon/arrow-right.png" alt="right" class="img-fluid"></a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <section class="w-100 clearfix breedersCardSec" id="breedersCardSec">
+      <div class="breedersCardGroup">
+         <div class="layerBreeders breedersBox">
+            <div class="breedersBoxIcon fadein">
+               <img src="images/icon5.png" alt="icon" class="img-fluid">
+            </div>
+            <div class="commonHeading">
+               <h4 class="fadein">Goat Farming</h4>
+               <p class="fadein">Premium Boer and Savannah (white) goats raised on-farm. Sold at 8 months from UGX 600,000+. Cross-breeding services available for smallholder farmers.</p>
+            </div>
+            <a class="btn btn-1 hover-slide-down fadein" href="broiler-breeder.html">
+               <span>Read More <img src="images/icon/icon-black-right.png" alt="icon" class="img-fluid"></span>
+            </a>
+         </div>
+         <div class="broilerBreeders breedersBox">
+            <div class="breedersBoxIcon fadein">
+               <img src="images/icon6.png" alt="icon" class="img-fluid">
+            </div>
+            <div class="commonHeading">
+               <h4 class="fadein">Dairy Production</h4>
+               <p class="fadein">Our dairy herd produces ~80 litres of fresh milk daily. Bulk supply available for households, cafÃ©s and retailers across Lira City.</p>
+            </div>
+            <a class="btn btn-1 hover-slide-down fadein" href="layer-breeders.html">
+               <span>Read More <img src="images/icon/icon-black-right.png" alt="icon" class="img-fluid"></span>
+            </a>
+         </div>
+      </div>
+   </section>
+   <section class="w-100 clearfix gotQuestionsSec" id="gotQuestionsSec">
+      <div class="container">
+         <div class="gotQuestionsRow">
+            <div class="gotQuestionsCol">
+               <div class="gotQuestions">
+                  <div class="gotQuestionsContent">
+                     <div class="commonHeading">
+                        <h4 class="fadein">You've got questions, we've
+                           got answers.</h4>
+                        <p class="fadein">Thinking about visiting the farm, buying livestock, or joining a training program? Our FAQ covers visits, training fees, bulk orders, internships and partnerships.</p>
+                     </div>
+                     <a class="btnCustom2 btn-1 hover-slide-down fadein" href="faq.html">
+                        <span>View FAQs <img src="images/icon/icon-right.png" alt="right"
+                              class="img-fluid"></span>
+                     </a>
+                  </div>
+                   <div class="gotQuestionsVideo">
+                      <div class="videoBanner fadein">
+                         <img src="images/gallary/jaclou-dl-cow-4270355_1920.jpg" alt="banner" class="w-100 img-fluid">
+                        <a href="javascript:void(0)" class="flVideo youtube-link" youtubeid="ZrGzRmcIFcU">
+                           <div class="circle pulse orange">
+                              <img src="images/icon/play.png" alt="banner" class="img-fluid">
+                           </div>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="gotQuestionsCol">
+                <div class="gotQuestions">
+                   <div class="videoBanner fadein">
+                      <img src="images/gallary/couleur-milk-2474993.jpg" alt="banner" class="w-100 img-fluid">
+                     <a href="javascript:void(0)" class="flVideo youtube-link" youtubeid="ZrGzRmcIFcU">
+                        <div class="circle pulse orange">
+                           <img src="images/icon/play.png" alt="banner" class="img-fluid">
+                        </div>
+                     </a>
+                  </div>
+                  <div class="gotQuesPara fadein">
+                     <p>Watch short videos from City Gate Mixed Farm â€” daily operations, feeding routines, milk collection, goat care, and coffee harvesting at our 4-hectare model farm in Amuca, Lira City.</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <section class="w-100 clearfix galleryPoultryFarm" id="galleryPoultryFarm">
+      <div class="commonHeading text-center">
+         <h4 class="fadein">Life at City Gate Mixed Farm</h4>
+         <p class="fadein">A glimpse of daily activity â€” poultry houses, goat pens, dairy milking, coffee and banana plots, and training sessions with visiting farmers and students.</p>
+      </div>
+      <div class="galleryPoultrySec">
+         <div class="owl-carousel owl-theme carouselGalleryPoultry">
+            <div class="item">
+               <div class="galleryItem fadein">
+                  <img src="images/gallary/rooster-farm.jpg" alt="gallery" class="img-fluid">
+               </div>
+            </div>
+            <div class="item">
+               <div class="galleryItem fadein">
+                  <img src="images/gallary/jaclou-dl-cow-4270355_1920.jpg" alt="gallery" class="img-fluid">
+               </div>
+            </div>
+            <div class="item">
+               <div class="galleryItem fadein">
+                  <img src="images/gallary/couleur-milk-2474993.jpg" alt="gallery" class="img-fluid">
+               </div>
+            </div>
+            <div class="item">
+               <div class="galleryItem fadein">
+                  <img src="images/gallary/engin_akyurt-egg-6757508_1920.jpg" alt="gallery" class="img-fluid">
+               </div>
+            </div>
+            <div class="item">
+               <div class="galleryItem fadein">
+                  <img src="images/gallary/stevepb-nest-1050964_1920.jpg" alt="gallery" class="img-fluid">
+               </div>
+            </div>
+            <div class="item">
+               <div class="galleryItem fadein">
+                  <img src="images/gallary/akirevarga-egg-7345934.jpg" alt="gallery" class="img-fluid">
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <section class="w-100 clearfix testimonialsBox" id="testimonialsBox">
+      <div class="testimonialsRow">
+         <div class="testimonialsCol testimonialsCol1">
+            <h4 class="fadein">TESTIMONIALS</h4>
+            <h2 class="fadein">What our customers are
+               talking about us</h2>
+            <a class="btn btn-1 hover-slide-down mt-3 fadein" href="javascript:void(0);">
+               <span>View All <img src="images/icon/icon-black-right.png" alt="icon" class="img-fluid"></span>
+            </a>
+         </div>
+         <div class="testimonialsCol testimonialsCol2">
+            <div class="testimonialSlider">
+               <!-- Tab panes -->
+               <div class="tab-content">
+                  <div class="tab-pane active" id="slide1">
+                     <div class="testimonialSliderItem fadein">
+                        <p>City Gate Mixed Farm changed how I think about farming. I came as a visitor, stayed for the training, and I am now running my own poultry unit back home. The practical sessions on feeding and biosecurity were the most useful.</p>
+                        <h4>Okello Dennis</h4>
+                        <span>Smallholder Farmer, Lira</span>
+                     </div>
+                  </div>
+                  <div class="tab-pane fade" id="slide2">
+                     <div class="testimonialSliderItem fadein">
+                        <p>We buy 1-month chicks and fresh milk from City Gate every week. The chicks survive and grow well, and the milk is always fresh. Reliable farm, reliable quality.</p>
+                        <h4>Akello Grace</h4>
+                        <span>Retailer, Lira City</span>
+                     </div>
+                  </div>
+
+                  <div class="tab-pane fade" id="slide3">
+                     <div class="testimonialSliderItem fadein">
+                        <p>My industrial training placement at City Gate Mixed Farm gave me exposure to real livestock and crop operations â€” poultry, goats, dairy, and pasture management. The mentorship was excellent.</p>
+                        <h4>Achan Mercy</h4>
+                        <span>Agriculture Student, Gulu University</span>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="testimonialSliderImg">
+               <!-- Nav pills -->
+               <ul class="nav nav-pills fadein">
+                  <li class="nav-item">
+                     <a class="nav-link active" data-bs-toggle="pill" href="#slide1">
+                        <img src="images/img21.png" alt="icon" class="img-fluid">
+                     </a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" data-bs-toggle="pill" href="#slide2">
+                        <img src="images/user2.png" alt="icon" class="img-fluid">
+                     </a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" data-bs-toggle="pill" href="#slide3">
+                        <img src="images/user3.png" alt="icon" class="img-fluid">
+                     </a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </div>
+
+   </section>
+   <section class="w-100 clearfix latestNewsArticles" id="latestNewsArticles">
+      <div class="container">
+         <div class="latestNewsArticlesInner">
+            <div class="commonHeading">
+               <h4 class="fadein">From the Farm Blog</h4>
+               <p class="fadein">Tips, lessons and updates from City Gate Mixed Farm â€” practical advice for poultry, dairy, goats and crops drawn from our daily operations in Amuca, Lira City.</p>
+            </div>
+            <div class="latestNewsCard">
+               <div class="row">
+                  <div class="col-md-12 col-lg-4">
+                      <div class="latestNewsCardInner fadein">
+                         <div class="latestNewsCardImg">
+                            <a href="blog-single.html"><img src="images/gallary/rooster-farm.jpg" alt="img"
+                                  class="w-100 img-fluid"></a>
+                           <div class="latestNewsDate">
+                              <a href="javascript:void(0);">
+                                 <h5>25</h5>
+                                 <span>Mar</span>
+                              </a>
+                           </div>
+                        </div>
+                        <div class="latestNewsCardInnerContent">
+                           <div class="latestNewsList">
+                              <div class="latestNewsUser">
+                                 <a href="javascript:void(0);">
+                                    <img src="images/icon/user.png" alt="icon" class="img-fluid"><span>by admin</span>
+                                 </a>
+                              </div>
+                              <div class="latestNewsMessage">
+                                 <a href="javascript:void(0);">
+                                    <img src="images/icon/message.png" alt="icon" class="img-fluid"><span>2
+                                       comments</span>
+                                 </a>
+                              </div>
+                           </div>
+                           <div class="latestNewsTxt">
+                              <h4><a href="blog-single.html">Scaling From 14,000 to 100,000 Birds â€” Our Plan</a></h4>
+                              <p>How City Gate is expanding poultry production while keeping biosecurity and bird welfare at the centre.</p>
+                           </div>
+                           <div class="latestNewBtn">
+                              <a class="btnCustom5 btn-1 hover-slide-down" href="blog-single.html">
+                                 <span>Read More <img src="images/icon/icon-right.png" alt="right"
+                                       class="img-fluid"></span>
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-md-12 col-lg-4">
+                      <div class="latestNewsCardInner fadein">
+                         <div class="latestNewsCardImg">
+                            <a href="blog-single.html;"><img src="images/gallary/engin_akyurt-egg-6757508_1920.jpg" alt="img"
+                                  class="w-100 img-fluid"></a>
+                           <div class="latestNewsDate">
+                              <a href="javascript:void(0);">
+                                 <h5>25</h5>
+                                 <span>Mar</span>
+                              </a>
+                           </div>
+                        </div>
+                        <div class="latestNewsCardInnerContent">
+                           <div class="latestNewsList">
+                              <div class="latestNewsUser">
+                                 <a href="javascript:void(0);">
+                                    <img src="images/icon/user.png" alt="icon" class="img-fluid"><span>by admin</span>
+                                 </a>
+                              </div>
+                              <div class="latestNewsMessage">
+                                 <a href="javascript:void(0);">
+                                    <img src="images/icon/message.png" alt="icon" class="img-fluid"><span>2
+                                       comments</span>
+                                 </a>
+                              </div>
+                           </div>
+                           <div class="latestNewsTxt">
+                              <h4><a href="blog-single.html">Boer Goats: Why Cross-Breeding Pays Off</a></h4>
+                              <p>A practical look at how crossing Boer and local breeds improves weight gain, milk and market value.</p>
+                           </div>
+                           <div class="latestNewBtn">
+                              <a class="btnCustom5 btn-1 hover-slide-down" href="blog-single.html">
+                                 <span>Read More <img src="images/icon/icon-right.png" alt="right"
+                                       class="img-fluid"></span>
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-md-12 col-lg-4">
+                      <div class="latestNewsCardInner fadein">
+                         <div class="latestNewsCardImg">
+                            <a href="blog-single.html"><img src="images/gallary/jaclou-dl-cow-4270355_1920.jpg" alt="img"
+                                  class="w-100 img-fluid"></a>
+                           <div class="latestNewsDate">
+                              <a href="javascript:void(0);">
+                                 <h5>25</h5>
+                                 <span>Mar</span>
+                              </a>
+                           </div>
+                        </div>
+                        <div class="latestNewsCardInnerContent">
+                           <div class="latestNewsList">
+                              <div class="latestNewsUser">
+                                 <a href="javascript:void(0);">
+                                    <img src="images/icon/user.png" alt="icon" class="img-fluid"><span>by admin</span>
+                                 </a>
+                              </div>
+                              <div class="latestNewsMessage">
+                                 <a href="javascript:void(0);">
+                                    <img src="images/icon/message.png" alt="icon" class="img-fluid"><span>2
+                                       comments</span>
+                                 </a>
+                              </div>
+                           </div>
+                           <div class="latestNewsTxt">
+                              <h4><a href="blog-single.html">Feeding Your Dairy Herd for 80+ Litres a Day</a></h4>
+                              <p>Our daily ration plan â€” pasture, silage and supplements â€” for consistent milk production on a mixed farm.</p>
+                           </div>
+                           <div class="latestNewBtn">
+                              <a class="btnCustom5 btn-1 hover-slide-down" href="blog-single.html">
+                                 <span>Read More <img src="images/icon/icon-right.png" alt="right"
+                                       class="img-fluid"></span>
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="latestNewsCardBtn fadein">
+                  <a class="btnCustom2 btn-1 hover-slide-down" href="blog.html">
+                     <span>View All <img src="images/icon/icon-right.png" alt="right" class="img-fluid"></span>
+                  </a>
+               </div>
+            </div>
+         </div>
+
+      </div>
+   </section>
+   <section class="w-100 clearfix mapsSection" id="mapsSection">
+      <div class="container">
+         <h2 class="d-none">Map Location Info</h2>
+         <div class="mapsSectionInner fadein">
+            <div class="mapOverlay">
+               <div class="tooltipGroup marker marker1 tooltip1">
+                  <div class="tooltip">
+                     <div class="locationIcon">
+                        <img src="images/icon/location.png" alt="location-icon" class="img-fluid">
+                     </div>
+                     <div class="locationTxt">
+                        <p>3923 City Gate Mixed Farm, Amuca,
+                           Lira City, Uganda</p>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="tooltipGroup marker marker2 tooltip2">
+                  <div class="tooltip">
+                     <div class="locationIcon">
+                        <img src="images/icon/location.png" alt="location-icon" class="img-fluid">
+                     </div>
+                     <div class="locationTxt">
+                        <p>3924 City Gate Mixed Farm, Amuca,
+                           Lira City, Uganda</p>
+                     </div>
+                  </div>
+               </div>
+
+
+               <div class="tooltipGroup marker marker3 tooltip3">
+                  <div class="tooltip">
+                     <div class="locationIcon">
+                        <img src="images/icon/location.png" alt="location-icon" class="img-fluid">
+                     </div>
+                     <div class="locationTxt">
+                        <p>3925 City Gate Mixed Farm, Amuca,
+                           Lira City, Uganda</p>
+                     </div>
+                  </div>
+               </div>
+
+
+               <div class="tooltipGroup marker marker4 tooltip4">
+                  <div class="tooltip">
+                     <div class="locationIcon">
+                        <img src="images/icon/location.png" alt="location-icon" class="img-fluid">
+                     </div>
+                     <div class="locationTxt">
+                        <p>3926 City Gate Mixed Farm, Amuca,
+                           Lira City, Uganda</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="tooltipGroup marker marker5 tooltip5">
+                  <div class="tooltip">
+                     <div class="locationIcon">
+                        <img src="images/icon/location.png" alt="location-icon" class="img-fluid">
+                     </div>
+                     <div class="locationTxt">
+                        <p>3927 City Gate Mixed Farm, Amuca,
+                           Lira City, Uganda</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="tooltipGroup marker marker6 tooltip6">
+                  <div class="tooltip">
+                     <div class="locationIcon">
+                        <img src="images/icon/location.png" alt="location-icon" class="img-fluid">
+                     </div>
+                     <div class="locationTxt">
+                        <p>3928 City Gate Mixed Farm, Amuca,
+                           Lira City, Uganda</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="tooltipGroup marker marker7 tooltip7">
+                  <div class="tooltip">
+                     <div class="locationIcon">
+                        <img src="images/icon/location.png" alt="location-icon" class="img-fluid">
+                     </div>
+                     <div class="locationTxt">
+                        <p>3929 City Gate Mixed Farm, Amuca,
+                           Lira City, Uganda</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="tooltipGroup marker marker8 tooltip8">
+                  <div class="tooltip">
+                     <div class="locationIcon">
+                        <img src="images/icon/location.png" alt="location-icon" class="img-fluid">
+                     </div>
+                     <div class="locationTxt">
+                        <p>3930 City Gate Mixed Farm, Amuca,
+                           Lira City, Uganda</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="tooltipGroup marker marker9 tooltip9">
+                  <div class="tooltip">
+                     <div class="locationIcon">
+                        <img src="images/icon/location.png" alt="location-icon" class="img-fluid">
+                     </div>
+                     <div class="locationTxt">
+                        <p>3931 City Gate Mixed Farm, Amuca,
+                           Lira City, Uganda</p>
+                     </div>
+                  </div>
+               </div>
+
+
+               <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%"
+                  height="674" viewBox="0 0 1441 674" fill="none">
+                  <rect x="110" width="1331" height="674" fill="url(#pattern0)" />
+                  <path
+                     d="M344.423 179C338.108 179 333 184.108 333 190.423C333 198.99 344.423 211.637 344.423 211.637C344.423 211.637 355.846 198.99 355.846 190.423C355.846 184.108 350.738 179 344.423 179ZM344.423 194.503C343.341 194.503 342.303 194.073 341.538 193.308C340.773 192.543 340.343 191.505 340.343 190.423C340.343 189.341 340.773 188.303 341.538 187.538C342.303 186.773 343.341 186.343 344.423 186.343C345.505 186.343 346.543 186.773 347.308 187.538C348.073 188.303 348.503 189.341 348.503 190.423C348.503 191.505 348.073 192.543 347.308 193.308C346.543 194.073 345.505 194.503 344.423 194.503Z"
+                     fill="#ED624F" data-continent="North American" />
+                  <path
+                     d="M734.423 338C728.108 338 723 343.108 723 349.423C723 357.99 734.423 370.637 734.423 370.637C734.423 370.637 745.846 357.99 745.846 349.423C745.846 343.108 740.738 338 734.423 338ZM734.423 353.503C733.341 353.503 732.303 353.073 731.538 352.308C730.773 351.543 730.343 350.505 730.343 349.423C730.343 348.341 730.773 347.303 731.538 346.538C732.303 345.773 733.341 345.343 734.423 345.343C735.505 345.343 736.543 345.773 737.308 346.538C738.073 347.303 738.503 348.341 738.503 349.423C738.503 350.505 738.073 351.543 737.308 352.308C736.543 353.073 735.505 353.503 734.423 353.503Z"
+                     fill="#ED624F" class="marker marker2" data-continent="North American" />
+                  <path
+                     d="M1008.42 332C1002.11 332 997 337.108 997 343.423C997 351.99 1008.42 364.637 1008.42 364.637C1008.42 364.637 1019.85 351.99 1019.85 343.423C1019.85 337.108 1014.74 332 1008.42 332ZM1008.42 347.503C1007.34 347.503 1006.3 347.073 1005.54 346.308C1004.77 345.543 1004.34 344.505 1004.34 343.423C1004.34 342.341 1004.77 341.303 1005.54 340.538C1006.3 339.773 1007.34 339.343 1008.42 339.343C1009.51 339.343 1010.54 339.773 1011.31 340.538C1012.07 341.303 1012.5 342.341 1012.5 343.423C1012.5 344.505 1012.07 345.543 1011.31 346.308C1010.54 347.073 1009.51 347.503 1008.42 347.503Z"
+                     fill="#ED624F" class="marker marker3" data-continent="North American" />
+                  <path
+                     d="M877.423 163C871.108 163 866 168.108 866 174.423C866 182.99 877.423 195.637 877.423 195.637C877.423 195.637 888.846 182.99 888.846 174.423C888.846 168.108 883.738 163 877.423 163ZM877.423 178.503C876.341 178.503 875.303 178.073 874.538 177.308C873.773 176.543 873.343 175.505 873.343 174.423C873.343 173.341 873.773 172.303 874.538 171.538C875.303 170.773 876.341 170.343 877.423 170.343C878.505 170.343 879.543 170.773 880.308 171.538C881.073 172.303 881.503 173.341 881.503 174.423C881.503 175.505 881.073 176.543 880.308 177.308C879.543 178.073 878.505 178.503 877.423 178.503Z"
+                     fill="#ED624F" class="marker marker4" data-continent="North American" />
+                  <path
+                     d="M589.423 37C583.108 37 578 42.1077 578 48.4231C578 56.9904 589.423 69.6373 589.423 69.6373C589.423 69.6373 600.846 56.9904 600.846 48.4231C600.846 42.1077 595.738 37 589.423 37ZM589.423 52.5027C588.341 52.5027 587.303 52.0729 586.538 51.3078C585.773 50.5427 585.343 49.5051 585.343 48.4231C585.343 47.3411 585.773 46.3034 586.538 45.5383C587.303 44.7732 588.341 44.3434 589.423 44.3434C590.505 44.3434 591.543 44.7732 592.308 45.5383C593.073 46.3034 593.503 47.3411 593.503 48.4231C593.503 49.5051 593.073 50.5427 592.308 51.3078C591.543 52.0729 590.505 52.5027 589.423 52.5027Z"
+                     fill="#ED624F" class="marker marker5" data-continent="North American" />
+                  <path
+                     d="M534.423 495C528.108 495 523 500.108 523 506.423C523 514.99 534.423 527.637 534.423 527.637C534.423 527.637 545.846 514.99 545.846 506.423C545.846 500.108 540.738 495 534.423 495ZM534.423 510.503C533.341 510.503 532.303 510.073 531.538 509.308C530.773 508.543 530.343 507.505 530.343 506.423C530.343 505.341 530.773 504.303 531.538 503.538C532.303 502.773 533.341 502.343 534.423 502.343C535.505 502.343 536.543 502.773 537.308 503.538C538.073 504.303 538.503 505.341 538.503 506.423C538.503 507.505 538.073 508.543 537.308 509.308C536.543 510.073 535.505 510.503 534.423 510.503Z"
+                     fill="#ED624F" class="marker marker6" data-continent="North American" />
+                  <path
+                     d="M820.423 440C814.108 440 809 445.108 809 451.423C809 459.99 820.423 472.637 820.423 472.637C820.423 472.637 831.846 459.99 831.846 451.423C831.846 445.108 826.738 440 820.423 440ZM820.423 455.503C819.341 455.503 818.303 455.073 817.538 454.308C816.773 453.543 816.343 452.505 816.343 451.423C816.343 450.341 816.773 449.303 817.538 448.538C818.303 447.773 819.341 447.343 820.423 447.343C821.505 447.343 822.543 447.773 823.308 448.538C824.073 449.303 824.503 450.341 824.503 451.423C824.503 452.505 824.073 453.543 823.308 454.308C822.543 455.073 821.505 455.503 820.423 455.503Z"
+                     fill="#ED624F" class="marker marker7" data-continent="North American" />
+                  <path
+                     d="M1143.42 137C1137.11 137 1132 142.108 1132 148.423C1132 156.99 1143.42 169.637 1143.42 169.637C1143.42 169.637 1154.85 156.99 1154.85 148.423C1154.85 142.108 1149.74 137 1143.42 137ZM1143.42 152.503C1142.34 152.503 1141.3 152.073 1140.54 151.308C1139.77 150.543 1139.34 149.505 1139.34 148.423C1139.34 147.341 1139.77 146.303 1140.54 145.538C1141.3 144.773 1142.34 144.343 1143.42 144.343C1144.51 144.343 1145.54 144.773 1146.31 145.538C1147.07 146.303 1147.5 147.341 1147.5 148.423C1147.5 149.505 1147.07 150.543 1146.31 151.308C1145.54 152.073 1144.51 152.503 1143.42 152.503Z"
+                     fill="#ED624F" class="marker marker8" data-continent="North American" />
+                  <path
+                     d="M1232.42 512C1226.11 512 1221 517.108 1221 523.423C1221 531.99 1232.42 544.637 1232.42 544.637C1232.42 544.637 1243.85 531.99 1243.85 523.423C1243.85 517.108 1238.74 512 1232.42 512ZM1232.42 527.503C1231.34 527.503 1230.3 527.073 1229.54 526.308C1228.77 525.543 1228.34 524.505 1228.34 523.423C1228.34 522.341 1228.77 521.303 1229.54 520.538C1230.3 519.773 1231.34 519.343 1232.42 519.343C1233.51 519.343 1234.54 519.773 1235.31 520.538C1236.07 521.303 1236.5 522.341 1236.5 523.423C1236.5 524.505 1236.07 525.543 1235.31 526.308C1234.54 527.073 1233.51 527.503 1232.42 527.503Z"
+                     fill="#ED624F" class="marker marker9" data-continent="North American" />
+                  <defs>
+                     <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                        <use xlink:href="#image0_487_9142"
+                           transform="matrix(0.00111539 0 0 0.00220264 -0.000251542 0)" />
+                     </pattern>
+                     <filter id="filter0_d_487_9142" x="0" y="206" width="454" height="207" filterUnits="userSpaceOnUse"
+                        color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                           result="hardAlpha" />
+                        <feOffset dy="4" />
+                        <feGaussianBlur stdDeviation="12.5" />
+                        <feComposite in2="hardAlpha" operator="out" />
+                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.07 0" />
+                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_487_9142" />
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_487_9142" result="shape" />
+                     </filter>
+                     <image id="image0_487_9142" width="897" height="454"
+                        xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA4EAAAHGBAMAAAA4RpMCAAAAElBMVEWpuMipuMipuMipuMipuMipuMh4HUUhAAAABnRSTlPkAC0PjFRBRyxxAAAxCUlEQVR42u2dSVfjSBKAp4riTkr2vYTh3sJwLxu4Iwz//6+Mct/31JJGem+ms7HaoVRYoYj4MiL/B6o77r5v/oDtoHfjf/Vd8/4wfG6aW4cGR13ch577CBX38tRd2GDT3vIavDv/fgs99x80nn8fXm/p4PemvQqtaLtpbA0a/Hg+37z993i6/dixweeN7eS7z5s3+MR9jY+eMHhGg1/vf/tNg7MfD/vL6/fz/en8sIODFzi4f7WdvLs/jedczubB+/OmwTmlDffNsTs8NT0dHLv7PRu0nWQwO+jkkI8afM5BH2xWdE4NNr///ff168/Hf6MDMw5uP+7ef7/9ZYOHX5KfCoO+dvRb3qHfcqMNztCl+bUFhvM+g92xafvD+D950D2RgXIy/L/xgcXnHM2DTYPzaPD58fT+8Pz5+oUGOzw4w8EbHbzD877g4Pnx9Tw+sOOgb8/4Ly+vePCABsPmgS6vwTdxgFW5aXDFGoRG70ht5rElg54PsO/Sj5+Rv9BBJw56dQB6ZGnRQDXCmwZLHsyBsXky6Kzdjd1vcXgyze2//8bBx/Np0+BkBwkZuoEMDuoAu6ooQBho7IAGF3HQ8cELGcBo4oJCk/EvmwanOcb4fdTO+LJjgTwaPA3j4EAH8O7vBxTaj9G6PLBE9K+P4+BTGCz4emxO16zB3XnMQe9HU/kMjecjGpBkGho8wKwavPu711uaQ2OD38LgWxyQrBoavP0H02tLWtH9rx+VVduOGjT454N6hshvGf95yx2YvhkHD7/IX8bBiJng83UDfRtlQPwWDpU4XUKezN9n6B8tm5xB8pdKsU+lwc8XOnrZHy6P6C9wsH8a6Sxo8WBktZd7OAAY2g6U3oYO7sdBc8CDBTWILwRcqQaZ4oSPqOJeIKPf95i/30dqkML6Bg5cv3/+w5nomPjrl7aiLAxkH3HjiQcdhICZVtTlht5h+bcfE5m5hlzIlVlR79Ha/03+l9CPIiWWPvoWXJ0GR3cFBhF/hSDitxBEEEaPn8qR0Y9P5Sse/BUGv72MHkYTVvnjd/9FftMjvZApwv43eiFXpsH29dsQyEuD3QWheXMg74voCaMfI/ovq3z43XCwY2Kn0OAX+vqXy+tVWlGcTMNEvgOc0fNkGnpeMKNnsF5G8y5GDz0Z8yPIxfLBNJ4MvZDh6Ro1KCa0T0DJbPPLQIw+JbP9MQ5cDoycUJ/kbUEuBLpU16jBo0jkgcLoucVTYD0fcLpkh/VmI4o+7CT50+S+BTnXosHdSG/RAL51Hp4vBOw+DwT1IkYv3E3M6CHqZYRXBrsK4f2EXwYH93BgSYfuLmci9iJLm+Y9COWc4cyvQoPPfg2+aRp8q1mDj/iKatcgQebIgh2pzWQWUmf01AKJsD6I0QN54LJuVOz0dxJNuG1nXyxQUoM8v7zjfovFpXjDWZq9tNowzZM52XMlXOww+Z2EawSYx1apBvkC3BYjc+jEY7feyOjhifQvEMQ/pTB6B5ofKLvHydeJDzrhuRcLlNQgjGvZ4AEic/oXGFEjWC8xeph0FmH9SxqjH9xXBKXxS5s0UUgyB/MmSAtb0Xc6uEXIHA5Q2mnMaiFYLzF6+BfK6LWsmp3RfymM/uS8IpRMA1Ds9BpEiwVu/9arwe2oPKsGSTUZQMNGlsfgFzv8C0/FsOTIHcVMOXTJ/QwS+RPSJfEWAHF1QnUaZBgXA9cRrI5eDMS444sd/oUzevQRwOfcE1ifzugdfgOW1pHB9HcTr0Wo7RnEN5QpThwIt5Lo9JHdU/EuXzIZvV+D8M7OcTv16VWgQQaoWdBliL7QX+6YFRUNX7YVdeSrmRUdj9s5bucCi8c3T+anezItJuX0X3FZO38G9ySsEFb8EkZPz2B19BmM3nWB2c49lB96Lll6TKzCPGFFtgZRgM2iZRzO7tiLADH6ARhW3dMzWB19BqN3XeDI6LPzFN+h535LsP6hAg2iJNeYQwPYI2wJdmfJrKaXGT3u/wMZvfAdRw3NRzH6Kf0SKt//Q0a/2eFJXRSweg2i/DIsGsD5ZRj9ISsqJJTlhDaC2DIsz81sT3iXmDS/rmEk3GgZ/NPqNUi4dAcwUWkJxuFoXGH0GGLLsNyM5sMZ/YQ3h8kPfAYlitbNhJnyNChw1nEAPRlIqvmAglWIWumv9fTueFcVJLy5rz8qNsAVYIyeoF6BLXv+27NGuzcNLqPBR3pFtWkQz0BB5h1oqS0hZ+iM3v5lsXX005gqIt9/orpqQJynd2mVsCgB3rNuKQ2SNX+4Bgx5KZLfEveGL8joc36URIj/nqLVjny1Ydzyxp3QCwkmoZbSIF13e88W4LJogpyhMfrO8WXlGH3GQeQHnCjNnC8KoAOP/8NWJwA4WDKrBkk5CmdRgI2I/Iis6YWKq97vaYxvi59LMvrUOHBw9epjh1rHf3llET2ZsPfSyOqEns68X0yDMHXGU0oYFDbUhDRS5QscnBwORElGn+rFYPm+09Q6/lfC6NE86TIF90HyiR2ZeUpdzpbZ/sGZ7T30J9ivrPEu6RPq6P2pkDKMPj0V8xFwnlzHzwYfrLJ/d/69ag22iLOyf/PUQouM3vPF4YTXx+jTDiQk4Dy5jl9agvBIugNcVq1BuKAAFbEfrW0IRp2SCfWxdzCY0Re/JUiI0/gcBjYgt+CJqpJpEM084McV0+6/vAa5LbOcwDPbQ6wVC7aixQN6JNYdAN/wSPgvjITvdCuKZh5g4O/O4fixGk+mTfpoFvnX5cnAX6uh4zxc9wqfuB2uWmfl65zR+5/BGEZf+BlsoJCTJwml1vHfCdHEuxBNkPAJX+Mer04wCPxvsbwoC7DPQigK43fU5+6CBqx8nUf0AemBCEZfWoNIrDtc1Or45UBeH+BvJhUA6hOfFsgX8UURKWe5rQvE8wdY5/IE0TxKpjFGjxNIlF0D2K/ScdWNjdHrsL60TUJCdHejgTU9tBe/VsfP6+i1wn0+2LMu//1arOhermZHeew/uNZsfI3TCJGkuHdixreHa4Icv/NdeGa7+FvFmNDGvs3+RjhHrON3ZLZNg2EtGgQMxPMi8iOgaB5/TvELEMrnEbRxkpsIRl/cizFCJcKJ6DOoX4hQr6//5aB8tBZPRuGscNBphJcWX0OwCwf4L+PLRmC+hqc7nPAWT4mSpvvSQVBvAz9qz6aZWxn9l6HLf6e8eFn9eVUafLsuDVoZ/Zo1yIm8yuiP3B6N8Lkh/2bodQ/MfF1F866C+imsqPZHMk8uH5gL+g2M3tBBQA45pQ4C82oQZ0bGdjwao/9Hkg24pSHOY+9Mve7B3cmWk1nSkzHlnkZPhss/gRxPBmX5ey7wNysU+TOvBikpBzqgJiEBcqXBCw099F73wJyVjmH05aMJQ5oSiQVcfg+kNQIuRq+tTiCLniWBrINAEQ3GMG8S+zYaoO5IqAoQhR6Asdf9CQFqy1eHMHoYWsfWlHmXhTVqgE3F4kHf2nvt64z+oq1OIM35lHb/QgqD3FjH62H8Tx94XYOuwf8iVg690aqWd4VUo+ug3SGVyhel173lq0MYPbTfsVlhbwILZtWkc6h8nEzrWm2NgIPRn7XVCbQl7rOwdyav+aE3/821xmoHJQ+rzmxvR7IV5XWYMV66Ea1wL4CuubuV6uh5l2ajRxhEl1ChRsyFhq0RUOgSk4+TUNZe+zqjp76NOnPpFthrXx3PoFWDnKHGeAicVAt4kx2sat4AsR+teDOI8KIy/ZgLDVsjoBBeJha0ljUCNkbvGbAOApb6c6udlz8SNGisZtdV2Q7Qz7zgAZu0gVR3XIPKbgXjR0Kv+6chUYOPDJYH+Jji6oeAQ5g5URxw9drXGb1bcXTmFzYw3HzxRwReer8VNT7RJ0NCGy3H44leFDAZTMiJW9F/ihWFSxOFHUMSrWhMPLgTTFjI+cLMifEEjl77d2Yrqm/2FmNFP8TQG1h9m82TuRpPZufujUWejd8ioCY+PUwcaj41Kajv4GLgs7j0l/6UpP3oDc8ghuVeRh9kQQ299r2BBr4FJzWaMPfa9zF6vcu/LZoQView9QIf6BlkknuLBvfuanZyZ89AC7Dh38+GcBYK2pHglSpG6DUv7Uev3c3zA4HlPkYflOs0xNWmYF8J5EmALUf05l77Pkbvavdv7QkI0yDoEtA8uWSzBoUeka3cI5JzceTAUEAuoHnCnC+8rJ20qRx4d0qYVWNyAM+zHQfhL6rHJF3CRWf0oU6MkZTvtYzcvu1M8klW7SAm/JyM/sXD6Pmt1geWm9+TlgX05hs0SPu03jiq2VV2/k3zyyQDg9/eyHh+/fpDi85wihtmtuFZ//BH1Legu7halwA4M9vhYaC1Q62cUP9lks8y20rSPZ3RU09G6iDw4UrlnyTJr7cGDVpq159aCYdbkDkn9qyOnuxw3LTkv4KMnsphnZz5fvSuJQB2WB+D3XVSrpEt9S/CygMmzbZYIIrRizNv7I0DxJuvIDdNg42wK7yjXznHq/ZaaEp4xTcK5Zy9iuZpg3QbanUR3mAyaOOsjyde/P3ANkiHnNVSBQ4J7wPeX53egjRGr+3jLtzz0JvfGTX45ek4/xBQzV6LBt/wYoF0DWYwepcGX/0aRHIGkxX1NJrXBhKgJtSeo3n6rYCZEGqYBJslAGoVi9slxyF3GymnE4ZnkYFn5oJd7xMZfaP19NcG0asTIjwZdfCt9uVBhZ93wm6DmNHT1zj3bQD2dgigRpLV59AhOWrZi82fIJmRd5J0v4MDzyJHxbeawJMJvPmv0uoEFk08+TrOd85qdhJEcDSPvhUxeupKA1JQT1w9dDLbmF59Bh2MPuoZNJPyAx/Asw64iL1x99ofv8xcxx/J6JVLsN3zQ+DqBBrRI15sii5PwbvCu8JZKa4lAk9yr3slorcx+iHqEXSQcrJGAHW9eyALDpyd+XCAfbEw+nM4oxfa/Qd0+Tfc/NcHJLmXNOjtOP/tqmZ/jyDVJIem9bpXM9sWRh+1vtAsX85toTw2fJH4eu2PVtRYx+/Pqn24NtHUsmp31pv/Jac0+y2zfWWMvnX3Sv4O2xX+w8hYJLSiUnPOWH6JdMdMl+IWpxnl41770hoBf5foEwCemRdn9B9OrkYG0jOY1HG+E3eFDwPU8qIAiVSLhNUssI/SoP1C2Ef3VJqnUzsA1jr+iRh9QJd/SIGZL9on7QrfSPPwXbX6AHFGr2rQJBDC8jgD47p9WH5XpNd+FKN/FBn9p4vRO9aXCJI//seXt5mf6D8FrOg/vcU9Ml6M0StW1MjoYTwWp0FVvmjCsPxTkV77HkafZ0VNNx8Il/C/zZO5Ak+GrDUN2r/qS2P05mjiXQXUcJFfozTIERh9o3R00OvoEyYnyaewnrryHTsnu9f+NIzet9YZX8KANEhIeVLH+dcHSzirA2reK48mlGlojRa7yx9pkhM0KMXVZI2AujF9iV770zB6RzoFcMkd8mTaIYTR3+8tjD6UVKOsGnYmVUANnSmF1imXkNAdSZQvi+3RMlXC320zt6wRcNyCyRi9KhmlAsl+RUiDfC/V5Mz2g2mFnTLoWe+1hrzPWWYbmjPFvOcktAFdNSDXrgt/QSUdH0JOP30X2RkYvZrZxss48TIFHE34MbGrrB04SLXIpUllPRPISTV8GI5Gsp4GlaRVA8o6Al6lemgof29CJuwq6HfO/JjP6A33gg4oXUKcNYfRi3jTwjkJ4X0HtI5e4JyDh/DGl1tru5lrnBV4OWtQp/a5GX3PCyjOBg0mM/pIDb5dlwbnZPRmDUqWK5TRq7C+AXbLQb8e4Xd1OVFvbPQuC4x+C0rygbB1iYuUH2NJeSKj1y6hi2H0juqz6TyZgSz7A/I2p8J+9O7VhtEF81rtuoXRV+jJnOwazGD0ZkAt7wdPisgPT/KyWuJKm1f8MoGxGpTlYxBvYvSZpPzguwVTMHqjBqdm9KSy3rAg3sjoAZBX3Uca0UbtOO9g9GGk3DnzmRn9YNTg1Iy+w/GYdqvNjJ58xHNLkY/gXu0472D0oflEa6/92Rn9aas+u0ZGT16mUzF6gZqjRYawArQDrFmQpbP8W/j+fwaoxOSTSg5bHX8JujQjowcWTyZ5V/gwRi9R8/H/OrzjOa4zHgukzZ3luZwssGuH9Y85pHwhRg9engzvwTYaE0cxeu0lxuvo3e+3chqU6uj1avblGP2jeAk+yXYripwG2xOdz+i1fModq6N3p1rKWVGpjj7Klq2J0XvWqm1HxZ5MMymj7y34nNTRO3ObRHLUQnuTfFc0sUZGj5dADqjvv2etM34PTsrozfhc25jeGNcRyVEaNMl3xtWTMXpvRG9l9HiZQsf6/jvqDagVNWNiQKo9chi9Wa6QUvLkW6JbUOqkHKjdMfsQQL4go2d1O0Ipv2/NtpnRO6vZAzPbtkVILK3rqWWJ3d3UvGessUPtx915nZltJbkP8/LejkBmTAwCqtl9jN4sVyDVPqsYi+d1ogPMpaBBpNwJ68FEjF4BbMC1N4DcT4Zh4gG8C9XRbQ6jtwjmeBOnTF/LeWfmPcUJGt2LdfRrY/RQC19iRXgA2xY1KNTRuzT4WkqD7wtr8H11jB53+U/UIFSUUDIOPMjcVFBvthx2K0oAtYDvyxx0WxLRihoZfVOc0QdaUWWZgHybKYM/ht0UUYPckzE59pN6MnBQTIPC2sYvnhNaMaMX3/q4/w+aRlg2StQg58UmhyKV0QdFE6mN3s3fTSr72YWgv1oBuZeUd1MzevHieU+BwO73clZthOg0qDQF4cmM3vRlOiPvC2kQieWhPaP2hrh6BYze5mmHNv6TNdjcAJrYMeK6VEZvy6rJjLzU5hFILF4Y/s22b1wLo9eyapZwGLcSiNbgdlTL6GWi82HOg5Rg9BzW64y82AYucG2jQpfGKgne635NjN6W0w/ex0fTIGPBDuCawehFWM/wJiHVpd6DcBN18KJ2tv8EZavZCzF6W24wmG2rGkTV7LbdCpoBOOcR2gBBWPcgM/JITTkaI4yKa8XO9utj9PgS8lcnqBpE1ey2HUN2J5BeR++3otELsx3NSUg8+C32o51upVM6o3esTki1ottRsydDffoPOzIH6XX0qhkVet1L20ZFhA22zej3uNc+CSvKMPqPSRi99RkMXp0ga/Aex9UPNg/B0PE9rI5+p29D3xgYeWzobksCNLjXPhc7GaM/ZzJ6W97/JXh1AtNga64/UY8nfRv6CFIt/hqMgLqQZWlxv0y+9XsQKZ+d0Vv9MGF/gXAN4tbz3iSA0Cc1uo5eWlso19HTzHIhDe5wGMg3YbN0iF2Y0Q92F02G9WHPIMbEXnLDt6FPINWioZPq6NOL5S1cX9n0vinJ6IvV0Tv5mATr/RpktNFPT0f4m1iFTTgnQpdWRj6U0SEvVka7qVt63S/L6B1XTy8hUoNfM2rwzUaqZ9Tg0oy+nAZD1hux5xuawihGb9iow15NfsywpNIc5KYdwdXsx7hBSAeB1tlcoAVaHxZ20eHxYMiaP+bJ8B1k4j2ZM9/H583syfyLXVsooflBzMmQhLqz1/3d+9KejKEXEvNkwjUYsu6Wc/xe2MXJHE14SLXY4t7EyFM1KDXMR2LZwFnEvgyjJ/fc0I+MRRPBGnTsCm9y1NFS8Jxe94CUz1sZeTKa7wRGHxZXZzH6h0KMXk9MiDsGBmgQ5rYi0nAD3BQyp9c9wKU2dkaejOYHgdE7eu2vjdHrqxPwJSQS3u2oLrMdqmuWDsM7KWf2unfSnazAvvHJX2EdveEZ/BWuQSsmtuU7Bk6Q03vdG2qRUxvaq9c3U8f5qB7xHsm9xqfDaXeqFc2ZB/a2HIw8R4P7lF3hl2P0eKFJb2D0E2uwzbCit5Na0V0oKZ+B0SdbURBlRTdf4IoYfcQzmNLrnnnzPY0mdmZGnv4MBvj0gYz+bh5Gb44mQMQtSNVgAqOXmt47GXn6ezC5mj2L0X/n1NGbInoQcQvSNJjK6P2M3JhkCj+y5c9fR9+D4JRmQQ3ucjLbzswyTOtmTCdW/grq6E8gz3VL02Aqo/czciNsiSFMpTvOT19HD4LRXtn3IEa9KYTXxMgFA/36btnf3A+f0+UvWEc/gLfECS+vwfeFNVia0VelQWxJQWYReaNuDA+PnP1BcuQvwOix5PG10fZLaBDS9JKeDEucp+/RU8CTWsSTGVdHLqFBstd8PKNXSbXc676l/cCiM7WZ8oVBQDRRhNHTaGJcobyEBsel7XAdfsJ+9OZe8yROoYF0CqOPj6tXUUf/DRbwRTkoTNiP3szIiQZpViuF0WfJX5DRL6XB7ag5s818jhS6ZKY77FvHFEWb8gxmyl+ujn6xZ7BNZPSWfuHCt/bg8hh/PZnyF2L0mYng5TSoM3JM/tkSgBk0CFZSR39/PVaUGc95rChYgRUFS1rR7ajdk4GL4tIYPXelNW8+Zy7/Bfn0J7JOp0Ndg2aJJuLr6OfSYCqj1+PajEBeoJaB8vGlw31dufxDIqP/zGT0C2uwPKPPmYoun7e4l+QDtDF9D3KyaoUYPVjUk0FFUoUZfc5UdPl6i3vSsxa2PRzAChg9WNiTKc/oQd7VKPLNLe6PGEXB/eg1+ceZGT2+8KU02JxKMXpcl537QtDlw7+aqsDhySQLuyijJz3ikeQqNfh+PRp8rFKDoDuWYPT0y5KNJ5IPaIt7WqBOB4badW0OC9bRZyxKKJSTyfdkyJf9TnZgkPxO8mQGuh/9oK0/HOQ5LN8RaJ/pw+XkRSPq6Bs7qaZJ1rwgQowmUDMuOlDl90pud0JG/xRQR88uYZn3YJGIPu/l16ryiYaIfGicZPmauVqkjn7cl4+mIXK7/GdZ0bQ6eiW3lKlBVT65GUQsvE87Sb6mwUUYPWy2yxcl/Ncto8HtqD+zXYYudXnPoCKfPIN/WJYG57GZWGK9uNj56ZL2yv+72DNYhtH3WT9BVT69NMZ8FfjbUxxMxc7P6LUJZ5WdL6vBElZEuo/CpVHtwE3vPQX9ZRh96MwVb+Iw1GxF+wIalOTzS0PfjeWfgAuQz25FFQWcbxbU4Hb8eEZfYgaCfMEeiWEFfAah/L4pX0cfyOhPsN2+MXzKaEO2BkZfQoOCfMGlE0L7MXgm29i1kbvCl2P042/LksKAklfH6O9DSXUJBYryeyHhx64RlebTrSzDdoWfgNGTYnnSMlPMbOXunbkooy+gwEaUz+7Ojm8eS5rek+1kl6qjP5H+tXfaPnDZ+9cWYPQCXYok1SWeQSi/U8mRsIEzB09AJlDiGoFkuhTe5Z/tGK2mJHL3kM7zRTM457hrTwkFtqJ89e5wnovE9nRQvgrbzeiFdzacufwW/8zcx33T4AyMfsUazLGihcIhQT6/LMHKc1PaqFb0OFsdPVlapW4roHQQWEKDOZ7MUESBoifDgRH5brbtIab2ve7JzFRHj/ZCJJ6M5HCJHQQW0WAqo++zE9qmaIKrlXz3Pd17ClH7p5LRRPBaZ/StZIkxiiaEmbd5zf2LZNX2ORF9qbxSg+Xj+F2G9c1JzUFYVv3nM3rvzOl6ATyAMT7pjLeoBrPq6EtpcI/F4mSaDOv3SpuPJevooapQqQ8a0Dxb9jZFW2b7R2e20TOYTpfKPYM4A6PINz7jKBV0t0AdPbX44jKBB9wRaFENNjmEt9h7kGz6rQgxvmAQ2F2ijp46L5zRE8nd0lY0WYM9KKhBk3zHrWkvdIf6PA0eUjSInHixE8KyGmyTrWgHClpRk3yHeWp+CzvUz21F4T+kbiSbJ7N5MrlfkcToC07BLN9npffzRRNwIMkmkruVaDAtoi+nQYt8nwab3Ig+ro5ekk0k9yvRoFoCE8LoC1oRe1bPe9VzZNXoQJYMspNpRTW4j85snwpq0JpZ9wjZzdshVpZsgPWLejLxdKmgBu10y/MMckbfT8/oO1kyyIZKhX3RSMJbUH+tj7Pi02TOSv8ya6970Yd6X5cvumnwCjRIKHRgEXnRcMhfxw9ENA8ouZ+V0cvLmcregjIaHOvYI3rNl1Rg418j0AtoHu0KhJyc2Xvdy57M2jQI69jDGX3RZ9C/RgCQFb9IPrxYuAAXzMroiWQhmlibBscd6ofwXvMFL39fqjPf5Ix+zVk1eODyksCsWsHL33kqb9bR617Lqq1Qg9tRc2abPoMeuoRPLFQuQcUW7BL9hppDT1cBunINwixkEJGnxc9ljpK99qGrMWUV9tqt6HgHQdBSimbNGgQTdkLg3le/Sg2ObXeA0YoZEsqrtaIjO5/BihZarb55Mpsno7n1b3TpreBT6wl4iMbLmBFnVzBvNGFg9Ggl7vTRRMEVQiU1iLB7o8W1+sU2hcrnczvzGRg9/GHNENE/r1ODpPJEzWqZnrZSjD6wO6aljt/I6AFuFglAcUbPL/t+rVaUZY0d/VhpGrwMo8/rUGti9L/It457rxWvo2fHv5VqUCA3vjLPYoy+y6njBya6RL4VMauydEmY/nqzaqgK2kJYpeMhu14HPfWZ/co7oBNegHZTx9y4aKd0NuGmeIp702ARDd5fhQahFQOaCTF5PUWkGWxZbKN5ndEbr69EHX1x4zmFBlEGRnuNG04sEg9q/kRCHb9l1yClYeu+QB19eQdmCg0+kR3qZW/edGIpaVldwXr0HQqjxypTo5bsaGKCIGKSrNoONXEX49oJk0lSXJ1Yx29g9OOLCg5kWbkRPWzJ/12DBmFKCaXXWG5pQg1Kua00Rm/aQRI0MHWm+F+5WTVWdLZ2DW5HzZltmm+BPzeOVrTPMd0hnkxGiru1MZ64Ov47ewWoJC6PLoGansFPXClu5dJyP/qMTukldoVHbcptndIlaXmMHrDi61qsqKNYHv2FlriPGmzTYvtGJ+UpjB7nsS119J2iQWDRIPo1+crnx5nXpEHBhAyaFYVhGEn0os7XaV7vawkrij0MWx39SbGiwGJF+8ZlRfnMN09mO+bToInR76E3z37WDfXmEzHTTvHpE1f84gsxr/jVBAI9miBelSmagBOuV4MmRt+Qju9k0jSiTkxx75W4OnHVPb4Q86p7TSDQI3o6GUNEDydcrwYNWTWaW+Ln0BxWYrbpkp1Vk7vfq5Uv5jSeklVTr4Vn1eCfD/Vq0JDZpvldOTBMf8O3t9mZbSrfXH1mTaWLmW3y6zRktklsXKsGDXSJMhbpHPRZInUxMp7IXvus+72hAtQwK50usWvR6FLGzFbhi0qcEyUxaadyNTvN9vSOfQaL7CmOvspchW1IxGqEV/hIlgyNaNlS602DU2vw/so0CPzl83wzdnR+9Nqn8SuzreihIQZe3zHEPCnxHDlH5O+DcqxLgztv+Tzpk7onrf5i+6SW8WRQ0GfyZIzNa2VPRrIciidjmsy/yp5BkzcvRxxsM3bsqcc+g0WiCRQOGKMJYzJWiibUj6RowhRiVZdVM5Hqgj+RIhE9zig0akRvMyxiRK99JEvWrpe0uK9Jg3odfVENFsmq4azeTs2q2W6VmFVTP1Ika89v0Za4W2Z7y2yHHY2pjr7UM1iELmGfYyfRJbtLJdIl5SNU6bo721cnNMW2KZpTg+00ne2JJ1OA0ZNu6o3E6O22TiS86kdweo2jar4t2hp+RitKQHjxfgCFGP0L0kUjMnrnT9K0AEPUsL2Vf2WrLCTr8gebkLI9OQoxepyDlqyo8/dIrKjtoiTJg2pF69TgdlTtyUivcWn/qALPYKFoArewEOro3c8giSYG20VJkq/oGWzVPdzy36+XQhE9rgwQ6uidv0Qa0XeWi5IlK7egdiva0qxWEY/MXX/i38GyE3NoPQjcx5GVwPS2i7LX/EzQl3NmDe5clfXx33ZTJrONEtoDCNxLlZWhneyejKXurinfG3f2Z7DoBsqWOsw2btDTKwrdz5jRJetFWWtfJ+hPvYAvSoqfpd9mWlHy/rUI4RWKr8MOTHht04Pr2az158V7xG8a3DSYdEh2BO3YAdJ6kwiMvonYt0Nh9OpqLJ8pVbvWq1aUn6O/LaCcpn4NSvkM7ED8TUl6twU9GSrfvMhQOrAnY8/JoHMsHhv0bT766jUokWrsxO+PKSFi4v5V5v3oiWn2u/s4mrCGOEhrtn5kUM5T7c+gRKrJOvxvuit77GZupSJ6KJ81xPMJRRG97eVMHjtDBwG8FuA0yU2dVYMSqYbdIXcnskP82CMoNuFWKquGSmAoo/cJRVk120+KaMjQQQB9tL8CDW5H/RrEsP7ubNvJOCqkCKdL/0K6NIfIx6Wgg8uTEQb0mMKBWUqDtHxd3k2cM/Kot2oOo78XO6WHy8fl2GZz39Caa7H4Gv9XV/QMAkeveS8jd2owv9f9S8BKEHiObSUGU5z6OWnu3wysg0DNGvRYsY9prOhbmBX1B6awWdA/rxVVXBZim3e/QNn9azdPZvNkUo+PZxpEGHauGiK+yBFN3KbsnBX2gHzpqw2JWXeCeHwJ1/EM4kAeRdQHrY495kWRH9FT+fuDoSGe7fIV/i4mLFzJgHuplUD9VtS+g2PElwQzegXNH4wbR4b6/I0tD3ixNPfnacRriujtu6hGfEluZvs/SX7o42+7xsbW3J8NpggMF9MgZ+RqHXvcl+QzeiY/OIyxXaOtuT8bNNf0DHp2Ew/8lp1IeAHaVj2B8GL5We8EUm2+03CxVH/+cGUaPF+PBpufp0GJkXeNaVuOsC/CjB7QinxAFxXFMPrOhd7DDGvH9r3X5zmJ8Vxcg2/e/eDDIifSjge5EdyfCGb0Z0F+lhXl+97LH/zTeiFdiwZN3nwrbQMfOGscRKAB+Us8o8eDvGcQVdY/aYHGvdaP7HregyIjN20DH+yTms+MYvRQbHaeAiYElH4BbfkOAiuKBxGap+ktw37wwZG9+cwoRg/F5k4IbgeO2/2LEWLxDgLr0eB2VO/JmOmSuJNxloBIupSfccYtLPZCcQTbSVme+dV4MkZG/ugoVo87Ygivs3w+PEdLVh7olyCd93gVGmytjF5qKD+XBj+L3FVSPs+I/KeuwZcJCuqX0WDzO8SKvs1nRUtMaoeXav/hEaJmRWFz/2uxottRtQZ3FkYuRROZ/n0Uoy/0bhDL5/fqzllkcHMVzyALpFVGLof2mQF2BKMvpEGxfL5Rd697nmgbuyU0aGPkT1JW7Yg2hs9wDcMZfTkPm3fhbAXJ8jkA1fz0NWtQq/4yZra1NqzxQkIZfbGZCcXyO1tvXJiAvy247HAJDdoYub5dcQEhIYy+2MyEYnl7f2pgolB1adBCWCXCK2winhbZBxPekjPDbJkoh0nW68+R5CvQ4HlhDZ43DSY7bSojf9IGsjlNt6Kdj9EXf0EwC8nbkuhLALBkvDqgRg3ehXoydDCVJ3N3/l12ZmKve94aCA20qyNdFU81atDMyBVGzwddCj4PZfSFZyb0umeSARooARWU3HYFworlInofo+cD0pAuQUgAoy/944Tr/QfxEqA6UZlBh/+iJDWCevKtN6vmYPRk8Bum195c5et2IUFZtdI/Tlh8cxIvASoO9Qvo8MzVWxDSF3N1GtyOurNqzgpQiS4JLg1syxz5zmoC6ugnaC/xx1Ripve6b8y1p+1tBRp01bGrm75b9xcPiVkC6ui7SabXGa+lV/7C2ba4E8ClFg0GMfpcah+2W0Hpw/CtWm8Edi+kHgyfsc0garOi37GBYdiOIaUPgxW1xp1yH5TohiybJ7N5Mqk/0jBGL0cTH6gNV5TZC9s5a4KMRcAePQ0OK6QOAklhxTJ19GGMXono0SAq9nVG9Ej+NPuRtSSQd59D7oXQQSAptF8mqxbK6GlWjW7cGEnt/Yy+n2R6fHWA5YyDlF7Lu5Y6MtuJ1N6f2T5NND3Hdq7IgeFvFDrz5GtZki4xNM8HRwusT6P2AYx+wuk5QDxHTW10yes6fNEG8dxARi8OHqKm6Wf0w6TT3FHJfUMIrwp2z2xDd5lkR7RvX0qDEYx+Mg2eNw1mHHGMPhXWi4z+MAejt9tVPGnTh2RWqaX8662jLwHrZ2f0dt8G/sNYUL8nlRSJaxFWXEdvjCZin8G5Gb09vkBBhKmgviX4PrWUfykNJjB6W0M614todkbviN8bW0H9N78pfU1WNJrR25pCuqzo49yM3ppnQ839LfeC35SuHg1uR7F37Irr6DMZPcA7OXt63a9AB29VanAGRg/0vuyGXvcr0OB9lRoE4hKDz/k1yFUpvKxmUyf5ERG/5f6lr1GDs1pRVx294Ln+mmvy5BLIT/Lt77bacPNkFjGjsYw+xV0K24+ePoOnmWfeZQQRK9BgE8voE9IGXkZ/EMvaJ2hEb5/5hS+2r3DVPU5TxDL6BCcvpI5e8I6nT3Oj9FpLLoFLrlODu9jMdryIoDp6ZnJDdu3JfmmJu75xyXVa0WhGHy8iqI5ePHmGSXe8xJ5LrtOTIbXI4YQ3+m7F1NE3cduaJx7mCn408yo1eF5Yg+dNgyWMioXRPxWwonIdvYvRP5VuS2JyYoTK+oO0Z/0xa63Ashqc1JNpwuvoifxJPRnY9lDOsv8dmA91c1upBoVooqOMvisWTYTX0dM1ApPG8T3Akht1qy69c1dFWbV2ujp62mjeyegH+n66D9+9LvEwd9nHt+BlqPU9CJs1TlVHTztChlS+RO0gmWpFjV328S2AO2xXqsHtyPclltZgMF2Kf769dfTsVCx/2qSaBXCl7CG9Lg0GM/r4d6y3jp6diuVPm5Jx7KO+j9zHfWVWNJTRJ3y1p44eLKrBi7I6wfljHNaswcmsqLeOHlRjRfc3myezeTJTPoMhjD7J0XcyevGJy++N5T529oBGnLnhv/QbhuU1GMbok4JtZ0QvvvWw/Oneg7Z985SZm+5Ov34Nuhn9hWbVErN2dkYv3Jr8HSRdXogk2dxu/8m+ieU486eVazAss52WdHZltoWnOn8XV5cFNVwCyWyLM/+wVJ+NSyD/rVyDgYw+9bsNjF7bfR7Ln+oZNK0OaM0D438Ojmt/DwYR3lPqdzsILzutfMt0dgTto85mbnrJ+HZ23zS4abCAFfUy+gw3wsHo2VlY2iSzc6wOQP+mtBKoMh6cqNe93Y1gWZo5PBnzMgGbJ/O3ygpQK6Pvsnrdy668Aut7ecOsCaMJw+qARu8gwG5Blc+gh9FnmmgXoxffg/fFd5VTkwrP5sFOyWXUmFVzM/rMB9zF6AUrCqVNMjtxmYCJ0cszT1kmsGW2az9WTpdy1//t7YxezslM1dTCJPnLWftaoSfjZPS5oYqd0QtZHiRtmtn59lHXWwlUp0FnHX0PptLgXNPzLfTQZ16dBp0rnbKJ3d7G6Oea3k+wottRuSfjrKMv8AxaoomZMoaSZC+jx4PaNOiso89/D9oi+nkm1746I3rzzOvzZKbZj55lzMyMfubpBTJ6NPPqrOhE+9HTw5LZntOTCc5sv6VU2S2uQWcdfaHvNzD6Oaenrg6wM3p0C6p7Bl2Et8//fiPhHeabXxThRTPfNFi1Bk/VadBZR1/Go9cZ/ZwTFCUfvIweDurS4N5ZR19EhMGT6WecYRyjr8+TaY119G0umhcPA6Of9RnUVgc0aim/cgsq0yCMYq2MvtBzrkX0c84wltHXFtG76+gL3UMtpTWrFY1j9BVm1bYj81j6GXR1aS41RZXRzzrDaLpU2TPYunrdl/J3Vbw6r7dt7bKPZm5o91+bFWWkOr+zfaAG5zYzxtUBP4HRF2vPs1NM2MwT3BlXB9xtjH47VvQMGqOJgg+BFE10c09wLzB6ZebXseK3EKkOjuhn12AjxO8BM69Ng62NVBeVwgH5/DMU0bzqw/VAnXlCu/21ZrbLBp2zo3kpHmQJbeX9MXaI1TLbv2rTILD1ui8v5NjMiOaFn4+p5BQdkHLpjL66nIzGOYeorbzDTPXr15Jm5mTZg/1t/EglvK6fWHteuQbfNw3WqEETo/9R0VxUHf2xEk/mR2kwqo7+36qjCY7mf5QGo+ron9anwd3FxOh/lAolRu8592HXrU6DRlL9szQYMfMv00a2W2a79mNRDZpJ9Q9TgEiXvCd/36xLg+b96H+WBqVbEHDyujT4KJLq0mi+ngP+dkHQzE3NBVZnRU8/T4Oo60rQzEcrqsWMmyezeTLZ0QRj9N1PVsRHQEHVx/gMvq1Lg/J+9P1P1qAxWtfOGfv+r0uDcjX5j9Zg2P0ylAOtaRfXblOR937pJXmr2Em5b0tVzV/5YSqzX1SDSi3yT34Gz5B2u32GsWX67vME1qvB902D9WlQBNQ/3D76VyfYGgssm5PhnszpZyuw9ef0d5YS+0U1KADqn/4M+lcn2Bp2LfweFBn9j9bg2RfRP79cVrhW7UNi9D/cinqyata+/yvJbLdbrJcc5S/ryQh06YcrwuPM/bFuZLseRv/DNeghvPa+/0uzCcrot5yo8yXj6Pu/cGabWdHTpibXL92xnHtj9Jsnk/P2fmaMfthU4VDSt6Pv/7IRPWf023vQcUA0/7zG9yDv+L4pyXW4O3UuqcFbltnetOQ63N1yl9QgLyLftOQ63JtJL6lB3i9805L7Pfj5uk5f9LxpsHINboy+/nhwY/SVa3Bj9JVr8Cww+i2ir1GDtwKjHzZV1GhFt6P6ZxDSpbH8ccvJVKpB3vF900OlGmR19JsearWitI5+08PmyWwaXOYZJIx+U0O1ET1h9JsaKtUgYfT9poWKPRmY2d4ewWo1uJXP165Bxug3NVTryWwarDwebFJ3ydiOlWiQMvpNDbVqkDL6TQ21ahAy+rFAfHsP1mtFR0Y/bti+abBaDbLAcNNDrRrcGH3tGtwYffVWtN3q6CvXYLPV0Wdr8P/4joo2vNA6hAAAAABJRU5ErkJggg==" />
+                  </defs>
+               </svg>
+               <!--          
+            <div data-count="38" data-continent="North American"></div>
+            <div class="marker marker2" data-count="13" data-continent="South American"></div>
+            <div class="marker marker3" data-count="47" data-continent="European"></div>
+            <div class="marker marker4" data-count="48" data-continent="Asian"></div>
+            <div class="marker marker5" data-count="55" data-continent="African"></div>
+            <div class="marker marker6" data-count="20" data-continent="Oceanian"></div> -->
+            </div>
+         </div>
+      </div>
+   </section>
+   <!--footer start-->
+   <footer class="w-100 clearfix footer footerBg1" id="footer">
+      <div class="needOurSupport">
+         <div class="container">
+            <div class="needOurSupportInner">
+               <div class="needOurSupportTxt">
+                  <h2 class="fadein">Stay Connected With City Gate Mixed Farm</h2>
+                  <p class="fadein">Get updates on new products, training intakes, farm visit schedules and price offers delivered straight to your inbox.</p>
+               </div>
+               <div class="needOurSupportInput">
+                  <div class="input-group fadein">
+                     <input type="text" class="form-control" placeholder="Email Address">
+                     <a href="javascript:void(0);" class="input-group-text subscriptionBtn"><span>Subscription</span>
+                        <img src="images/icon/icon-right.png" alt="btn-arrow" class="img-fluid"></a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="footerGroup">
+         <div class="footerInner">
+            <div class="container">
+               <div class="footerInnerRow">
+                  <div class="row">
+                     <div class="col-md-12 col-lg-3">
+<div class="footerCol footerCol1">
+                            <div class="footerPara fadein">
+                              <p>City Gate Mixed Farm is an integrated model farm in Amuca, Lira City, Uganda â€” producing poultry, goats, dairy and crops, and training the next generation of Ugandan farmers.</p>
+                           </div>
+                           <hr class="hrLine fadein">
+                           <div class="socialMediaIcon fadein">
+                              <ul class="nav">
+                                 <li class="nav-item">
+                                    <a class="nav-link" href="javascript:void(0);"><i class="fa fa-whatsapp"
+                                          aria-hidden="true"></i></a>
+                                 </li>
+                                 <li class="nav-item">
+                                    <a class="nav-link" href="javascript:void(0);"><i class="fa fa-instagram"
+                                          aria-hidden="true"></i></a>
+                                 </li>
+                                 <li class="nav-item">
+                                    <a class="nav-link" href="javascript:void(0);"><i class="fa fa-facebook"
+                                          aria-hidden="true"></i></a>
+                                 </li>
+                                 <li class="nav-item">
+                                    <a class="nav-link" href="javascript:void(0);"><i class="fa fa-twitter"
+                                          aria-hidden="true"></i></a>
+                                 </li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="footerCol footerCol2">
+                           <div class="footerMenuHeading">
+                              <h4 class="fadein">Useful Links</h4>
+                           </div>
+                           <div class="footerMenuLink">
+                              <ul class="nav flex-column">
+                                 <li class="nav-item fadein">
+                                    <a class="nav-link" href="about-us.html"><i class="fa fa-caret-right"
+                                          aria-hidden="true"></i> About Us</a>
+                                 </li>
+                                 <li class="nav-item fadein">
+                                    <a class="nav-link" href="our-service.html"><i class="fa fa-caret-right"
+                                          aria-hidden="true"></i> Our Services</a>
+                                 </li>
+                                 <li class="nav-item fadein">
+                                    <a class="nav-link" href="gallery-3-column.html"><i class="fa fa-caret-right"
+                                          aria-hidden="true"></i> Gallery</a>
+                                 </li>
+                                 <li class="nav-item fadein">
+                                    <a class="nav-link" href="shop.html"><i class="fa fa-caret-right"
+                                          aria-hidden="true"></i> Shop</a>
+                                 </li>
+                                 <li class="nav-item fadein">
+                                    <a class="nav-link" href="contact-us.html"><i class="fa fa-caret-right"
+                                          aria-hidden="true"></i> Contact Us</a>
+                                 </li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="footerCol footerCol3">
+                           <div class="footerMenuHeading">
+                              <h4 class="fadein">Farm Sectors</h4>
+                           </div>
+                           <div class="footerMenuLink">
+                              <ul class="nav flex-column">
+                                 <li class="nav-item fadein">
+                                    <a class="nav-link" href="poultry-feed.html"><i class="fa fa-caret-right"
+                                          aria-hidden="true"></i> Poultry (Chicken)</a>
+                                 </li>
+                                 <li class="nav-item fadein">
+                                    <a class="nav-link" href="broiler-breeder.html"><i class="fa fa-caret-right"
+                                          aria-hidden="true"></i> Goat Farming</a>
+                                 </li>
+                                 <li class="nav-item fadein">
+                                    <a class="nav-link" href="layer-breeders.html"><i class="fa fa-caret-right"
+                                          aria-hidden="true"></i> Dairy (Cows)</a>
+                                 </li>
+                                 <li class="nav-item fadein">
+                                    <a class="nav-link" href="actigen.html"><i class="fa fa-caret-right"
+                                          aria-hidden="true"></i> Crops</a>
+                                 </li>
+                                 <li class="nav-item fadein">
+                                    <a class="nav-link" href="faq.html"><i class="fa fa-caret-right"
+                                          aria-hidden="true"></i> FAQ</a>
+                                 </li>
+                                 <li class="nav-item fadein">
+                                    <a class="nav-link" href="blog.html"><i class="fa fa-caret-right"
+                                          aria-hidden="true"></i> Blog</a>
+                                 </li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-md-4 col-lg-3">
+                        <div class="footerCol footerCol4">
+                           <div class="footerMenuHeading">
+                              <h4 class="fadein">Contact Information</h4>
+                           </div>
+                           <div class="footerMenuLink footerContactInfo">
+                              <ul class="nav flex-column">
+                                 <li class="nav-item fadein">
+                                    <a class="nav-link" href="javascript:void(0);">
+                                       <div class="contactInfo">
+                                          <div class="contactInfoIcon">
+                                             <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                          </div>
+                                          <div class="contactInfoTxt">
+                                             <h6>Location:</h6>
+                                             <p class="mb-0">Amuca, Lira City, Uganda</p>
+                                          </div>
+                                       </div>
+                                    </a>
+                                 </li>
+                                 <li class="nav-item fadein">
+                                    <a class="nav-link" href="tel:+256123456789">
+                                       <div class="contactInfo">
+                                          <div class="contactInfoIcon">
+                                             <i class="fa fa-phone" aria-hidden="true"></i>
+                                          </div>
+                                          <div class="contactInfoTxt">
+                                             <h6>Call Us Now:</h6>
+                                             <p class="mb-0">+256 123 456 789</p>
+                                          </div>
+                                       </div>
+                                    </a>
+                                 </li>
+                                 <li class="nav-item fadein">
+                                    <a class="nav-link" href="mailto:info@citygatefarms.com">
+                                       <div class="contactInfo">
+                                          <div class="contactInfoIcon">
+                                             <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                                          </div>
+                                          <div class="contactInfoTxt">
+                                             <h6>Email Address:</h6>
+                                             <p class="mb-0">info@citygatefarms.com</p>
+                                          </div>
+                                       </div>
+                                    </a>
+                                 </li>
+                                 <li class="nav-item fadein">
+                                    <a class="nav-link" href="javascript:void(0);">
+                                       <div class="contactInfo">
+                                          <div class="contactInfoIcon">
+                                             <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                          </div>
+                                          <div class="contactInfoTxt">
+                                             <h6>Office Hours:</h6>
+                                             <p class="mb-0">Monâ€“Sat: 07:00 â€“ 18:00</p>
+                                          </div>
+                                       </div>
+                                    </a>
+                                 </li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="footerCopyRight">
+            <div class="container">
+               <div class="footerCopyRightInner">
+                   <p class="mb-0 fadein">Copyright Â© 2026 <a href="index.html">City Gate Mixed Farm</a>. All Rights Reserved.</p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </footer>
+   <!--footer end-->
+
+   <script src="js/jquery-3.6.4.min.js"></script>
+   <script src="js/bootstrap.bundle.min.js"></script>
+   <script src="js/wow.min.js"></script>
+   <script src="js/jquery.magnific-popup.js"></script>
+   <script src="js/jquery-ui.min.js"></script>
+   <script src="js/slick.min.js"></script>
+   <script src="js/owl.carousel.min.js"></script>
+   <script src="js/contact_form.js"></script>
+   <script src="js/grt-youtube-popup.js"></script>
+   <script src="js/jquery.fancybox.min.js"></script>
+   <script src="js/custom.js"></script>
+
+   <script>
+      $(".youtube-link").grtyoutube({
+         autoPlay: true,
+         theme: "dark",
+      });
+
+      $(document).ready(function ($) {
+         $('.owlCarouselProducts').owlCarousel({
+            loop: false,
+            margin: 0,
+            nav: true,
+            dots: false,
+            responsiveClass: true,
+            responsive: {
+               0: {
+                  items: 1,
+               },
+               768: {
+                  items: 2,
+               },
+               992: {
+                  items: 3,
+               },
+               1200: {
+                  items: 3,
+               },
+               1400: {
+                  items: 4,
+                  loop: false
+               }
+            }
+         })
+      });
+
+
+
+      $(document).ready(function ($) {
+         $('.owlCarouselRelatedProducts').owlCarousel({
+            loop: false,
+            margin: 0,
+            nav: true,
+            dots: false,
+            responsiveClass: true,
+            responsive: {
+               0: {
+                  items: 1,
+               },
+               768: {
+                  items: 1,
+               },
+               992: {
+                  items: 2,
+                  loop: false
+               }
+            }
+         })
+      });
+
+      $('.carouselGalleryPoultry').owlCarousel({
+         loop: false,
+         margin: 10,
+         nav: true,
+         dots: true,
+         responsiveClass: true,
+         responsive: {
+            0: {
+               items: 1,
+            },
+            600: {
+               items: 2,
+            },
+            1000: {
+               items: 3,
+            }
+         }
+      })
+      $(".carouselGalleryPoultry .owl-prev").html('<img src="images/icon/icon-black-left.png" alt="left" class="img-fluid">');
+      $(".carouselGalleryPoultry .owl-next").html('<img src="images/icon/icon-black-right.png" alt="right" class="img-fluid">');
+
+      $(document).ready(function ($) {
+         var owl = $(".owl-carousel");
+         owl.owlCarousel();
+         $(".next-btn").click(function () {
+            owl.trigger("next.owl.carousel");
+         });
+         $(".prev-btn").click(function () {
+            owl.trigger("prev.owl.carousel");
+         });
+         $(".prev-btn").addClass("disabled");
+         $(owl).on("translated.owl.carousel", function (event) {
+            if ($(".owl-prev").hasClass("disabled")) {
+               $(".prev-btn").addClass("disabled");
+            } else {
+               $(".prev-btn").removeClass("disabled");
+            }
+            if ($(".owl-next").hasClass("disabled")) {
+               $(".next-btn").addClass("disabled");
+            } else {
+               $(".next-btn").removeClass("disabled");
+            }
+         });
+      });
+
+       // Header scroll behavior is handled by custom.js
+
+      // Maps JS
+      let tooltip = document.querySelector('.tooltip');
+      setInterval(function () {
+         $('.tooltipGroup').removeClass('activeTool');
+         let rand = Math.floor(Math.random() * (9 - 1 + 1)) + 1;
+         let el = document.querySelector('.marker' + rand);
+         let active = document.querySelector('.activeTool');
+         active && active.classList.remove('activeTool');
+         el.classList.add('activeTool');
+         let pos = el.getBoundingClientRect();
+}, 3000)
+
+        // Fade-in on scroll
+        const fadeElements = document.querySelectorAll('.fade-in');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+        
+        fadeElements.forEach(el => observer.observe(el));
+
+    </script>
+</body>
+
+</html>
+
+

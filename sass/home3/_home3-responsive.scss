@@ -1,0 +1,353 @@
+﻿
+@include for-max-1599{
+    .fishFarming .fishFarmingInner .fishFarmingHead .fishFarmingHeadInner h2 {
+        font-size: 42px;
+    }
+    .fishFarming .fishFarmingInner .fishFarmingHead .fishFarmingHeadInner p {
+        font-size: 18px;
+    }
+    .fishFarming .fishFarmingInner .fishFarmingHead .fishFarmingHeadInner {
+        padding: 60px 40px;
+    }
+}
+@include for-max-1400{
+    .fishFarming .fishFarmingInner .fishFarmingHead .fishFarmingHeadInner h2 {
+        font-size: 34px;
+    }
+    .fishFarming .fishFarmingInner .fishFarmingHead .fishFarmingHeadInner p {
+        font-size: 16px;
+    }
+    .fishFarming .fishFarmingInner .fishFarmingHead .fishFarmingHeadInner {
+        padding: 40px 40px;
+    }
+    .headerThree .mainHeader .navbar .container .headerGroup .topHeader .topHeaderInner .language .searchBar {
+        width: 250px;
+    }
+    .howItWorks .howItWorksPoints .howItWorksItem {
+        width: 250px;
+        height: 250px;
+    }
+    .howItWorks .howItWorksPoints .howItWorksItemInner {
+        width: 220px;
+        height: 220px;
+    }
+    .howItWorks .howItWorksPoints .howItWorksItem::before {
+        height: 250px;
+        width: 250px;
+        top: -15px;
+    }
+    .howItWorks .howItWorksPoints .howItWorksItem .howItWorksItemInner .howItWorksCircle .howItWorksContent h5 {
+        font-size: 18px;
+    }
+    .howItWorks .howItWorksPoints .howItWorksItem .howItWorksItemInner .howItWorksCircle .howItWorksContent p {
+        font-size: 12px;
+    }
+    .commTxtSec .nCommHeading h2, .customersTalkingSec .customersTalkingInner .customersTalkInnerSec .customersTalkingHeading h2, .howItWorks .commonHeading h2, .galleryOurFish .commonHeading h2, .testimonials .testimonialsContent .testimonialsHeadingSlider h2 {
+        font-size: 36px;
+    }
+    .testimonials .testimonialsContent .testimonialsHeadingSlider span, .customersTalkingSec .customersTalkingInner .customersTalkInnerSec .customersTalkingHeading h5, .commTxtSec .nCommHeading h5 {
+        font-size: 26px;
+    }
+    .customersTalkingSec .customersTalkingInner .customersTalkInnerSec .customersTalkingCartRow {
+        margin-bottom: 60px;
+    }
+    .customersTalkingSec .customersTalkingVideo {
+        margin-top: -300px;
+    }
+    .galleryOurFish .galleryOurFishInner .galleryOurFishSlider .galleryOurFishItem .galleryOurFishContent p {
+        font-size: 18px;
+    }
+    .mainHeader .navbar .container #collapsibleNavbar .navbar-nav {
+        margin-left: 0;
+        gap: 10px;
+    }
+    .headerThree .mainHeader .navbar .headerGroup .mainMenuContainer .navbarCollapseMenu a.navbar-brand {
+        padding: 30px 20px;
+    }
+    .headerThree .mainHeader .navbar .headerGroup .mainMenuContainer .navbarCollapseMenu #collapsibleNavbar {
+        margin-left: 172px;
+    }
+}
+@include for-max-1199{
+    .fishFarmingCards .fishFarmingCardInner {
+        padding: 10px;
+    }
+    .fishFarmingCards .fishFarmingCardInner a .fishFarmingCardBox {
+        padding: 20px;
+    }
+    .fishFarming .fishFarmingInner .fishFarmingHead .fishFarmingHeadInner {
+        margin: 0 40px;
+    }
+    .commTxtSec .nCommHeading h2, .customersTalkingSec .customersTalkingInner .customersTalkInnerSec .customersTalkingHeading h2, .howItWorks .commonHeading h2, .galleryOurFish .commonHeading h2, .testimonials .testimonialsContent .testimonialsHeadingSlider h2 {
+        font-size: 34px;
+    }
+    .testimonials .testimonialsContent .testimonialsHeadingSlider span, .customersTalkingSec .customersTalkingInner .customersTalkInnerSec .customersTalkingHeading h5, .commTxtSec .nCommHeading h5 {
+        font-size: 22px;
+    }
+    .aboutFishFarming .aboutFishFarmingImg .aboutFishRoted .aboutFishRotedinner span {
+        right: -34px;
+        font-size: 30px;
+        top: 74px;
+    }
+    .aboutFishFarming .aboutFishFarmingImg .rotateDiv .rotateDivInner {
+        height: 200px;
+    }
+    .aboutFishFarming .aboutFishFarmingImg {
+        display: grid;
+        grid-template-columns: 20px 1fr 60px;
+    }
+    .aboutFishFarming .aboutFishFarmingTxt {
+        padding-left: 0px;
+    }
+    .commTxtSec .yearExperience .year h4 {
+        font-size: 70px;
+    }  
+    .commTxtSec .yearExperience .yearExperienceTxt span {
+        font-size: 26px;
+    }
+    .commTxtSec .yearExperience .yearExperienceTxt p {
+        font-size: 18px;
+    }
+    .headerThree .mainHeader .navbar .container .headerGroup .topHeader .topHeaderInner .language .searchBar {
+        display: none;
+    }
+    .headerThree .mainHeader .navbar {
+        padding: 0;
+    }
+    .headerThree .mainHeader .navbar .container .headerGroup .navbarCollapseMenu {
+        justify-content: end;
+        padding: 10px;
+    }
+    .customersTalkingSec .customersTalkingInner .customersTalkInnerSec .customersTalkingCart .customersTalkingHead .customersTalkingHeading span {
+        font-size: 30px;
+    }
+    .fishFarmingCards .fishFarmingCardInner a .fishFarmingCardBox .fishFarmingCardBoxInner .fishFarmingGroup .fishFarmingCardTxt h4 {
+        font-size: 24px;
+    }
+    .fishFarmingCards .fishFarmingCardInner a .fishFarmingCardBox .fishFarmingCardBoxInner .fishFarmingGroup .fishFarmingCardTxt p {
+        font-size: 14px;
+    }
+    .fishFarming .fishFarmingInner .fishFarmingHead .fishFarmingHeadInner {
+        padding: 30px 40px;
+    }
+    .customersTalkingSec .customersTalkingInner .customersTalkInnerSec .customersTalkingCart .customersTalkingHead .customersTalkingHeading h6 {
+        font-size: 18px;
+    }
+    .galleryOurFish .galleryOurFishInner .galleryOurFishSlider .owl-nav {
+        width: 66%;
+    }
+    .testimonials .testimonialsImg .fiveStar {
+        width: 100%;
+        position: static;
+    }
+    .testimonials .testimonialsContent .testimonialsHeadingSlider {
+        width: 80%;
+        margin-bottom: 10px;
+    }
+    .needOurSupportSec .needOurSupportContainer .needOurSupport .needOurSupportInner .needOurSupportTxt, .needOurSupportSec .needOurSupportContainer .needOurSupport .needOurSupportInner .needOurSupportInput {
+        width: 70%;
+        margin: 0 auto;
+    }
+    .needOurSupportSec .needOurSupportContainer .needOurSupport .needOurSupportInner .needOurSupportTxt h2 {
+        font-size: 34px;
+    }
+    .howItWorks .commonHeading {
+        width: 80%;
+    }  
+    .rightMenu {
+        margin: 0 0 0 auto;
+        padding: 10px 0;
+    }  
+    .headerThree .mainHeader .navbar .headerGroup .topHeader .topHeaderInner .language .topRightItem {
+        padding: 0 15px;
+    }
+    .headerThree .mainHeader .navbar .headerGroup .topHeader .topHeaderInner .language .topRightItem:nth-child(2) {
+        border: 0;
+        padding-right: 0;
+    }
+    .headerThree .mainHeader .navbar .headerGroup .mainMenuContainer .navbarCollapseMenu #collapsibleNavbar {
+        padding-left: 20px;
+    }
+    .testimonials .testimonialsContent .testimonialSlide .testimonialsSlider .testimonialsSliderOuter {
+        padding: 30px 30px;
+    }
+    .testimonials .testimonialsContent .testimonialSlide .testimonialsSlider::before {
+        right: 28px;
+    }
+    .latestArticles .latestNewsArticlesInner .latestNewsCard .latestNewsCardInner .latestNewsCardInnerContent .latestNewsTxt h4 a {
+        font-size: 20px;
+    }
+    .latestArticles .latestNewsArticlesInner .commonHeading {
+        width: 70%;
+    }
+    .headerThree .mainHeader .navbar .headerGroup .mainMenuContainer .navbarCollapseMenu #collapsibleNavbar {
+        margin-left: 0;
+    }
+    .headerThree .mainHeader .navbar .headerGroup .mainMenuContainer .navbarCollapseMenu #collapsibleNavbar {
+        height: calc(100vh - 63px);
+        z-index: 999;
+    }
+}
+@include for-max-991{
+    .fishFarming .fishFarmingInner .fishFarmingHead .fishFarmingHeadInner h2 {
+        font-size: 24px;
+    }
+    .fishFarming .fishFarmingInner .fishFarmingHead .fishFarmingHeadInner p {
+        font-size: 14px;
+    }
+    .fishFarming .fishFarmingInner .fishFarmingHead .fishFarmingHeadInner {
+        padding: 6px 20px;
+    }
+    .fishFarming .fishFarmingInner .fishFarmingHead .fishFarmingHeadInner {
+        margin: 0 20px;
+    }
+    .headerThree .mainHeader .navbar .container .headerGroup .topHeader .topHeaderInner .mobile  .flexGroupHeader .iconTxt, .headerThree .mainHeader .navbar .container .headerGroup .topHeader .topHeaderInner .mail .flexGroupHeader .iconTxt  {
+        display: none;
+    }
+    .aboutFishFarming .aboutFishFarmingTxt.aboutFishFarmingTxt3 {
+        margin-top: 40px;
+    }
+    .customersTalkingSec .customersTalkingVideo {
+        margin-top: -190px;
+    }
+    .commTxtSec .nCommHeading h2, .customersTalkingSec .customersTalkingInner .customersTalkInnerSec .customersTalkingHeading h2, .howItWorks .commonHeading h2, .galleryOurFish .commonHeading h2, .testimonials .testimonialsContent .testimonialsHeadingSlider h2 {
+        font-size: 30px;
+    }
+    .testimonialsContent {
+        margin-top: 40px;
+    }
+    .latestArticles .latestNewsArticlesInner .commonHeading {
+        width: 80%;
+        margin-bottom: 40px;
+    }
+    .customersTalkingSec .customersTalkingInner .customersTalkInnerSec .customersTalkingCart .customersTalkingHead .customersTalkingIcon span {
+        width: 60px;
+        height: 60px;
+        padding: 12px;
+    }
+    .customersTalkingSec .customersTalkingInner .customersTalkInnerSec .customersTalkingCart .customersTalkingHead .customersTalkingHeading h6 {
+        font-size: 16px;
+    }
+    .customersTalkingSec .customersTalkingInner .customersTalkInnerSec .customersTalkingCart .customersTalkingHead .customersTalkingHeading span {
+        font-size: 26px;
+    }
+    .galleryOurFish .commonHeading {
+        width: 80%;
+        margin: 0 auto 20px;
+    }
+    .needOurSupportSec .needOurSupportContainer .needOurSupport .needOurSupportInner .needOurSupportTxt, .needOurSupportSec .needOurSupportContainer .needOurSupport .needOurSupportInner .needOurSupportInput {
+        width: 90%;
+    }
+    .headerThree .mainHeader .navbar .headerGroup .mainMenuContainer .navbarCollapseMenu a.navbar-brand {
+        padding: 20px 20px;
+    }
+}
+@include for-max-767{
+    .fishFarming .fishFarmingInner .fishFarmingHead {
+        margin-bottom: 40px;
+    }
+    .fishFarming .fishFarmingInner .fishFarmingHead .fishFarmingHeadInner {
+        margin: 0;
+    }
+    .fishFarmingImg1 {
+        margin-bottom: 10px;
+    }
+    .fishFarmingCards .fishFarmingCardInner a {
+        height: auto;
+        margin-bottom: 10px;
+    }
+    .customersTalkingSec .customersTalkingVideo {
+        margin-top: -150px;
+    }
+    .howItWorks .commonHeading {
+        width: 100%;
+        margin: 0 auto 40px;
+    }
+    .galleryOurFish .galleryOurFishInner .galleryOurFishSlider .galleryOurFishItem .galleryOurFishContent p {
+        font-size: 14px;
+    }
+    .headerThree .mainHeader .navbar .container .logoFullHeight {
+        width: 140px;
+    }
+    .headerThree .mainHeader .navbar .container .headerGroup {
+        width: calc(100% - 200px);
+    }
+    .headerThree .mainHeader .navbar .container .cartIcon {
+        width: 60px;
+    }
+    .headerThree .mainHeader .navbar .container .headerGroup .navbarCollapseMenu {
+        top: 0px;
+    }
+    .headerThree .mainHeader .navbar .container .headerGroup .topHeader {
+        padding: 8px 10px;
+    }
+    .headerThree .mainHeader .navbar .container .headerGroup .navbarCollapseMenu .loginRegisterBtn {
+        margin-right: 0;
+    }
+    .testimonials .testimonialsContent .testimonialSlide .testimonialsSlider .testimonialsSliderOuter::after {
+        background-size: contain;
+    }
+    .fishFarming {
+        padding: 40px 0 80px;
+    }
+    .latestArticles .latestNewsArticlesInner .commonHeading, .galleryOurFish .commonHeading {
+        width: 100%;
+    }
+    .customersTalkingSec .customersTalkingVideo {
+        margin-top: 0;
+    }
+    .customersTalkingSec .customersTalkingVideo .videoBanner {
+        width: 100%;
+    }
+    .customersTalkingSec .customersTalkingInner .customersTalkInnerSec .customersTalkingCartRow {
+        margin-bottom: 20px;
+    }
+}
+@include for-max-575{
+    .aboutFishFarming .aboutFishFarmingTxt .nCommHeading, .testimonials .testimonialsContent .testimonialsHeadingSlider  {
+        width: 100%;
+    }
+    .testimonials .testimonialsContent .testimonialSlide .owl-nav {
+        margin-top: 20px;
+        justify-content: center;
+    }
+    .testimonials .testimonialsContent .testimonialSlide .testimonialsSlider .testimonialsSliderOuter {
+        padding: 40px 20px;
+    }
+    .needOurSupportSec .needOurSupportContainer .needOurSupport .needOurSupportInner .needOurSupportTxt h2 {
+        font-size: 28px;
+    }
+    .latestArticles, .howItWorks, .customersTalkingSec .customersTalkingInner, .fishFarmingCards, .fishFarming {
+        padding: 40px 0;
+    }
+    .needOurSupportSec .needOurSupportContainer, .testimonials {
+        padding-top: 40px;
+    }
+    .aboutFishFarming {
+        padding-bottom: 40px;
+    }
+    .galleryOurFish .galleryOurFishInner .galleryOurFishSlider .galleryOurFishItem .galleryOurFishContent {
+        padding: 0 10px;
+    }
+    .galleryOurFish .galleryOurFishInner .galleryOurFishSlider .galleryOurFishItem .galleryOurFishContent p {
+        padding: 8px;
+    }
+    .galleryOurFish .galleryOurFishInner .galleryOurFishSlider .galleryOurFishItem .galleryOurFishContent p {
+        font-size: 12px;
+    }
+    .aboutFishFarming .aboutFishFarmingImg {
+        grid-template-columns: 20px 1fr 40px;
+    }
+    .aboutFishFarming .aboutFishFarmingImg .aboutFishRoted .aboutFishRotedinner span {
+        font-size: 24px;
+    }
+    .commTxtSec .nCommHeading h2, .customersTalkingSec .customersTalkingInner .customersTalkInnerSec .customersTalkingHeading h2, .howItWorks .commonHeading h2, .galleryOurFish .commonHeading h2, .testimonials .testimonialsContent .testimonialsHeadingSlider h2 {
+        font-size: 26px;
+    }
+    .latestArticles .latestNewsArticlesInner .commonHeading, .galleryOurFish .commonHeading {
+        padding: 0 15px;
+    }
+    .headerThree .mainHeader .navbar .headerGroup .mainMenuContainer .navbarCollapseMenu a.navbar-brand img {
+        width: 90px;
+    }
+}

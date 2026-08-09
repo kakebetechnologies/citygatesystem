@@ -1,0 +1,545 @@
+﻿ 
+   
+  
+
+//-- Manage pig farms the professional way
+//-- About Us
+//-- Pigs Farming video
+
+
+// Manage pig farms the professional way
+.professionalSec{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #fdefed;
+    .professionalSecInner{
+        padding-top: 20px;
+        .professionalGroup{
+            display: flex;
+            align-items: center;
+            height: 100%;
+            .professionalGroupInner{
+                .professionalTxt{
+                    .commonHeading{
+                        h4 {
+                            font-size: 50px;
+                        }
+                        p {
+                            font-size: 20px;
+                            color: #707070;
+                        }
+                    }
+                }
+            }
+        }
+        .professionalBoxGroup{
+            .professionalBox{
+                .professionalBoxRow{
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+                    .professionalBoxCol{
+                        .professionalBoxItem{
+                            padding: 20px;
+                            h2{
+                                font-weight: 700;
+                                font-size: 46px;
+                                color: #ED624F;
+                            }
+                            h5{
+                                font-weight: 700;
+                                font-size: 20px;
+                                color: #333333;
+                            }
+                            p{
+                                font-weight: 400;
+                                font-size: 16px;
+                                color: #707070;
+                            }
+                            &.clrProfessionalBox{
+                                background-color: #ED624F;
+                                h2, h5, p{
+                                    color: #fff;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// About Us
+.aboutUs{
+    padding: 80px 0;
+    .aboutUsGroup{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: space-between;
+        .aboutUsHead{
+            h5{
+                font-weight: 700;
+                font-size: 30px;
+                color: #ED624F;
+            }
+            h2{
+                font-weight: 700;
+                font-size: 46px;
+                color: #333333;
+            }
+        }
+    }
+    .aboutUsTxt{
+        display: flex;
+        gap: 40px;
+        margin-top: 50px;
+        .aboutUsSince{
+            span{
+                font-weight: 700;
+                font-size: 30px;
+                color: #ED624F;
+            }
+            p{
+                font-weight: 700;
+                font-size: 55px;
+                color: #333333;
+            }
+        }
+    }
+}
+
+// The Easiest Pig Farm Management
+
+.farmManagement{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #fdefed;
+    padding: 80px 0;
+    .farmManagementHeadingBox{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+        h2{
+            font-weight: 700;
+            font-size: 46px;
+            color: #333333;
+        }
+        a{
+            color: #ED624F;
+            font-size: 20px;
+            font-weight: 700;
+        }
+    }
+    .farmManagementIconBox {
+        background: #FFFFFF;
+        box-shadow: 2px 0px 26px rgba(0, 0, 0, 0.05);
+        border-radius: 10px;
+        padding: 40px 20px;
+        text-align: center;
+        margin-bottom: 30px;
+        transition: all 0.4s ease;
+        border: 1px solid #fff;
+        transition: all 0.2s ease;
+        &:hover {
+            border: 1px solid #ed624f;
+            background-color: #ed624f;
+            *{
+                color: #fff;
+            }
+            .farmManagementIcon {
+                img{
+                    scale: 1.1;
+                }
+            }
+        }
+        a{
+            color: #000;
+            .farmManagementIcon {
+                background: #FDEFED;
+                border: 1px solid #ED624F;
+                padding: 18px;
+                border-radius: 50px;
+                width: 80px;
+                height: 80px;
+                margin: 0 auto;
+                margin-bottom: 20px;
+                img{
+                    transition: all 0.4s ease;
+                }
+            }
+        }
+    }
+}
+
+//  Pigs Farming video
+.pigsFarmingVideo{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #fdefed;
+    padding: 80px 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 80vh;
+    padding: 20px;
+    .flVideo{
+        display: inline-block;
+        margin-bottom: 50px;
+        .circle {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            box-shadow: 0px 0px 1px 1px rgba(255, 255, 255, 0.4);
+            background-color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    .pigsFarmingVideoTxt{
+        width: 50%;
+        h4{
+            font-weight: 700;
+            font-size: 46px;
+            color: #fff;
+        }
+        p{
+            font-size: 20px;
+            color: #fff;
+        }
+    }
+}
+
+  
+// Customers Talking
+
+.customersTalking{
+    padding: 80px 0;
+    .commonHeading {
+        text-align: center;
+        width: 60%;
+        margin: 0 auto;
+    }
+    .customersTalkingSlider{
+        .customersTalkingOwlSlider {
+            .owl-stage{
+                display: flex;
+                padding: 40px 0;
+                .owl-item { 
+                    .item {
+                        cursor: pointer;
+                        margin: 4% 2%;
+                        transition: margin 0.4s ease;
+                    }
+                    &.center{
+                        .item {
+                            cursor: auto;
+                            margin: 0;
+                            display: flex;
+                            flex: 1 0 auto;
+                            height: 100%;
+                            .customersTalkingItem {
+                                &:before{
+                                    top: 26px;
+                                    height: 150px;
+                                    width: 150px;
+                                    left: 60px;
+                                } 
+                            }
+                        }
+                    }
+                }
+            }
+            .owl-nav{
+                button.owl-next, button.owl-prev{
+                    background-color: #ED624F;
+                    border-radius: 5px;
+                    color: #fff;
+                    width: 50px;
+                    height: 50px;
+                    &.disable{
+                        opacity: 0.6;
+                    }
+                }
+            }
+            .customersTalkingItem {
+                background: #FFFFFF;
+                box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.07);
+                border-radius: 5px;
+                padding: 40px 80px;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+                &:before{
+                    position: absolute;
+                    content: "";
+                    top: 12px;
+                    height: 100px;
+                    width: 100px;
+                    background-image: url(../images/icon/q.png);
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    display: inline-block;
+                    left: 40px;
+                }
+                .customersTalkingSlidePara{
+                    p{
+                        font-weight: 400;
+                        font-size: 16px;
+                        color: #333333;
+                    }
+                }
+                .customersTalkingImg{
+                    margin: 10px 0;
+                    img {
+                        width: 80px;
+                        height: 80px;
+                        background: #ED624F;
+                        border-radius: 50px;
+                        padding: 6px;
+                        margin: 0 auto;
+                    }
+                }
+                .customersTalkingName{
+                    h4{
+                        font-weight: 700;
+                        font-size: 30px;
+                        color: #333333;
+                    }
+                    span{
+                        font-weight: 500;
+                        font-size: 16px;
+                        color: #ED624F;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Pig Facts Topics
+.pigFactsTopics{
+    background-color: #ED624F;
+    .pigFactsTopicsRow{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .pigFactsTopicsCol1{
+        .pigFactsImg{
+            height: 100%;
+            img{
+                height: 100%;
+            }
+        }
+    }
+    .pigFactsTopicsCol2{
+        position: relative;
+        &:before{
+            position: absolute;
+            content: "";
+            top: 0;
+            height: 350px;
+            width: 350px;
+            background-image: url(../images/img33.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            display: inline-block;
+            right: 0;
+            transform: rotate(-90deg);
+        }
+    }
+    .pigFactsTxt{
+        display: flex;
+        align-items: center;
+        height: 100%;
+        padding: 80px;
+        .pigFactsTxtInner{
+            .pigFactsHead{
+                h4 {
+                    font-weight: 700;
+                    font-size: 46px;
+                    color: #fff;
+                }
+                p{
+                    font-size: 20px;
+                    color: #fff;
+                }
+            }
+            .pigFactsList {
+                ul {
+                    li {
+                        a{
+                            display: flex;
+                            align-items: center;
+                            gap: 10px;
+                            color: #fff;
+                            font-weight: 500;
+                            font-size: 20px;
+                            &::before {
+                                display: block;
+                                content: "";
+                                width: 34px;
+                                height: 20px;
+                                background: url(../images/icon/arrow-icon.png) no-repeat;
+                                background-size: contain;
+                                filter: brightness(0) invert(1);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.galleryPigFarm{
+    padding: 80px 0;
+    .commonHeading {
+        text-align: center;
+        width: 60%;
+        margin: 0 auto;
+        margin-bottom: 40px;
+    }
+}
+
+
+.latestNewArticles{
+    background-color: #fdefed;
+    padding: 80px 0 80px;
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #fdefed;
+    .latestNewsArticlesInner{
+        .commonHeading{
+            width: 50%;
+            margin: 0 auto;
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        .latestNewsCard{
+            position: relative;
+            &::after{
+                position: absolute;
+                content: "";
+                top: -68px;
+                right: -67px;
+                height: 150px;
+                width: 150px;
+                background-image: url(../images/img34.png);
+                background-size: contain;
+                background-repeat: no-repeat;
+                display: inline-block;
+            }
+            .latestNewsCardInner{ 
+                padding: 15px;
+                background-color: #fff;
+                border-radius: 4px;
+                position: relative;
+                z-index: 2;
+                .latestNewsCardImg{
+                    position: relative;
+                    a{
+                        display: inline-block;
+                        width: 100%;
+                        margin-bottom: 30px;
+                    }
+                    .latestNewsDate{
+                        position: absolute;
+                        bottom: -25px;
+                        right: 20px;
+                        a {
+                            background-color: #73805a;
+                            display: flex;
+                            flex-direction: column;
+                            width: 60px;
+                            height: 60px;
+                            color: #fff;
+                            align-items: center;
+                            border-radius: 50px;
+                            border: 4px solid #fff;
+                            text-decoration: none;
+                            justify-content: center;
+                            h5{
+                                margin-bottom: 0;
+                                font-weight: 700;
+                                font-size: 16px;
+                            }
+                            span{
+                                font-weight: 400;
+                                font-size: 12px;
+                                display: inline-block;
+                            }
+                        }
+                    }
+                }
+                .latestNewsCardInnerContent{
+                    .latestNewsList {
+                        display: flex;
+                        gap: 20px;
+                        padding: 10px 0 10px;
+                        .latestNewsUser, .latestNewsMessage{
+                            a{
+                                display: flex;
+                                align-items: center;
+                                gap: 10px;
+                                color: #707070;
+                                text-decoration: none;
+                            }
+                        }  
+                    }
+                    .latestNewsTxt{
+                        h4{
+                            min-height: 60px;
+                            a{
+                                color: #000;
+                                text-decoration: none;
+                            }
+                        }
+                    }
+                }
+            }
+            .latestNewsCardBtn{
+                margin-top: 40px;
+                text-align: center;
+            }
+        }
+    }
+}
+
+
+
+// Reflection Effect
+
+.reflectionEffect{
+    overflow: hidden;
+    position: relative;
+}
+.reflectionEffect:before {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 200%;
+    height: 200%;
+    background: rgba(255, 255, 255, 0.5);
+    pointer-events: none;
+    content: "";
+    transition: transform 0.8s;
+    transform: scale3d(2.2, 1.4, 1) rotate3d(0, 0, 1, 45deg) translate3d(0, -100%, 0);
+}
+.reflectionEffect:hover:before {
+    transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg) translate3d(0, 100%, 0);
+}
+

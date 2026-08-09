@@ -1,0 +1,168 @@
+﻿
+@include for-max-1699{
+    .headerFour .mainHeader .navbar #collapsibleNavbar .navbar-nav {
+        gap: 10px;
+    }
+    .headerFourInner .phoneGroup {
+        padding: 10px;
+    }
+    .headerFourContainer {
+        width: calc(100% - 224px);
+    }
+    .headerFourInner .phoneGroup .phoneNumber p {
+        font-size: 16px;
+    }
+}
+@include for-max-1400{
+    .headerFour .mainHeader .navbar .navbar-brand img {
+        width: 150px;
+    }
+    .horseBreeding .horseBreedingInner .topBannerHeading .nCommHeading h2 {
+        font-size: 46px;
+    }
+    .horseBreeding .horseBreedingInner .topBannerHeading .nCommHeading p {
+        font-size: 18px;
+    }
+    .horseBreeding .horseBreedingInner .topBannerHeading .nCommHeading h5 {
+        font-size: 26px;
+    }
+    .industryLeading .industryLeadingInner {
+        width: 70%;
+    }
+    .industryLeading {
+        height: 80vh;
+    }
+}
+
+@include for-max-1199{
+    .horseBreeding .horseBreedingInner .topBannerHeading .nCommHeading h2 {
+        font-size: 40px;
+    }
+    .horseBreeding .horseBreedingInner .topBannerHeading .nCommHeading p {
+        font-size: 18px;
+    }
+    .horseBreeding .horseBreedingInner .topBannerHeading .nCommHeading h5 {
+        font-size: 26px;
+    }
+    .industryLeading {
+        height: 60vh;
+    }
+    .ourServicesTopics.ourServicesTopics .pigFactsTxt {
+        padding: 20px;
+    }
+    .headerFour .mainHeader .navbar div#collapsibleNavbar{
+        height: calc(100vh - 122px);
+    }
+}
+@include for-max-991{
+    .ourServicesTopics .pigFactsTopicsRow {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .aboutFishFarming .aboutFishFarmingTxt .nCommHeading.marBottom {
+        margin-bottom: 20px;
+    }
+    .horseBreeding .horseBreedingInner .horseBreedingImg {
+        padding-left: 0;
+    }
+    .horseBreeding .horseBreedingInner .topBannerHeading {
+        width: 100%;
+        padding: 40px;
+        position: static;
+        transform: unset;
+    }
+    .horseBreeding .horseBreedingInner .topBannerHeading .nCommHeading h2 {
+        font-size: 30px;
+    }
+    .horseBreeding .horseBreedingInner .topBannerHeading .nCommHeading h5 {
+        font-size: 22px;
+    }
+    .horseBreeding .horseBreedingInner .topBannerHeading .nCommHeading p {
+        font-size: 16px;
+        margin-bottom:0;
+    }
+    .aboutFishFarming .aboutFishFarmingTxt .nComPara.marBottom {
+        margin-bottom: 20px;
+    }
+    .horseBreeding {
+        padding: 10px 0 80px 0px;
+    }
+    .aboutFishFarming .aboutFishFarmingTxt {
+        margin-top: 0px;
+    }
+    .aboutHourseImg {
+        margin-bottom: 20px;
+    }
+    .industryLeading .industryLeadingInner {
+        width: 100%;
+    }
+    .industryLeading .industryLeadingInner h2 {
+        font-size: 32px;
+    }
+    .industryLeading {
+        height: 45vh;
+    }
+    .horseBreeding .horseBreedingInner .topBannerHeading {
+        padding: 20px;
+    }
+    .ourServicesTopics.ourServicesTopics .pigFactsTxt .pigFactsTxtInner .pigFactsHead h4 {
+        font-size: 30px;
+    }
+    .ourServicesTopics.ourServicesTopics .pigFactsTxt .pigFactsTxtInner .pigFactsHead p {
+        font-size: 18px;
+    }
+    .ourServicesTopics.ourServicesTopics .pigFactsTxt .pigFactsTxtInner .pigFactsList ul li a {
+        font-size: 16px;
+    }
+    .ourServicesTopics.ourServicesTopics .pigFactsTxt .pigFactsTxtInner .pigFactsList ul li a::before {
+        width: 30px;
+        height: 16px;
+    }
+}
+@include for-max-767{
+    .testimonials .testimonialsImg {
+        margin-top: 40px;
+    }
+    .ourServicesTopics.ourServicesTopics .pigFactsTopicsRow {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .aboutFishFarming, .latestArticles, .horseTestimonials, .mapsSection  {
+        padding: 40px 0;
+    }
+    .headerFourInner .topHeader .topHeaderInner {
+        padding: 10px;
+    }
+}
+@include for-max-575{
+    .industryLeading .industryLeadingInner h2 {
+        font-size: 26px;
+    }
+    .testimonials .testimonialsContent .testimonialSlide .testimonialsSlider .testimonialsSliderOuter .testimonialsSliderInner .testimonialPara p {
+        font-size: 14px;
+    }
+    .testimonials .testimonialsContent .testimonialSlide .testimonialsSlider .testimonialsSliderOuter {
+        padding: 40px 20px;
+    }
+    .latestArticles .latestNewsArticlesInner .latestNewsCard .latestNewsCardBtn {
+        margin-top: 20px;
+    }
+    .horseBreeding {
+        padding: 10px 0 40px 0px;
+    }
+    .testimonialsContent {
+        margin-top: 0;
+    }
+    .horseBreeding .horseBreedingInner .topBannerHeading .nCommHeading h2 {
+        font-size: 26px;
+    }
+}
+@include for-max-375{
+    .commTxtSec .yearExperience .year h4 {
+        font-size: 50px;
+    }
+    .commTxtSec .yearExperience .yearExperienceTxt span {
+        font-size: 22px;
+    }
+    .commTxtSec .yearExperience .yearExperienceTxt p {
+        font-size: 16px;
+    }
+}

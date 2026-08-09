@@ -1,0 +1,211 @@
+﻿
+.aboutFishFarming{
+    padding: 80px 0;
+    .aboutFishFarmingTxt {
+        .nCommHeading{
+            &.marBottom {
+                margin-bottom: 80px;
+            }
+        }
+        .nComPara{
+            &.marBottom {
+                margin-bottom: 80px;
+            }
+        }
+    }
+}
+
+
+
+
+// Pig Facts Topics
+.ourServicesTopics{
+    background-color: #ED624F;
+    &.ourServicesTopics{
+        .pigFactsTopicsRow{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+        .pigFactsTopicsCol1{
+            .pigFactsImg{
+                height: 100%;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+        .pigFactsTopicsCol2{
+            position: relative;
+            &:before{
+                position: absolute;
+                content: "";
+                top: 0;
+                height: 100%;
+                width: 500px;
+                background-image: url(../images/img99.png);
+                background-size: cover;
+                background-repeat: no-repeat;
+                display: inline-block;
+                right: 0;
+                transform: unset;
+            }
+        }
+        .pigFactsTxt{
+            display: flex;
+            align-items: center;
+            height: 100%;
+            padding: 80px;
+            .pigFactsTxtInner{
+                .pigFactsHead{
+                    h4 {
+                        font-weight: 700;
+                        font-size: 46px;
+                        color: #fff;
+                    }
+                    p{
+                        font-size: 20px;
+                        color: #fff;
+                    }
+                }
+                .pigFactsList {
+                    ul {
+                        li {
+                            a{
+                                display: flex;
+                                align-items: center;
+                                gap: 10px;
+                                color: #fff;
+                                font-weight: 500;
+                                font-size: 20px;
+                                &::before {
+                                    display: block;
+                                    content: "";
+                                    width: 34px;
+                                    height: 20px;
+                                    background: url(../images/icon/arrow-icon.png) no-repeat;
+                                    background-size: contain;
+                                    filter: brightness(0) invert(1);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.latestHorseArticles{
+    position: relative;
+    &:before{
+        position: absolute;
+        content: "";
+        top: 0;
+        height: 60%;
+        width: 100%;
+        background-image: url(../images/img100.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: inline-block;
+        right: 0;
+        transform: unset;
+        background-color: #fdefed;
+    }
+    .latestNewsArticlesInner{
+        position: relative;
+    }
+}
+
+.horseTestimonials{
+    padding: 80px 0;
+}
+
+
+.industryLeading{
+    background-image: url(../images/bg-img11.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    .industryLeadingInner {
+        color: #fff;
+        width: 50%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+        height: 100%;
+        justify-content: center;
+        h2{
+            font-size: 46px;
+            font-weight: 700;
+            color: #fff;
+        }
+        p{
+            font-size: 16px;
+            color: #fff;
+        }
+    }
+}
+
+.horseBreeding{
+    padding: 80px 0 80px 0px;
+    position: relative;
+    background-color: #f9f9f9;
+    .horseBreedingInner{
+        .horseBreedingImg {
+            padding-left: 300px;
+        }
+        .topBannerHeading{
+            width: 650px;
+            background-color: rgb(255 255 255 / 60%);
+            padding: 40px;
+            position: absolute;
+            transform: translateY(-50%);
+            top: 50%;
+            .nCommHeading{
+                h5{
+                    color: #ED624F;
+                    font-size: 30px;
+                    font-weight: 700;
+                }
+                h2{
+                    color:#333;
+                    font-size: 55px;
+                    font-weight: 700;
+                }
+                p{
+                    color: #707070;
+                    font-size: 20px;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+}
+
+// circle effect
+
+.circleEffect {
+	position: relative;
+    overflow: hidden;
+}
+.circleEffect::before {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	z-index: 2;
+	display: block;
+	content: '';
+	width: 0;
+	height: 0;
+	background: rgba(255,255,255,.2);
+	border-radius: 100%;
+	transform: translate(-50%, -50%);
+	opacity: 0;
+}
+.circleEffect:hover::before {
+	animation: circle .75s;
+}

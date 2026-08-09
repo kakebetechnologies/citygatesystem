@@ -1,0 +1,177 @@
+﻿ 
+@include for-max-1599{  
+    .pigFactsTopics .pigFactsTxt {
+        padding: 40px;
+    }
+    .pigFactsTopics .pigFactsTxt .pigFactsTxtInner .pigFactsList ul li a {
+        font-size: 15px;
+    }
+    .pigFactsTopics .pigFactsTxt .pigFactsTxtInner .pigFactsList ul li a::before {
+        width: 22px;
+        height: 13px;
+    }
+}
+@include for-max-1399{  
+    .professionalSec .professionalSecInner .professionalBoxGroup .professionalBox .professionalBoxRow .professionalBoxCol .professionalBoxItem {
+        height: 100%;
+    }
+    .farmManagement .farmManagementHeadingBox a {
+        font-size: 18px;
+    }
+    .pigsFarmingVideo .pigsFarmingVideoTxt, .customersTalking .commonHeading {
+        width: 70%;
+    }
+    .latestNewArticles .latestNewsArticlesInner .latestNewsCard::after {
+        top: -30px;
+        right: -30px;
+        height: 100px;
+        width: 100px;
+    }
+    .latestNewArticles .latestNewsArticlesInner .latestNewsCard .latestNewsCardInner .latestNewsCardInnerContent .latestNewsTxt h4 a {
+        font-size: 22px;
+    }
+    .aboutUs .aboutUsTxt .aboutUsSince p {
+        font-size: 40px;
+    }
+    .aboutUs .aboutUsGroup .aboutUsHead h2, .farmManagement .farmManagementHeadingBox h2, .pigsFarmingVideo .pigsFarmingVideoTxt h4, .pigFactsTopics .pigFactsTxt .pigFactsTxtInner .pigFactsHead h4 {
+        font-size: 36px;
+    }
+    .pigsFarmingVideo .pigsFarmingVideoTxt p, .professionalSec .professionalSecInner .professionalGroup .professionalGroupInner .professionalTxt .commonHeading p, .pigFactsTopics .pigFactsTxt .pigFactsTxtInner .pigFactsHead p {
+        font-size: 18px;
+    }
+    .pigsFarmingVideo {
+        height: 70vh;
+    }
+}
+@include for-max-1199{  
+    .aboutUs .aboutUsGroup .aboutUsHead h2, .farmManagement .farmManagementHeadingBox h2, .pigsFarmingVideo .pigsFarmingVideoTxt h4, .pigFactsTopics .pigFactsTxt .pigFactsTxtInner .pigFactsHead h4 {
+        font-size: 32px;
+    }
+    .professionalSec .professionalSecInner .professionalBoxGroup .professionalBox .professionalBoxRow .professionalBoxCol .professionalBoxItem h5 {
+        font-size: 18px;
+    }
+    .professionalSec .professionalSecInner .professionalBoxGroup .professionalBox .professionalBoxRow .professionalBoxCol .professionalBoxItem h2 {
+        font-size: 38px;
+    }
+    .professionalSec .professionalSecInner .professionalBoxGroup .professionalBox .professionalBoxRow .professionalBoxCol .professionalBoxItem p {
+        font-size: 14px;
+    }
+    .professionalSec .professionalSecInner .professionalGroup .professionalGroupInner .professionalTxt .commonHeading h4 {
+        font-size: 40px;
+    }
+    .farmManagementIconBox .farmManagementPara h4 {
+        font-size: 18px;
+    }
+    .latestNewArticles .latestNewsArticlesInner .commonHeading {
+        width: 70%;
+    }
+    .latestNewArticles .latestNewsArticlesInner .latestNewsCard .latestNewsCardInner .latestNewsCardInnerContent .latestNewsTxt h4 a {
+        font-size: 20px;
+    }
+    .latestNewArticles .latestNewsArticlesInner .latestNewsCard .latestNewsCardInner .latestNewsCardInnerContent .latestNewsList {
+        padding: 30px 0 10px;
+    }
+    .btn-1 span {
+        font-size: 14px;
+        img {
+            width: 18px;
+        }        
+    }   
+    .latestNewArticles .latestNewsArticlesInner .latestNewsCard::after {
+        top: -14px;
+        right: -14px;
+    } 
+    .headerTwo .mainHeader .navbar .headerGroup .mainMenuContainer .navbarCollapseMenu #collapsibleNavbar {
+        padding-top: 80px;
+    }
+    .headerTwo .mainHeader .navbar div#collapsibleNavbar {
+        height: calc(100vh - 82px);
+    }
+}
+@include for-max-991{  
+    .professionalGroupInner {
+        margin-bottom: 40px;
+    }
+    .pigFactsTopics .pigFactsTopicsRow {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .galleryPigFarm .commonHeading, .pigsFarmingVideo .pigsFarmingVideoTxt, .customersTalking .commonHeading {
+        width: 80%;
+    } 
+    .aboutUs .aboutUsGroup .aboutUsHead h5 {
+        font-size: 26px;
+    }
+    .pigsFarmingVideo {
+        height: 46vh;
+    }
+    .latestNewArticles .latestNewsArticlesInner .latestNewsCard .latestNewsCardInner .latestNewsCardInnerContent .latestNewsTxt h4 {
+        min-height: auto;
+    }
+}
+@include for-max-767{ 
+    .latestNewArticles .latestNewsArticlesInner .commonHeading, .galleryPigFarm .commonHeading, .pigsFarmingVideo .pigsFarmingVideoTxt, .customersTalking .commonHeading {
+        width: 100%;
+    }
+    .farmManagement .farmManagementHeadingBox {
+        padding: 0px 0 40px;
+    }
+    .aboutUs .aboutUsGroup .aboutUsHead {
+        margin-bottom: 20px;
+    }
+    .aboutUs .aboutUsGroup .aboutImg1 {
+        margin-bottom: 40px;
+    }
+    .customersTalking, .farmManagement, .aboutUs, .galleryPigFarm, .latestNewArticles {
+        padding: 40px 0;
+    }
+    .customersTalking .customersTalkingSlider .customersTalkingOwlSlider .customersTalkingItem {
+        padding: 40px;
+    }
+    .customersTalking .customersTalkingSlider .customersTalkingOwlSlider .owl-stage .owl-item.center .item .customersTalkingItem:before {
+        left: 40px;
+    }
+}
+@include for-max-575{ 
+    .professionalSec .professionalSecInner .professionalBoxGroup .professionalBox .professionalBoxRow {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .professionalSec .professionalSecInner .professionalGroup .professionalGroupInner .professionalTxt .commonHeading h4 {
+        font-size: 30px;
+    }
+    .pigsFarmingVideo .pigsFarmingVideoTxt p, .professionalSec .professionalSecInner .professionalGroup .professionalGroupInner .professionalTxt .commonHeading p, .pigFactsTopics .pigFactsTxt .pigFactsTxtInner .pigFactsHead p {
+        font-size: 16px;
+    }
+    .aboutUs .aboutUsGroup .aboutUsHead h2, .farmManagement .farmManagementHeadingBox h2, .pigsFarmingVideo .pigsFarmingVideoTxt h4, .pigFactsTopics .pigFactsTxt .pigFactsTxtInner .pigFactsHead h4 {
+        font-size: 25px;
+    }
+    .aboutUs .aboutUsGroup .aboutUsHead h5 {
+        font-size: 20px;
+    }
+    .aboutUs .aboutUsTxt .aboutUsSince p {
+        font-size: 30px;
+    }
+    .aboutUs .aboutUsTxt .aboutUsSince span {
+        font-size: 20px;
+    }
+    .customersTalking .customersTalkingSlider .customersTalkingOwlSlider .customersTalkingItem {
+        padding: 20px;
+    }
+    .customersTalking .customersTalkingSlider .customersTalkingOwlSlider .owl-stage .owl-item.center .item .customersTalkingItem:before {
+        height: 100px;
+        width: 100px;
+        left: 20px;
+    }
+    .customersTalking .customersTalkingSlider .customersTalkingOwlSlider .owl-stage {
+        padding: 20px 0;
+    }
+    .pigFactsTopics .pigFactsTxt {
+        padding: 40px 20px;
+    }
+    .latestNewArticles .latestNewsArticlesInner .latestNewsCard::after {
+        top: -12px;
+        right: -12px;
+    }
+    .latestNewArticles .latestNewsArticlesInner .commonHeading {
+        margin-bottom: 40px;
+    }
+}

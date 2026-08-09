@@ -1,0 +1,891 @@
+
+// responsive mixin
+@mixin for-min-1200 {
+	@media (min-width: 1200px) {
+		@content;
+	}
+}
+@mixin for-min-1600 {
+	@media (min-width: 1600px) {
+		@content;
+	}
+}
+@mixin for-min-1800 {
+	@media (min-width: 1800px) {
+		@content;
+	}
+}
+@mixin for-max-1799 {
+	@media (max-width: 1799px) {
+		@content;
+	}
+}
+@mixin for-max-1699 {
+	@media (max-width: 1699px) {
+		@content;
+	}
+}
+@mixin for-max-1599 {
+	@media (max-width: 1599px) {
+		@content;
+	}
+}
+@mixin for-max-1440 {
+	@media (max-width: 1440px) {
+		@content;
+	}
+}
+@mixin for-max-1400 {
+	@media (max-width: 1400px) {
+		@content;
+	}
+}
+@mixin for-max-1399 {
+	@media (max-width: 1399px) {
+		@content;
+	}
+}
+@mixin for-max-1199{
+	@media (max-width: 1199px) {
+		@content;
+	}
+}
+@mixin for-max-991{
+	@media (max-width: 991px) {
+		@content;
+	}
+}
+@mixin for-max-767{
+	@media (max-width: 767px) {
+		@content;
+	}
+}
+@mixin for-max-575{
+	@media (max-width: 575px) {
+		@content;
+	}
+}
+@mixin for-max-375{
+	@media (max-width: 375px) {
+		@content;
+	}
+}
+@mixin for-max-350{
+	@media (max-width: 350px) {
+		@content;
+	}
+}
+
+// import header responsive
+@import 'header/header-responsive';
+
+// import footer responsive
+@import 'footer/footer-responsive';
+
+// import inner responsive
+@import 'inner/inner-responsive';
+
+// import Home 4 Responsive responsive
+@import 'home5/home5-responsive';
+
+// import Home 2 Responsive responsive
+@import 'home2/home2-responsive';
+
+// import Home 3 Responsive responsive
+@import 'home3/home3-responsive';
+
+// import Home 4 Responsive responsive
+@import 'home4/home4-responsive';
+
+
+
+
+// responsive include
+@media (min-width: 1400px){
+    .container.shoCustomContainer {
+        max-width: 1140px;
+    }
+}
+@include for-min-1600{
+    .container{
+        max-width: 1520px;
+    }
+	.container.shoCustomContainer {
+        max-width: 1140px;
+    }
+}
+@include for-min-1800{
+    .container{
+        max-width: 1620px;
+    }
+	.breedersBox {
+		height: 800px;
+		padding: 0 150px;
+	}
+	.container.shoCustomContainer {
+        max-width: 1140px;
+    }
+}
+
+@include for-max-1799{
+    .latestNewsArticles .latestNewsArticlesInner .latestNewsCard::before {
+		top: -232px;
+        left: -70px;
+    }
+    .latestNewsArticles .latestNewsArticlesInner .latestNewsCard::after {
+		top: -232px;
+        right: -67px;
+    }
+	.mapsSection .mapsSectionInner .mapOverlay .tooltipGroup.tooltip1 {
+		left:4%;
+	}
+	.mapsSection .mapsSectionInner .mapOverlay .tooltipGroup.tooltip2 {
+		left: 21%;
+	}
+	.mapsSection .mapsSectionInner .mapOverlay .tooltipGroup.tooltip3 {
+		left: 40%;
+	}
+	.mapsSection .mapsSectionInner .mapOverlay .tooltipGroup.tooltip4 {
+		right: 15%;
+	}
+	.mapsSection .mapsSectionInner .mapOverlay .tooltipGroup.tooltip5 {
+		left: 31%;
+	}
+	.mapsSection .mapsSectionInner .mapOverlay .tooltipGroup.tooltip6 {
+		right: 24%;
+	}
+	.mapsSection .mapsSectionInner .mapOverlay .tooltipGroup.tooltip7 {
+		left: 17%;
+	}
+	.mapsSection .mapsSectionInner .mapOverlay .tooltipGroup.tooltip8 {
+		left: 36%;
+	}
+	.mapsSection .mapsSectionInner .mapOverlay .tooltipGroup.tooltip9 {
+		right: 9%;
+	}
+}
+@include for-max-1699{
+	.mapsSection .mapsSectionInner .mapOverlay .tooltipGroup.tooltip1 {
+		left: 4%;
+	}
+	.mapsSection .mapsSectionInner .mapOverlay .tooltipGroup.tooltip2 {
+		left: 21%;
+    	top: 12%;
+	}
+	.mapsSection .mapsSectionInner .mapOverlay .tooltipGroup.tooltip3 {
+		left: 40%;
+	}
+	.mapsSection .mapsSectionInner .mapOverlay .tooltipGroup.tooltip4 {
+		right: 4%;
+	}
+	.mapsSection .mapsSectionInner .mapOverlay .tooltipGroup.tooltip5 {
+		left: 31%;
+	}
+	.mapsSection .mapsSectionInner .mapOverlay .tooltipGroup.tooltip6 {
+		right: 24%;
+	}
+	.mapsSection .mapsSectionInner .mapOverlay .tooltipGroup.tooltip7 {
+		left: 17%;
+	}
+	.mapsSection .mapsSectionInner .mapOverlay .tooltipGroup.tooltip8 {
+		left: 36%;
+	}
+	.mapsSection .mapsSectionInner .mapOverlay .tooltipGroup.tooltip9 {
+		right: 9%;
+	}
+}
+@include for-max-1599{
+	.mapsSection .mapsSectionInner .mapOverlay .tooltipGroup.tooltip1 {
+		left: 0%;
+		top: 36%;
+	}
+	.mapsSection .mapsSectionInner .mapOverlay .tooltipGroup.tooltip2 {
+		left: 17%;
+		top: 16%;
+	}
+	.mapsSection .mapsSectionInner .mapOverlay .tooltipGroup.tooltip3 {
+		left: 37%;
+		top: 33%;
+	}
+	.mapsSection .mapsSectionInner .mapOverlay .tooltipGroup.tooltip4 {
+		right: 13%;
+		top: 30%;
+	}	
+	.mapsSection .mapsSectionInner .mapOverlay .tooltipGroup.tooltip5 {
+		left: 27%;
+		top: 57%;
+	}
+	.mapsSection .mapsSectionInner .mapOverlay .tooltipGroup.tooltip6 {
+		right: 23%;
+	}
+	.mapsSection .mapsSectionInner .mapOverlay .tooltipGroup.tooltip8 {
+		left: 34%;
+		top: 71%;
+	}
+	.mapsSection .mapsSectionInner .mapOverlay .tooltipGroup.tooltip7 {
+		left: 14%;
+		bottom: 5%;
+	}
+	.mapsSection .mapsSectionInner .mapOverlay .tooltipGroup.tooltip9 {
+		right: 7%;
+		top: 80%;
+	}
+}
+@include for-max-1400{
+	.latestNewsArticles .latestNewsArticlesInner .latestNewsCard::before {
+		left: -30px;
+		height: 300px;
+   		width: 300px;
+	}
+	.latestNewsArticles .latestNewsArticlesInner .latestNewsCard::after {
+		right: -30px;
+		height: 300px;
+   		width: 300px;
+	}
+	.commonHeading h4 {
+		font-size: 36px;
+	}
+	.poultryPerformanceBanner {
+		height: 70vh;
+	}
+	.poultryPerformanceBanner .poultryPerformanceHeading h1 {
+		font-size: 45px;
+	}
+	.qualityFeeds .yearsExperience a .yearsExperienceTxt p {
+		font-size: 24px;
+	}
+	.diverBusinessesGrid .diverBusinessesGridCol .diverBusinessesContent {
+		background-color: #fdefed;
+		padding: 50px;
+		min-height: 600px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	.diverBusinessesGrid .diverBusinessesGridCol .diverBusinessesContent .diverBusinessesList ul li a {
+		font-size: 24px;
+	}
+	.testimonialsBox .testimonialsRow .testimonialsCol.testimonialsCol1 {
+		padding: 100px 30px 100px 40px;
+	}
+	.testimonialsBox .testimonialsRow .testimonialsCol h2 {
+		font-size: 42px;
+	}
+	.testimonialsBox .testimonialsRow .testimonialsCol .testimonialSlider .testimonialSliderItem p {
+		font-size: 18px;
+	}
+	.testimonialsBox .testimonialsRow .testimonialsCol .testimonialSlider .testimonialSliderItem h4 {
+		font-size: 26px;
+	}
+	.needOurSupport .needOurSupportInner .needOurSupportTxt h2 {
+		font-size: 36px;
+	}
+	.latestNewsArticles .latestNewsArticlesInner .latestNewsCard .latestNewsCardInner .latestNewsCardInnerContent .latestNewsTxt h4 a {
+		font-size: 22px;
+	}
+	.mainHeader .navbar #collapsibleNavbar .navbar-nav li a {
+		font-size: 14px;
+	}
+	.cartSideBox {
+		height: calc(100vh - 117px);
+	}
+	.cartSideBox2 {
+        height: calc(100vh - 82px);
+    }
+	.mainHeader .navbar .rightMenu .loginBtn .btnGroup a:first-child:after {
+		top: 1px;
+	}
+}
+@include for-max-1399{
+	.mapsSection .mapsSectionInner .mapOverlay .tooltipGroup.tooltip1 {
+		left: 20%;
+		top: 38%;
+	}
+	.mapsSection .mapsSectionInner .mapOverlay .tooltipGroup.tooltip2 {
+		left: 14%;
+		top: 21%;
+	}
+	.mapsSection .mapsSectionInner .mapOverlay .tooltipGroup.tooltip3 {
+		left: 34%;
+		top: 35%;
+	}
+	.mapsSection .mapsSectionInner .mapOverlay .tooltipGroup.tooltip4 {
+		right: 12%;
+		top: 32%;
+	}
+	.mapsSection .mapsSectionInner .mapOverlay .tooltipGroup.tooltip5 {
+		left: 24%;
+		top: 56%;
+	}
+	.mapsSection .mapsSectionInner .mapOverlay .tooltipGroup.tooltip6 {
+		right: 22%;
+		top: 55%;
+	}
+	.mapsSection .mapsSectionInner .mapOverlay .tooltipGroup.tooltip7 {
+		left: 10%;
+		bottom: 10%;
+	}
+	.mapsSection .mapsSectionInner .mapOverlay .tooltipGroup.tooltip8 {
+		left: 30%;
+		top: 67%;
+	}
+	.mapsSection .mapsSectionInner .mapOverlay .tooltipGroup.tooltip9 {
+		right: 6%;
+		top: 76%;
+	}
+	 .mapsSection .mapsSectionInner .mapOverlay .tooltip1 .tooltip:after {
+		right: unset;
+		left: 70px;
+	}
+	.mapsSection .mapsSectionInner .mapOverlay .tooltip .locationTxt p {
+		font-size: 18px;
+	}
+}
+@include for-max-1199{
+	.owlCarouselRelatedProducts .owlSlideItem {
+		grid-template-columns: 200px 1fr;
+	}
+	.breedersBox {
+		height: 500px;
+		padding: 0 40px;
+	}
+	.breedersBox .commonHeading h4 {
+		color: #fff;
+		font-size: 30px;
+	}
+	.breedersBoxIcon img {
+		width: 120px;
+		height: 120px;
+		object-fit: fill;
+	}
+	.testimonialsBox .testimonialsRow .testimonialsCol h2 {
+		font-size: 30px;
+	}
+	.testimonialsBox .testimonialsRow .testimonialsCol .testimonialSlider .testimonialSliderItem p {
+		font-size: 16px;
+	}
+	.testimonialsBox .testimonialsRow .testimonialsCol .testimonialSlider .testimonialSliderItem h4 {
+		font-size: 24px;
+	}
+	.qualityFeeds .yearsExperience a .yearsExperienceTxt p {
+		font-size: 18px;
+	}
+	.commonHeading h4 {
+		font-size: 30px;
+	}
+	.qualityFeeds .yearsExperience a .yearsExperienceTxt span {
+		font-size: 18px;
+	}
+	.qualityFeeds .yearsExperience a .yearsExperienceTxt span img {
+		width: 18px;
+	}
+	.yearsExperience a .yearsExperienceIcon {
+		width: 80px;
+	}
+	.yearsExperience a .yearsExperienceTxt{
+		width: calc(100% - 80px);
+	}
+	.diverBusinessesGrid .diverBusinessesGridCol .diverBusinessesContent .diverBusinessesList ul li a {
+		font-size: 20px;
+	}
+	.poultryPerformanceBanner .poultryPerformanceHeading h1 {
+		font-size: 38px;
+		margin-bottom: 20px;
+	}
+	.poultryPerformanceBanner .poultryPerformanceHeading p {
+		font-size: 18px;
+		margin-bottom: 20px;
+	}
+	.poultryPerformanceBanner {
+		height: 60vh;
+	}
+	.diverBusinessesGrid .diverBusinessesGridCol .diverBusinessesContent {
+		min-height: 500px;
+	}
+	.latestNewsArticles .latestNewsArticlesInner .latestNewsCard::before, .latestNewsArticles .latestNewsArticlesInner .latestNewsCard::after {
+		height: 200px;
+		width: 200px;
+	}
+	.latestNewsArticles .latestNewsArticlesInner .latestNewsCard::after {
+		right: 0;
+	}
+	.latestNewsArticles .latestNewsArticlesInner .latestNewsCard::before{
+		left: 0;
+	}
+	.poultryProductsSlider .poultryProductsHead .commonHeading {
+		width: 60%;
+	}
+	.mapsSection .mapsSectionInner .mapOverlay .tooltipGroup.tooltip1 {
+		left: 19%;
+		top: 40%;
+	}
+	.mapsSection .mapsSectionInner .mapOverlay .tooltipGroup.tooltip2 {
+		left: 8%;
+		top: 26%;
+	}
+	.mapsSection .mapsSectionInner .mapOverlay .tooltipGroup.tooltip3 {
+		left: 28%;
+		top: 38%;
+	}
+	.mapsSection .mapsSectionInner .mapOverlay .tooltipGroup.tooltip4 {
+		right: 10%;
+		top: 35%;
+	}
+	.mapsSection .mapsSectionInner .mapOverlay .tooltipGroup.tooltip5 {
+		left: 19%;
+		top: 55%;
+	}
+	.mapsSection .mapsSectionInner .mapOverlay .tooltipGroup.tooltip6 {
+		right: 20%;
+		top: 54%;
+	}
+	.mapsSection .mapsSectionInner .mapOverlay .tooltipGroup.tooltip7 {
+		left: 5%;
+		bottom: 14%;
+	}
+	.mapsSection .mapsSectionInner .mapOverlay .tooltipGroup.tooltip8 {
+		left: 24%;
+		top: 65%;
+	}
+	.mapsSection .mapsSectionInner .mapOverlay .tooltipGroup.tooltip9 {
+		right: 4%;
+		top: 71%;
+	}
+	.searchBox .searchBoxInner {
+		padding: 40px 80px;
+	}
+	.faqSec .faqImg{
+		margin-bottom: 20px;
+		height: auto;
+	}
+	.headerOne .mainHeader .navbar div#collapsibleNavbar {
+        height: calc(100vh - 125px);
+    }
+}
+@include for-max-991{
+	.commonHeading p {
+		font-size: 14px;
+	}
+	.diverBusinessesGrid .diverBusinessesGridCol .diverBusinessesContent {
+		padding: 20px;
+	}
+	.diverBusinessesGrid .diverBusinessesGridCol .diverBusinessesContent .diverBusinessesList ul li a {
+		font-size: 18px;
+	}
+	.diverBusinessesGrid .diverBusinessesGridCol .diverBusinessesContent .diverBusinessesList ul li a::before {
+		width: 25px;
+		height: 16px;
+	}
+	.yearsExperience a .yearsExperienceIcon {
+		width: 40px;
+	}
+	.yearsExperience a .yearsExperienceTxt {
+		width: calc(100% - 40px);
+	}
+	.qualityFeeds .yearsExperience a .yearsExperienceTxt p {
+		font-size: 14px;
+	}
+	.qualityFeeds .yearsExperience a .yearsExperienceTxt span {
+		font-size: 16px;
+	}
+	.commonHeading h4 {
+		font-size: 26px;
+	}
+	.btn-1 span {
+		font-size: 14px;
+	}
+	.gotQuestionsSec .gotQuestions .gotQuesPara p {
+		font-size: 14px;
+	}
+	.gotQuestionsSec:before {
+		height: 62%;
+	}
+	.latestNewsArticles .latestNewsArticlesInner .commonHeading {
+		width: 70%;
+		margin-bottom: 30px;
+	}
+	.latestNewsArticles .latestNewsArticlesInner .latestNewsCard::before, .latestNewsArticles .latestNewsArticlesInner .latestNewsCard::after {
+		height: 120px;
+		width: 120px;
+	}
+	.latestNewsArticles .latestNewsArticlesInner .latestNewsCard::before, .latestNewsArticles .latestNewsArticlesInner .latestNewsCard::after {
+		top: -100px;
+	}
+	.testimonialsBox .testimonialsRow {
+		display: flex;
+		flex-direction: column;
+	}
+	.testimonialsBox .testimonialsRow .testimonialsCol:first-child {
+		border-right: 0;
+		border-bottom: 1px solid #fff;
+	}
+	
+	.testimonialsBox .testimonialsRow .testimonialsCol.testimonialsCol1 {
+		padding: 0;
+	}
+	.testimonialsBox .testimonialsRow .testimonialsCol.testimonialsCol1 {
+		padding: 0;
+		margin: 0;
+	}	
+	.testimonialsBox .testimonialsRow .testimonialsCol.testimonialsCol2 {
+		margin-left: 0 !important;
+		padding: 0;
+	}
+	.testimonialsBox .testimonialsRow .testimonialsCol {
+		margin: 0;
+	}
+	.testimonialsBox .testimonialsRow{
+		padding: 40px;
+	}
+	.testimonialsBox .testimonialsRow .testimonialsCol.testimonialsCol1{
+		padding-bottom: 20px;
+	}
+	.testimonialsBox .testimonialsRow .testimonialsCol.testimonialsCol2{
+		padding-top: 20px;
+	}
+	.testimonialsBox .testimonialsRow .testimonialsCol h2 {
+		font-size: 22px;
+	}
+	.testimonialsBox .testimonialsRow .testimonialsCol h4 {
+		font-size: 24px;
+	}
+	.testimonialsBox .testimonialsRow .testimonialsCol.testimonialsCol1::before {
+		height: 80px;
+		width: 80px;
+		right: 0;
+	}
+	.galleryPoultryFarm .commonHeading {
+		width: 70%;
+		margin: 0 auto 40px;
+	}	
+	.gotQuestionsSec .gotQuestionsRow {
+		gap: 40px;
+	}
+	.poultryPerformanceBanner .poultryPerformanceHeading h1 {
+		font-size: 28px;
+		margin-bottom: 10px;
+	}
+	.poultryPerformanceBanner .poultryPerformanceHeading p {
+		font-size: 16px;
+		margin-bottom: 20px;
+		line-height: normal;
+	}
+	.poultryPerformanceBanner {
+		height: 50vh;
+	}
+	.qualityFeeds {
+		padding: 100px 0;
+	}
+	.diverBusinessesGrid .diverBusinessesGridCol .diverBusinessesContent {
+		min-height: 450px;
+	}
+	.latestNewsCardInner, .categorySecItem{
+		margin-bottom: 20px;
+	}
+	.mapsSection .mapsSectionInner .mapOverlay .tooltip .locationTxt p {
+		font-size: 16px;
+	}
+
+	.mapsSection .mapsSectionInner .mapOverlay .tooltipGroup.tooltip1 {
+		left: 18%;
+		top: 33%;
+	}
+	.mapsSection .mapsSectionInner .mapOverlay .tooltipGroup.tooltip2 {
+		left: 20%;
+		top: 15%;
+	}
+	.mapsSection .mapsSectionInner .mapOverlay .tooltipGroup.tooltip3 {
+		left: 17%;
+		top: 32%;
+	}
+	.mapsSection .mapsSectionInner .mapOverlay .tooltipGroup.tooltip4 {
+		right: 7%;
+		top: 28%;
+	}
+	.mapsSection .mapsSectionInner .mapOverlay .tooltipGroup.tooltip5 {
+		left: 7%;
+		top: 58%;
+	}
+	.mapsSection .mapsSectionInner .mapOverlay .tooltipGroup.tooltip6 {
+		right: 17%;
+		top: 56%;
+	}
+	.mapsSection .mapsSectionInner .mapOverlay .tooltipGroup.tooltip7 {
+		left: 16%;
+		bottom: 102px;
+	}
+	.mapsSection .mapsSectionInner .mapOverlay .tooltipGroup.tooltip8 {
+		left: 7%;
+		top: 58%;
+	}
+	.mapsSection .mapsSectionInner .mapOverlay .tooltipGroup.tooltip9 {
+		right: 1%;
+		top: 83%;
+	}
+	.mapsSection .mapsSectionInner .mapOverlay .tooltip2 .tooltip:after {
+		right: unset;
+		left: 170px;
+	}
+	.mapsSection .mapsSectionInner .mapOverlay .tooltip7 .tooltip:after {
+		right: unset;
+		left: 170px;
+		bottom: -14px;
+		top: unset;
+		transform: rotate(0deg);
+	}
+	.mapsSection .mapsSectionInner .mapOverlay svg {
+		height: 330px;
+	}
+	.searchBox .searchBoxInner {
+		padding: 20px;
+	}
+	.searchBox .searchBoxInner .searchHeading h4 {
+		font-size: 26px;
+	}
+	.qualityFeeds .qualityFeedsRow .qualityFeedsCol1 {
+		padding-right: 15px;
+	}
+	.mainHeader .navbar .rightMenu .loginBtn .btnGroup a:first-child:after {
+		font-size: 20px;
+		top: 3px;
+	}
+	.latestNewsArticles .latestNewsArticlesInner .latestNewsCard .latestNewsCardInner .latestNewsCardInnerContent .latestNewsTxt h4 {
+		min-height: auto;
+	}
+}
+@include for-max-767{
+	.qualityFeeds .qualityFeedsRow .qualityFeedsCol1 {
+		margin-bottom: 40px;
+	}
+	.qualityFeeds {
+		padding: 100px 0 40px;
+	}
+	.diverBusinessesGrid, .breedersCardGroup, .gotQuestionsSec .gotQuestionsRow {
+		display: flex;
+		flex-direction: column;
+	}
+	.gotQuestionsSec .gotQuestions .gotQuestionsContent {
+		margin-bottom: 20px;
+	}
+	.gotQuestionsSec .gotQuestionsRow {
+		gap: 20px;
+	}
+	.poultryProductsSlider, .gotQuestionsSec {
+		padding: 40px 0;
+	}
+	.galleryPoultryFarm .commonHeading {
+		width: 100%;
+		padding: 0 15px;
+	}
+	.testimonialsBox {
+		padding: 0 40px;
+	}
+	.needOurSupport .needOurSupportInner .needOurSupportTxt h2 {
+		font-size: 28px;
+	}
+	.latestNewsArticles .latestNewsArticlesInner .latestNewsCard::before, .latestNewsArticles .latestNewsArticlesInner .latestNewsCard::after{
+		display: none;
+	}
+	.latestNewsArticles .latestNewsArticlesInner .commonHeading {
+		width: 100%;
+	}
+	.latestNewsArticles {
+		padding: 340px 0 40px;
+	}
+	.mapsSection .mapsSectionInner .mapOverlay .tooltip .locationTxt p {
+		font-size: 14px;
+	}
+	.mapsSection .mapsSectionInner .mapOverlay .tooltip {
+		padding: 10px;
+	}
+	.mapsSection .mapsSectionInner .mapOverlay .tooltipGroup, .mapsSection .mapsSectionInner .mapOverlay .tooltip{
+		width: 300px;
+	}
+	.mapsSection .mapsSectionInner .mapOverlay .tooltip .locationIcon {
+		width: 26px;
+	}
+	.mapsSection .mapsSectionInner .mapOverlay .tooltip {
+		gap: 10px;
+	}
+	.mapsSection .mapsSectionInner .mapOverlay .tooltipGroup.tooltip2 {
+		left: 13%;
+		top: 23%;
+	}
+	.mapsSection .mapsSectionInner .mapOverlay .tooltipGroup.tooltip4 {
+		right: 2%;
+		top: 34%;
+	}
+	.mapsSection .mapsSectionInner .mapOverlay .tooltipGroup.tooltip3 {
+		left: 21%;
+		top: 37%;
+	}
+	.mapsSection .mapsSectionInner .mapOverlay .tooltipGroup.tooltip1 {
+		left: 15%;
+		top: 39%;
+	}
+	.mapsSection .mapsSectionInner .mapOverlay .tooltipGroup.tooltip6 {
+		right: 12%;
+		top: 55%;
+	}
+	.mapsSection .mapsSectionInner .mapOverlay .tooltipGroup.tooltip5 {
+		left: 11%;
+		top: 57%;
+	}
+	.mapsSection .mapsSectionInner .mapOverlay .tooltipGroup.tooltip8 {
+		left: 17%;
+		top: 67%;
+	}
+	.mapsSection .mapsSectionInner .mapOverlay .tooltipGroup.tooltip7 {
+		left: 9%;
+		bottom: 119px;
+	}
+	.mapsSection .mapsSectionInner .mapOverlay .tooltipGroup.tooltip9 {
+		right: -3%;
+		top: 75%;
+	}	
+	.searchBox .searchBoxInner .searchHeading h4 {
+		font-size: 20px;
+	}
+	.cartSideBox {
+		width: 320px;
+	}
+	.cartSideBox .allItems .itemContent .addItems {
+		display: flex;
+		gap: 10px;
+		flex-direction: column;
+	}
+	.cartSideBox .allItems .itemContent .addItems .removeItems {
+		justify-content: start;
+	}
+	.itemContent .itemTitlePriceGroup .itemTitle h5 {
+		font-size: 16px;
+	}
+	.cartSideBox .allItems .itemContent .addItems .removeItems a {
+		font-size: 14px;
+	}
+	.cartSideBox .priceTbl .priceBody .priceTr h6, .cartSideBox .priceTbl .priceBody .priceTr span, .cartSideBox .checkoutTaxIncluded P, .cartSideBox .checkoutTaxIncluded .form-check .form-check-label {
+		font-size: 14px;
+	}
+	.cartSideBox .priceTbl .priceFoot .priceTr h5,.cartSideBox .priceTbl .priceFoot .priceTr span {
+		font-size: 16px;
+	}
+	.faqTab .accordion .accordion-item .accordion-header .accordion-button {
+		font-size: 16px;
+		font-weight: 600;
+		padding: 15px;
+	}
+	.faqTab .accordion .accordion-item .accordion-collapse .accordion-body p {
+		font-size: 14px;
+	}
+	.faqSec {
+		padding: 40px 0;
+	}
+}
+@include for-max-575{
+	.poultryProductsSlider .poultryProductsHead .commonHeading {
+		width: 100%;
+	}
+	.poultryProductsSlider .poultryProductsHead {
+		align-items: flex-start;
+		flex-direction: column;
+	}
+	.testimonialsBox {
+		padding: 0 15px;
+	}
+	.breedersBox {
+        height: 420px;
+        padding: 0 20px;
+    }
+	.testimonialsBox .testimonialsRow {
+		padding: 20px;
+	}
+	.latestNewsArticles .latestNewsArticlesInner .latestNewsCard .latestNewsCardInner .latestNewsCardInnerContent .latestNewsTxt h4 a {
+		font-size: 18px;
+	}
+	.latestNewsArticles .latestNewsArticlesInner .latestNewsCard .latestNewsCardInner .latestNewsCardInnerContent .latestNewsList span {
+		font-size: 14px;
+	}
+	.commonHeading h4 {
+		font-size: 22px;
+	}
+	.latestNewsTxt p {
+		font-size: 14px;
+	}
+	.needOurSupport .needOurSupportInner .needOurSupportTxt h2 {
+		font-size: 22px;
+	}
+	.owlCarouselRelatedProducts .owlSlideItem{
+		display: flex;
+		flex-direction: column;
+	}
+	.poultryProductsSlider .owlCarouselProducts .owlSlideItem .owlSlideItemImg, .poultryProductsSlider .owlCarouselRelatedProducts .owlSlideItem .owlSlideItemImg {
+		background-color: #fdefed;
+		padding: 50px 10px;
+		border-radius: 8px;
+		position: relative;
+		margin-bottom: 10px;
+		width: 100%;
+	}
+	.needOurSupport .needOurSupportInner {
+        padding: 40px 15px;
+    }
+	.latestNewsArticles .latestNewsArticlesInner .latestNewsCard .latestNewsCardBtn {
+		margin-top: 20px;
+	}
+	.mainHeader .navbar div#collapsibleNavbar {
+		width: 250px;
+	}
+	.mapsSection .mapsSectionInner .mapOverlay .tooltip .locationTxt p {
+		font-size: 12px;
+	}
+	.mapsSection .mapsSectionInner .mapOverlay .tooltipGroup, .mapsSection .mapsSectionInner .mapOverlay .tooltip {
+		width: 220px;
+	}
+	.searchBox .searchBoxInner .searchInput .input-group {
+		flex-direction: column;
+	}
+	.searchBox .searchBoxInner .searchInput .input-group .form-control {
+		width: 100%;
+		margin-bottom: 10px;
+	}
+	.poultryPerformanceBanner {
+		height: 40vh;
+	}
+	.poultryPerformanceBanner .poultryPerformanceHeading h1 {
+		font-size: 25px;
+	}
+	.mapsSection .mapsSectionInner .mapOverlay svg {
+		height: 250px;
+	}
+	.mapsSection {
+		padding: 40px 0;
+	}
+	.cartSideBox {
+		height: calc(100vh - 80px);
+	}
+	.faqTab .accordion .accordion-item .accordion-header .accordion-button {
+		font-size: 14px;
+	}
+	.faqTab .accordion .accordion-item .accordion-collapse .accordion-body p {
+		font-size: 14px;
+	}
+}
+@include for-max-375{
+	.breedersBox {
+        padding: 0 15px;
+    }
+	.testimonialsBox .testimonialsRow {
+		padding: 15px;
+	}
+	.mapsSection .mapsSectionInner .mapOverlay svg {
+		height: 150px;
+	}
+	.cartSideBox {
+		height: calc(100vh - 110px);
+	}
+	.galleryPoultryFarm .galleryPoultrySec .carouselGalleryPoultry .owl-nav {
+		padding: 0 15px;
+	}
+}
+
+

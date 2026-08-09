@@ -1,0 +1,484 @@
+.needOurSupport{
+    position: relative;
+    z-index: 1;
+    .needOurSupportInner{
+        background-image: url(../images/bg-img3.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        padding: 60px 20px;
+        border-radius: 10px;
+        *{
+            color: $textWhite;
+        }
+        .needOurSupportTxt, .needOurSupportInput {
+            width: 50%;
+            margin: 0 auto;
+        }
+        .needOurSupportTxt{
+            text-align: center;
+            margin-bottom: 20px;
+            h2 {
+                font-size: 40px;
+            }
+            p{
+                font-size: 16px;
+            }
+        }
+        .needOurSupportInput{
+            .input-group{
+                background-color: $textWhite;
+                padding: 4px;
+                border-radius: 4px;
+                .form-control{
+                    border-radius: 0;
+                    border: 0;
+                    color: #333333;
+                }
+                .input-group-text {
+                    color: $textWhite;
+                    background-color: #73805a;
+                    border: 1px solid $textWhite;
+                    border-radius: 4px !important;
+                    display: flex;
+                    align-items: center;
+                    gap: 8px;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    font-size: 16px;
+                    transition: all 0.4s ease;
+                    &:hover{
+                        background-color: #ed624f;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.footerGroup{
+    width: 100%;
+    .footerInner{
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        padding: 220px 0 60px 0;
+        .footerInnerRow{
+            .footerCol {
+                .footerLogo{
+                    margin-bottom: 20px;
+                }
+                .footerPara{
+                    p{
+                        color: $textWhite;
+                        font-size: 16px;
+                    }
+                }
+                .footerMenuHeading{
+                    h4 {
+                        color: $textWhite;
+                        font-size: 20px;
+                    }
+                }
+                .footerMenuLink{
+                    ul{
+                        li{
+                            a{
+                                color: $textWhite;
+                                font-size: 16px;
+                                display: flex;
+                                align-items: center;
+                                gap: 10px;
+                                padding-left: 0;
+                                i.fa{
+                                    color: $textClr4;
+                                }
+                                &:hover{
+                                    color: #252e14;
+                                }
+                            }
+                        }
+                    }
+                    &.footerContactInfo{
+                        ul{
+                            li{
+                                a{
+                                    .contactInfo {
+                                        display: flex;
+                                        align-items: center;
+                                        gap: 20px;
+                                        .contactInfoIcon{
+                                            i.fa {
+                                                font-size: 20px;
+                                                color: $textWhite;
+                                                background-color: #818d6a;
+                                                width: 50px;
+                                                height: 50px;
+                                                border-radius: 50px;
+                                                display: flex;
+                                                align-items: center;
+                                                justify-content: center;
+                                                border: 1px solid #818d6a;
+                                            }
+                                        }
+                                        .contactInfoTxt{
+                                            h6{
+                                                font-size: 20px;
+                                                color: $textWhite;
+                                            }
+                                            p{
+                                                font-size: 16px;
+                                                color: $textWhite;
+                                            }
+                                        }
+                                    }
+                                    &:hover{
+                                        .contactInfoIcon{
+                                            i.fa {
+                                                background-color: #ed624f;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                &.footerCol2, &.footerCol3 {
+                    padding-left: 60px;
+                }
+            }
+        }
+    }
+}
+.hrLine{
+    border-color: $textWhite;
+}
+.socialMediaIcon{
+    ul {
+        gap: 10px;
+        li {
+            a {
+                color: $textWhite;
+                font-size: 20px;
+                border: 1px solid $textWhite;
+                border-radius: 50px;
+                padding: 0;
+                width: 40px;
+                height: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                i.fa{
+                    transition: all 0.4s ease;
+                }
+                &:hover{
+                    i.fa{
+                        transform: scale(1.1);
+                    }
+                    background-color: #ed624f;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+
+.footerCopyRight{
+    padding: 15px;
+    text-align: center;
+    .footerCopyRightInner{
+        p{
+            font-size: 16px;
+        }
+        a{
+            color: #ed624f;
+            text-decoration: none;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+// home 1
+.footer{
+    position: relative;
+    &.footerBg1{
+        .footerGroup{
+            position: absolute;
+            top: 150px;
+            .footerInner{
+                background-image: url(../images/bg-img4.png);
+            }
+        }
+    }
+}
+
+// home 2
+
+
+.footer{
+    position: relative;
+    &.footerBg2{
+        .footerGroup{
+            position: relative;
+            top: 0px;
+            background: #ED624F;
+            .footerInner{
+                padding: 60px 0 !important;
+                .footerInnerRow{
+                    .footerCol{
+                        .footerMenuLink{
+                            ul{
+                                li{
+                                    a{
+                                        i.fa {
+                                            color: #fff;
+                                        }
+                                        &:hover{
+                                            color: #667449;
+                                        }
+                                    }
+                                }
+                            }
+                            &.footerContactInfo {
+                                ul {
+                                    li {
+                                        a {
+                                            .contactInfo{
+                                                .contactInfoIcon{
+                                                    i.fa{
+                                                        background-color: rgb(255 255 255 / 20%);
+                                                        border: 1px solid rgb(255 255 255 / 20%);
+                                                        color: #fff;
+                                                    }
+                                                }
+                                            }
+                                            &:hover{
+                                                .contactInfo{
+                                                    .contactInfoIcon{
+                                                        i.fa{
+                                                            background-color: #73805A;
+                                                            color: #fff;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        &.footerCol1{
+                            .needOurSupport{
+                                .needOurSupportInner {
+                                    padding: 40px;
+                                    background: #E85642;
+                                    border-radius: 5px;
+                                    .needOurSupportTxt{
+                                        width: 100%;
+                                        h2 {
+                                            font-size: 22px;
+                                        }
+                                        p{
+                                            color: #FFD55F;
+                                            font-size: 16px;
+                                        }
+                                    }
+                                    .needOurSupportInput{
+                                        width: 100%;
+                                        .input-group{
+                                            .input-group-text{
+                                                background-color: #73805A;
+                                                &:hover{
+                                                    background-color: #ee6755;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                 
+                }
+            }
+        }
+        .footerCopyRight{
+            padding: 0;
+            .footerCopyRightInner {
+                padding: 20px;
+                border-top: 1px solid #fff;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                p{
+                    color: #fff;
+                    a{
+                        color: #fff;
+                        font-weight: 600;
+                        transition: all 0.4s ease;
+                        &:hover{
+                            color: #73805a;
+                        }
+                    }
+                }
+                .socialMediaIcon{
+                    ul{
+                        li{
+
+                            a{
+                                color: #fff;
+                                text-decoration: none; 
+                                &:hover{
+                                    background-color: #73805A;
+                                    border-color: #73805A;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+// footer Three
+
+.footer.footerThree{
+    .footerGroup{
+        position: static;
+        .footerInner{
+            padding: 60px 0 60px 0;
+            background-image: unset;
+            background-color: #333333;
+            .footerInnerRow{
+                .footerCol.footerCol1{
+                    .needOurSupport{
+                        .needOurSupportInner {
+                            background: #474747;
+                            .needOurSupportInput{
+                                .input-group{
+                                    .input-group-text {
+                                        background-color: #ed624f;
+                                        &:hover{
+                                            background-color: #73805A; 
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .footerCol{
+                    .footerMenuLink{
+                        ul{
+                            li{
+                                a {
+                                    color: #fff;
+                                    &:hover{
+                                        color: #73805A;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .footerMenuLink.footerContactInfo{
+                        ul{
+                            li{
+                                a {
+                                    .contactInfo{
+                                        .contactInfoIcon{
+                                            i.fa {
+                                                background-color: rgb(255 255 255 / 8%);
+                                                border: 1px solid rgb(255 255 255 / 8%);
+                                                color: #ed624f;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                
+            }
+        }
+        .footerCopyRight{
+            background-color: #333333;
+            padding: 0;
+            .footerCopyRightInner {
+                border-top: 1px solid rgb(255 255 255 / 30%);
+                padding: 20px 0;
+            }
+        }
+    }
+}
+
+
+// footer 4
+
+.footer.footerFour{
+    .footerGroup{
+        background-color: #73805A;
+        .footerInner{
+            .footerInnerRow{
+                .footerCol.footerCol1{
+                    .needOurSupport{
+                        .needOurSupportInner{
+                            background: rgb(255 255 255 / 10%);
+                            .needOurSupportTxt{
+                                h2 {
+                                    font-size: 30px;
+                                }
+                                p {
+                                    font-size: 20px;
+                                }
+                                
+                            }
+                        }
+                    }
+                }
+                .footerCol{
+                    .footerMenuLink{
+                        ul{
+                            li{
+                                a{
+                                    &:hover{
+                                        color: #ed624f;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .footerCopyRight{
+            .footerCopyRightInner{
+                .socialMediaIcon{
+                    ul{
+                        li{
+                            a{
+                                &:hover{
+                                    color: #ed624f;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            p{
+                a{
+                    &:hover{
+                        color: #ed624f;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
