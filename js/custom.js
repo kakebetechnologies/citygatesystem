@@ -1,57 +1,50 @@
 ﻿// City Gate Farm - Custom JavaScript
 
 // ============================================
-// SMART HEADER - Fixed on scroll, hide on scroll down, show on scroll up
+// SMART HEADER — Scroll handler
+// CSS (cg-redesign.css) handles all visual states.
+// Toggles .headerActive for the homepage transparent→white transition, and
+// .nav-faded to fade the navbar out while scrolling down, back in when
+// scrolling up (or near the top) — same behavior on every page.
 // ============================================
 $(document).ready(function() {
-    let lastScrollTop = 0;
-    let isFixed = false; // track if header is in fixed state
-    const header = $('.header');
-    const fixedThreshold = 150; // px - when header becomes fixed
-    
-    // Initial state
-    header.addClass('header-visible');
-    
-    $(window).on('scroll', function() {
-        const currentScroll = $(this).scrollTop();
-        const windowWidth = $(window).width();
-        const nowFixed = currentScroll > fixedThreshold;
-        
-        // State change: became fixed or returned to relative
-        if (nowFixed && !isFixed) {
-            // Just became fixed
-            header.addClass('headerActive');
-            isFixed = true;
-            // Ensure header is visible when it first sticks
-            header.removeClass('header-hidden').addClass('header-visible');
-        } else if (!nowFixed && isFixed) {
-            // Just became relative (scrolled back to top)
-            header.removeClass('headerActive header-hidden header-visible header-hidden-mobile');
-            isFixed = false;
+    var $header = $('#headerOne');
+    var threshold = 80;
+    var fadeThreshold = 160;
+
+    // Some page layouts scroll the window; others (where body has a
+    // constrained height) scroll <body> itself. Read whichever is actually
+    // moving so this works either way.
+    function currentScrollTop() {
+        return Math.max(
+            window.pageYOffset || 0,
+            document.documentElement.scrollTop || 0,
+            document.body.scrollTop || 0
+        );
+    }
+
+    var lastScrollTop = currentScrollTop();
+
+    function updateHeader() {
+        var scrollTop = currentScrollTop();
+
+        if (scrollTop > threshold) {
+            $header.addClass('headerActive');
+        } else {
+            $header.removeClass('headerActive');
         }
-        
-        // If currently fixed, handle hide/show based on scroll direction
-        if (isFixed) {
-            if (currentScroll > lastScrollTop) {
-                // Scrolling down - hide
-                if (windowWidth > 768) {
-                    header.addClass('header-hidden').removeClass('header-visible');
-                } else {
-                    header.addClass('header-hidden-mobile');
-                }
-            } else {
-                // Scrolling up - show
-                if (windowWidth > 768) {
-                    header.removeClass('header-hidden').addClass('header-visible');
-                } else {
-                    header.removeClass('header-hidden-mobile');
-                }
-            }
+
+        if (scrollTop > lastScrollTop && scrollTop > fadeThreshold) {
+            $header.addClass('nav-faded');
+        } else {
+            $header.removeClass('nav-faded');
         }
-        
-        lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
-    });
-});
+
+        lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+    }
+
+    $(window).add(document).add('body').on('scroll', updateHeader);
+    updateHeader(); // run on load
 });
 
 

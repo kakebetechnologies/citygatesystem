@@ -1,0 +1,8 @@
+/vendor/
+/config/mail.php
+/uploads/*
+!/uploads/blog/.gitkeep
+!/uploads/gallery/.gitkeep
+!/uploads/videos/.gitkeep
+node_modules/
+.kilo/node_modules/
