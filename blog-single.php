@@ -64,7 +64,7 @@ if (!$post) {
          </ul>
       </div>
    </section>
-   <section style="padding:90px 0;text-align:center;">
+   <section class="section-pad" style="text-align:center;">
       <div class="container">
          <p style="font-size:17px;color:#666;margin-bottom:24px;">Sorry, we couldn't find that blog post. It may have been unpublished or the link may be incorrect.</p>
          <a href="blog.php" class="modern-btn" style="display:inline-block;background:var(--cg-green,#2f5d3a);color:#fff;padding:14px 32px;border-radius:4px;text-decoration:none;font-weight:700;">&larr; Back to Blog</a>

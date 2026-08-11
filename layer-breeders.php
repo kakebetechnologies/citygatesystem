@@ -10,36 +10,13 @@ require __DIR__ . '/includes/header.php';
 ?>
 <link rel="stylesheet" href="css/cg-redesign.css">
 <style>
-   .dairy-hero {
-      position: relative;
-      height: 85vh;
-      min-height: 600px;
-      background: linear-gradient(135deg, rgba(0, 50, 100, 0.8), rgba(0, 80, 150, 0.6)), url('images/gallary/jaclou-dl-cow-4270355_1920.jpg');
-      background-size: cover;
-      background-position: center;
-      display: flex;
-      align-items: center;
-   }
-   .dairy-hero .hero-content {
-      text-align: center;
-      color: #fff;
-   }
-   .dairy-hero h1 {
-      font-size: 4rem;
-      font-weight: 800;
-      margin-bottom: 1rem;
-   }
-   .dairy-hero p {
-      font-size: 1.4rem;
-      margin-bottom: 2rem;
-   }
    .milk-card {
       background: linear-gradient(135deg, #fff 0%, #f0f8ff 100%);
       border-radius: 25px;
       padding: 2rem;
       text-align: center;
       height: 100%;
-      box-shadow: 0 15px 50px rgba(0, 50, 100, 0.1);
+      box-shadow: var(--cg-shadow);
       transition: all 0.4s ease;
       border: 2px solid transparent;
    }
@@ -110,7 +87,7 @@ require __DIR__ . '/includes/header.php';
       padding: 1.5rem;
       max-width: 400px;
       margin-right: 30px;
-      box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+      box-shadow: var(--cg-shadow);
    }
    .timeline-item:nth-child(even) .timeline-content {
       margin-right: 0;
@@ -175,7 +152,7 @@ require __DIR__ . '/includes/header.php';
    }
    .btn-blue:hover {
       transform: translateY(-3px);
-      box-shadow: 0 10px 30px rgba(0, 102, 204, 0.4);
+      box-shadow: var(--cg-shadow);
       color: #fff;
    }
    .btn-outline-blue {
@@ -202,7 +179,6 @@ require __DIR__ . '/includes/header.php';
       font-weight: 800;
    }
    @media (max-width: 768px) {
-      .dairy-hero h1 { font-size: 2.5rem; }
       .timeline-section::before { left: 20px; }
       .timeline-item, .timeline-item:nth-child(even) {
          padding: 0 0 0 50px;
@@ -217,13 +193,18 @@ require __DIR__ . '/includes/header.php';
    }
 </style>
 
-<!-- Hero -->
-<section class="dairy-hero">
+<!-- ═══════════════ PAGE BANNER ═══════════════ -->
+<section class="cg-page-banner">
    <div class="container">
-      <div class="hero-content wow fadeInUp">
-         <h1>Pure Fresh Dairy</h1>
-         <p>80 litres daily — from our happy cows to your home</p>
-         <a href="shop.php" class="btn btn-blue me-3">Order Milk</a>
+      <span class="section-eyebrow">City Gate Mixed Farm</span>
+      <h1>Pure Fresh Dairy</h1>
+      <ul class="breadcrumb">
+         <li class="breadcrumb-item"><a href="index.php">Home</a></li>
+         <li class="breadcrumb-item active">Dairy (Cows)</li>
+      </ul>
+      <p class="mt-3 mb-4 wow fadeInUp">80 litres daily — from our happy cows to your home</p>
+      <div class="d-flex flex-wrap justify-content-center gap-3 wow fadeInUp">
+         <a href="shop.php" class="btn btn-blue">Order Milk</a>
          <a href="contact-us.php" class="btn btn-outline-blue">Visit the Dairy</a>
       </div>
    </div>

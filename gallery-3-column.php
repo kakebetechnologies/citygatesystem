@@ -69,13 +69,13 @@ function cg_render_gallery_photo(array $photo): void {
    }
    .videosSection {
       background: var(--cg-cream, #FAF7F0);
-      padding: 60px 0 70px;
+      padding: 56px 0;
    }
    .videoCard {
       background: #fff;
       border-radius: var(--cg-radius, 10px);
       overflow: hidden;
-      box-shadow: var(--cg-shadow, 0 8px 40px rgba(47,93,58,0.13));
+      box-shadow: var(--cg-shadow);
       height: 100%;
       margin-bottom: 30px;
    }

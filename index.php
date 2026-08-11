@@ -172,26 +172,38 @@ $latestPosts = $stmt->fetchAll();
 })();
 </script>
 
-<!-- WHY CITY GATE? (value proposition — was "What We Do" pillars) -->
-<section class="pillars-row">
+<!-- WHY CITY GATE? (value proposition — bold photo-card treatment) -->
+<section class="value-prop-row">
     <div class="container">
         <p class="section-eyebrow">Why City Gate?</p>
         <h2 class="section-title">Produce &middot; Train &middot; Partner</h2>
-        <div class="pillars-grid">
-            <div class="pillar-item fade-in">
-                <div class="pillar-icon"><i class="fa fa-leaf"></i></div>
-                <h3 class="pillar-title">Produce</h3>
-                <p class="pillar-desc">Farm-fresh eggs, chicks, broiler meat, fresh milk, and premium goats. Direct from the farm, priced in UGX.</p>
+        <div class="value-prop-grid">
+            <div class="value-prop-card fade-in">
+                <img loading="lazy" src="images/gallary/stevepb-nest-1050964_1920.jpg" alt="Produce">
+                <div class="value-prop-overlay"></div>
+                <div class="value-prop-icon"><i class="fa fa-leaf"></i></div>
+                <div class="value-prop-label">
+                    <h3>Produce</h3>
+                    <p>Farm-fresh eggs, chicks, broiler meat, fresh milk, and premium goats. Direct from the farm, priced in UGX.</p>
+                </div>
             </div>
-            <div class="pillar-item fade-in">
-                <div class="pillar-icon"><i class="fa fa-graduation-cap"></i></div>
-                <h3 class="pillar-title">Train</h3>
-                <p class="pillar-desc">Hands-on farming training, youth empowerment programs, and industrial placements for agriculture students.</p>
+            <div class="value-prop-card fade-in">
+                <img loading="lazy" src="images/gallary/hat3m-seedling-4394118_1920.jpg" alt="Train">
+                <div class="value-prop-overlay"></div>
+                <div class="value-prop-icon"><i class="fa fa-graduation-cap"></i></div>
+                <div class="value-prop-label">
+                    <h3>Train</h3>
+                    <p>Hands-on farming training, youth empowerment programs, and industrial placements for agriculture students.</p>
+                </div>
             </div>
-            <div class="pillar-item fade-in">
-                <div class="pillar-icon"><i class="fa fa-users"></i></div>
-                <h3 class="pillar-title">Partner</h3>
-                <p class="pillar-desc">Join us in scaling from 14,000 to 100,000 birds. Farm tours, school visits, and investor partnerships.</p>
+            <div class="value-prop-card fade-in">
+                <img loading="lazy" src="images/gallary/techvaran-goats-5902053_1920.jpg" alt="Partner">
+                <div class="value-prop-overlay"></div>
+                <div class="value-prop-icon"><i class="fa fa-users"></i></div>
+                <div class="value-prop-label">
+                    <h3>Partner</h3>
+                    <p>Join us in scaling from 14,000 to 100,000 birds. Farm tours, school visits, and investor partnerships.</p>
+                </div>
             </div>
         </div>
     </div>
@@ -218,14 +230,14 @@ $latestPosts = $stmt->fetchAll();
                 </div>
             </div>
             <div class="sector-card fade-in">
-                <img loading="lazy" src="images/gallary/couleur-milk-2474993.jpg" alt="Goats">
+                <img loading="lazy" src="images/gallary/rschaubhut-goat-5642612_1920.jpg" alt="Goats">
                 <div class="sector-card-overlay">
                     <span class="sector-card-label">Goats</span>
                     <span class="sector-card-promise">Boer &amp; Savannah</span>
                 </div>
             </div>
             <div class="sector-card fade-in">
-                <img loading="lazy" src="images/gallary/engin_akyurt-egg-6757508_1920.jpg" alt="Crops">
+                <img loading="lazy" src="images/gallary/christoph-coffee-171653_1920.jpg" alt="Crops">
                 <div class="sector-card-overlay">
                     <span class="sector-card-label">Crops</span>
                     <span class="sector-card-promise">Coffee, bananas, maize</span>

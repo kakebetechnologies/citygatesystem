@@ -127,21 +127,13 @@ $pageDescription = 'Book a farm visit, training session, or school tour at City 
 $activeNav = '';
 require_once __DIR__ . '/includes/header.php';
 ?>
+<link rel="stylesheet" href="css/cg-redesign.css">
 <style>
-   .booking-hero {
-      background: linear-gradient(135deg, rgba(47,93,58,0.92), rgba(31,63,39,0.88)), url('images/gallary/rooster-farm.jpg');
-      background-size: cover;
-      background-position: center;
-      padding: 60px 0;
-      color: #fff;
-      text-align: center;
-   }
    .booking-form-card {
       background: #fff;
       border-radius: 20px;
       padding: 2.5rem;
-      box-shadow: 0 10px 40px rgba(0,0,0,0.1);
-      margin-top: -60px;
+      box-shadow: var(--cg-shadow);
       margin-bottom: 2rem;
    }
    .booking-form-card h3 { color: var(--farm-green); font-weight: 700; margin-bottom: 0.5rem; }
@@ -158,13 +150,13 @@ require_once __DIR__ . '/includes/header.php';
       color: #fff; padding: 1rem 2rem; border-radius: 50px; font-weight: 600; border: none;
       width: 100%; font-size: 1.1rem; transition: all 0.3s ease;
    }
-   .btn-submit:hover { transform: translateY(-3px); box-shadow: 0 10px 30px rgba(47,93,58,0.35); color: #fff; }
+   .btn-submit:hover { transform: translateY(-3px); color: #fff; }
    .success-message { background: #e8f5e9; border: 2px solid var(--farm-green); border-radius: 15px; padding: 2rem; text-align: center; }
    .success-message i { font-size: 3rem; color: var(--farm-green); margin-bottom: 1rem; }
    .booking-errors { background: #fbe2e2; border: 2px solid #c0392b; border-radius: 12px; padding: 1rem 1.25rem; margin-bottom: 1.5rem; color: #a32e2e; }
    .booking-errors ul { margin: 0; padding-left: 1.1rem; }
    .info-section { background: #f8fff8; padding: 3rem 0; }
-   .info-card { background: #fff; border-radius: 15px; padding: 1.5rem; text-align: center; height: 100%; box-shadow: 0 5px 20px rgba(0,0,0,0.08); }
+   .info-card { background: #fff; border-radius: 15px; padding: 1.5rem; text-align: center; height: 100%; box-shadow: var(--cg-shadow); }
    .info-card i { font-size: 2rem; color: var(--farm-green); margin-bottom: 1rem; }
    .info-card h5 { color: #333; font-weight: 700; margin-bottom: 0.5rem; }
    .attendeesWrap { background: #f8fff8; border: 2px dashed #cfe8cf; border-radius: 15px; padding: 1.25rem; margin-bottom: 1.5rem; }
@@ -176,13 +168,18 @@ require_once __DIR__ . '/includes/header.php';
    .attendee-row .form-control { padding: 0.5rem 0.75rem; border-width: 1px; }
    .remove-attendee-btn { border-radius: 8px; border: 1px solid #e0a0a0; color: #c0392b; background: #fff; width: 100%; }
    .attendeesEmpty { color: #888; font-size: 0.9rem; margin: 0; }
-   @media (max-width: 768px) { .booking-form-card { margin-top: 0; padding: 1.5rem; } }
+   @media (max-width: 768px) { .booking-form-card { padding: 1.5rem; } }
 </style>
 
-<section class="booking-hero">
+<section class="cg-page-banner">
    <div class="container">
-      <h1 class="mb-3">Book a Farm Visit</h1>
-      <p style="opacity: 0.95; font-size: 1.1rem;">Schedule a tour, training session, or school visit at City Gate Mixed Farm</p>
+      <span class="section-eyebrow">City Gate Mixed Farm</span>
+      <h1>Book a Farm Visit</h1>
+      <p style="color:rgba(255,255,255,.85); margin-bottom:14px;">Schedule a tour, training session, or school visit at City Gate Mixed Farm</p>
+      <ul class="breadcrumb">
+         <li class="breadcrumb-item"><a href="index.php">Home</a></li>
+         <li class="breadcrumb-item active">Book a Visit</li>
+      </ul>
    </div>
 </section>
 

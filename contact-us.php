@@ -119,7 +119,7 @@ require __DIR__ . '/includes/header.php';
          <h4>Find Us in Amuca, Lira City</h4>
          <p>City Gate Mixed Farm is a short drive from central Lira City. Call ahead for directions and tour bookings.</p>
       </div>
-      <div class="mapEmbedWrap" style="border-radius:12px; overflow:hidden; box-shadow:0 4px 18px rgba(0,0,0,0.08);">
+      <div class="mapEmbedWrap" style="border-radius:12px; overflow:hidden; box-shadow:var(--cg-shadow);">
          <iframe src="https://www.google.com/maps?q=Amuca%2C+Lira+City%2C+Uganda&amp;output=embed"
                  width="100%" height="420" style="border:0;" allowfullscreen loading="lazy"
                  referrerpolicy="no-referrer-when-downgrade" title="City Gate Mixed Farm &mdash; Amuca, Lira City, Uganda"></iframe>

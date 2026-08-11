@@ -13,7 +13,7 @@
   --cg-earth:       #C9A978;
   --cg-charcoal:    #1A1A1A;
   --cg-white:       #FFFFFF;
-  --cg-shadow:      0 8px 40px rgba(47,93,58,0.13);
+  --cg-shadow:      0 4px 14px rgba(26,26,26,0.08);
   --cg-radius:      10px;
   --cg-transition:  0.35s ease;
 }
@@ -138,7 +138,7 @@ body.cg-home .mainHeader .navbar .container #collapsibleNavbar .navbar-nav li a:
   right: auto !important;
   border: none !important;
   border-radius: 12px !important;
-  box-shadow: 0 12px 40px rgba(47,93,58,0.15) !important;
+  box-shadow: 0 6px 18px rgba(26,26,26,0.10) !important;
   margin-top: 4px !important;
   min-width: 220px !important;
   padding: 8px 0 !important;
@@ -509,6 +509,53 @@ body.cg-home .header.headerOne:not(.headerActive) .mainHeader .navbar-toggler-ic
 .pillar-desc { font-size: 15px !important; line-height: 1.7 !important; color: #666 !important; }
 
 /* ============================================================
+   VALUE PROP — bold photo cards for "Why City Gate?" on the
+   homepage (index.php only — distinct from .pillars-row/.pillar-item,
+   which about-us.php still uses).
+   ============================================================ */
+.value-prop-row { background: var(--cg-cream) !important; padding: 64px 0 !important; }
+.value-prop-grid {
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr) !important;
+  gap: 28px !important;
+  margin-top: 40px !important;
+}
+.value-prop-card {
+  position: relative !important;
+  border-radius: 18px !important;
+  overflow: hidden !important;
+  aspect-ratio: 3 / 4 !important;
+  display: block !important;
+  box-shadow: var(--cg-shadow) !important;
+}
+.value-prop-card img {
+  position: absolute !important; inset: 0 !important;
+  width: 100% !important; height: 100% !important;
+  object-fit: cover !important;
+  transition: transform 0.7s ease !important;
+}
+.value-prop-card:hover img { transform: scale(1.07) !important; }
+.value-prop-overlay {
+  position: absolute !important; inset: 0 !important;
+  background: linear-gradient(180deg, rgba(26,26,26,0.05) 0%, rgba(26,26,26,0.25) 45%, rgba(20,20,20,0.92) 100%) !important;
+}
+.value-prop-icon {
+  position: absolute !important; top: 20px !important; left: 20px !important;
+  width: 50px !important; height: 50px !important;
+  background: var(--cg-earth) !important;
+  border-radius: 50% !important;
+  display: flex !important; align-items: center !important; justify-content: center !important;
+  color: var(--cg-charcoal) !important;
+  font-size: 20px !important;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.25) !important;
+}
+.value-prop-label {
+  position: absolute !important; left: 22px !important; right: 22px !important; bottom: 22px !important;
+}
+.value-prop-label h3 { font-size: 22px !important; font-weight: 700 !important; color: #fff !important; margin: 0 0 8px !important; }
+.value-prop-label p { font-size: 14px !important; line-height: 1.6 !important; color: rgba(255,255,255,0.86) !important; margin: 0 !important; }
+
+/* ============================================================
    PRODUCT CARDS
    ============================================================ */
 .products-section { padding: 56px 0 !important; background: var(--cg-cream) !important; }
@@ -849,6 +896,9 @@ footer .hrLine { border-color: rgba(250,247,240,0.1) !important; }
   .stats-strip-inner { grid-template-columns: repeat(2, 1fr) !important; }
   .section-pad { padding: 56px 0 !important; }
   .pillars-row { background: var(--cg-white) !important; padding: 56px 0 !important; }
+  .value-prop-row { padding: 44px 0 !important; }
+  .value-prop-grid { grid-template-columns: 1fr !important; gap: 20px !important; }
+  .value-prop-card { aspect-ratio: 4 / 3 !important; }
   .products-section { padding: 56px 0 !important; background: var(--cg-cream) !important; }
   .blog-section { padding: 56px 0 !important; background: var(--cg-white) !important; }
   .categorySec { padding: 48px 0 !important; background: var(--cg-cream) !important; }

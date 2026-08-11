@@ -1,6 +1,42 @@
 ﻿// City Gate Farm - Custom JavaScript
 
 // ============================================
+// SCROLL FADE-IN — reveals .fade-in elements
+// CSS (cg-redesign.css) starts them at opacity:0/translateY(28px) and
+// transitions to visible once this script adds .visible. Falls back to
+// revealing everything immediately if IntersectionObserver isn't
+// available, so content is never permanently stuck invisible.
+// ============================================
+(function () {
+    function reveal() {
+        var targets = document.querySelectorAll('.fade-in:not(.visible)');
+        if (!targets.length) return;
+
+        if (!('IntersectionObserver' in window)) {
+            targets.forEach(function (el) { el.classList.add('visible'); });
+            return;
+        }
+
+        var observer = new IntersectionObserver(function (entries, obs) {
+            entries.forEach(function (entry) {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    obs.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+
+        targets.forEach(function (el) { observer.observe(el); });
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', reveal);
+    } else {
+        reveal();
+    }
+})();
+
+// ============================================
 // SMART HEADER — Scroll handler
 // CSS (cg-redesign.css) handles all visual states.
 // Toggles .headerActive for the homepage transparent→white transition, and

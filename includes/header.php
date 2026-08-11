@@ -106,7 +106,7 @@ function cg_nav_active(string $key, string $active): string {
                   <ul class="navbar-nav">
                      <li class="nav-item<?php echo cg_nav_active('home', $activeNav); ?>"><a class="nav-link" href="index.php"><span>Home</span></a></li>
                      <li class="nav-item<?php echo cg_nav_active('about', $activeNav); ?>"><a class="nav-link" href="about-us.php">About Us</a></li>
-                     <li class="nav-item dropdown">
+                     <li class="nav-item dropdown<?php echo cg_nav_active('services', $activeNav); ?>">
                         <a class="nav-link" href="our-service.php" data-bs-toggle="dropdown">Services <i class="fa fa-angle-right" aria-hidden="true"></i></a>
                         <ul class="dropdown-menu">
                            <li><a class="dropdown-item" href="our-service.php">All Services</a></li>

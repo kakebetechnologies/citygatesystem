@@ -10,43 +10,6 @@ require __DIR__ . '/includes/header.php';
 ?>
 <link rel="stylesheet" href="css/cg-redesign.css">
 <style>
-   .poultry-hero {
-      position: relative;
-      height: 85vh;
-      min-height: 600px;
-      background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)), url('images/gallary/pexels-chicken-1867521_1920.jpg');
-      background-size: cover;
-      background-position: center;
-      display: flex;
-      align-items: center;
-      overflow: hidden;
-   }
-   .poultry-hero::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: linear-gradient(135deg, rgba(34,139,34,0.3) 0%, rgba(0,0,0,0.4) 100%);
-   }
-   .poultry-hero .hero-content {
-      position: relative;
-      z-index: 2;
-      text-align: center;
-      color: #fff;
-   }
-   .poultry-hero h1 {
-      font-size: 4rem;
-      font-weight: 800;
-      margin-bottom: 1rem;
-      text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-   }
-   .poultry-hero p {
-      font-size: 1.4rem;
-      margin-bottom: 2rem;
-      opacity: 0.95;
-   }
    .stat-box {
       background: linear-gradient(135deg, #228B22 0%, #32CD32 100%);
       border-radius: 20px;
@@ -54,7 +17,7 @@ require __DIR__ . '/includes/header.php';
       text-align: center;
       color: #fff;
       transition: transform 0.3s ease;
-      box-shadow: 0 10px 30px rgba(34,139,34,0.3);
+      box-shadow: var(--cg-shadow);
    }
    .stat-box:hover {
       transform: translateY(-10px);
@@ -70,16 +33,7 @@ require __DIR__ . '/includes/header.php';
       opacity: 0.9;
    }
    .product-card {
-      border-radius: 20px;
-      overflow: hidden;
-      background: #fff;
-      box-shadow: 0 10px 40px rgba(0,0,0,0.1);
-      transition: all 0.4s ease;
       height: 100%;
-   }
-   .product-card:hover {
-      transform: translateY(-15px);
-      box-shadow: 0 20px 60px rgba(0,0,0,0.15);
    }
    .product-card img {
       height: 250px;
@@ -187,22 +141,24 @@ require __DIR__ . '/includes/header.php';
       border-radius: 50% !important;
    }
    @media (max-width: 768px) {
-      .poultry-hero h1 {
-         font-size: 2.5rem;
-      }
       .cta-section {
          padding: 2rem;
       }
    }
 </style>
 
-<!-- Hero Section -->
-<section class="poultry-hero">
+<!-- ═══════════════ PAGE BANNER ═══════════════ -->
+<section class="cg-page-banner">
    <div class="container">
-      <div class="hero-content wow fadeInUp">
-         <h1>Fresh Poultry, Thriving Lives</h1>
-         <p>14,000+ birds producing fresh eggs and quality chicks for Lira City</p>
-         <a href="shop.php" class="btn btn-custom btn-custom-light me-3">Buy Chicks</a>
+      <span class="section-eyebrow">City Gate Mixed Farm</span>
+      <h1>Fresh Poultry, Thriving Lives</h1>
+      <ul class="breadcrumb">
+         <li class="breadcrumb-item"><a href="index.php">Home</a></li>
+         <li class="breadcrumb-item active">Poultry (Chicken)</li>
+      </ul>
+      <p class="mt-3 mb-4 wow fadeInUp">14,000+ birds producing fresh eggs and quality chicks for Lira City</p>
+      <div class="d-flex flex-wrap justify-content-center gap-3 wow fadeInUp">
+         <a href="shop.php" class="btn btn-custom btn-custom-light">Buy Chicks</a>
          <a href="contact-us.php" class="btn btn-custom btn-custom-outline">Visit Farm</a>
       </div>
    </div>

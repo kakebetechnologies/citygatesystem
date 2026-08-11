@@ -10,52 +10,17 @@ require __DIR__ . '/includes/header.php';
 ?>
 <link rel="stylesheet" href="css/cg-redesign.css">
 <style>
-   .crop-hero {
-      position: relative;
-      height: 85vh;
-      min-height: 600px;
-      background: linear-gradient(135deg, rgba(0, 80, 0, 0.85), rgba(20, 100, 20, 0.7)), url('images/gallary/pexels-chicken-1867521_1920.jpg');
-      background-size: cover;
-      background-position: center;
-      display: flex;
-      align-items: center;
-   }
-   .crop-hero::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="2" fill="rgba(255,255,255,0.1)"/></svg>');
-      background-size: 30px 30px;
-   }
-   .crop-hero .hero-content {
-      text-align: center;
-      color: #fff;
-      position: relative;
-      z-index: 2;
-   }
-   .crop-hero h1 {
-      font-size: 4rem;
-      font-weight: 800;
-      margin-bottom: 1rem;
-   }
-   .crop-hero p {
-      font-size: 1.4rem;
-      margin-bottom: 2rem;
-   }
    .crop-card {
       background: #fff;
       border-radius: 25px;
       overflow: hidden;
-      box-shadow: 0 15px 50px rgba(0,80,0,0.1);
+      box-shadow: var(--cg-shadow);
       transition: all 0.4s ease;
       height: 100%;
    }
    .crop-card:hover {
       transform: translateY(-15px);
-      box-shadow: 0 25px 70px rgba(0,80,0,0.2);
+      box-shadow: var(--cg-shadow);
    }
    .crop-card img {
       height: 220px;
@@ -178,7 +143,7 @@ require __DIR__ . '/includes/header.php';
    }
    .btn-green:hover {
       transform: translateY(-3px);
-      box-shadow: 0 10px 30px rgba(34,139,34,0.4);
+      box-shadow: var(--cg-shadow);
       color: #fff;
    }
    .btn-outline-green {
@@ -211,20 +176,24 @@ require __DIR__ . '/includes/header.php';
       font-weight: 800;
    }
    @media (max-width: 768px) {
-      .crop-hero h1 { font-size: 2.5rem; }
       .banana-section, .cofeedb-section { padding: 1.5rem; margin: 1.5rem 0; }
       .cycle-diagram { flex-direction: column; }
       .cycle-arrow { transform: rotate(90deg); }
    }
 </style>
 
-<!-- Hero -->
-<section class="crop-hero">
+<!-- ═══════════════ PAGE BANNER ═══════════════ -->
+<section class="cg-page-banner">
    <div class="container">
-      <div class="hero-content wow fadeInUp">
-         <h1>Grown with Purpose</h1>
-         <p>4 hectares — coffee, bananas, maize, pasture & feed crops</p>
-         <a href="shop.php" class="btn btn-green me-3">Buy Farm Produce</a>
+      <span class="section-eyebrow">City Gate Mixed Farm</span>
+      <h1>Grown with Purpose</h1>
+      <ul class="breadcrumb">
+         <li class="breadcrumb-item"><a href="index.php">Home</a></li>
+         <li class="breadcrumb-item active">Crops</li>
+      </ul>
+      <p class="mt-3 mb-4 wow fadeInUp">4 hectares — coffee, bananas, maize, pasture & feed crops</p>
+      <div class="d-flex flex-wrap justify-content-center gap-3 wow fadeInUp">
+         <a href="shop.php" class="btn btn-green">Buy Farm Produce</a>
          <a href="contact-us.php" class="btn btn-outline-green">Visit Farm</a>
       </div>
    </div>

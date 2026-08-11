@@ -10,56 +10,20 @@ require __DIR__ . '/includes/header.php';
 ?>
 <link rel="stylesheet" href="css/cg-redesign.css">
 <style>
-   .goat-hero {
-      position: relative;
-      height: 85vh;
-      min-height: 600px;
-      background: linear-gradient(rgba(20, 20, 10, 0.5), rgba(20, 20, 10, 0.7)), url('images/gallary/walter46-goat-4138049_1920.jpg');
-      background-size: cover;
-      background-position: center;
-      display: flex;
-      align-items: center;
-   }
-   .goat-hero::after {
-      content: '';
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      height: 100px;
-      background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 100"><path fill="%23fff" d="M0,50 C360,100 720,0 1080,50 C1260,75 1350,75 1440,50 L1440,100 L0,100 Z"/></svg>') no-repeat bottom;
-      background-size: cover;
-   }
-   .goat-hero .hero-content {
-      position: relative;
-      z-index: 2;
-      text-align: center;
-      color: #fff;
-   }
-   .goat-hero h1 {
-      font-size: 4rem;
-      font-weight: 800;
-      margin-bottom: 1rem;
-   }
-   .goat-hero p {
-      font-size: 1.4rem;
-      margin-bottom: 2rem;
-   }
    .breed-section {
-      padding: 80px 0;
-      position: relative;
+      padding: 56px 0;
    }
    .breed-card {
       background: #fff;
       border-radius: 30px;
       overflow: hidden;
-      box-shadow: 0 20px 60px rgba(0,0,0,0.1);
+      box-shadow: var(--cg-shadow);
       margin-bottom: 30px;
       transition: all 0.4s ease;
    }
    .breed-card:hover {
       transform: translateY(-10px);
-      box-shadow: 0 30px 80px rgba(0,0,0,0.15);
+      box-shadow: var(--cg-shadow);
    }
    .breed-card img {
       height: 350px;
@@ -182,7 +146,7 @@ require __DIR__ . '/includes/header.php';
    }
    .btn-brown:hover {
       transform: translateY(-3px);
-      box-shadow: 0 10px 30px rgba(139, 69, 19, 0.4);
+      box-shadow: var(--cg-shadow);
       color: #fff;
    }
    .btn-outline-brown {
@@ -199,18 +163,22 @@ require __DIR__ . '/includes/header.php';
       color: #fff;
    }
    @media (max-width: 768px) {
-      .goat-hero h1 { font-size: 2.5rem; }
       .crossbreeding-banner { padding: 2rem; }
    }
 </style>
 
-<!-- Hero -->
-<section class="goat-hero">
+<!-- ═══════════════ PAGE BANNER ═══════════════ -->
+<section class="cg-page-banner">
    <div class="container">
-      <div class="hero-content wow fadeInUp">
-         <h1>Premium Goat Breeding</h1>
-         <p>Boer & Savannah goats — superior genetics for Northern Uganda</p>
-         <a href="shop.php" class="btn btn-brown me-3">Buy Goats</a>
+      <span class="section-eyebrow">City Gate Mixed Farm</span>
+      <h1>Premium Goat Breeding</h1>
+      <ul class="breadcrumb">
+         <li class="breadcrumb-item"><a href="index.php">Home</a></li>
+         <li class="breadcrumb-item active">Goat Farming</li>
+      </ul>
+      <p class="mt-3 mb-4 wow fadeInUp">Boer & Savannah goats — superior genetics for Northern Uganda</p>
+      <div class="d-flex flex-wrap justify-content-center gap-3 wow fadeInUp">
+         <a href="shop.php" class="btn btn-brown">Buy Goats</a>
          <a href="contact-us.php" class="btn btn-outline-brown">Cross-Breeding Service</a>
       </div>
    </div>

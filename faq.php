@@ -10,27 +10,12 @@ require __DIR__ . '/includes/header.php';
 ?>
 <link rel="stylesheet" href="css/cg-redesign.css">
 <style>
-   .faq-hero {
-      background: linear-gradient(135deg, rgba(47,93,58,0.92), rgba(31,63,39,0.88)), url('images/gallary/pexels-chicken-1867521_1920.jpg');
-      background-size: cover;
-      background-position: center;
-      padding: 64px 0;
-      color: #fff;
-   }
-   @media (max-width: 768px) {
-      .faq-hero { padding: 48px 0; }
-   }
-   .faq-hero h1 {
-      font-size: 3.5rem;
-      font-weight: 800;
-      margin-bottom: 1rem;
-   }
    .faq-category {
       background: #fff;
       border-radius: 20px;
       padding: 2rem;
       margin-bottom: 2rem;
-      box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+      box-shadow: var(--cg-shadow);
    }
    .faq-category h3 {
       color: var(--farm-green, #2F5D3A);
@@ -72,17 +57,6 @@ require __DIR__ . '/includes/header.php';
       padding: 1.5rem;
       line-height: 1.8;
    }
-   .info-card {
-      background: linear-gradient(135deg, var(--farm-green-dark, #1F3F27) 0%, var(--farm-green, #2F5D3A) 100%);
-      border-radius: 20px;
-      padding: 2rem;
-      color: #fff;
-      margin-bottom: 2rem;
-   }
-   .info-card h4 {
-      font-weight: 700;
-      margin-bottom: 1rem;
-   }
    .cta-box {
       background: linear-gradient(135deg, var(--farm-green-dark, #1F3F27) 0%, var(--farm-green, #2F5D3A) 100%);
       border-radius: 25px;
@@ -104,7 +78,6 @@ require __DIR__ . '/includes/header.php';
    }
    .cta-box .btn:hover {
       transform: translateY(-3px);
-      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
    }
    .cta-box .btn-outline {
       background: transparent;
@@ -137,18 +110,21 @@ require __DIR__ . '/includes/header.php';
 </style>
 
 <!-- Hero Section -->
-<section class="faq-hero">
+<section class="cg-page-banner">
    <div class="container">
-      <div class="text-center wow fadeInUp">
-         <h1>Frequently Asked Questions</h1>
-         <p style="font-size: 1.2rem; opacity: 0.95;">Find answers about visiting, training, products, and partnerships</p>
-         <div class="quick-links justify-content-center">
-            <a href="#visiting">Farm Visits</a>
-            <a href="#training">Training</a>
-            <a href="#products">Products</a>
-            <a href="#bulk">Bulk Orders</a>
-            <a href="#partnerships">Partnerships</a>
-         </div>
+      <span class="section-eyebrow">City Gate Mixed Farm</span>
+      <h1>Frequently Asked Questions</h1>
+      <p style="color:rgba(255,255,255,.85); margin-bottom:14px;">Find answers about visiting, training, products, and partnerships</p>
+      <ul class="breadcrumb">
+         <li class="breadcrumb-item"><a href="index.php">Home</a></li>
+         <li class="breadcrumb-item active">FAQ</li>
+      </ul>
+      <div class="quick-links justify-content-center">
+         <a href="#visiting">Farm Visits</a>
+         <a href="#training">Training</a>
+         <a href="#products">Products</a>
+         <a href="#bulk">Bulk Orders</a>
+         <a href="#partnerships">Partnerships</a>
       </div>
    </div>
 </section>
