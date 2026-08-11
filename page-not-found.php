@@ -26,7 +26,9 @@
    <link rel="stylesheet" type="text/css" href="css/style.css">
    <link rel="stylesheet" type="text/css" href="css/responsive.css">
    <link rel="stylesheet" href="css/cg-theme.css">
-   <link rel="shortcut icon" type="image/png" href="images/logo/favcon.png">
+   <link rel="icon" type="image/png" sizes="32x32" href="images/logo/favicon-32.png">
+   <link rel="apple-touch-icon" href="images/logo/apple-touch-icon.png">
+   <link rel="shortcut icon" type="image/png" href="images/logo/favicon-32.png">
    <style>
       #errorSec .commonHeading h4 { color: var(--farm-green); }
       #errorSec .commonHeading p { color: var(--charcoal); }
@@ -51,8 +53,8 @@
                 <div class="cg-footer-logo">
                    <img src="images/logo/citygatelogo.png" alt="City Gate Farms" class="img-fluid">
                 </div>
-                <div class="error-image">
-                   <img src="images/img28.png" alt="404 illustration" class="img-fluid">
+                <div class="error-image" style="font-size:120px;font-weight:800;color:var(--farm-green,#2f5d3a);line-height:1;display:flex;align-items:center;justify-content:center;gap:18px;">
+                   4<i class="fa fa-map-signs" aria-hidden="true" style="color:var(--earth,#C9A978);font-size:90px;"></i>4
                 </div>
                 <div class="commonHeading">
                    <h4>Page Not Found</h4>

@@ -66,7 +66,9 @@ $currentFile = basename($_SERVER['SCRIPT_NAME']);
    <link rel="stylesheet" type="text/css" href="../css/font-awesome.css">
    <link rel="stylesheet" href="../css/cg-theme.css">
    <link rel="stylesheet" href="../css/cg-admin.css">
-   <link rel="shortcut icon" type="image/png" href="../images/logo/favcon.png">
+   <link rel="icon" type="image/png" sizes="32x32" href="../images/logo/favicon-32.png">
+   <link rel="apple-touch-icon" href="../images/logo/apple-touch-icon.png">
+   <link rel="shortcut icon" type="image/png" href="../images/logo/favicon-32.png">
 </head>
 <body class="cg-admin-body">
    <div class="cg-admin-overlay" id="cgAdminOverlay"></div>

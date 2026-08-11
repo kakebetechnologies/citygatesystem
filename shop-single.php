@@ -82,38 +82,38 @@ require __DIR__ . '/includes/header.php';
                   <div id="custCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
                      <div class="carousel-inner">
                         <div class="carousel-item active">
-                           <div class="carouselItem"><img loading="lazy" src="images/img7.png" alt="Bovans Browns" class="img-fluid"></div>
+                           <div class="carouselItem"><img loading="lazy" src="images/gallary/andreasgoellner-hen-5642953_1920.jpg" alt="Bovans Browns" class="img-fluid"></div>
                         </div>
                         <div class="carousel-item">
-                           <div class="carouselItem"><img loading="lazy" src="images/img8.png" alt="Bovans Browns" class="img-fluid"></div>
+                           <div class="carouselItem"><img loading="lazy" src="images/gallary/neelam279-floor-7049278_1920.jpg" alt="Bovans Browns" class="img-fluid"></div>
                         </div>
                         <div class="carousel-item">
-                           <div class="carouselItem"><img loading="lazy" src="images/img44.png" alt="Bovans Browns" class="img-fluid"></div>
+                           <div class="carouselItem"><img loading="lazy" src="images/gallary/stevepb-nest-1050964_1920.jpg" alt="Bovans Browns" class="img-fluid"></div>
                         </div>
                         <div class="carousel-item">
-                           <div class="carouselItem"><img loading="lazy" src="images/img5.png" alt="Bovans Browns" class="img-fluid"></div>
+                           <div class="carouselItem"><img loading="lazy" src="images/gallary/pexels-chicken-1867521_1920.jpg" alt="Bovans Browns" class="img-fluid"></div>
                         </div>
                      </div>
 
                      <ol class="carousel-indicators list-inline">
                         <li class="list-inline-item">
                            <a id="carousel-selector-0" class="selected active" data-bs-slide-to="0" data-bs-target="#custCarousel">
-                              <div class="carouselIndicatorsItem"><img loading="lazy" src="images/img7.png" alt="img" class="img-fluid"></div>
+                              <div class="carouselIndicatorsItem"><img loading="lazy" src="images/gallary/andreasgoellner-hen-5642953_1920.jpg" alt="img" class="img-fluid"></div>
                            </a>
                         </li>
                         <li class="list-inline-item">
                            <a id="carousel-selector-1" data-bs-slide-to="1" data-bs-target="#custCarousel">
-                              <div class="carouselIndicatorsItem"><img loading="lazy" src="images/img8.png" alt="img" class="img-fluid"></div>
+                              <div class="carouselIndicatorsItem"><img loading="lazy" src="images/gallary/neelam279-floor-7049278_1920.jpg" alt="img" class="img-fluid"></div>
                            </a>
                         </li>
                         <li class="list-inline-item">
                            <a id="carousel-selector-2" data-bs-slide-to="2" data-bs-target="#custCarousel">
-                              <div class="carouselIndicatorsItem"><img loading="lazy" src="images/img44.png" alt="img" class="img-fluid"></div>
+                              <div class="carouselIndicatorsItem"><img loading="lazy" src="images/gallary/stevepb-nest-1050964_1920.jpg" alt="img" class="img-fluid"></div>
                            </a>
                         </li>
                         <li class="list-inline-item">
                            <a id="carousel-selector-3" data-bs-slide-to="3" data-bs-target="#custCarousel">
-                              <div class="carouselIndicatorsItem"><img loading="lazy" src="images/img5.png" alt="img" class="img-fluid"></div>
+                              <div class="carouselIndicatorsItem"><img loading="lazy" src="images/gallary/pexels-chicken-1867521_1920.jpg" alt="img" class="img-fluid"></div>
                            </a>
                         </li>
                      </ol>
@@ -158,11 +158,11 @@ require __DIR__ . '/includes/header.php';
                   </div>
                   <div class="guaranteedInfo">
                      <div class="guaranteedInfoItem">
-                        <div class="guaranteedInfoImg"><img loading="lazy" src="images/icon14.png" alt="img" class="img-fluid"></div>
+                        <div class="guaranteedInfoImg"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
                         <div class="guaranteedInfoTxt"><p>Available for pickup at the farm in Amuca, Lira City</p></div>
                      </div>
                      <div class="guaranteedInfoItem">
-                        <div class="guaranteedInfoImg"><img loading="lazy" src="images/icon15.png" alt="img" class="img-fluid"></div>
+                        <div class="guaranteedInfoImg"><i class="fa fa-truck" aria-hidden="true"></i></div>
                         <div class="guaranteedInfoTxt"><p>Contact us to arrange delivery or collection timing</p></div>
                      </div>
                      <hr class="HorizLine">
@@ -227,11 +227,16 @@ require __DIR__ . '/includes/header.php';
                               <?php if (empty($reviews)): ?>
                                  <p style="color:#888;">No reviews yet — be the first to review this product.</p>
                               <?php endif; ?>
-                              <?php foreach ($reviews as $r): ?>
+                              <?php foreach ($reviews as $r):
+                                 $rInitialsParts = preg_split('/\s+/', trim($r['name']));
+                                 $rInitials = '';
+                                 foreach (array_slice($rInitialsParts, 0, 2) as $rp) { if ($rp !== '') $rInitials .= mb_strtoupper(mb_substr($rp, 0, 1)); }
+                                 if ($rInitials === '') $rInitials = '?';
+                              ?>
                               <div class="commentItem mb-4">
                                  <div class="commentPost">
                                     <div class="userProfile">
-                                       <img src="images/profile.png" alt="profile" class="img-fluid">
+                                       <div style="width:100px;height:100px;border-radius:50px;background:var(--cg-green,#2f5d3a);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:28px;"><?php echo htmlspecialchars($rInitials); ?></div>
                                     </div>
                                     <div class="postContent">
                                        <div class="postGroup">
@@ -330,10 +335,10 @@ require __DIR__ . '/includes/header.php';
       <div class="owl-carousel owl-theme owlCarouselProducts">
          <?php
          $related = [
-            ['img' => 'images/img5.png', 'name' => 'White & Brown Eggs', 'badge' => 'New', 'badgeClass' => 'bg-success'],
-            ['img' => 'images/img6.png', 'name' => 'Little Chicks', 'badge' => 'Hot', 'badgeClass' => 'bg-danger'],
-            ['img' => 'images/img7.png', 'name' => 'Bovans Browns', 'badge' => 'New', 'badgeClass' => 'bg-success'],
-            ['img' => 'images/img8.png', 'name' => 'Chicken Broiler', 'badge' => '', 'badgeClass' => ''],
+            ['img' => 'images/gallary/akirevarga-egg-7345934.jpg', 'name' => 'White & Brown Eggs', 'badge' => 'New', 'badgeClass' => 'bg-success'],
+            ['img' => 'images/gallary/9883074-chicken-3727097_1920.jpg', 'name' => 'Little Chicks', 'badge' => 'Hot', 'badgeClass' => 'bg-danger'],
+            ['img' => 'images/gallary/andreasgoellner-hen-5642953_1920.jpg', 'name' => 'Bovans Browns', 'badge' => 'New', 'badgeClass' => 'bg-success'],
+            ['img' => 'images/gallary/pexels-chicken-1867521_1920.jpg', 'name' => 'Chicken Broiler', 'badge' => '', 'badgeClass' => ''],
          ];
          foreach ($related as $rp):
          ?>

@@ -5,6 +5,8 @@
  *   $pageDescription  (string) — meta description
  *   $activeNav        (string) — one of: home,about,services,gallery,blog,shop,faq,contact
  *   $ogImage/$ogTitle/$ogDescription/$canonicalUrl — override Open Graph tags (used by blog-single.php)
+ *   $ogType           (string) — og:type, defaults to 'website' ('article' for blog posts)
+ *   $articleMeta      (array)  — when $ogType === 'article': published_time, author, section (all optional)
  */
 require_once __DIR__ . '/../config/db.php';
 
@@ -16,6 +18,8 @@ $activeNav = $activeNav ?? '';
 $ogTitle = $ogTitle ?? $pageTitle;
 $ogDescription = $ogDescription ?? $pageDescription;
 $ogImage = $ogImage ?? 'images/gallary/rooster-farm.jpg';
+$ogType = $ogType ?? 'website';
+$articleMeta = $articleMeta ?? [];
 $scheme = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') ? 'https' : 'http';
 $canonicalUrl = $canonicalUrl ?? ($scheme . '://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI']);
 
@@ -31,16 +35,25 @@ function cg_nav_active(string $key, string $active): string {
    <meta name="description" content="<?php echo htmlspecialchars($pageDescription); ?>">
    <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-   <meta property="og:type" content="website">
+   <meta property="og:type" content="<?php echo htmlspecialchars($ogType); ?>">
    <meta property="og:title" content="<?php echo htmlspecialchars($ogTitle); ?>">
    <meta property="og:description" content="<?php echo htmlspecialchars($ogDescription); ?>">
    <meta property="og:image" content="<?php echo htmlspecialchars($ogImage); ?>">
+   <meta property="og:image:secure_url" content="<?php echo htmlspecialchars($ogImage); ?>">
+   <meta property="og:image:alt" content="<?php echo htmlspecialchars($ogTitle); ?>">
    <meta property="og:url" content="<?php echo htmlspecialchars($canonicalUrl); ?>">
    <meta property="og:site_name" content="<?php echo htmlspecialchars($siteName); ?>">
    <meta name="twitter:card" content="summary_large_image">
    <meta name="twitter:title" content="<?php echo htmlspecialchars($ogTitle); ?>">
    <meta name="twitter:description" content="<?php echo htmlspecialchars($ogDescription); ?>">
    <meta name="twitter:image" content="<?php echo htmlspecialchars($ogImage); ?>">
+   <?php if ($ogType === 'article'): ?>
+   <?php if (!empty($articleMeta['published_time'])): ?><meta property="article:published_time" content="<?php echo htmlspecialchars($articleMeta['published_time']); ?>"><?php endif; ?>
+   <?php if (!empty($articleMeta['modified_time'])): ?><meta property="article:modified_time" content="<?php echo htmlspecialchars($articleMeta['modified_time']); ?>"><?php endif; ?>
+   <?php if (!empty($articleMeta['author'])): ?><meta property="article:author" content="<?php echo htmlspecialchars($articleMeta['author']); ?>"><?php endif; ?>
+   <?php if (!empty($articleMeta['section'])): ?><meta property="article:section" content="<?php echo htmlspecialchars($articleMeta['section']); ?>"><?php endif; ?>
+   <?php foreach (($articleMeta['tags'] ?? []) as $tag): ?><meta property="article:tag" content="<?php echo htmlspecialchars($tag); ?>"><?php endforeach; ?>
+   <?php endif; ?>
    <link rel="canonical" href="<?php echo htmlspecialchars($canonicalUrl); ?>">
 
    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
@@ -58,7 +71,12 @@ function cg_nav_active(string $key, string $active): string {
    <link rel="stylesheet" type="text/css" href="css/style.css">
    <link rel="stylesheet" type="text/css" href="css/responsive.css">
    <link rel="stylesheet" href="css/cg-theme.css">
-   <link rel="shortcut icon" type="image/png" href="images/logo/favcon.png">
+   <link rel="icon" type="image/png" sizes="16x16" href="images/logo/favicon-16.png">
+   <link rel="icon" type="image/png" sizes="32x32" href="images/logo/favicon-32.png">
+   <link rel="icon" type="image/png" sizes="48x48" href="images/logo/favicon-48.png">
+   <link rel="icon" type="image/png" sizes="192x192" href="images/logo/favicon-192.png">
+   <link rel="apple-touch-icon" href="images/logo/apple-touch-icon.png">
+   <link rel="shortcut icon" type="image/png" href="images/logo/favicon-32.png">
 </head>
 <body>
    <div class='cursor cursor1'></div>
@@ -128,7 +146,6 @@ function cg_nav_active(string $key, string $active): string {
                </div>
                <div class="rightMenu">
                   <ul class="nav">
-                     <li class="nav-item searchBtn"><a class="nav-link" href="javascript:void(0);"><img src="images/icon/search.png" alt="loader" class="img-fluid"></a></li>
                      <li class="nav-item loginBtn d-none d-md-block">
                         <div class="btnGroup"><a class="nav-link btn" href="bookings.php">Book a Visit</a></div>
                      </li>
@@ -144,18 +161,3 @@ function cg_nav_active(string $key, string $active): string {
       </div>
       <div class="widgetOverlay"></div>
    </header>
-   <!--search box start-->
-   <div class="searchBox">
-      <div class="container">
-         <div class="searchBoxInner">
-            <div class="searchHeading"><h4>Search Our Site</h4></div>
-            <div class="searchInput">
-               <div class="input-group">
-                  <input type="text" class="form-control" placeholder="Search">
-                  <a href="javascript:void(0);" class="input-group-text searchButton"><span>Search</span> <img src="images/icon/icon-right.png" alt="btn-arrow" class="img-fluid"></a>
-               </div>
-            </div>
-            <div class="quickSearch"><p><span>Quick Search:</span>Poultry, Pig Farm, Fish Feed, Hen Feeds</p></div>
-         </div>
-      </div>
-   </div>

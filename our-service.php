@@ -43,7 +43,7 @@ require __DIR__ . '/includes/header.php';
                <a href="contact-us.php">
                   <div class="categorySecItem cg-card">
                      <div class="categoryIcon">
-                        <span><img src="images/icon1.png" alt="icon" class="img-fluid"></span>
+                        <span><i class="fa fa-map-marker" aria-hidden="true"></i></span>
                      </div>
                      <div class="categoryContent">
                         <h5>Farm Visits & Tours</h5>
@@ -56,7 +56,7 @@ require __DIR__ . '/includes/header.php';
                <a href="contact-us.php">
                   <div class="categorySecItem cg-card">
                      <div class="categoryIcon">
-                        <span><img src="images/icon2.png" alt="icon" class="img-fluid"></span>
+                        <span><i class="fa fa-graduation-cap" aria-hidden="true"></i></span>
                      </div>
                      <div class="categoryContent">
                         <h5>Agricultural Training</h5>
@@ -69,7 +69,7 @@ require __DIR__ . '/includes/header.php';
                <a href="contact-us.php">
                   <div class="categorySecItem cg-card">
                      <div class="categoryIcon">
-                        <span><img src="images/icon3.png" alt="icon" class="img-fluid"></span>
+                        <span><i class="fa fa-users" aria-hidden="true"></i></span>
                      </div>
                      <div class="categoryContent">
                         <h5>Youth Empowerment</h5>
@@ -82,7 +82,7 @@ require __DIR__ . '/includes/header.php';
                <a href="contact-us.php">
                   <div class="categorySecItem cg-card">
                      <div class="categoryIcon">
-                        <span><img src="images/icon4.png" alt="icon" class="img-fluid"></span>
+                        <span><i class="fa fa-briefcase" aria-hidden="true"></i></span>
                      </div>
                      <div class="categoryContent">
                         <h5>Internships & Industrial Training</h5>
@@ -97,7 +97,7 @@ require __DIR__ . '/includes/header.php';
                <a href="shop.php">
                   <div class="categorySecItem cg-card">
                      <div class="categoryIcon">
-                        <span><img src="images/icon1.png" alt="icon" class="img-fluid"></span>
+                        <span><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
                      </div>
                      <div class="categoryContent">
                         <h5>Livestock Sales</h5>
@@ -110,7 +110,7 @@ require __DIR__ . '/includes/header.php';
                <a href="actigen.php">
                   <div class="categorySecItem cg-card">
                      <div class="categoryIcon">
-                        <span><img src="images/icon2.png" alt="icon" class="img-fluid"></span>
+                        <span><i class="fa fa-leaf" aria-hidden="true"></i></span>
                      </div>
                      <div class="categoryContent">
                         <h5>Crop Production Support</h5>
@@ -123,7 +123,7 @@ require __DIR__ . '/includes/header.php';
                <a href="broiler-breeder.php">
                   <div class="categorySecItem cg-card">
                      <div class="categoryIcon">
-                        <span><img src="images/icon3.png" alt="icon" class="img-fluid"></span>
+                        <span><i class="fa fa-random" aria-hidden="true"></i></span>
                      </div>
                      <div class="categoryContent">
                         <h5>Cross-Breeding Services</h5>
@@ -136,7 +136,7 @@ require __DIR__ . '/includes/header.php';
                <a href="contact-us.php">
                   <div class="categorySecItem cg-card">
                      <div class="categoryIcon">
-                        <span><img src="images/icon4.png" alt="icon" class="img-fluid"></span>
+                        <span><i class="fa fa-comments-o" aria-hidden="true"></i></span>
                      </div>
                      <div class="categoryContent">
                         <h5>Agribusiness Mentorship</h5>
@@ -188,15 +188,14 @@ require __DIR__ . '/includes/header.php';
                   <h4>WHY CHOOSE CITY GATE MIXED FARM</h4>
                   <p>We are not a training institute that rents animals &mdash; we are a commercial farm that trains. Everything we teach, sell, and demonstrate comes from operations we run every single day.</p>
                   <ul>
-                     <li><img src="images/icon10.png" alt="img" class="img-fluid"> Four integrated sectors &mdash; poultry, goats, dairy, and crops &mdash; on one site.</li>
-                     <li><img src="images/icon10.png" alt="img" class="img-fluid"> Locally rooted in Amuca, Lira City, focused on Northern Uganda farmers.</li>
-                     <li><img src="images/icon10.png" alt="img" class="img-fluid"> Prices in UGX, practical content, and a team that answers the phone.</li>
+                     <li><i class="fa fa-check-circle" aria-hidden="true"></i> Four integrated sectors &mdash; poultry, goats, dairy, and crops &mdash; on one site.</li>
+                     <li><i class="fa fa-check-circle" aria-hidden="true"></i> Locally rooted in Amuca, Lira City, focused on Northern Uganda farmers.</li>
+                     <li><i class="fa fa-check-circle" aria-hidden="true"></i> Prices in UGX, practical content, and a team that answers the phone.</li>
                   </ul>
                </div>
             </div>
             <div class="col-lg-6 getDifferentCol getDifferentCol2">
                <div class="getOrganicIcon">
-                  <img src="images/icon11.png" alt="img" class="img-fluid OrganicImgIcon">
                   <div class="getOrganicImg">
                      <div class="getOrganicImgInner">
                         <img src="images/gallary/jaclou-dl-cow-4270355_1920.jpg" alt="Why Choose Us" class="img-fluid getOrgImg">

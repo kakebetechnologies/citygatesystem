@@ -106,9 +106,6 @@ $latestPosts = $stmt->fetchAll();
         </div>
     </div>
 
-    <button class="cg-hero__arrow cg-hero__arrow--prev" id="cgHeroPrev" aria-label="Previous slide"><i class="fa fa-angle-left"></i></button>
-    <button class="cg-hero__arrow cg-hero__arrow--next" id="cgHeroNext" aria-label="Next slide"><i class="fa fa-angle-right"></i></button>
-
     <div class="cg-hero__dots" id="cgHeroDots">
         <button class="cg-hero__dot is-active" data-go="0" aria-label="Slide 1"></button>
         <button class="cg-hero__dot" data-go="1" aria-label="Slide 2"></button>
@@ -138,8 +135,6 @@ $latestPosts = $stmt->fetchAll();
     dots.forEach(function(d){
         d.addEventListener('click', function(){ go(parseInt(d.dataset.go, 10)); restart(); });
     });
-    document.getElementById('cgHeroNext').addEventListener('click', function(){ next(); restart(); });
-    document.getElementById('cgHeroPrev').addEventListener('click', function(){ prev(); restart(); });
     document.addEventListener('keydown', function(e){
         if (e.key === 'ArrowRight') { next(); restart(); }
         if (e.key === 'ArrowLeft')  { prev(); restart(); }
@@ -171,6 +166,18 @@ $latestPosts = $stmt->fetchAll();
     }
 })();
 </script>
+
+<!-- INTRO STATEMENT — high-level summary of who City Gate is -->
+<section class="cg-intro-statement">
+    <div class="container">
+        <div class="cg-intro-statement__inner fade-in">
+            <span class="cg-intro-statement__mark">Who We Are</span>
+          <p class="cg-intro-statement__lead">A living model of integrated farming in Amuca, Lira City — where poultry, dairy, goats, and crops work together as one thriving ecosystem.</p>
+<p>City Gate Mixed Farm is a 4‑hectare demonstration farm and training hub. We combine poultry, goats, dairy, and crops to prove sustainable agriculture works in Northern Uganda. Beyond production, we host school tours, mentor young agripreneurs, and offer hands-on training. Our mission: to build a farm that feeds, employs, and inspires — a model for the community and beyond.</p>
+            <hr class="cg-intro-statement__rule">
+        </div>
+    </div>
+</section>
 
 <!-- WHY CITY GATE? (value proposition — bold photo-card treatment) -->
 <section class="value-prop-row">
@@ -349,17 +356,17 @@ $latestPosts = $stmt->fetchAll();
                 <ul class="nav nav-pills fadein">
                     <li class="nav-item">
                         <a class="nav-link active" data-bs-toggle="pill" href="#slide1">
-                            <img loading="lazy" src="images/img21.png" alt="icon" class="img-fluid">
+                            <span class="nav-pill-avatar">OD</span>
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" data-bs-toggle="pill" href="#slide2">
-                            <img loading="lazy" src="images/user2.png" alt="icon" class="img-fluid">
+                            <span class="nav-pill-avatar">AG</span>
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" data-bs-toggle="pill" href="#slide3">
-                            <img loading="lazy" src="images/user3.png" alt="icon" class="img-fluid">
+                            <span class="nav-pill-avatar">AM</span>
                         </a>
                     </li>
                 </ul>

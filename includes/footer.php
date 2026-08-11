@@ -7,23 +7,7 @@ $extraScripts = $extraScripts ?? [];
 ?>
    <!--footer start-->
    <footer class="w-100 clearfix footer footerBg1" id="footer">
-      <div class="needOurSupport">
-         <div class="container">
-            <div class="needOurSupportInner">
-               <div class="needOurSupportTxt">
-                  <h2>Stay Connected With City Gate Mixed Farm</h2>
-                  <p>Get updates on new products, training intakes, farm visit schedules and price offers delivered straight to your inbox.</p>
-               </div>
-               <div class="needOurSupportInput">
-                  <div class="input-group">
-                     <input type="text" class="form-control" placeholder="Email Address">
-                     <a href="javascript:void(0);" class="input-group-text subscriptionBtn"><span>Subscription</span>
-                        <img src="images/icon/icon-right.png" alt="btn-arrow" class="img-fluid"></a>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
+      
       <div class="footerGroup">
          <div class="footerInner">
             <div class="container">

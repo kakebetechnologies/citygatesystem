@@ -100,18 +100,9 @@ $('.dropdown').on('hide.bs.dropdown', function(e){
 // ============================================
 $(document).ready(function($) {
     var mastHeight = $('.header').outerHeight();
-    $('.searchBox').css('top', mastHeight); 
-    $('.mainHeader .navbar div#collapsibleNavbar').css('top', mastHeight); 
-    
+    $('.mainHeader .navbar div#collapsibleNavbar').css('top', mastHeight);
+
     var topHeaderHeight = $('.topHeader').outerHeight();
-});
-
-
-// ============================================
-// SEARCH BOX TOGGLE
-// ============================================
-$(".searchBtn").click(function(){
-    $(".searchBox").toggleClass("active");
 });
 
 
@@ -160,19 +151,6 @@ $(document).ready(function(){
             $(this).toggleClass('open');       
         }
     );
-});
-
-
-// ============================================
-// CLOSE SEARCH WHEN CLICKING OUTSIDE
-// ============================================
-$(function() {
-    $(document).click(function(e) {
-        var target = e.target;
-        if (!$(target).is('.searchBtn, .searchBoxInner') && !$(target).parents().is('.searchBtn, .searchBoxInner')) {
-            $(".searchBox.active").removeClass("active");
-        }
-    });
 });
 
 
