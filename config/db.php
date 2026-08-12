@@ -1,13 +1,33 @@
 <?php
 /**
- * Database connection (PDO). Local XAMPP dev defaults — root / no password.
- * Change these before any real deployment; consider moving to environment
- * variables at that point instead of hardcoding here.
+ * Database connection (PDO). Automatically switches between local XAMPP
+ * dev credentials and the live server's credentials based on the request's
+ * host — same codebase, no manual editing needed when deploying.
+ *
+ * "Local" = HTTP_HOST is localhost/127.0.0.1, or the script is run from the
+ * CLI (e.g. a one-off maintenance script on the dev machine). Everything
+ * else (the live domain, whatever it resolves to) uses the live credentials.
  */
-$DB_HOST = 'localhost';
-$DB_NAME = 'citygatefarm';
-$DB_USER = 'root';
-$DB_PASS = '';
+$cgHttpHost = $_SERVER['HTTP_HOST'] ?? '';
+$isLocalEnv = PHP_SAPI === 'cli'
+   || $cgHttpHost === 'localhost'
+   || $cgHttpHost === '127.0.0.1'
+   || str_starts_with($cgHttpHost, 'localhost:')
+   || str_starts_with($cgHttpHost, '127.0.0.1:');
+
+if ($isLocalEnv) {
+   // Local XAMPP dev
+   $DB_HOST = 'localhost';
+   $DB_NAME = 'citygatefarm';
+   $DB_USER = 'root';
+   $DB_PASS = '';
+} else {
+   // Live server
+   $DB_HOST = 'localhost';
+   $DB_NAME = 'u850523537_CityGate';
+   $DB_USER = 'u850523537_CityGateUser';
+   $DB_PASS = 'i#@Recover2';
+}
 
 try {
    $pdo = new PDO(
