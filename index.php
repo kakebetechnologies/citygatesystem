@@ -7,7 +7,7 @@
  */
 $pageTitle       = 'City Gate Mixed Farm - Integrated Model Farm in Lira City, Uganda';
 $pageDescription = 'City Gate Mixed Farm is an integrated model farm in Amuca, Lira City, Uganda — poultry, dairy, goats and crops, farm-fresh produce, hands-on training, and guided farm visits.';
-$ogImage         = 'images/gallary/pexels-chicken-1867521_1920.jpg';
+$ogImage         = 'images/gallary/cover-img.jpeg';
 $activeNav       = 'home';
 require __DIR__ . '/includes/header.php';
 require_once __DIR__ . '/includes/cms.php';

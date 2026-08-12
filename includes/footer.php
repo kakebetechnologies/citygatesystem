@@ -77,8 +77,9 @@ $extraScripts = $extraScripts ?? [];
          </div>
          <div class="footerCopyRight">
             <div class="container">
-               <div class="footerCopyRightInner">
+               <div class="footerCopyRightInner cg-footer-bottom-row">
                   <p class="mb-0">Copyright © <?php echo date('Y'); ?> <a href="index.php">City Gate Mixed Farm</a>. All Rights Reserved.</p>
+                  <a href="admin/login.php" class="cg-admin-login-link"><i class="fa fa-lock" aria-hidden="true"></i> Staff Login</a>
                </div>
             </div>
          </div>

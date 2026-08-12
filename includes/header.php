@@ -23,6 +23,15 @@ $articleMeta = $articleMeta ?? [];
 $scheme = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') ? 'https' : 'http';
 $canonicalUrl = $canonicalUrl ?? ($scheme . '://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI']);
 
+// Social crawlers (Facebook, WhatsApp, Twitter/X, LinkedIn) need an absolute
+// URL for og:image — a bare relative path like "images/gallary/x.jpg" won't
+// reliably resolve when they fetch the page. Make it absolute here once, so
+// every page gets a working share-preview image without having to remember.
+if (!preg_match('~^https?://~i', $ogImage)) {
+   $basePath = rtrim(str_replace('\\', '/', dirname($_SERVER['SCRIPT_NAME'])), '/');
+   $ogImage = $scheme . '://' . $_SERVER['HTTP_HOST'] . $basePath . '/' . ltrim($ogImage, '/');
+}
+
 function cg_nav_active(string $key, string $active): string {
    return $key === $active ? ' active' : '';
 }
@@ -83,11 +92,11 @@ function cg_nav_active(string $key, string $active): string {
    <div class='cursor cursor2'></div>
    <header class="w-100 clearfix header headerOne" id="headerOne">
       <div class="mainHeader">
-         <nav class="navbar navbar-expand-xl">
+         <nav class="navbar navbar-expand-xl cg-navbar-split">
             <div class="container">
-               <a class="navbar-brand" href="index.php"><img src="images/logo/citygatelogo.png" alt="City Gate Mixed Farm" class="img-fluid" style="max-width:180px;"></a>
+               <a class="navbar-brand cg-navbar-brand-mobile" href="index.php"><img src="images/logo/citygatelogo.png" alt="City Gate Mixed Farm" class="img-fluid" style="max-width:180px;"></a>
                <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                  <ul class="navbar-nav">
+                  <ul class="navbar-nav cg-nav-left">
                      <li class="nav-item<?php echo cg_nav_active('home', $activeNav); ?>"><a class="nav-link" href="index.php"><span>Home</span></a></li>
                      <li class="nav-item<?php echo cg_nav_active('about', $activeNav); ?>"><a class="nav-link" href="about-us.php">About Us</a></li>
                      <li class="nav-item dropdown<?php echo cg_nav_active('services', $activeNav); ?>">
@@ -101,20 +110,22 @@ function cg_nav_active(string $key, string $active): string {
                         </ul>
                      </li>
                      <li class="nav-item<?php echo cg_nav_active('gallery', $activeNav); ?>"><a class="nav-link" href="gallery-3-column.php">Gallery</a></li>
+                  </ul>
+
+                  <a class="navbar-brand cg-navbar-brand-center" href="index.php"><img src="images/logo/citygatelogo.png" alt="City Gate Mixed Farm" class="img-fluid" style="max-width:150px;"></a>
+
+                  <ul class="navbar-nav cg-nav-right">
                      <li class="nav-item<?php echo cg_nav_active('blog', $activeNav); ?>"><a class="nav-link" href="blog.php">Blog</a></li>
                      <li class="nav-item<?php echo cg_nav_active('shop', $activeNav); ?>"><a class="nav-link" href="shop.php">Shop</a></li>
                      <li class="nav-item<?php echo cg_nav_active('faq', $activeNav); ?>"><a class="nav-link" href="faq.php">FAQ</a></li>
                      <li class="nav-item<?php echo cg_nav_active('contact', $activeNav); ?>"><a class="nav-link" href="contact-us.php">Contact</a></li>
-                     <li class="nav-item loginBtn d-block d-md-none">
+                     <li class="nav-item loginBtn">
                         <div class="btnGroup"><a class="nav-link btn" href="bookings.php">Book a Visit</a></div>
                      </li>
                   </ul>
                </div>
                <div class="rightMenu">
                   <ul class="nav">
-                     <li class="nav-item loginBtn d-none d-md-block">
-                        <div class="btnGroup"><a class="nav-link btn" href="bookings.php">Book a Visit</a></div>
-                     </li>
                      <li class="nav-item toggleBtn">
                         <a class="nav-link navbar-toggler" href="javascript:void(0);" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
                            <span class="navbar-toggler-icon"></span>

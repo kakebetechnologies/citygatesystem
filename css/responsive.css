@@ -161,6 +161,10 @@
     display: block;
     transform: translateX(-320px);
   }
+  .mainHeader .navbar .collapse.show {
+    display: block;
+    transform: translateX(0);
+  }
   .rightMenu .toggleBtn {
     margin-left: 10px;
   }
