@@ -7,6 +7,7 @@
  */
 require_once __DIR__ . '/config/db.php';
 require_once __DIR__ . '/includes/auth.php'; // session + CSRF helpers only (no login required to book)
+require_once __DIR__ . '/includes/mailer.php';
 
 $purposes = [
    'farm-tour'    => 'Farm Tour',
@@ -111,6 +112,30 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
          }
 
          $pdo->commit();
+
+         // Best-effort admin notification — booking is already saved above
+         // either way, so a mail failure never blocks the visitor's request.
+         $mailConfig = require __DIR__ . '/config/mail.php';
+         $notifyTo = $mailConfig['notify_to'] ?? ($mailConfig['from_email'] ?: 'info@citygatefarms.com');
+         $visitDateStr = $old['visit_date'] !== '' ? date('d F Y', strtotime($old['visit_date'])) : 'Not specified';
+         $timeLabel = $old['visit_time'] !== '' ? ($times[$old['visit_time']] ?? $old['visit_time']) : 'Not specified';
+         $purposeLabel = $purposes[$old['purpose']] ?? $old['purpose'];
+         $bodyHtml = '<h2 style="color:#2F5D3A;">New Farm Visit Request</h2>'
+            . '<p>A new booking request has been submitted on the City Gate Mixed Farm website.</p>'
+            . '<table cellpadding="6" style="border-collapse:collapse;">'
+            . '<tr><td><strong>Contact Name</strong></td><td>' . htmlspecialchars($old['contact_name']) . '</td></tr>'
+            . '<tr><td><strong>Phone</strong></td><td>' . htmlspecialchars($old['contact_phone']) . '</td></tr>'
+            . '<tr><td><strong>Email</strong></td><td>' . htmlspecialchars($old['contact_email']) . '</td></tr>'
+            . ($old['institution'] !== '' ? '<tr><td><strong>Institution / Group</strong></td><td>' . htmlspecialchars($old['institution']) . '</td></tr>' : '')
+            . '<tr><td><strong>Purpose</strong></td><td>' . htmlspecialchars($purposeLabel) . '</td></tr>'
+            . '<tr><td><strong>Visit Date</strong></td><td>' . htmlspecialchars($visitDateStr) . '</td></tr>'
+            . '<tr><td><strong>Preferred Time</strong></td><td>' . htmlspecialchars($timeLabel) . '</td></tr>'
+            . ($numVisitors !== null ? '<tr><td><strong>Number of Visitors</strong></td><td>' . (int) $numVisitors . '</td></tr>' : '')
+            . ($old['message'] !== '' ? '<tr><td><strong>Notes</strong></td><td>' . nl2br(htmlspecialchars($old['message'])) . '</td></tr>' : '')
+            . '</table>'
+            . '<p>Review and confirm/decline this request in the admin panel under Appointments.</p>';
+         cg_send_mail($notifyTo, 'City Gate Mixed Farm', 'New Farm Visit Request — ' . $old['contact_name'], $bodyHtml, $old['contact_email'], $old['contact_name']);
+
          header('Location: bookings.php?success=1');
          exit;
       } catch (Throwable $e) {

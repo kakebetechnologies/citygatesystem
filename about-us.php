@@ -34,8 +34,17 @@ $visionText  = cg_cms($pdo, 'about', 'vision_text', 'To be the leading model far
    <div class="container">
       <div class="row align-items-center g-5">
          <div class="col-lg-6 fade-in">
-            <div style="border-radius:16px; overflow:hidden; aspect-ratio:4/3;">
-               <img src="images/gallary/pexels-chicken-1867521_1920.jpg" alt="City Gate Mixed Farm" class="img-fluid w-100 h-100" style="object-fit:cover;">
+            <div class="cg-about-collage">
+               <div class="cg-about-collage__main">
+                  <img src="images/gallary/pexels-chicken-1867521_1920.jpg" alt="City Gate Mixed Farm poultry house">
+               </div>
+               <div class="cg-about-collage__small">
+                  <img src="images/gallary/walter46-goat-4138049_1920.jpg" alt="City Gate Mixed Farm goats">
+               </div>
+               <div class="cg-about-collage__badge">
+                  <strong><span class="counting" data-count="8">0</span></strong>
+                  <span>Years Strong</span>
+               </div>
             </div>
          </div>
          <div class="col-lg-6 fade-in">
@@ -44,33 +53,14 @@ $visionText  = cg_cms($pdo, 'about', 'vision_text', 'To be the leading model far
             <p class="section-sub">City Gate Mixed Farm is an integrated model farm located in Amuca, Lira City, Uganda. We operate across four productive sectors &mdash; poultry, goats, dairy cows, and crops &mdash; on a 4-hectare farm designed to demonstrate profitable, sustainable agriculture for Northern Uganda.</p>
             <p style="font-size:16px; line-height:1.75; color:#666; margin-top:16px;">Beyond production, we train farmers, host school and student tours, mentor young agripreneurs, and run industrial-training placements. Our goal is a working example of modern mixed farming that feeds, employs, and educates the community.</p>
 
-            <!-- Counters -->
-            <div class="row g-3 mt-4">
-               <div class="col-4 text-center fade-in">
-                  <div style="background:var(--cg-cream); border-radius:12px; padding:20px 12px;">
-                     <div style="font-size:clamp(28px,4vw,42px); font-weight:800; color:var(--cg-green); line-height:1;">
-                        <span class="counting" data-count="14000">0</span>+
-                     </div>
-                     <div style="font-size:12px; font-weight:600; letter-spacing:2px; text-transform:uppercase; color:#888; margin-top:6px;">Chickens</div>
-                  </div>
-               </div>
-               <div class="col-4 text-center fade-in">
-                  <div style="background:var(--cg-cream); border-radius:12px; padding:20px 12px;">
-                     <div style="font-size:clamp(28px,4vw,42px); font-weight:800; color:var(--cg-green); line-height:1;">
-                        <span class="counting" data-count="80">0</span>L
-                     </div>
-                     <div style="font-size:12px; font-weight:600; letter-spacing:2px; text-transform:uppercase; color:#888; margin-top:6px;">Milk / Day</div>
-                  </div>
-               </div>
-               <div class="col-4 text-center fade-in">
-                  <div style="background:var(--cg-cream); border-radius:12px; padding:20px 12px;">
-                     <div style="font-size:clamp(28px,4vw,42px); font-weight:800; color:var(--cg-green); line-height:1;">
-                        <span class="counting" data-count="4">0</span>
-                     </div>
-                     <div style="font-size:12px; font-weight:600; letter-spacing:2px; text-transform:uppercase; color:#888; margin-top:6px;">Sectors</div>
-                  </div>
-               </div>
-            </div>
+            <ul class="cg-about-checklist">
+               <li><i class="fa fa-check-circle" aria-hidden="true"></i> 14,000+ poultry &mdash; broilers &amp; layers</li>
+               <li><i class="fa fa-check-circle" aria-hidden="true"></i> 80 litres of fresh milk daily</li>
+               <li><i class="fa fa-check-circle" aria-hidden="true"></i> Boer &amp; Savannah goat breeding</li>
+               <li><i class="fa fa-check-circle" aria-hidden="true"></i> Coffee, bananas, maize &amp; pasture</li>
+               <li><i class="fa fa-check-circle" aria-hidden="true"></i> Farm training &amp; internships</li>
+               <li><i class="fa fa-check-circle" aria-hidden="true"></i> Guided tours &amp; school visits</li>
+            </ul>
 
             <div style="margin-top:32px; padding-top:24px; border-top:1px solid #eee; display:flex; align-items:center; gap:20px;">
                <div>

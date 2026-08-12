@@ -13,6 +13,30 @@ $pageModule = 'visitors';
 $pageTitle = 'Visitors & Appointments';
 $pageSub = 'Manage booking requests from the public site';
 require_once __DIR__ . '/includes/header.php';
+require_once __DIR__ . '/../includes/mailer.php';
+
+/** Best-effort email to the visitor when their booking is approved/rejected. */
+function cg_notify_visitor_status(array $appt, string $status): void {
+   if (empty($appt['contact_email'])) return;
+   $dateStr = $appt['visit_date'] ? date('d F Y', strtotime($appt['visit_date'])) : 'the requested date';
+   if ($status === 'Approved') {
+      $subject = 'Your City Gate Mixed Farm visit is confirmed';
+      $body = '<h2 style="color:#2F5D3A;">Visit Confirmed</h2>'
+         . '<p>Hello ' . htmlspecialchars($appt['contact_name']) . ',</p>'
+         . '<p>Good news — your visit request for <strong>' . htmlspecialchars($dateStr) . '</strong> has been <strong>approved</strong>.</p>'
+         . '<p>We look forward to hosting you at City Gate Mixed Farm, Amuca, Lira City. Please arrive on time and bring a valid ID for sign-in at the front desk.</p>'
+         . '<p>If you need to reschedule, just reply to this email or call us.</p>'
+         . '<p>— City Gate Mixed Farm</p>';
+   } else {
+      $subject = 'Update on your City Gate Mixed Farm visit request';
+      $body = '<h2 style="color:#2F5D3A;">Visit Request Update</h2>'
+         . '<p>Hello ' . htmlspecialchars($appt['contact_name']) . ',</p>'
+         . '<p>Thank you for your interest in visiting City Gate Mixed Farm. Unfortunately we are unable to confirm your request for <strong>' . htmlspecialchars($dateStr) . '</strong> at this time.</p>'
+         . '<p>Please reply to this email or call us to arrange an alternative date.</p>'
+         . '<p>— City Gate Mixed Farm</p>';
+   }
+   cg_send_mail($appt['contact_email'], $appt['contact_name'], $subject, $body);
+}
 
 $canFull = cg_can('visitors', 'full');
 
@@ -44,9 +68,19 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
    if ($id > 0 && $action === 'approve') {
       $stmt = $pdo->prepare("UPDATE appointments SET status='Approved' WHERE id=? AND status='Pending'");
       $stmt->execute([$id]);
+      if ($stmt->rowCount() > 0) {
+         $aStmt = $pdo->prepare('SELECT * FROM appointments WHERE id=? LIMIT 1');
+         $aStmt->execute([$id]);
+         if ($appt = $aStmt->fetch()) cg_notify_visitor_status($appt, 'Approved');
+      }
    } elseif ($id > 0 && $action === 'reject') {
       $stmt = $pdo->prepare("UPDATE appointments SET status='Rejected' WHERE id=? AND status='Pending'");
       $stmt->execute([$id]);
+      if ($stmt->rowCount() > 0) {
+         $aStmt = $pdo->prepare('SELECT * FROM appointments WHERE id=? LIMIT 1');
+         $aStmt->execute([$id]);
+         if ($appt = $aStmt->fetch()) cg_notify_visitor_status($appt, 'Rejected');
+      }
    } elseif ($id > 0 && $action === 'checkin') {
       $stmt = $pdo->prepare("SELECT * FROM appointments WHERE id=? LIMIT 1");
       $stmt->execute([$id]);

@@ -67,7 +67,7 @@ try {
 // the message is already saved above either way).
 // ---------------------------------------------------------------
 $mailConfig = require __DIR__ . '/config/mail.php';
-$notifyTo = $mailConfig['from_email'] ?: 'info@citygatefarms.com';
+$notifyTo = $mailConfig['notify_to'] ?? ($mailConfig['from_email'] ?: 'info@citygatefarms.com');
 
 if ($formType === 'contact') {
    $mailSubject = 'Contact Details';

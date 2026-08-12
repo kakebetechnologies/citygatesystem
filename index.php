@@ -6,6 +6,8 @@
  * are pulled live from blog_posts.
  */
 $pageTitle       = 'City Gate Mixed Farm - Integrated Model Farm in Lira City, Uganda';
+$pageDescription = 'City Gate Mixed Farm is an integrated model farm in Amuca, Lira City, Uganda — poultry, dairy, goats and crops, farm-fresh produce, hands-on training, and guided farm visits.';
+$ogImage         = 'images/gallary/pexels-chicken-1867521_1920.jpg';
 $activeNav       = 'home';
 require __DIR__ . '/includes/header.php';
 require_once __DIR__ . '/includes/cms.php';
@@ -13,6 +15,30 @@ require_once __DIR__ . '/includes/cms.php';
 // ---- CMS: hero headline/sub (falls back to the original hero copy) ----
 $heroTitle = cg_cms($pdo, 'home', 'hero_title', 'Modern Poultry Farming');
 $heroSub   = cg_cms($pdo, 'home', 'hero_sub', 'Clean housing. Organized feeding. Healthy birds.');
+
+// ---- CMS: hero slider — 5 slides, each editable from admin/cms.php ----
+$heroSlideDefaults = [
+   1 => ['eyebrow' => 'Poultry', 'title' => $heroTitle, 'sub' => $heroSub, 'image' => 'images/gallary/pexels-chicken-1867521_1920.jpg',
+         'ctas' => [['label' => 'Explore Poultry', 'href' => 'poultry-feed.php', 'style' => 'solid'], ['label' => 'Book a Visit', 'href' => 'bookings.php', 'style' => 'outline']]],
+   2 => ['eyebrow' => 'Dairy', 'title' => 'Fresh Daily Milk', 'sub' => 'Straight from a well-cared-for herd in Amuca.', 'image' => 'images/gallary/jaclou-dl-cow-4270355_1920.jpg',
+         'ctas' => [['label' => 'View Dairy', 'href' => 'layer-breeders.php', 'style' => 'solid'], ['label' => 'Shop Now', 'href' => 'shop.php', 'style' => 'outline']]],
+   3 => ['eyebrow' => 'Goats', 'title' => 'Premium Goat Breeds', 'sub' => 'Boer & Savannah — strong, healthy, farm-raised.', 'image' => 'images/gallary/walter46-goat-4138049_1920.jpg',
+         'ctas' => [['label' => 'See Goats', 'href' => 'shop.php', 'style' => '']]],
+   4 => ['eyebrow' => 'Crops', 'title' => 'Sustainable Farming', 'sub' => 'Coffee and banana, grown on our 4-acre model farm.', 'image' => 'images/gallary/marcusvu-coffee-2992598_1920.jpg',
+         'ctas' => [['label' => 'Explore Crops', 'href' => 'our-service.php', 'style' => '']]],
+   5 => ['eyebrow' => 'Training & Visits', 'title' => 'Visit. Learn. Grow.', 'sub' => 'Hands-on training and farm tours in Lira City.', 'image' => 'images/gallary/rooster-farm.jpg',
+         'ctas' => [['label' => 'Book a Visit', 'href' => 'contact-us.php', 'style' => '']]],
+];
+$heroSlides = [];
+foreach ($heroSlideDefaults as $n => $d) {
+   $heroSlides[] = [
+      'eyebrow' => cg_cms($pdo, 'home', "hero_slide_{$n}_eyebrow", $d['eyebrow']),
+      'title'   => $n === 1 ? $heroTitle : cg_cms($pdo, 'home', "hero_slide_{$n}_title", $d['title']),
+      'sub'     => $n === 1 ? $heroSub   : cg_cms($pdo, 'home', "hero_slide_{$n}_sub", $d['sub']),
+      'image'   => cg_cms($pdo, 'home', "hero_slide_{$n}_image", $d['image']),
+      'ctas'    => $d['ctas'],
+   ];
+}
 
 // ---- CMS: "Our Impact" stats strip ----
 $impactYears        = cg_cms($pdo, 'home', 'impact_years', '8');
@@ -35,83 +61,35 @@ $latestPosts = $stmt->fetchAll();
 ?>
 <link rel="stylesheet" href="css/cg-redesign.css">
 
-<!-- HERO SLIDER -->
+<!-- HERO SLIDER — content editable in Admin > Website Content > Homepage Hero Slider -->
 <section class="cg-hero" id="cgHero" aria-label="City Gate Mixed Farm">
     <div class="cg-hero__stage">
-        <div class="cg-hero__slide is-active" data-slide="0">
-            <div class="cg-hero__img" style="background-image: url('images/gallary/pexels-chicken-1867521_1920.jpg');"></div>
+        <?php foreach ($heroSlides as $i => $slide): ?>
+        <div class="cg-hero__slide<?php echo $i === 0 ? ' is-active' : ''; ?>" data-slide="<?php echo $i; ?>">
+            <div class="cg-hero__img" style="background-image: url('<?php echo htmlspecialchars($slide['image']); ?>');"></div>
             <div class="cg-hero__overlay"></div>
             <div class="cg-hero__content">
                 <div class="cg-hero__inner">
-                    <span class="cg-hero__eyebrow">Poultry</span>
-                    <h1 class="cg-hero__title"><?php echo htmlspecialchars($heroTitle); ?></h1>
-                    <p class="cg-hero__sub"><?php echo htmlspecialchars($heroSub); ?></p>
+                    <span class="cg-hero__eyebrow"><?php echo htmlspecialchars($slide['eyebrow']); ?></span>
+                    <h1 class="cg-hero__title"><?php echo htmlspecialchars($slide['title']); ?></h1>
+                    <p class="cg-hero__sub"><?php echo htmlspecialchars($slide['sub']); ?></p>
                     <div class="cg-hero__btns">
-                        <a href="poultry-feed.php" class="cg-hero__cta cg-hero__cta--solid">Explore Poultry <i class="fa fa-arrow-right"></i></a>
-                        <a href="bookings.php" class="cg-hero__cta cg-hero__cta--outline">Book a Visit</a>
+                        <?php foreach ($slide['ctas'] as $j => $cta):
+                           $ctaClass = 'cg-hero__cta' . ($cta['style'] !== '' ? ' cg-hero__cta--' . $cta['style'] : '');
+                        ?>
+                        <a href="<?php echo htmlspecialchars($cta['href']); ?>" class="<?php echo $ctaClass; ?>"><?php echo htmlspecialchars($cta['label']); ?><?php if ($j === 0): ?> <i class="fa fa-arrow-right"></i><?php endif; ?></a>
+                        <?php endforeach; ?>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="cg-hero__slide" data-slide="1">
-            <div class="cg-hero__img" style="background-image: url('images/gallary/jaclou-dl-cow-4270355_1920.jpg');"></div>
-            <div class="cg-hero__overlay"></div>
-            <div class="cg-hero__content">
-                <div class="cg-hero__inner">
-                    <span class="cg-hero__eyebrow">Dairy</span>
-                    <h1 class="cg-hero__title">Fresh <strong>Daily Milk</strong></h1>
-                    <p class="cg-hero__sub">Straight from a well-cared-for herd in Amuca.</p>
-                    <div class="cg-hero__btns">
-                        <a href="layer-breeders.php" class="cg-hero__cta cg-hero__cta--solid">View Dairy <i class="fa fa-arrow-right"></i></a>
-                        <a href="shop.php" class="cg-hero__cta cg-hero__cta--outline">Shop Now</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="cg-hero__slide" data-slide="2">
-            <div class="cg-hero__img" style="background-image: url('images/gallary/walter46-goat-4138049_1920.jpg');"></div>
-            <div class="cg-hero__overlay"></div>
-            <div class="cg-hero__content">
-                <div class="cg-hero__inner">
-                    <span class="cg-hero__eyebrow">Goats</span>
-                    <h1 class="cg-hero__title">Premium <strong>Goat Breeds</strong></h1>
-                    <p class="cg-hero__sub">Boer &amp; Savannah — strong, healthy, farm-raised.</p>
-                    <a href="shop.php" class="cg-hero__cta">See Goats <i class="fa fa-arrow-right"></i></a>
-                </div>
-            </div>
-        </div>
-        <div class="cg-hero__slide" data-slide="3">
-            <div class="cg-hero__img" style="background-image: url('images/gallary/marcusvu-coffee-2992598_1920.jpg');"></div>
-            <div class="cg-hero__overlay"></div>
-            <div class="cg-hero__content">
-                <div class="cg-hero__inner">
-                    <span class="cg-hero__eyebrow">Crops</span>
-                    <h1 class="cg-hero__title">Sustainable <strong>Farming</strong></h1>
-                    <p class="cg-hero__sub">Coffee and banana, grown on our 4-acre model farm.</p>
-                    <a href="our-service.php" class="cg-hero__cta">Explore Crops <i class="fa fa-arrow-right"></i></a>
-                </div>
-            </div>
-        </div>
-        <div class="cg-hero__slide" data-slide="4">
-            <div class="cg-hero__img" style="background-image: url('images/gallary/rooster-farm.jpg');"></div>
-            <div class="cg-hero__overlay"></div>
-            <div class="cg-hero__content">
-                <div class="cg-hero__inner">
-                    <span class="cg-hero__eyebrow">Training &amp; Visits</span>
-                    <h1 class="cg-hero__title">Visit. Learn. <strong>Grow.</strong></h1>
-                    <p class="cg-hero__sub">Hands-on training and farm tours in Lira City.</p>
-                    <a href="contact-us.php" class="cg-hero__cta">Book a Visit <i class="fa fa-arrow-right"></i></a>
-                </div>
-            </div>
-        </div>
+        <?php endforeach; ?>
     </div>
 
     <div class="cg-hero__dots" id="cgHeroDots">
-        <button class="cg-hero__dot is-active" data-go="0" aria-label="Slide 1"></button>
-        <button class="cg-hero__dot" data-go="1" aria-label="Slide 2"></button>
-        <button class="cg-hero__dot" data-go="2" aria-label="Slide 3"></button>
-        <button class="cg-hero__dot" data-go="3" aria-label="Slide 4"></button>
-        <button class="cg-hero__dot" data-go="4" aria-label="Slide 5"></button>
+        <?php foreach ($heroSlides as $i => $slide): ?>
+        <button class="cg-hero__dot<?php echo $i === 0 ? ' is-active' : ''; ?>" data-go="<?php echo $i; ?>" aria-label="Slide <?php echo $i + 1; ?>"></button>
+        <?php endforeach; ?>
     </div>
 
     <a href="#cgHeroBelow" class="cg-hero__scroll" aria-label="Scroll down">Scroll</a>

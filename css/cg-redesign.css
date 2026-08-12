@@ -9,6 +9,7 @@
 :root {
   --cg-green:       #2F5D3A;
   --cg-green-dark:  #1F3F27;
+  --cg-green-light: #4E8557;
   --cg-cream:       #FAF7F0;
   --cg-earth:       #C9A978;
   --cg-charcoal:    #1A1A1A;
@@ -737,7 +738,20 @@ body.cg-home .header.headerOne:not(.headerActive) .mainHeader .navbar-toggler-ic
    (bg-img4.png, img20.png, img70.png, img73.png — replaced with
    plain brand-color treatments so no placeholder art ships)
    ============================================================ */
-.footer.footerBg1 .footerGroup .footerInner { background-image: none !important; }
+/* The stock template only ever painted this area's background via
+   bg-img4.png on .footerInner — .footerGroup is absolutely positioned,
+   so the outer <footer>'s own background never actually rendered.
+   Put the footer back into normal flow and give it a solid fill directly,
+   instead of depending on a background image. */
+.footer.footerBg1 .footerGroup {
+  position: static !important;
+  top: auto !important;
+  background: var(--cg-green-light) !important;
+}
+.footer.footerBg1 .footerGroup .footerInner {
+  background-image: none !important;
+  padding: 64px 0 40px !important;
+}
 .testimonialsBox .testimonialsRow .testimonialsCol.testimonialsCol1::before { display: none !important; }
 .ourServiceCategory .categorySecInner { background-image: none !important; }
 .getDifferent { background-image: none !important; background-color: var(--cg-green) !important; }
@@ -842,19 +856,19 @@ body.cg-home .header.headerOne:not(.headerActive) .mainHeader .navbar-toggler-ic
 
 /* Legacy footer overrides — kept for pages not yet rebuilt */
 footer.footer, footer.footerBg1, .footer {
-  background: var(--cg-charcoal) !important;
+  background: var(--cg-green-light) !important;
 }
-footer .footerMenuHeading h4, footer .contactInfoTxt h6 { color: var(--cg-cream) !important; font-size: 14px !important; letter-spacing: 2px !important; text-transform: uppercase !important; }
+footer .footerMenuHeading h4, footer .contactInfoTxt h6 { color: var(--cg-white) !important; font-size: 14px !important; letter-spacing: 2px !important; text-transform: uppercase !important; }
 footer .footerPara, footer .footerMenuLink a, footer .contactInfoTxt p, footer .footerCopyRightInner p {
-  color: rgba(250,247,240,0.55) !important;
+  color: rgba(255,255,255,0.88) !important;
   font-size: 14px !important;
 }
 footer .footerMenuLink a:hover { color: var(--cg-earth) !important; }
 footer .contactInfoIcon i, footer .socialMediaIcon a { color: var(--cg-earth) !important; }
-footer .needOurSupport { background: var(--cg-green) !important; }
-footer .needOurSupportTxt h2 { color: var(--cg-cream) !important; }
+footer .needOurSupport { background: var(--cg-green-dark) !important; }
+footer .needOurSupportTxt h2 { color: var(--cg-white) !important; }
 footer .subscriptionBtn { background: var(--cg-earth) !important; color: var(--cg-charcoal) !important; border-radius: 6px !important; font-weight: 700 !important; }
-footer .hrLine { border-color: rgba(250,247,240,0.1) !important; }
+footer .hrLine { border-color: rgba(255,255,255,0.2) !important; }
 
 /* ============================================================
    CURSOR
@@ -1052,6 +1066,94 @@ section h2, section h4, section h3 { margin-top: 0 !important; }
   width: 64px; height: 3px; background: var(--cg-earth); border: none;
   margin: 26px auto 0; border-radius: 2px;
 }
+
+/* ============================================================
+   ABOUT PAGE — photo collage + checklist (about-us.php only)
+   ============================================================ */
+.cg-about-collage { position: relative; padding-bottom: 40px; padding-right: 30px; }
+.cg-about-collage__main { border-radius: 20px; overflow: hidden; aspect-ratio: 4/3; box-shadow: var(--cg-shadow); }
+.cg-about-collage__main img { width: 100%; height: 100%; object-fit: cover; }
+.cg-about-collage__small {
+  position: absolute; right: 0; bottom: 0; width: 55%; aspect-ratio: 4/3;
+  border-radius: 16px; overflow: hidden; border: 5px solid var(--cg-white);
+  box-shadow: var(--cg-shadow);
+}
+.cg-about-collage__small img { width: 100%; height: 100%; object-fit: cover; }
+.cg-about-collage__badge {
+  position: absolute; left: 10px; bottom: 10px; z-index: 2;
+  width: 84px; height: 84px; border-radius: 50%;
+  background: var(--cg-green); color: var(--cg-white);
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  box-shadow: var(--cg-shadow); text-align: center; line-height: 1.1;
+}
+.cg-about-collage__badge strong { font-size: 20px; font-weight: 800; display: block; }
+.cg-about-collage__badge span { font-size: 9px; text-transform: uppercase; letter-spacing: 0.5px; opacity: 0.85; }
+
+.cg-about-checklist { list-style: none; margin: 26px 0 0; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 14px 24px; }
+.cg-about-checklist li { display: flex; align-items: flex-start; gap: 10px; font-size: 14.5px; font-weight: 600; color: var(--cg-charcoal); }
+.cg-about-checklist li i { color: var(--cg-green); font-size: 16px; margin-top: 2px; }
+
+@media(max-width: 640px){
+  .cg-about-checklist { grid-template-columns: 1fr; }
+  .cg-about-collage { padding-right: 0; }
+}
+
+/* ============================================================
+   GALLERY PAGE — filterable masonry layout (gallery-3-column.php only)
+   ============================================================ */
+.cg-gallery-filters { padding: 44px 0 8px; background: var(--cg-white); }
+.cg-gallery-filters__row { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; }
+.cg-gallery-pill {
+  border: 1.5px solid rgba(47,93,58,0.2); background: var(--cg-white);
+  color: var(--cg-green); font-size: 13px; font-weight: 600;
+  padding: 9px 22px; border-radius: 50px; cursor: pointer;
+  transition: all var(--cg-transition);
+}
+.cg-gallery-pill:hover { border-color: var(--cg-green); background: rgba(47,93,58,0.06); }
+.cg-gallery-pill.is-active { background: var(--cg-green); border-color: var(--cg-green); color: var(--cg-white); }
+
+.cg-gallery-masonry {
+  column-count: 3; column-gap: 20px; margin-top: 36px;
+}
+.cg-gallery-item {
+  break-inside: avoid; margin-bottom: 20px;
+  position: relative; border-radius: 16px; overflow: hidden;
+  box-shadow: var(--cg-shadow); display: block; text-decoration: none;
+}
+.cg-gallery-item img { width: 100%; display: block; transition: transform 0.5s ease; }
+.cg-gallery-item:hover img { transform: scale(1.06); }
+.cg-gallery-item__badge {
+  position: absolute; top: 14px; left: 14px;
+  background: rgba(250,247,240,0.92); color: var(--cg-charcoal);
+  font-size: 11px; font-weight: 700; letter-spacing: 0.5px; text-transform: uppercase;
+  padding: 5px 14px; border-radius: 50px;
+}
+.cg-gallery-item__overlay {
+  position: absolute; inset: 0;
+  background: linear-gradient(0deg, rgba(26,26,26,0.75) 0%, rgba(26,26,26,0) 45%);
+  opacity: 0; transition: opacity var(--cg-transition);
+  display: flex; align-items: flex-end; padding: 18px;
+}
+.cg-gallery-item:hover .cg-gallery-item__overlay { opacity: 1; }
+.cg-gallery-item__caption { color: var(--cg-white); font-size: 14px; font-weight: 500; margin: 0; }
+.cg-gallery-item__zoom {
+  position: absolute; top: 14px; right: 14px; width: 34px; height: 34px; border-radius: 50%;
+  background: rgba(255,255,255,0.9); color: var(--cg-green);
+  display: flex; align-items: center; justify-content: center;
+  opacity: 0; transform: translateY(-6px); transition: all var(--cg-transition);
+}
+.cg-gallery-item:hover .cg-gallery-item__zoom { opacity: 1; transform: translateY(0); }
+.cg-gallery-item.is-hidden { display: none; }
+
+.cg-gallery-empty {
+  text-align: center; padding: 60px 20px; background: var(--cg-cream);
+  border-radius: var(--cg-radius); border: 2px dashed rgba(47,93,58,0.2);
+}
+.cg-gallery-empty i { font-size: 2.5rem; color: var(--cg-earth); margin-bottom: 14px; display: inline-block; }
+.cg-gallery-empty p { margin: 0; color: #777; }
+
+@media(max-width: 991px){ .cg-gallery-masonry { column-count: 2; } }
+@media(max-width: 560px){ .cg-gallery-masonry { column-count: 1; } }
 
 /* ============================================================
    BLOG PAGE — magazine-style layout (blog.php only)

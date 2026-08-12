@@ -27,6 +27,10 @@ function cg_save_uploaded_image(array $file): ?string {
    if (!is_dir($destDir)) {
       mkdir($destDir, 0755, true);
    }
+   $htaccess = $destDir . '.htaccess';
+   if (!file_exists($htaccess)) {
+      file_put_contents($htaccess, "php_flag engine off\n<Files \"*.php\">\nDeny from all\n</Files>\n");
+   }
    $dest = $destDir . $filename;
    if (!move_uploaded_file($file['tmp_name'], $dest)) {
       return null;

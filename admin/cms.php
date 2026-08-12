@@ -9,6 +9,41 @@ require_once __DIR__ . '/../includes/cms.php';
 $canEdit = cg_can('cms', 'full');
 $message = '';
 
+// ---- Hero slide defaults (used until an admin overrides them) ----
+$heroSlideDefaults = [
+   1 => ['eyebrow' => 'Poultry', 'title' => 'Modern Poultry Farming', 'sub' => 'Clean housing. Organized feeding. Healthy birds.', 'image' => 'images/gallary/pexels-chicken-1867521_1920.jpg'],
+   2 => ['eyebrow' => 'Dairy', 'title' => 'Fresh Daily Milk', 'sub' => 'Straight from a well-cared-for herd in Amuca.', 'image' => 'images/gallary/jaclou-dl-cow-4270355_1920.jpg'],
+   3 => ['eyebrow' => 'Goats', 'title' => 'Premium Goat Breeds', 'sub' => 'Boer & Savannah — strong, healthy, farm-raised.', 'image' => 'images/gallary/walter46-goat-4138049_1920.jpg'],
+   4 => ['eyebrow' => 'Crops', 'title' => 'Sustainable Farming', 'sub' => 'Coffee and banana, grown on our 4-acre model farm.', 'image' => 'images/gallary/marcusvu-coffee-2992598_1920.jpg'],
+   5 => ['eyebrow' => 'Training & Visits', 'title' => 'Visit. Learn. Grow.', 'sub' => 'Hands-on training and farm tours in Lira City.', 'image' => 'images/gallary/rooster-farm.jpg'],
+];
+
+/** Ensures an uploads subdirectory exists and is hardened against PHP execution. */
+function cg_cms_ensure_upload_dir(string $dir): void {
+   if (!is_dir($dir)) mkdir($dir, 0755, true);
+   $htaccess = $dir . '/.htaccess';
+   if (!file_exists($htaccess)) {
+      file_put_contents($htaccess, "php_flag engine off\n<Files \"*.php\">\nDeny from all\n</Files>\n");
+   }
+}
+
+/** Validates + saves an uploaded hero-slide image into uploads/hero/, returns relative path or null. */
+function cg_save_hero_image(array $file): ?string {
+   if (!isset($file['tmp_name']) || $file['error'] !== UPLOAD_ERR_OK || (int) $file['size'] <= 0) return null;
+   if ($file['size'] > 8 * 1024 * 1024) return null;
+   $info = @getimagesize($file['tmp_name']);
+   if ($info === false) return null;
+   $allowedMime = ['image/jpeg' => 'jpg', 'image/png' => 'png', 'image/webp' => 'webp'];
+   $mime = $info['mime'] ?? '';
+   if (!isset($allowedMime[$mime])) return null;
+   $ext = $allowedMime[$mime];
+   $destDir = __DIR__ . '/../uploads/hero';
+   cg_cms_ensure_upload_dir($destDir);
+   $filename = bin2hex(random_bytes(8)) . '.' . $ext;
+   if (!move_uploaded_file($file['tmp_name'], $destDir . '/' . $filename)) return null;
+   return 'uploads/hero/' . $filename;
+}
+
 // Field groups: each field is [field_key, label, type(text|textarea), placeholder/default]
 $groups = [
    'home' => [
@@ -22,12 +57,9 @@ $groups = [
    ],
 ];
 
-// Simple text/textarea fields, keyed by page_key
+// Simple text/textarea fields, keyed by page_key (hero slide fields have
+// their own dedicated editor block further down, not this generic loop)
 $textFields = [
-   'home' => [
-      ['key' => 'hero_title', 'label' => 'Hero Title', 'type' => 'text', 'placeholder' => 'Modern Poultry Farming'],
-      ['key' => 'hero_sub', 'label' => 'Hero Subtitle', 'type' => 'text', 'placeholder' => 'Clean housing. Organized feeding. Healthy birds.'],
-   ],
    'about' => [
       ['key' => 'mission_text', 'label' => 'Mission', 'type' => 'textarea', 'placeholder' => 'To operate a profitable, sustainable integrated farm that feeds, employs, and educates Northern Uganda.'],
       ['key' => 'vision_text', 'label' => 'Vision', 'type' => 'textarea', 'placeholder' => 'To be the leading model farm and agricultural training center in Northern Uganda.'],
@@ -39,6 +71,12 @@ $allFieldKeys = [
    'home' => ['impact_years', 'impact_years_label', 'impact_farmers', 'impact_farmers_label', 'impact_students', 'impact_students_label', 'impact_sectors', 'impact_sectors_label', 'hero_title', 'hero_sub'],
    'about' => ['mission_text', 'vision_text'],
 ];
+foreach ($heroSlideDefaults as $n => $d) {
+   $allFieldKeys['home'][] = "hero_slide_{$n}_eyebrow";
+   $allFieldKeys['home'][] = "hero_slide_{$n}_title";
+   $allFieldKeys['home'][] = "hero_slide_{$n}_sub";
+   // hero_slide_N_image is handled separately below (file upload, not a plain text field).
+}
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
    if (!$canEdit) {
@@ -62,7 +100,19 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
       }
    }
 
-   header('Location: cms.php?saved=1');
+   // Hero slide image uploads — only touched when a new file was actually chosen.
+   foreach (array_keys($heroSlideDefaults) as $n) {
+      $fieldKey = "hero_slide_{$n}_image";
+      $fileKey = "home__{$fieldKey}";
+      if (isset($_FILES[$fileKey]) && $_FILES[$fileKey]['error'] === UPLOAD_ERR_OK) {
+         $path = cg_save_hero_image($_FILES[$fileKey]);
+         if ($path !== null) {
+            $upsert->execute(['home', $fieldKey, $path]);
+         }
+      }
+   }
+
+   header('Location: cms.php?saved=1#hero');
    exit;
 }
 
@@ -84,7 +134,7 @@ function cg_input_name($pageKey, $fieldKey) {
    <?php if (!$canEdit): ?><p class="text-muted">You have read-only access to this module.</p><?php endif; ?>
    <?php if ($message): ?><div class="alert alert-success"><?php echo htmlspecialchars($message); ?></div><?php endif; ?>
 
-   <form method="post" action="cms.php">
+   <form method="post" action="cms.php" enctype="multipart/form-data">
       <?php echo cg_csrf_field(); ?>
       <div class="row g-3 mb-2">
          <?php foreach ($groups['home']['pairs'] as $pair):
@@ -106,16 +156,46 @@ function cg_input_name($pageKey, $fieldKey) {
       </div>
 
       <hr class="my-4">
-      <h2 class="h5 mb-3">Homepage Hero</h2>
-      <?php foreach ($textFields['home'] as $f):
-         $val = $currentByPage['home'][$f['key']] ?? '';
+      <h2 class="h5 mb-3" id="hero">Homepage Hero Slider</h2>
+      <p class="text-muted small mb-3">The homepage hero rotates through 5 full-screen slides. Edit each one's eyebrow label, headline, subtitle and background photo below — changes appear on the live site immediately after saving.</p>
+
+      <?php foreach ($heroSlideDefaults as $n => $defaults):
          $disabled = $canEdit ? '' : ' disabled';
+         $eyebrowVal = $currentByPage['home']["hero_slide_{$n}_eyebrow"] ?? '';
+         $imageVal   = $currentByPage['home']["hero_slide_{$n}_image"] ?? '';
+         $currentImage = $imageVal !== '' ? $imageVal : $defaults['image'];
+         if ($n === 1) {
+            // Slide 1's title/sub reuse the original hero_title/hero_sub keys (predates the multi-slide feature).
+            $titleVal = $currentByPage['home']['hero_title'] ?? '';
+            $subVal   = $currentByPage['home']['hero_sub'] ?? '';
+            $titleName = cg_input_name('home', 'hero_title');
+            $subName   = cg_input_name('home', 'hero_sub');
+         } else {
+            $titleVal = $currentByPage['home']["hero_slide_{$n}_title"] ?? '';
+            $subVal   = $currentByPage['home']["hero_slide_{$n}_sub"] ?? '';
+            $titleName = cg_input_name('home', "hero_slide_{$n}_title");
+            $subName   = cg_input_name('home', "hero_slide_{$n}_sub");
+         }
       ?>
-      <div class="mb-3">
-         <label class="form-label" for="home_<?php echo htmlspecialchars($f['key']); ?>"><?php echo htmlspecialchars($f['label']); ?></label>
-         <input type="text" class="form-control" id="home_<?php echo htmlspecialchars($f['key']); ?>"
-                name="<?php echo cg_input_name('home', $f['key']); ?>" value="<?php echo htmlspecialchars($val); ?>"
-                placeholder="<?php echo htmlspecialchars($f['placeholder']); ?>"<?php echo $disabled; ?>>
+      <div class="border rounded p-3 mb-3">
+         <div class="d-flex align-items-center justify-content-between mb-2">
+            <strong>Slide <?php echo $n; ?></strong>
+         </div>
+         <div class="row g-3">
+            <div class="col-md-4">
+               <img src="../<?php echo htmlspecialchars($currentImage); ?>" alt="Slide <?php echo $n; ?> preview" class="img-fluid rounded mb-2" style="aspect-ratio:16/10;object-fit:cover;width:100%;">
+               <label class="form-label small text-muted mb-1">Replace Photo</label>
+               <input type="file" class="form-control form-control-sm" name="<?php echo cg_input_name('home', "hero_slide_{$n}_image"); ?>" accept="image/jpeg,image/png,image/webp"<?php echo $disabled; ?>>
+            </div>
+            <div class="col-md-8">
+               <label class="form-label small text-muted mb-1">Eyebrow Label</label>
+               <input type="text" class="form-control mb-2" name="<?php echo cg_input_name('home', "hero_slide_{$n}_eyebrow"); ?>" value="<?php echo htmlspecialchars($eyebrowVal); ?>" placeholder="<?php echo htmlspecialchars($defaults['eyebrow']); ?>"<?php echo $disabled; ?>>
+               <label class="form-label small text-muted mb-1">Headline</label>
+               <input type="text" class="form-control mb-2" name="<?php echo $titleName; ?>" value="<?php echo htmlspecialchars($titleVal); ?>" placeholder="<?php echo htmlspecialchars($defaults['title']); ?>"<?php echo $disabled; ?>>
+               <label class="form-label small text-muted mb-1">Subtitle</label>
+               <input type="text" class="form-control" name="<?php echo $subName; ?>" value="<?php echo htmlspecialchars($subVal); ?>" placeholder="<?php echo htmlspecialchars($defaults['sub']); ?>"<?php echo $disabled; ?>>
+            </div>
+         </div>
       </div>
       <?php endforeach; ?>
 
