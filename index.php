@@ -150,7 +150,7 @@ $latestPosts = $stmt->fetchAll();
     <div class="container">
         <div class="cg-intro-statement__inner fade-in">
             <span class="cg-intro-statement__mark">Who We Are</span>
-          <p class="cg-intro-statement__lead">A living model of integrated farming in Amuca, Lira City — where poultry, dairy, goats, and crops work together as one thriving ecosystem.</p>
+          <p class="cg-intro-statement__lead">A living model of integrated farming in Amuca.</p>
 <p>City Gate Mixed Farm is a 4‑hectare demonstration farm and training hub. We combine poultry, goats, dairy, and crops to prove sustainable agriculture works in Northern Uganda. Beyond production, we host school tours, mentor young agripreneurs, and offer hands-on training. Our mission: to build a farm that feeds, employs, and inspires — a model for the community and beyond.</p>
             <hr class="cg-intro-statement__rule">
         </div>
