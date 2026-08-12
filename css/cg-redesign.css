@@ -28,24 +28,6 @@ body {
 }
 
 /* ============================================================
-   TOP BAR — hide on homepage (body.cg-home), slim on others
-   ============================================================ */
-body.cg-home .topHeader { display: none !important; }
-.topHeader {
-  background: var(--cg-charcoal) !important;
-  padding: 5px 15px !important;
-}
-.topHeader .topHeaderInner .boxGroupHeader .flexGroupHeader .iconTxt span,
-.topHeader .topHeaderInner .boxGroupHeader .flexGroupHeader .iconTxt select {
-  color: rgba(250,247,240,0.75) !important;
-  font-size: 13px !important;
-}
-.topHeader .topHeaderInner .boxGroupHeader .flexGroupHeader .icon img {
-  filter: brightness(0) invert(1) !important;
-  opacity: 0.7;
-}
-
-/* ============================================================
    HEADER / NAVBAR — shared base
    OVERRIDES style.css .headerOne and custom.js header classes
    ============================================================ */
@@ -474,12 +456,15 @@ body.cg-home .header.headerOne:not(.headerActive) .mainHeader .navbar-toggler-ic
 .pillar-item {
   text-align: left !important;
   padding: 28px 24px !important;
-  background: var(--cg-cream) !important;
-  border-radius: 16px !important;
-  border-left: 4px solid var(--cg-green) !important;
+  background: var(--cg-white) !important;
+  border-radius: 14px !important;
+  border: 1px solid rgba(26,26,26,0.06) !important;
+  box-shadow: 0 2px 10px rgba(26,26,26,0.04) !important;
   transition: all var(--cg-transition) !important;
+  display: block !important;
+  text-decoration: none !important;
 }
-.pillar-item:hover { transform: translateY(-6px); box-shadow: var(--cg-shadow) !important; }
+.pillar-item:hover { transform: translateY(-6px); box-shadow: var(--cg-shadow) !important; border-color: transparent !important; }
 .pillar-icon {
   width: 56px !important; height: 56px !important;
   background: var(--cg-green) !important;
@@ -490,7 +475,14 @@ body.cg-home .header.headerOne:not(.headerActive) .mainHeader .navbar-toggler-ic
   margin-bottom: 24px !important;
 }
 .pillar-title { font-size: 22px !important; font-weight: 700 !important; margin-bottom: 12px !important; color: var(--cg-charcoal) !important; }
-.pillar-desc { font-size: 15px !important; line-height: 1.7 !important; color: #666 !important; }
+.pillar-desc { font-size: 15px !important; line-height: 1.7 !important; color: #666 !important; margin-bottom: 0 !important; }
+.pillar-link {
+  display: inline-flex !important; align-items: center !important; gap: 6px !important;
+  margin-top: 16px !important; font-size: 13px !important; font-weight: 700 !important;
+  color: var(--cg-green) !important; letter-spacing: 0.5px !important;
+  transition: gap var(--cg-transition) !important;
+}
+.pillar-item:hover .pillar-link { gap: 10px !important; }
 
 /* ============================================================
    VALUE PROP — bold photo cards for "Why City Gate?" on the
@@ -894,11 +886,11 @@ footer .hrLine { border-color: rgba(255,255,255,0.2) !important; }
    RESPONSIVE
    ============================================================ */
 @media (max-width: 1200px) {
-  .sectors-grid { grid-template-columns: repeat(2, 1fr) !important; }
-  .products-grid { grid-template-columns: repeat(2, 1fr) !important; }
+  .sectors-grid { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; }
+  .products-grid { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; }
 }
 @media (max-width: 991px) {
-  .stats-strip-inner { grid-template-columns: repeat(2, 1fr) !important; }
+  .stats-strip-inner { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; }
   .pillars-grid { grid-template-columns: 1fr !important; }
   .blog-grid { grid-template-columns: 1fr !important; }
   .newsletter-inner { flex-direction: column !important; text-align: center !important; }
@@ -913,9 +905,13 @@ footer .hrLine { border-color: rgba(255,255,255,0.2) !important; }
   body.cg-home .mainHeader .navbar .container #collapsibleNavbar .navbar-nav li a { color: rgba(255,255,255,0.9) !important; }
 }
 @media (max-width: 768px) {
-  .sectors-grid { grid-template-columns: 1fr !important; }
+  .sectors-grid { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; gap: 12px !important; margin-top: 24px !important; }
+  .sector-card { aspect-ratio: 1 / 1 !important; border-radius: 10px !important; }
+  .sector-card-overlay { padding: 12px !important; }
+  .sector-card-label { font-size: 9px !important; letter-spacing: 1px !important; margin-bottom: 3px !important; }
+  .sector-card-promise { font-size: 12.5px !important; line-height: 1.3 !important; }
   .products-grid { grid-template-columns: 1fr !important; }
-  .stats-strip-inner { grid-template-columns: repeat(2, 1fr) !important; }
+  .stats-strip-inner { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; }
   .section-pad { padding: 56px 0 !important; }
   .pillars-row { background: var(--cg-white) !important; padding: 56px 0 !important; }
   .value-prop-row { padding: 44px 0 !important; }
@@ -932,7 +928,6 @@ footer .hrLine { border-color: rgba(255,255,255,0.2) !important; }
   .newsletter-form input { min-width: 100% !important; border-radius: 6px !important; }
   .newsletter-form button { border-radius: 6px !important; }
   .cg-page-banner { padding: 48px 0 32px !important; }
-  .topHeader { padding: 4px 12px !important; }
   .mainHeader .navbar .container .navbar-brand img { width: 108px !important; }
 }
 

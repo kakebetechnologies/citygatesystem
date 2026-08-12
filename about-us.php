@@ -169,30 +169,30 @@ $visionText  = cg_cms($pdo, 'about', 'vision_text', 'To be the leading model far
          <p class="section-sub">Four ways to engage with City Gate Mixed Farm &mdash; whether you are a visitor, buyer, learner, or partner.</p>
       </div>
       <div class="pillars-grid" style="margin-top:52px;">
-         <div class="pillar-item fade-in" style="border-left-color:var(--cg-earth);">
+         <a href="bookings.php" class="pillar-item fade-in">
             <div class="pillar-icon"><i class="fa fa-map-marker"></i></div>
             <h3 class="pillar-title">Visit the Farm</h3>
             <p class="pillar-desc">Take a guided tour of our poultry houses, goat pens, dairy unit, and crop plots. Great for schools, community groups, and individuals curious about modern farming.</p>
-            <a href="bookings.php" style="display:inline-block; margin-top:16px; font-size:13px; font-weight:700; color:var(--cg-green); letter-spacing:0.5px;">Book a Visit &rarr;</a>
-         </div>
-         <div class="pillar-item fade-in">
+            <span class="pillar-link">Book a Visit <i class="fa fa-arrow-right" aria-hidden="true"></i></span>
+         </a>
+         <a href="contact-us.php" class="pillar-item fade-in">
             <div class="pillar-icon"><i class="fa fa-graduation-cap"></i></div>
             <h3 class="pillar-title">Learn &amp; Train</h3>
             <p class="pillar-desc">Hands-on training in poultry, goats, dairy, and crops. Internships and industrial-training placements available for agriculture students from across Uganda.</p>
-            <a href="contact-us.php" style="display:inline-block; margin-top:16px; font-size:13px; font-weight:700; color:var(--cg-green); letter-spacing:0.5px;">Enquire Now &rarr;</a>
-         </div>
-         <div class="pillar-item fade-in">
+            <span class="pillar-link">Enquire Now <i class="fa fa-arrow-right" aria-hidden="true"></i></span>
+         </a>
+         <a href="shop.php" class="pillar-item fade-in">
             <div class="pillar-icon"><i class="fa fa-shopping-basket"></i></div>
             <h3 class="pillar-title">Buy Farm Products</h3>
             <p class="pillar-desc">Eggs, chicks, broiler meat, goats, fresh milk, maize, coffee and bananas &mdash; direct from the farm, priced in UGX. Bulk orders welcome.</p>
-            <a href="shop.php" style="display:inline-block; margin-top:16px; font-size:13px; font-weight:700; color:var(--cg-green); letter-spacing:0.5px;">View Products &rarr;</a>
-         </div>
-         <div class="pillar-item fade-in" style="border-left-color:var(--cg-earth);">
+            <span class="pillar-link">View Products <i class="fa fa-arrow-right" aria-hidden="true"></i></span>
+         </a>
+         <a href="contact-us.php" class="pillar-item fade-in">
             <div class="pillar-icon"><i class="fa fa-handshake-o"></i></div>
             <h3 class="pillar-title">Partner or Invest</h3>
             <p class="pillar-desc">Join us in scaling the farm from 14,000 to 100,000 birds, expanded dairy, and new crop acreage. Investor partnerships and institutional collaborations welcome.</p>
-            <a href="contact-us.php" style="display:inline-block; margin-top:16px; font-size:13px; font-weight:700; color:var(--cg-green); letter-spacing:0.5px;">Let&rsquo;s Talk &rarr;</a>
-         </div>
+            <span class="pillar-link">Let&rsquo;s Talk <i class="fa fa-arrow-right" aria-hidden="true"></i></span>
+         </a>
       </div>
    </div>
 </section>

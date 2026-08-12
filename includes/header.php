@@ -82,40 +82,6 @@ function cg_nav_active(string $key, string $active): string {
    <div class='cursor cursor1'></div>
    <div class='cursor cursor2'></div>
    <header class="w-100 clearfix header headerOne" id="headerOne">
-      <div class="topHeader">
-         <div class="container">
-            <div class="topHeaderInner">
-               <div class="mobile boxGroupHeader">
-                  <a href="javascript:void(0);">
-                     <div class="flexGroupHeader">
-                        <div class="icon"><img src="images/icon/phone.png" alt="icon" class="img-fluid"></div>
-                        <div class="iconTxt"><span>+256 123 456 789</span></div>
-                     </div>
-                  </a>
-               </div>
-               <div class="mail boxGroupHeader">
-                  <a href="javascript:void(0);">
-                     <div class="flexGroupHeader">
-                        <div class="icon"><img src="images/icon/mail.png" alt="icon" class="img-fluid"></div>
-                        <div class="iconTxt"><span>info@citygatefarms.com</span></div>
-                     </div>
-                  </a>
-               </div>
-               <div class="language boxGroupHeader ms-auto">
-                  <div class="flexGroupHeader">
-                     <div class="icon"><img src="images/icon/lang.png" alt="icon" class="img-fluid"></div>
-                     <div class="iconTxt">
-                        <select class="form-select">
-                           <option>English</option>
-                           <option>Luo</option>
-                           <option>Luganda</option>
-                        </select>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
       <div class="mainHeader">
          <nav class="navbar navbar-expand-xl">
             <div class="container">
